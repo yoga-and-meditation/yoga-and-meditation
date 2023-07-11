@@ -4,13 +4,13 @@ Welcome to the README file for the Yoga with Sheetal web application. This proje
 
 ## 📚 Table of Contents
 
-- [Project Overview](#project-overview)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [Contributors](#Contributors)
-- [License](#license)
+- [Project Overview](#🌟-project-overview)
+- [Technologies Used](#💻-technologies-used)
+- [Project Structure](#🏰-project-structure)
+- [Getting Started](#🚀-getting-started)
+- [Contributing](#🤝-contributing)
+- [Contributors](#🙌-contributors)
+- [License](#📜-license)
 
 ## 🌟 Project Overview
 
@@ -81,12 +81,12 @@ Contributions to the Yoga with Sheetal website project are welcome. If you would
 
 The following individuals have contributed to the development of this project:
 
-- [Chandu Sasidharan](https://github.com/Chandu-Sasidharan)
-- [Kidan Tekelearegy](https://github.com/Kidan-Tekelearegy)
-- [Louis Clarencepeter](https://github.com/louisclarencepeter)
-- [Abdulwase Naeemi](https://github.com/Naeemi7)
-- [Roshini Murali](https://github.com/roshinimurali)
-- [Shaqayeq Taheri](https://github.com/Shaqayeq-taheri)
+- <a href="https://github.com/Chandu-Sasidharan" target="_blank">Chandu Sasidharan</a>
+- <a href="https://github.com/Kidan-Tekelearegy" target="_blank">Kidan Lakew</a>
+- <a href="https://github.com/louisclarencepeter" target="_blank">Louis Peter</a>
+- <a href="https://github.com/Naeemi7" target="_blank">Abdulwase Naeemi</a>
+- <a href ="https://github.com/roshinimurali" target="_blank">Roshini Muralidharan</a>
+- <a href="https://github.com/Shaqayeq-taheri" target="_blank">Shaqayeq Taheri</a>
 
 ## 📜 License
 
