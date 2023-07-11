@@ -4,13 +4,13 @@ Welcome to the README file for the Yoga with Sheetal web application. This proje
 
 ## 📚 Table of Contents
 
-- [Project Overview](#🌟-project-overview)
-- [Technologies Used](#💻-technologies-used)
-- [Project Structure](#🏰-project-structure)
-- [Getting Started](#🚀-getting-started)
-- [Contributing](#🤝-contributing)
-- [Contributors](#🙌-contributors)
-- [License](#📜-license)
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [Contributors](#contributors)
+- [License](#license)
 
 ## 🌟 Project Overview
 
@@ -21,7 +21,7 @@ Key features of the website include:
 - Single-page design for easy navigation and accessibility
 - Responsive layout for optimal viewing on different devices
 - Information about different yoga styles and meditation techniques
-- Integration of a booking system for yoga, meditation, and counseling sessio
+- Integration of a booking system for yoga, meditation, and counseling sessions
 - Blog section for articles on well-being and self-care
 - Contact form for inquiries and feedback
 
@@ -61,20 +61,20 @@ The project structure will be organized as follows:
 
 To get started with the project, follow these steps:
 
-1. Clone the repository: git clone https://github.com/yoga-with-sheetal/website.git
-2. Navigate to the project directory: cd yoga-meditation-counseling
-3. Install dependencies: npm install
-4. Start the development server: npm run dev
-5. Open your web browser and visit http://localhost:3000 to view the web page
+1. Clone the repository: `git clone https://github.com/yoga-with-sheetal/website.git`
+2. Navigate to the project directory: `cd yoga-meditation-counseling`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to view the web page
 
 ## 🤝 Contributing
 
 Contributions to the Yoga with Sheetal website project are welcome. If you would like to contribute, please follow these steps:
 
 1. Fork the repository.
-2. Create a new branch: git checkout -b your-branch
-3. Make your changes and commit them: git commit -m 'Add your feature'
-4. Push to the branch: git push origin your-branch
+2. Create a new branch: `git checkout -b your-branch`
+3. Make your changes and commit them: `git commit -m 'Add your feature'`
+4. Push to the branch: `git push origin your-branch`
 5. Submit a pull request.
 
 ## 🙌 Contributors
