@@ -88,6 +88,6 @@ The following individuals have contributed to the development of this project:
 - <a href ="https://github.com/roshinimurali" target="_blank">Roshini Muralidharan</a>
 - <a href="https://github.com/Shaqayeq-taheri" target="_blank">Shaqayeq Taheri</a>
 
-## 📜 License
+## License
 
 The Yoga, Meditation, and Counseling website project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
