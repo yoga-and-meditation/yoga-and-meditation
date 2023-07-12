@@ -7,6 +7,14 @@ h1 {
   color: $text-color;
   font-style: italic;
 }
+
+h2 {
+  font-family: Roboto-Medium;
+  font-weight: 700;
+  color: $text-color;
+  font-style: italic;
+}
+
 button {
   @include button-style;
 }
