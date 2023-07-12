@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "mixin";
 h1 {
   font-family: Roboto-Black;
   font-weight: 900;
@@ -7,5 +7,5 @@ h1 {
   font-style: italic;
 }
 button {
-  background-color: $button-color;
+  @include button-style
 }

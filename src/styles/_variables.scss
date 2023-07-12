@@ -1,14 +1,9 @@
 //Font variable initialization
-$button-color: linear-gradient(
-  90deg,
-  rgba(203, 157, 35, 1) 0%,
-  /* Varaibles can't be more than a line so we need to create it as mixedin */
-    rgba(249, 194, 51, 1) 100%
-);
+
 
 $primary-background-color: white;
 $secondary-background-color: #ece8e7;
-$text-color: orange;
+$text-color: #333;
 $button-text-color: white;
 
 //Google Fonts variable Initialization
