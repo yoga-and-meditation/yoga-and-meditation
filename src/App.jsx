@@ -1,8 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import "./styles/App.scss";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <h1>Test</h1>
+      <button>Click Me</button>
+    </>
+  );
 }
 
 export default App;

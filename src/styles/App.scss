@@ -1,1 +1,11 @@
 @import "variables";
+
+h1 {
+  font-family: Roboto-Black;
+  font-weight: 900;
+  color: $text-color;
+  font-style: italic;
+}
+button {
+  background-color: $button-color;
+}
