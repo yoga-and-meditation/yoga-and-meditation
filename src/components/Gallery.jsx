@@ -1,7 +1,9 @@
 
 function Gallery() {
   return (
-    <div>Gallery</div>
+    <div>
+
+    </div>
   )
 }
 

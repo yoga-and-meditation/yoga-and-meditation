@@ -17,9 +17,8 @@
   box-shadow: 4px 8px 40px 0px rgba(142, 110, 26, 15%);
 }
 
-
 //google font mixin styles
-@mixin heading-1{
+@mixin heading-1 {
   @font-face {
     font-family: "Roboto-Black";
     src: url("../path/to/Roboto-Black.ttf") format("truetype"); /* here also */
@@ -27,7 +26,7 @@
     font-style: normal;
   }
 }
-@mixin heading-2{
+@mixin heading-2 {
   @font-face {
     font-family: "Roboto-Medium";
     src: url("../path/to/Roboto-Medium.ttf") format("truetype");
@@ -36,17 +35,16 @@
   }
 }
 
-@mixin heading-3{
+@mixin heading-3 {
   @font-face {
     font-family: "Roboto-Medium";
     src: url("../path/to/Roboto-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
   }
-
 }
 
-@mixin paragraph-normal{
+@mixin paragraph-normal {
   @font-face {
     font-family: "Roboto-Regular";
     src: url("../path/to/Roboto-Regular.ttf") format("truetype");
@@ -55,7 +53,7 @@
   }
 }
 
-@mixin paragraph-italics{
+@mixin paragraph-italics {
   @font-face {
     font-family: "Roboto-MediumItalic";
     src: url("../path/to/Roboto-MediumItalic.ttf") format("truetype");
