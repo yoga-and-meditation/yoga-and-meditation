@@ -81,7 +81,7 @@ Contributions to the Yoga with Sheetal website project are welcome. If you would
 
 The following individuals have contributed to the development of this project:
 
--[Chandu Sasidharan](https://github.com/Chandu-Sasidharan){:target="_blank" rel="noopener"}
+- <a href="https://github.com/Chandu-Sasidharan" target="_blank">Chandu Sasidharan</a>
 - <a href="https://github.com/Kidan-Tekelearegy" target="_blank">Kidan Lakew</a>
 - <a href="https://github.com/louisclarencepeter" target="_blank">Louis Peter</a>
 - <a href="https://github.com/Naeemi7" target="_blank">Abdulwase Naeemi</a>
