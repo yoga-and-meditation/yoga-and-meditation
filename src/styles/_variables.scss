@@ -1,0 +1,19 @@
+//Font variable initialization
+$button-color: linear-gradient(
+  90deg,
+  rgba(203, 157, 35, 1) 0%,
+  rgba(249, 194, 51, 1) 100%
+);
+
+$primary-background-color: white;
+$secondary-background-color: #ece8e7;
+$text-color: #333;
+$button-text-color: white;
+
+//Media Query breakpoints
+$xs: 480px;
+$sm: 576px;
+$md: 915px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
