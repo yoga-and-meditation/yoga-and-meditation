@@ -1,11 +1,8 @@
 @import "variables";
 @import "mixin";
-h1 {
-  font-family: Roboto-Black;
-  font-weight: 900;
-  color: $text-color;
-  font-style: italic;
-}
-button {
-  @include button-style
+
+.services-container {
+  h2 {
+    color: orange;
+  }
 }
