@@ -1,18 +1,29 @@
 @import "variables";
 @import "mixin";
+@import 'media-query';
 
 .app {
   .about-container {
     display: flex;
     flex-direction: flex-start;
-   margin: 5rem 5rem;
+    margin: 5rem 5rem;
+    h1 {
+      color: rgb(249, 193, 52);
+      font-family: "Roboto-Black";
+      font-weight: bold;
+      font-style: normal;
 
-    img{
+    }
+    .about-img-container{
+      background-image: url(../assets/images/Rectangle\ 594.jpg);
+      background-image: url(../assets/images/Rectangle\ 595.jpg);
+    }
+    img {
       width: 350px;
       height: 450px;
       margin: 2rem;
     }
-    section{
+    section {
       flex: 1;
       display: flex;
       gap: 1rem;
@@ -20,32 +31,13 @@
       padding-top: 1rem;
       padding-left: 7rem;
       max-width: 50vw;
-    
-      p{
+
+      p {
         padding-top: 2rem;
+        color: $text-color;
       }
     }
   }
   /* about me page for small screens */
-  @media (max-width:$sm) {
-    .about-container{
-      flex-direction: column;
-      align-items: center;
-      margin: 1rem 1rem;
-     section{
-     
-      max-width: 80vw;
-      padding-left: 0;
-      p{
-        padding-top: 1rem;
-      }
-     }
-     img{
-      margin: 0;
-      width: 400px;
-      height: 500px;
-     }
-    }
-  }
 
 }
