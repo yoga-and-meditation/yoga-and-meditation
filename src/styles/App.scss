@@ -9,34 +9,3 @@ h1 {
 button {
   @include button-style;
 }
-.feedback {
-  text-align: center;
-}
-
-.feedback-card {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 400px;
-}
-
-.feedback-rating {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.stars {
-  color: #ffd700;
-}
-
-.feedback-text {
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-.feedback-author {
-  margin-top: 10px;
-  font-style: italic;
-  color: #888;
-}
