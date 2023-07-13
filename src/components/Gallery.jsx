@@ -43,7 +43,9 @@ function Gallery() {
   return (
     <div>
       <h2>My Gallery</h2>
-
+      {galleryImages.map((src, index) => (
+        <img key={index} src={src} alt={`Image ${index + 1}`} />
+      ))}
     </div>
   );
 }
