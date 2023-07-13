@@ -6,6 +6,16 @@ h1 {
   color: $text-color;
   font-style: italic;
 }
-button {
-  @include button-style;
+.ContactForm {
+   margin-top: 20rem;
+   display: flex;
+   .submit-btn {
+    @include button-style
+   }
+   img {
+    width: 25rem;
+    margin-right: 5rem;
+    
+   }
+ 
 }

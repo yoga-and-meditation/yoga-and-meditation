@@ -1,11 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/App.scss";
-import Feedback from "./components/Feedback";
+
+import Contacts from "./components/Contacts";
 
 function App() {
   return (
     <>
-      <Feedback />
+      <Contacts/>
+   
     </>
   );
 }
