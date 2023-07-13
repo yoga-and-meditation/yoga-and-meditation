@@ -1,11 +1,51 @@
 @import "variables";
 @import "mixin";
-h1 {
-  font-family: Roboto-Black;
-  font-weight: 900;
-  color: $text-color;
-  font-style: italic;
-}
-button {
-  @include button-style
+
+.app {
+  .about-container {
+    display: flex;
+    flex-direction: flex-start;
+   margin: 3rem 3rem;
+
+    img{
+      width: 550px;
+      height: 750px;
+      margin: 2rem;
+    }
+    section{
+      flex: 1;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      padding-top: 1rem;
+      padding-left: 7rem;
+      max-width: 50vw;
+    
+      p{
+        padding-top: 2rem;
+      }
+    }
+  }
+  /* about me page for small screens */
+  @media (max-width:$sm) {
+    .about-container{
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 1rem;
+     section{
+     
+      max-width: 80vw;
+      padding-left: 0;
+      p{
+        padding-top: 1rem;
+      }
+     }
+     img{
+      margin: 0;
+      width: 450px;
+      height: 500px;
+     }
+    }
+  }
+
 }
