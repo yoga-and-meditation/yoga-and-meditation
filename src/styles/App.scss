@@ -9,7 +9,7 @@ h1 {
 button {
   @include button-style;
 }
-.feedback {
+/* .feedback {
   text-align: center;
 }
 
@@ -20,6 +20,8 @@ button {
   margin: 20px auto;
   max-width: 400px;
 }
+
+
 
 .feedback-rating {
   font-size: 24px;
@@ -40,3 +42,17 @@ button {
   font-style: italic;
   color: #888;
 }
+ */
+.hero{
+ /*  width:auto;*/
+  height:70rem;
+  background:url(../assets/images/Bg.jpg) no-repeat  ;
+  background-position: 0% 0;
+  background-size: contain;
+
+ } 
+ .hero-heading{
+  font-family: "Roboto";
+  font-weight: 100rem;
+    font-size: 20rem;
+ }

@@ -1,6 +1,7 @@
-function Feedback() {
+ function Feedback() {
   return (
-    <div className="feedback">
+    <></>
+   /*  <div className="feedback">
       <h2>Customer Feedback</h2>
       <div className="feedback-card">
         <div className="feedback-rating">
@@ -13,8 +14,9 @@ function Feedback() {
         </p>
         <p className="feedback-author">- John Doe</p>
       </div>
-    </div>
+    </div> */
   );
 }
 
 export default Feedback;
+ 
