@@ -1,4 +1,7 @@
-// Import all images
+import React from "react";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+
+// Imported all images
 import image1 from '../assets/images/gallery/1.jpg'
 import image2 from '../assets/images/gallery/2.jpg'
 import image3 from '../assets/images/gallery/3.jpg'
@@ -18,7 +21,7 @@ import image16 from '../assets/images/gallery/16.jpg'
 import image17 from '../assets/images/gallery/17.jpg'
 import image18 from '../assets/images/gallery/18.jpg'
 
-// Combine all images into an array
+// Combined all images into an array
 const galleryImages = [
   { id: 1, src: image1, alt: 'Image 1' },
   { id: 2, src: image2, alt: 'Image 2' },
@@ -40,17 +43,21 @@ const galleryImages = [
   { id: 18, src: image18, alt: 'Image 18' },
 ];
 
-function Gallery() {
-  return (
-    <div className='gallery-container'>
-      <h2>My Gallery</h2>
-      <div className='gallery-images-container'>
-        {galleryImages.map((image) => (
-          <img key={image.id} src={image.src} alt={image.alt} />
-        ))}
+class Gallery extends React.Component {
+  render() {
+    return (
+      <div className="gallery-container">
+        <h1>My Gallery</h1>
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }} >
+          <Masonry className="gallery-images-container">
+            {galleryImages.map((image) => (
+              <img key={image.id} src={image.src} alt={image.alt} style={{ margin: "10px" }} />
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
       </div>
-    </div>
-  );
+    )
+  }
 }
 
 export default Gallery;

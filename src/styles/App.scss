@@ -15,26 +15,4 @@ h2 {
   font-style: italic;
 }
 
-.gallery-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 2rem 0;
-  width: 100%;
-  max-width: 1200px;
 
-  .gallery-images-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 10px;
-    justify-items: center;
-    align-items: center;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
