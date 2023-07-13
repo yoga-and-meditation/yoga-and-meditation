@@ -46,13 +46,41 @@ button {
 .hero{
  /*  width:auto;*/
   height:70rem;
-  background:url(../assets/images/Bg.jpg) no-repeat  ;
-  background-position: 0% 0;
-  background-size: contain;
-
+  background:url(../assets/images/bgimg.jpg) no-repeat  ;
+   background-size: contain;
+ position: relative
  } 
  .hero-heading{
-  font-family: "Roboto";
-  font-weight: 100rem;
-    font-size: 20rem;
+  @include yoga ;
+  font-weight:100;
+  font-size: 300px;
+  color:rgb(29, 28, 26);
+  padding: 1rem 20rem ;
+  display:flex;
+position: absolute;
+left:5rem;
+z-index:1;
+ }
+ .name{ 
+ top: 20rem;
+  left:25rem;
+  position: absolute;
+
+ }
+ .ball{
+  width:700px;
+  height:700px;
+  background-color: rgb(215, 167, 39);
+  border-radius:50%;
+ position: absolute;
+ top:8rem;
+ right:20rem
+ }
+ .gif{
+width:90rem;
+height:55rem;
+position: absolute;
+left:25rem;
+top: -4rem
+
  }
