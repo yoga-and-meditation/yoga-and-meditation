@@ -1,7 +1,8 @@
+// React and ResponsiveMasonry libraries are imported
 import React from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
-// Imported all images
+// Importing all the images individually
 import image1 from '../assets/images/gallery/1.jpg'
 import image2 from '../assets/images/gallery/2.jpg'
 import image3 from '../assets/images/gallery/3.jpg'
@@ -21,7 +22,7 @@ import image16 from '../assets/images/gallery/16.jpg'
 import image17 from '../assets/images/gallery/17.jpg'
 import image18 from '../assets/images/gallery/18.jpg'
 
-// Combined all images into an array
+// Creating an array of objects, each containing details of an image
 const galleryImages = [
   { id: 1, src: image1, alt: 'Image 1' },
   { id: 2, src: image2, alt: 'Image 2' },
@@ -43,13 +44,19 @@ const galleryImages = [
   { id: 18, src: image18, alt: 'Image 18' },
 ];
 
+// Gallery is a React class component 
 class Gallery extends React.Component {
   render() {
     return (
+      // A container div for the gallery
       <div className="gallery-container">
+        {/* A heading for the gallery */}
         <h2>My Gallery</h2>
+        {/* ResponsiveMasonry is used to make the gallery responsive */}
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }} >
+          {/* Masonry is used to display the images in a grid */} 
           <Masonry className="gallery-images-container">
+            {/* Mapping through the array of objects and displaying each image */}
             {galleryImages.map((image) => (
               <img className="gallery-image" key={image.id} src={image.src} alt={image.alt} style={{ margin: "10px" }} />
             ))}
@@ -60,5 +67,6 @@ class Gallery extends React.Component {
   }
 }
 
+// The Gallery component is exported for use in other parts of the application
 export default Gallery;
 
