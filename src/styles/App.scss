@@ -8,11 +8,16 @@ h1 {
   font-style: italic;
 }
 
-h2 {
-  font-family: Roboto-Medium;
-  font-weight: 700;
-  color: $text-color;
-  font-style: italic;
+
+.gallery-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 2rem;
+
+  h2 {
+    @include heading-2-color;
+    margin: 2rem;
+    text-align: center;
+  }
 }
-
-

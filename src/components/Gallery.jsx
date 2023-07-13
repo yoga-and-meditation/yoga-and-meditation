@@ -47,7 +47,7 @@ class Gallery extends React.Component {
   render() {
     return (
       <div className="gallery-container">
-        <h1>My Gallery</h1>
+        <h2>My Gallery</h2>
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }} >
           <Masonry className="gallery-images-container">
             {galleryImages.map((image) => (
