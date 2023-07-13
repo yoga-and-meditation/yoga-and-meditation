@@ -21,11 +21,15 @@ h1 {
   }
 
   .gallery-image {
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin: 10px;
+    box-sizing: border-box;
+    position: relative;
   }
 
   .gallery-image:hover {
     transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   }
 }
