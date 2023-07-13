@@ -16,19 +16,14 @@ h2 {
 }
 
 .gallery-container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 1.8rem;
-  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
-  .gallery-images-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 10px;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
+.gallery-images-container img {
+  width: 300px;
+  height: auto;
 }
