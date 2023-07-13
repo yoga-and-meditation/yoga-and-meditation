@@ -8,7 +8,6 @@ h1 {
   font-style: italic;
 }
 
-
 .gallery-container {
   margin: 0 auto;
   width: 100%;
@@ -19,5 +18,14 @@ h1 {
     @include heading-2-color;
     margin: 2rem;
     text-align: center;
+  }
+
+  .gallery-image {
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+  }
+
+  .gallery-image:hover {
+    transform: scale(1.1);
   }
 }

@@ -51,7 +51,7 @@ class Gallery extends React.Component {
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }} >
           <Masonry className="gallery-images-container">
             {galleryImages.map((image) => (
-              <img key={image.id} src={image.src} alt={image.alt} style={{ margin: "10px" }} />
+              <img className="gallery-image" key={image.id} src={image.src} alt={image.alt} style={{ margin: "10px" }} />
             ))}
           </Masonry>
         </ResponsiveMasonry>
