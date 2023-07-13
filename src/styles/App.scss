@@ -8,12 +8,33 @@
   .services-container {
     width: 90%;
     margin-top: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid green;
+    background: $secondary-background-color;
 
-    h1 {
+    h2 {
+      @include heading-2-color;
+      font-size: 3rem;
+    }
+
+    h3 {
+      @include heading-3;
+      color: $text-color;
+      font-size: 2.3rem;
+    }
+    .parent {
+      align-items: center;
+    }
+  }
+  .service-card {
+    display: flex;
+    justify-content: center;
+
+    .card {
+      display: flex;
+      justify-content: center;
     }
   }
 }
