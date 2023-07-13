@@ -17,3 +17,14 @@
 
 
 }
+@mixin heading-2-color {
+  background: linear-gradient(
+    360deg,
+    rgba(203, 157, 35, 1) 0%,
+    rgba(249, 194, 51, 1) 100%
+  );
+  -webkit-background-clip: text; /* For Safari */
+  -webkit-text-fill-color: transparent; /* For Safari */
+  background-clip: text;
+  text-fill-color: transparent;
+}

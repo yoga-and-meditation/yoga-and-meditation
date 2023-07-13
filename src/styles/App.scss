@@ -5,39 +5,45 @@
 .app {
   .about-container {
     display: flex;
-    flex-direction: flex-start;
-    margin: 5rem 5rem;
-    h1 {
-      color: rgb(249, 193, 52);
-      font-family: "Roboto-Black";
-      font-weight: bold;
-      font-style: normal;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+     @include heading-2-color;
 
     }
+      
+  
+
+      img{
+        width: 500px;
+        height: 600px;
+
+      }
+     
     .about-img-container{
       background-image: url(../assets/images/Rectangle\ 594.jpg);
-      background-image: url(../assets/images/Rectangle\ 595.jpg);
+  
     }
-    img {
-      width: 350px;
-      height: 450px;
-      margin: 2rem;
-    }
+   
     section {
       flex: 1;
       display: flex;
-      gap: 1rem;
+      gap: 2rem;
       flex-direction: column;
       padding-top: 1rem;
-      padding-left: 7rem;
+      padding-left: 2rem;
       max-width: 50vw;
+      margin-top: 2rem;
 
       p {
-        padding-top: 2rem;
         color: $text-color;
+        font-family: "Roboto-Medium";
+        max-width: 70%;
+  
       }
     }
   }
-  /* about me page for small screens */
+
 
 }
