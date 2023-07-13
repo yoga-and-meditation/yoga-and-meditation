@@ -5,9 +5,9 @@ import Services from "./components/Services";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Services />
-    </>
+    </div>
   );
 }
 

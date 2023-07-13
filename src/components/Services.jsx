@@ -16,7 +16,7 @@ const Retreats = () => {
 
 const Parent = () => {
   return (
-    <>
+    <div className="parent">
       <Link to="/">
         <button>Yoga</button>
       </Link>
@@ -27,7 +27,7 @@ const Parent = () => {
         <button>Retreats</button>
       </Link>
       <Outlet />
-    </>
+    </div>
   );
 };
 

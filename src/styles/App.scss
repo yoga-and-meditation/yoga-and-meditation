@@ -1,10 +1,19 @@
 @import "variables";
 @import "mixin";
 
-.services-container {
-  width: 90%;
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid green;
+  justify-content: center;
+
+  .services-container {
+    width: 90%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+
+    h1 {
+    }
+  }
 }
