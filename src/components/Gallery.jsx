@@ -44,6 +44,7 @@ const galleryImages = [
   { id: 18, src: image18, alt: 'Image 18' },
 ];
 
+
 // Gallery is a React class component 
 class Gallery extends React.Component {
   render() {
@@ -54,7 +55,7 @@ class Gallery extends React.Component {
         <h2>My Gallery</h2>
         {/* ResponsiveMasonry is used to make the gallery responsive */}
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }} >
-          {/* Masonry is used to display the images in a grid */} 
+          {/* Masonry is used to display the images in a grid */}
           <Masonry className="gallery-images-container">
             {/* Mapping through the array of objects and displaying each image */}
             {galleryImages.map((image) => (
