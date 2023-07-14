@@ -1,5 +1,7 @@
 @import "variables";
 @import "mixin";
+@import "media-query";
+
 h1 {
   font-family: Roboto-Black;
   font-weight: 900;
@@ -8,4 +10,17 @@ h1 {
 }
 button {
   @include button-style;
+}
+
+.footer-container {
+ width: 100%;
+ height: 100vh;
+ gap: 5rem;
+  padding: 10rem;
+ //For some reason align-content doesn't work
+  align-items: center;
+  justify-content: space-around;
+  
+ 
+ 
 }
