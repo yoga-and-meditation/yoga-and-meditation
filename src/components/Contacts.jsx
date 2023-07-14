@@ -5,7 +5,7 @@ function Contacts() {
     <div className="ContactForm ">
       <div className="container">
         <h2 className="heading2 mb-5">Excited to know more?</h2>
-        <h1 className="heading1 mb-5">Get in Touch</h1>
+        <h3 className="heading1 mb-5">Get in Touch</h3>
         <div className="row">
           <div className="col-12 text-center">
             <div className="contactForm">

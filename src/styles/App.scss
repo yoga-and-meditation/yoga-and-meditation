@@ -18,11 +18,14 @@ h1 {
     margin-right: 5rem;
     
    }
-   .heading1 {
-    @include heading-1
+   h2 {
+    @include heading-2-color;
+    font-size: 2rem;
+
    }
-   .heading2{
-    @include heading-2
+   h3{
+    @include heading-3;
+    font-size: 2.5rem;
    }
  
 }
