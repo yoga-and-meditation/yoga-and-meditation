@@ -74,8 +74,16 @@ button {
    border-radius:50%;
   position: relative;
   top:8rem;
-  left:50rem
+  left:50rem;
   }
+ /*  @-webkit-keyframes circle{
+    0%{
+      transform: rotate(0deg)translate(-160px)rotate(0deg);
+    }
+    100%{
+      transform :rotate(360deg)translate(-165px)rotate(-360deg);
+    }
+  } */
   .gif{
  width:90rem;
  height:55rem;
