@@ -1,4 +1,4 @@
-import contactImg from "../assets/images/contact-img/onlineYoga.avif"
+import contactImg from "../assets/images/contact/onlineYoga.avif"
 
 function Contacts() {
   return (
