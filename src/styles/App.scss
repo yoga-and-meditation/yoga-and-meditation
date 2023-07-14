@@ -5,36 +5,61 @@
   display: flex;
   justify-content: center;
 
-  .services-container {
-    width: 90%;
-    margin-top: 1rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .service-container {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    width: 80%;
     background: $secondary-background-color;
 
-    h2 {
-      @include heading-2-color;
-      font-size: 3rem;
-    }
-
-    h3 {
-      @include heading-3;
-      color: $text-color;
-      font-size: 2.3rem;
-    }
-    .parent {
-      align-items: center;
+    .header-container {
+      text-align: center;
+      h2 {
+        padding: 1rem;
+        @include heading-2-color;
+        @include heading-2;
+        font-size: 3rem;
+      }
+      h3 {
+        font-size: 2.5rem;
+        @include heading-3;
+      }
+      header {
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 15rem;
+      }
     }
   }
-  .service-card {
+  section {
     display: flex;
     justify-content: center;
 
-    .card {
-      display: flex;
-      justify-content: center;
+    .card-container {
+      @include card-shadow;
+      .img-fluid {
+        height: 30rem;
+        width: 25rem;
+      }
+      .subscribe-btn {
+        @include button-style;
+      }
+      .card-text {
+        font-size: 1.5rem;
+        padding: 0.6rem;
+        color: $text-color;
+        @include paragraph-normal;
+      }
+      h3 {
+        font-size: 2.4rem;
+        @include heading-3;
+      }
     }
+  }
+  .meditation-section {
+    color: orange;
+  }
+  .retreat-section {
+    color: hotpink;
   }
 }

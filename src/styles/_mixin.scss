@@ -16,6 +16,12 @@
   font-size: 1rem;
   box-shadow: 4px 8px 40px 0px rgba(142, 110, 26, 15%);
 }
+
+@mixin card-shadow {
+  box-shadow: -16px -19px 57px 32px rgba(0, 0, 0, 0.1),
+    -30px 6px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
 @mixin heading-2-color {
   background: linear-gradient(
     360deg,
