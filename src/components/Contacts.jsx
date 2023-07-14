@@ -1,10 +1,11 @@
-import sheetal from "../assets/images/sheetal.jpg"
+import contactImg from "../assets/images/contact-img/onlineYoga.avif"
 
 function Contacts() {
   return (
     <div className="ContactForm ">
       <div className="container">
-        <h1 className="h1 mb-5">Get in Touch</h1>
+        <h2 className="heading2 mb-5">Excited to know more?</h2>
+        <h1 className="heading1 mb-5">Get in Touch</h1>
         <div className="row">
           <div className="col-12 text-center">
             <div className="contactForm">
@@ -40,7 +41,7 @@ function Contacts() {
                   </div>
                 </div>
                 {/* Row 3 of form */}
-                <div className="row formRow mb-5">
+                <div className="row formRow mb-4">
                   <div className="col">
                     <textarea
                       rows={6}
@@ -59,7 +60,7 @@ function Contacts() {
         </div>
       </div>
       <div className="contact-img">
-        <img  src= {sheetal} alt="contact-img" />
+        <img  src= {contactImg} alt="contact-img" />
       </div>
     </div>
   );
