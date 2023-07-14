@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import image1 from "../assets/images/services/yoga.jpg";
 import image2 from "../assets/images/services/meditation.jpg";
@@ -6,6 +6,20 @@ import image3 from "../assets/images/services/retreating.jpg";
 
 function Services() {
   const [tab, setTab] = useState(1);
+  useEffect(() => {
+    const list = document.querySelectorAll(".navigation li");
+
+    function activeLink() {
+      list.forEach((item) => item.classList.remove("active"));
+      this.classList.add("active");
+    }
+
+    list.forEach((item) => item.addEventListener("click", activeLink));
+
+    return () => {
+      list.forEach((item) => item.removeEventListener("click", activeLink));
+    };
+  }, []);
 
   return (
     <div className="service-container">
@@ -13,11 +27,32 @@ function Services() {
         <h2>What We Do?</h2>
         <h3>Our Services</h3>
         <div className="tab-container">
-          <header>
-            <button onClick={() => setTab(1)}>Yoga</button>
-            <button onClick={() => setTab(2)}>Meditation</button>
-            <button onClick={() => setTab(3)}> Retreats</button>
-          </header>
+          <ul className="navigation">
+            <li className="active">
+              <button onClick={() => setTab(1)}>
+                <span className="icon">
+                  <ion-icon name="triangle-sharp"></ion-icon>
+                </span>
+                <span className="text">Yoga</span>
+              </button>
+            </li>
+            <li>
+              <button onClick={() => setTab(2)}>
+                <span className="icon">
+                  <ion-icon name="person-outline"></ion-icon>
+                </span>
+                <span className="text">Meditaion</span>
+              </button>
+            </li>
+            <li>
+              <button onClick={() => setTab(3)}>
+                <span className="icon">
+                  <ion-icon name="chatbubbles-outline"></ion-icon>
+                </span>
+                <span className="text">Retreats</span>
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
       {tab === 1 && (
