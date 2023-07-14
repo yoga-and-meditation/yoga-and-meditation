@@ -12,13 +12,13 @@ function Services() {
       <div className="header-container">
         <h2>What We Do?</h2>
         <h3>Our Services</h3>
-        <header>
-          <button className="service-button" onClick={() => setTab(1)}>
-            Yoga
-          </button>
-          <button onClick={() => setTab(2)}>Meditation</button>
-          <button onClick={() => setTab(3)}>Retreats</button>
-        </header>
+        <div className="tab-container">
+          <header>
+            <button onClick={() => setTab(1)}>Yoga</button>
+            <button onClick={() => setTab(2)}>Meditation</button>
+            <button onClick={() => setTab(3)}> Retreats</button>
+          </header>
+        </div>
       </div>
       {tab === 1 && (
         <section>

@@ -10,56 +10,65 @@
     padding: 1.5rem;
     width: 80%;
     background: $secondary-background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .header-container {
-      text-align: center;
-      h2 {
-        padding: 1rem;
-        @include heading-2-color;
-        @include heading-2;
-        font-size: 3rem;
+    header {
+      display: flex;
+      gap: 3rem;
+
+      button {
+        padding: 0 1.5rem;
+        border: none;
       }
-      h3 {
-        font-size: 2.5rem;
-        @include heading-3;
-      }
-      header {
+    }
+  }
+  .header-container {
+    text-align: center;
+    h2 {
+      padding: 1rem;
+      @include heading-2-color;
+      @include heading-2;
+    }
+    h3 {
+      @include heading-3;
+    }
+    /*  header {
         margin: 1rem;
         display: flex;
         justify-content: center;
         gap: 15rem;
-      }
-    }
+      } */
   }
-  section {
-    display: flex;
-    justify-content: center;
+}
+section {
+  display: flex;
+  justify-content: center;
 
-    .card-container {
-      @include card-shadow;
-      .img-fluid {
-        height: 30rem;
-        width: 25rem;
-      }
-      .subscribe-btn {
-        @include button-style;
-      }
-      .card-text {
-        font-size: 1.5rem;
-        padding: 0.6rem;
-        color: $text-color;
-        @include paragraph-normal;
-      }
-      h3 {
-        font-size: 2.4rem;
-        @include heading-3;
-      }
+  .card-container {
+    @include card-shadow;
+    .img-fluid {
+      height: 30rem;
+      width: 25rem;
+    }
+    .subscribe-btn {
+      @include button-style;
+    }
+    .card-text {
+      font-size: 1.4rem;
+      padding: 0.6rem;
+      color: $text-color;
+      @include paragraph-normal;
+    }
+    h3 {
+      @include heading-3;
     }
   }
-  .meditation-section {
-    color: orange;
-  }
-  .retreat-section {
-    color: hotpink;
-  }
+}
+.meditation-section {
+  color: orange;
+}
+.retreat-section {
+  color: hotpink;
 }
