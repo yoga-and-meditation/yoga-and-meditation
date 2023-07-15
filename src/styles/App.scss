@@ -1,43 +1,49 @@
 @import "variables";
 @import "mixin";
 
+/* App component style */
 .app {
   display: flex;
   justify-content: center;
 
+  /* Service container style */
   .service-container {
     margin-top: 3rem;
     padding: 1.5rem;
     width: 80%;
-    /*    background: $secondary-background-color; */
+    background: $secondary-background-color;
+    box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    /* Tab container style */
     .tab-container {
-      margin-top: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
 
+      /* Tab buttons style */
       .navigation {
-        margin-top: 3rem;
         position: relative;
-
         display: flex;
         justify-content: center;
         align-items: center;
-        /*    border: 1px solid black; */
 
+        /* Tab active button style */
         .active {
           button {
             .icon {
-              background: gold;
+              background: #333;
               color: #fff;
               /*       transform: translateY(-55px); */
-              box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+              /*       box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
                 inset 2px 2px 3px rgba(255, 255, 255, 0.25),
                 inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+              transition-delay: 0s; */
+              box-shadow: 5px 5px 7px rgba(218, 165, 32, 0.25),
+                inset 2px 2px 3px rgba(255, 215, 0, 0.25),
+                inset -3px -3px 5px rgba(128, 100, 0, 0.5);
               transition-delay: 0s;
             }
             .icon::before {
@@ -51,18 +57,17 @@
           }
         }
 
+        /* Tab un-active buttons style */
         li {
           position: relative;
           list-style: none;
           margin: 4rem;
-
           display: flex;
           justify-content: center;
-          width: 10rem;
-          height: 10rem;
-          background-color: red;
+          padding: 4.9rem;
           border-radius: 50%;
-
+          background: #fcfcfc;
+          box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
           button {
             display: flex;
             align-items: center;
@@ -102,7 +107,8 @@
               content: "";
               position: absolute;
               inset: 10px;
-              background: #2f363e;
+              /*     background: #2f363e; */
+              background: goldenrod;
               border-radius: 50%;
               box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5),
                 inset 2px 2px 3px rgba(255, 255, 255, 0.25),
@@ -116,6 +122,7 @@
       }
     }
   }
+  /* Heading style of the section */
   .header-container {
     text-align: center;
     h2 {
@@ -128,15 +135,19 @@
     }
   }
 }
+
+/* section style */
 section {
   display: flex;
   justify-content: center;
 
   .card-container {
-    /* @include card-shadow; */
+    background: #fcfcfc;
+    box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
+    width: 80%;
     .img-fluid {
       height: 30rem;
-      width: 25rem;
+      width: 30rem;
     }
     .subscribe-btn {
       @include button-style;
