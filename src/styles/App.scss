@@ -34,7 +34,7 @@
             .icon {
               background: gold;
               color: #fff;
-              transform: translateY(-55px);
+              /*       transform: translateY(-55px); */
               box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
                 inset 2px 2px 3px rgba(255, 255, 255, 0.25),
                 inset -3px -3px 5px rgba(0, 0, 0, 0.5);
@@ -45,7 +45,7 @@
             }
             .text {
               opacity: 1;
-              transform: translateY(4rem);
+              transform: translateY(7.5rem);
               transition-delay: 0.2s;
             }
           }
@@ -55,15 +55,19 @@
           position: relative;
           list-style: none;
           margin: 4rem;
-          width: 20rem;
+
           display: flex;
           justify-content: center;
+          width: 10rem;
+          height: 10rem;
+          background-color: red;
+          border-radius: 50%;
+
           button {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            text-decoration: none;
 
             .text {
               position: absolute;
@@ -71,7 +75,7 @@
               color: rgb(46, 38, 38);
               opacity: 0;
               border-radius: 15px;
-              transform: translateY(20px);
+              /*   transform: translateY(20px); */
               padding: 0.8rem;
               background: white;
               box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
