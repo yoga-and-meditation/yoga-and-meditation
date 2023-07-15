@@ -26,12 +26,8 @@ class Gallery extends React.Component {
         imagesLoaded: true,
         galleryImages: importedImages,
       });
-    }, 1000);
+    }, 500);
   }
-
-  loadMoreImages = () => {
-    // Implement the logic to load more images here
-  };
 
   render() {
     const { imagesLoaded, galleryImages } = this.state;
