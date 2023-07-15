@@ -9,27 +9,40 @@ h1 {
 }
 
 .gallery-container {
+  /* This class defines the container for the gallery. */
   margin: 0 auto;
   width: 100%;
   max-width: 120rem;
   padding: 0 2rem;
 
+  /* This code centers the container and sets its maximum width. */
+
   h2 {
+    /* This class defines the heading for the gallery. */
     @include heading-2-color;
     margin: 2rem;
     text-align: center;
   }
 
+  /* This code applies the `heading-2-color` mixin to the heading, which sets its color to the same color as the `h2` heading element in the JSX code. */
+
   .gallery-image {
+    /* This class defines the styles for the gallery images. */
     transition: all 0.3s ease-in-out;
     box-sizing: border-box;
     position: relative;
     padding: 1rem;
   }
 
+  /* This code applies a transition to the images, which will cause them to scale up slightly when the user hovers over them. */
+
   .gallery-image:hover {
+    /* This class defines the styles for the gallery images when the user hovers over them. */
     transform: scale(1.05);
     z-index: 1;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   }
+
+  /* This code applies a scale transform to the images when the user hovers over them, and also gives them a box shadow. */
 }
+
