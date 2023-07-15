@@ -45,29 +45,55 @@ const galleryImages = [
 ];
 
 
-// Gallery is a React class component 
 class Gallery extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      imagesLoaded: false,
+    };
+  }
+
+  loadMoreImages = () => {
+    // Load more images...
+  };
+
+  componentDidMount() {
+    // Load the initial images...
+    setTimeout(() => {
+      this.setState({
+        imagesLoaded: true,
+      });
+    }, 1000);
+  }
+
   render() {
     return (
-      // A container div for the gallery
       <div className="gallery-container">
-        {/* A heading for the gallery */}
         <h2>My Gallery</h2>
-        {/* ResponsiveMasonry is used to make the gallery responsive */}
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }} >
-          {/* Masonry is used to display the images in a grid */}
+        <ResponsiveMasonry
+          className="gallery-masonry"
+          columnsCountBreakPoints={{
+            350: 1,
+            750: 2,
+            900: 3,
+          }}
+          loadMore={this.loadMoreImages}
+        >
           <Masonry className="gallery-images-container">
-            {/* Mapping through the array of objects and displaying each image */}
             {galleryImages.map((image) => (
-              <img className="gallery-image" key={image.id} src={image.src} alt={image.alt} style={{ margin: "10px" }} />
+              <img
+                className="gallery-image"
+                key={image.id}
+                src={image.src}
+                alt={image.alt}
+              />
             ))}
           </Masonry>
         </ResponsiveMasonry>
       </div>
-    )
+    );
   }
 }
 
-// The Gallery component is exported for use in other parts of the application
 export default Gallery;
 
