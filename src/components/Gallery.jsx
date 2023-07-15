@@ -34,7 +34,7 @@ class Gallery extends React.Component {
         imagesLoaded: true,
         galleryImages: importedImages,
       });
-    }, 500);
+    }, 1000);
   }
 
   // This function renders the component.
