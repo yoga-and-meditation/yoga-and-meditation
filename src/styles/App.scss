@@ -20,7 +20,18 @@ button {
  //For some reason align-content doesn't work
   align-items: center;
   justify-content: space-around;
-  
+
+  .icons{
+    font-size: 5rem;
+    display: flex;
+    gap: 3rem;
+  }
+}
+.copyright{
+ background-color: #2B2B28;
+ color: $secondary-background-color;
+ font-size: 3rem;
  
- 
+ text-align: center;
+ position: relative;
 }
