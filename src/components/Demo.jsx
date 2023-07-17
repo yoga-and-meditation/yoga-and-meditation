@@ -5,7 +5,7 @@ function Demo() {
         <div className='demo'>
             <div className='hero mb-2'>
                 <h2 className='mb-2'>Yoga Demo Session</h2>
-                <img src={image} alt="Yoga demo session" className='mb-2'/>
+                <img src={image} alt="Yoga demo session" className='mb-2' />
             </div>
             <div className='info'>
                 <div className='info-p mb-2'>
