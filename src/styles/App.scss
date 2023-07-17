@@ -21,6 +21,7 @@ button {
     @include heading-2-color;
     font-size: 2.4rem;
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   img {
@@ -29,6 +30,12 @@ button {
     margin-bottom: 2rem;
   }
 
+  .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
   h6 {
     font-size: 2rem;
     margin-bottom: 2rem;
