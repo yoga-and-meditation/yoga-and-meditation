@@ -2,7 +2,7 @@
 @import "mixin";
 
 $margin-size: 2rem;
-$circle-color: #f8c75d;
+$circle-color: rgba(249, 194, 51, 1);
 
 h1 {
   font-family: Roboto-Black, Arial, sans-serif;
@@ -53,27 +53,6 @@ button {
     width: 50%;
     gap: $margin-size;
 
-    .info-p {
-      display: flex;
-      flex-direction: column;
-      font-size: 1.2rem;
-      text-align: start;
-      position: relative;
-
-      p {
-        font-size: 1.2rem;
-        text-align: start;
-      }
-
-      .circle {
-        border: $circle-color 0.1rem solid;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        margin-top: $margin-size;
-      }
-    }
-
     .book-info {
       display: flex;
       flex-direction: column;
@@ -85,6 +64,29 @@ button {
 
     h6 {
       font-size: 2rem;
+    }
+  }
+
+  .info-p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    text-align: start;
+    
+
+    p {
+      font-size: 1.2rem;
+      text-align: start;
+    }
+
+    .circle {
+      border: $circle-color 0.1rem solid;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-top: $margin-size;
+      position: absolute;
+      margin-left: -75px;
     }
   }
 }
