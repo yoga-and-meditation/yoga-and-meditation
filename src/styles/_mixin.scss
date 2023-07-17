@@ -1,6 +1,7 @@
 @import "variables";
 
 //Button mixin styles
+/* ---------------------------- Mixin for button style -------------------------- */
 @mixin button-style {
   background: linear-gradient(
     360deg,
@@ -22,6 +23,7 @@
     -30px 6px 15px -3px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
 }
+/* ---------------------------- Mixin for Heading 2 color style -------------------------- */
 @mixin heading-2-color {
   background: linear-gradient(
     360deg,
@@ -35,6 +37,9 @@
 }
 
 //google font mixin styles
+/* ---------------------------- Mixin for Google fonts -------------------------- */
+
+// Heading 1
 @mixin heading-1 {
   @font-face {
     font-family: "Roboto-Black";
@@ -43,6 +48,8 @@
     font-style: normal;
   }
 }
+
+// Heading 2
 @mixin heading-2 {
   @font-face {
     font-family: "Roboto-Medium";
@@ -52,6 +59,7 @@
   }
 }
 
+// Heading 3
 @mixin heading-3 {
   @font-face {
     font-family: "Roboto-Medium";
@@ -61,6 +69,7 @@
   }
 }
 
+// Normal paragraph
 @mixin paragraph-normal {
   @font-face {
     font-family: "Roboto-Regular";
@@ -70,11 +79,22 @@
   }
 }
 
+// Italics paragraph
 @mixin paragraph-italics {
   @font-face {
     font-family: "Roboto-MediumItalic";
     src: url("../path/to/Roboto-MediumItalic.ttf") format("truetype");
     font-weight: 500;
     font-style: italic;
+  }
+}
+
+// Logo Fonts mixin
+@mixin logo-font-style {
+  @font-face {
+    font-family: "MoonDance-Regular";
+    src: url("path/to/MoonDance-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
   }
 }
