@@ -4,11 +4,11 @@ import sheetalImg from "../assets/images/My project-1.png";
 function Aboutme() {
   return (
     <div className="about-container">
-      <div className="about-img-container">
+
       <img src={sheetalImg} alt="personal photo" /> 
       <div className="rectangle1"></div>
       <div className="rectangle2"></div>
-      </div>
+   
       <section>
         <h2>About Me</h2>
         <p>

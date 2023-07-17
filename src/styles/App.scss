@@ -5,7 +5,7 @@
 .app {
   .about-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     h2 {
@@ -27,9 +27,8 @@
       width: 500px;
       height: 700px;
       transform: rotate(-45deg);
-      z-index: -1; 
-      animation: rotateAnimation 60s infinite linear; 
-     
+      z-index: -1;
+      //animation: rotateAnimation 60s infinite linear;
     }
 
     .rectangle1 {
@@ -38,11 +37,11 @@
     }
 
     .rectangle2 {
-      border: 15px solid #EAEAE8;
+      border: 15px solid #eaeae8;
       margin-left: -30px; /* Add some spacing between the rectangles */
     }
-    
-/*  */
+
+    /*  */
     @keyframes rotateAnimation {
       0% {
         transform: rotate(0);
@@ -52,20 +51,17 @@
       }
     }
 
-
-
     section {
       flex: 1;
       display: flex;
       gap: 2rem;
       flex-direction: column;
       padding-top: 1rem;
-      padding-left: 7rem;
+
       max-width: 50vw;
       margin-top: 2rem;
 
       p {
-  
         color: $text-color;
         font-family: "Roboto-Medium";
         max-width: 70%;
