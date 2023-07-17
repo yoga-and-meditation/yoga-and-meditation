@@ -1,6 +1,6 @@
 @import "variables";
 @import "mixin";
-@import 'media-query';
+@import "media-query";
 
 .app {
   .about-container {
@@ -9,41 +9,79 @@
     align-items: center;
 
     h2 {
-     @include heading-2-color;
-
+      @include heading-2-color;
     }
-      
-  
 
-      img{
-        width: 500px;
-        height: 600px;
+    img {
+      width: 500px;
+      height: 700px;
+      position: relative;
+      z-index: 1;
+    }
 
-      }
+    .rectangle1,
+    .rectangle2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 500px;
+      height: 700px;
+      transform: rotate(-45deg);
+      z-index: -1; /* Set a lower z-index to position them behind the image */
+     // animation: slideAnimation 10s infinite alternate ease, rotateAnimation 50s infinite linear; /* Add multiple animations */
      
-    .about-img-container{
-      background-image: url(../assets/images/Rectangle\ 594.jpg);
-  
     }
-   
+
+    .rectangle1 {
+      border: 15px solid #fdeee0;
+      margin-left: 50px; /* Add some spacing between the rectangles */
+    }
+
+    .rectangle2 {
+      border: 15px solid #EAEAE8;
+      margin-left: -30px; /* Add some spacing between the rectangles */
+    }
+    
+
+    @keyframes slideAnimation {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(20px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes rotateAnimation {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+
+
     section {
       flex: 1;
       display: flex;
       gap: 2rem;
       flex-direction: column;
       padding-top: 1rem;
-      padding-left: 2rem;
+      padding-left: 7rem;
       max-width: 50vw;
       margin-top: 2rem;
 
       p {
+  
         color: $text-color;
         font-family: "Roboto-Medium";
         max-width: 70%;
-  
       }
     }
   }
-
-
 }
