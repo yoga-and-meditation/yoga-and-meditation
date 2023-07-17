@@ -1,5 +1,5 @@
 //Icons
-import {  FaFacebook,FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 function Footer() {
   return (
     <>
@@ -7,40 +7,51 @@ function Footer() {
         <div className="logo m-5">
           <h4>logo</h4>
         </div>
-        <div className="about-me">
+        <div className=" card about-me">
           <h4>About me </h4>
-          <p>
+          <p className="card-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
             quidem pariatur autem neque, voluptatum sit error sint. Qui,
             facilis. Consectetur temporibus ullam neque tempore, ut perferendis
             nostrum necessitatibus repellendus fuga.
           </p>
-          <div className='icons'>  <FaFacebook />
-           <FaInstagram/>
-           <FaTwitter/>
-           </div>
-       
-          {/* <div>
-        <FontAwesomeIcon icon={faFacebook} />
-        <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faTwitter} />
-        </div> */}
+          <div className="icons">
+            <ul>
+              <li className="list-group">
+                <a href="">
+                  <FaFacebook />
+                </a>
+              </li>
+              <li className="list-group">
+                <a href="">
+                  {" "}
+                  <FaInstagram />
+                </a>
+              </li>
+              <li className="list-group">
+                <a href="">
+                  {" "}
+                  <FaTwitter />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="links">
-          <h4 className="text-center">Links</h4>
+          <h4 className="m-3">Links</h4>
           <ul>
             <li className="list-group">
-              <a href=""></a>Home
+              <a href="">Home</a>
             </li>
             <li className="list-group">
-              <a href="#"></a>About Me
+              <a href="#">About Me</a>
             </li>
             <li className="list-group">
-              <a href="#"></a>Services
+              <a href="#">Services</a>
             </li>
             <li className="list-group">
-              <a href="#"></a>Contact
+              <a href="#">Contact</a>
             </li>
           </ul>
         </div>
