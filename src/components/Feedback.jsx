@@ -1,8 +1,5 @@
-
 function Feedback() {
-  return (
-    <div>Feedback</div>
-  )
+  return <h1>I am Feedback</h1>;
 }
 
-export default Feedback
+export default Feedback;
