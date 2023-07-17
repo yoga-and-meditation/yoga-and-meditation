@@ -27,8 +27,8 @@
       width: 500px;
       height: 700px;
       transform: rotate(-45deg);
-      z-index: -1; /* Set a lower z-index to position them behind the image */
-     // animation: slideAnimation 10s infinite alternate ease, rotateAnimation 50s infinite linear; /* Add multiple animations */
+      z-index: -1; 
+      animation: rotateAnimation 60s infinite linear; 
      
     }
 
@@ -42,19 +42,7 @@
       margin-left: -30px; /* Add some spacing between the rectangles */
     }
     
-
-    @keyframes slideAnimation {
-      0% {
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(20px);
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-
+/*  */
     @keyframes rotateAnimation {
       0% {
         transform: rotate(0);
