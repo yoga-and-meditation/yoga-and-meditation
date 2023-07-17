@@ -2,7 +2,7 @@ import image from '../assets/images/demosession/pexels-marta.jpg'
 
 function Demo() {
     return (
-        <div className='demosession'>
+        <div className='demo'>
             <div>
                 <h2>Yoga Demo Session</h2>
                 <img src={image} alt="demo session" />
