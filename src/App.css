@@ -1,42 +1,123 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Fixed CSS code */
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: blur(10px);
+  z-index: -1;
+  /*   background-image: url("src/assets/images/yoga.jpg"); */
+  background-color: #333;
+
+  background-size: cover;
+  background-position: center;
+
+  background-size: cover;
+}
+
+.container {
+  width: 600px;
+  max-width: 100%; /* Added max-width to ensure responsiveness */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12rem;
+}
+
+.top h2 {
+  font-size: 25px;
+  width: 160px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.top {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  margin: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+hr {
+  width: 100px;
+  height: 2px; /* Added height to make the HR visible */
+  background-color: gold; /* Changed the color to white for better visibility */
+  border: none; /* Removed border to achieve a solid line */
+  margin: 0 15px;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a {
+  color: white;
+  text-decoration: none; /* Added to remove underlines from links */
+}
+
+i {
+  font-size: 35px;
+  margin: 10px;
+}
+
+.progress-wrapper {
+  width: 100%;
+  background: white;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.progress {
+  width: 0%;
+  height: 10px;
+  background: gold;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.progress span {
+  color: white;
+  position: relative;
+  top: 13px;
+  left: 25px;
+  font-weight: 800;
+}
+
+/* Media Queries */
+@media screen and (max-width: 640px) {
+  .container {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 50px;
+  }
+
+  i {
+    font-size: 25px;
+    margin: 10px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 30px;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
