@@ -1,11 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/App.scss";
-import Feedback from "./components/Feedback";
+import Demo from "./components/Demo";
 
 function App() {
   return (
     <>
-      <Feedback />
+      <Demo />
     </>
   );
 }
