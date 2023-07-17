@@ -17,21 +17,15 @@ button {
   width: 11rem;
 }
 
-.mb-2 {
-  margin-bottom: $margin-size;
-}
-
 .demo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .mb-2 {
+    margin-bottom: $margin-size;
   }
 
   h2 {
@@ -39,11 +33,6 @@ button {
     font-size: 2.4rem;
     text-align: center;
     padding: 1rem;
-  }
-
-  img {
-    width: 100%;
-    max-width: 40rem;
   }
 
   .info {
@@ -54,7 +43,11 @@ button {
     gap: $margin-size;
     background-color: $secondary-background-color;
     padding: 2rem;
-    width: 40rem;
+    width: 60rem;
+    height: 40rem;
+    background-image: url("../assets/images/demosession/pexels-marta.jpg");
+    background-size: cover;
+    background-position: center;
 
     .book-info {
       display: flex;
@@ -67,29 +60,6 @@ button {
 
     h6 {
       font-size: 2rem;
-    }
-  }
-
-  .info-p {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    text-align: start;
-    
-
-    p {
-      font-size: 1.2rem;
-      text-align: start;
-    }
-
-    .circle {
-      border: $circle-color 0.1rem solid;
-      width: 70rem;
-      height: 20rem;
-      border-radius: 50%;
-      margin-top: $margin-size;
-      position: absolute;
-      margin-left: -5rem;
     }
   }
 }
