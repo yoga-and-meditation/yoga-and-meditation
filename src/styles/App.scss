@@ -17,12 +17,11 @@ button {
   justify-content: center;
   height: 100vh;
   background-color: $background-color;
-  .demosession__title {
+  h6 {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
-  .demosession__button {
+  button {
     margin-top: 2rem;
   }
 }
-```
