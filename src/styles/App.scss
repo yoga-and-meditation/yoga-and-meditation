@@ -26,7 +26,6 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 
   .hero {
     display: flex;
@@ -39,6 +38,7 @@ button {
     @include heading-2-color;
     font-size: 2.4rem;
     text-align: center;
+    padding: 1rem;
   }
 
   img {
@@ -52,6 +52,9 @@ button {
     align-items: start;
     width: 50%;
     gap: $margin-size;
+    background-color: $secondary-background-color;
+    padding: 2rem;
+    width: 40rem;
 
     .book-info {
       display: flex;
