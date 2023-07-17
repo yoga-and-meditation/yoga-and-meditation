@@ -1,13 +1,24 @@
 @import "variables";
 @import "mixin";
+
+$margin-size: 2rem;
+$circle-color: #f8c75d;
+
 h1 {
-  font-family: Roboto-Black;
+  font-family: Roboto-Black, Arial, sans-serif;
   font-weight: 900;
   color: $text-color;
   font-style: italic;
 }
+
 button {
   @include button-style;
+  margin-top: $margin-size;
+  width: 11rem;
+}
+
+.mb-2 {
+  margin-bottom: $margin-size;
 }
 
 .demo {
@@ -22,51 +33,58 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
   }
 
   h2 {
     @include heading-2-color;
     font-size: 2.4rem;
-    margin-bottom: 2rem;
     text-align: center;
   }
 
   img {
     width: 100%;
     max-width: 40rem;
-    margin-bottom: 2rem;
   }
 
   .info {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     width: 50%;
-    gap: 2rem;
+    gap: $margin-size;
 
-    p {
+    .info-p {
+      display: flex; 
+      flex-direction: column; 
       font-size: 1.2rem;
-      margin-bottom: 2rem;
       text-align: start;
+      position: relative;
+
+      p {
+        font-size: 1.2rem;
+        text-align: start;
+      }
+
+      .circle {
+        border: $circle-color 0.1rem solid;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: $margin-size; 
+      }
     }
 
     .book-info {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-left: 2rem;
+      margin-left: $margin-size;
       width: 50%;
       margin: 0 auto;
     }
 
     h6 {
       font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-    button {
-      margin-top: 2rem;
-      width: 11rem;
     }
   }
 }
