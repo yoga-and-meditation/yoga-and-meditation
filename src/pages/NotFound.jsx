@@ -34,16 +34,16 @@ function NotFound() {
           </div>
         </div>
         <div className="social-icons">
-          <a href="#your-fb-page">
+          <a href="https://www.facebook.com/sheetal.k.chavan">
             <FaFacebook/>
           </a>
-          <a href="#your-fb-page">
+          <a href="https://www.instagram.com/sheetalkchavan/">
             <FaInstagram/>
           </a>
-          <a href="#your-fb-page">
+          <a href="https://www.linkedin.com/in/sheetalchavan/">
             <FaLinkedin/>
           </a>
-          <a href="#your-fb-page">
+          <a href="mailto:website@sheetalchavan.com">
             <FaEnvelope/>
           </a>
         </div>
