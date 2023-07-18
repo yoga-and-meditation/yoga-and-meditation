@@ -36,18 +36,15 @@ function NotFound() {
           <a href="#your-fb-page">
             <i className="fab fa-facebook"></i>
           </a>
-          <a href="#your-twitter-profile">
-            <i className="fab fa-twitter"></i>
-          </a>
           <a href="#your-linkedin-page">
             <i className="fab fa-linkedin-in"></i>
           </a>
           <a href="#your-instagram-page">
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="#your-youtube-page">
-            <i className="fab fa-youtube"></i>
-          </a>
+         <a href="fa-regular fa-envelope">
+         <i className="fa-regular fa-envelope"></i>
+         </a>
         </div>
       </div>
     </div>
