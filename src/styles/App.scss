@@ -11,11 +11,10 @@
     margin-top: 3rem;
     padding: 1.5rem;
     width: 80%;
-    background: $secondary-background-color;
-    box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $secondary-background-color;
 
     /* Tab container style */
     .tab-container {
@@ -34,15 +33,7 @@
         .active {
           button {
             .icon {
-              color: #333;
-              /*          transform: translateY(-55px); */
-              /*       box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
-                inset 2px 2px 3px rgba(255, 255, 255, 0.25),
-                inset -3px -3px 5px rgba(0, 0, 0, 0.5);
-              transition-delay: 0s; */
-              /*   box-shadow: 5px 5px 7px rgba(218, 165, 32, 0.25),
-                inset 2px 2px 3px rgba(255, 215, 0, 0.25),
-                inset -3px -3px 5px rgba(128, 100, 0, 0.5); */
+              color: gold;
               transition-delay: 0s;
             }
             .icon::before {
@@ -79,14 +70,10 @@
               color: rgb(46, 38, 38);
               opacity: 0;
               border-radius: 15px;
-              /*   transform: translateY(20px); */
               padding: 0.8rem;
               background: white;
               box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
                 inset -3px -3px 5px rgba(0, 0, 0, 0.5);
-
-              /* transition: 0.5s;
-              transition-delay: 0s; */
             }
 
             .icon {
@@ -97,7 +84,7 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              color: black;
+              color: gold;
               border-radius: 50%;
               transition: 0.5s;
               transition-delay: 0.2s;
@@ -106,7 +93,6 @@
               content: "";
               position: absolute;
               inset: 1px;
-              /*     background: #2f363e; */
               background: #ece8e7;
               border-radius: 50%;
               box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5),
@@ -141,13 +127,14 @@ section {
   justify-content: center;
 
   .card-container {
-    background: #fcfcfc;
-    box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
+    border-radius: 1rem;
+    box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
     width: 80%;
     .img-fluid {
       height: 30rem;
-      width: 30rem;
+      width: 45rem;
     }
+
     .subscribe-btn {
       @include button-style;
     }
@@ -159,6 +146,7 @@ section {
     }
     h3 {
       @include heading-3;
+      font-size: 2.5rem;
     }
   }
 }
