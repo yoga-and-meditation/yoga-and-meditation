@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/App.scss";
 import NotFound from "./pages/NotFound";
 function App() {
   return (

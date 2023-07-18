@@ -1,0 +1,9 @@
+@mixin logo-font-style {
+  @font-face {
+    font-family: "MoonDance-Regular";
+    src: url("src/assets/fonts/MoonDance/MoonDance-Regular.ttf")
+      format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
