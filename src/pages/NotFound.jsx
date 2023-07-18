@@ -60,7 +60,7 @@ function NotFound() {
           >
             <FaLinkedin />
           </a>
-          <a href="mailto:website@sheetalchavan.com">
+          <a href="mailto:info@sheetalchavan.com">
             <FaEnvelope />
           </a>
         </div>
