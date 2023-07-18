@@ -31,7 +31,7 @@
   font-size: 35px;
   text-align: center;
   @include logo-font-style;
-  color: gold;
+  color: #b48821;
 }
 
 .top {
@@ -44,7 +44,7 @@
 hr {
   width: 100px;
   height: 2px; /* Added height to make the HR visible */
-  background-color: gold; /* Changed the color to gold for better visibility */
+  background-color: #b48821; /* Changed the color to gold for better visibility */
   border: none; /* Removed border to achieve a solid line */
   margin: 0 15px;
 }
@@ -54,7 +54,7 @@ h1 {
   text-align: center;
   font-weight: 500;
   letter-spacing: 2px;
-  color: gold;
+  color: #b48821;
 }
 
 h3 {
@@ -69,7 +69,7 @@ h3 {
 }
 
 a {
-  color: gold;
+  color: #b48821;
   text-decoration: none;
   font-size: 40px;
   margin: 10px;
@@ -86,7 +86,7 @@ a {
 .progress {
   width: 0%;
   height: 13px;
-  background: gold;
+  background: #b48821;
   border-radius: 5px;
   display: flex;
   justify-content: flex-end;
