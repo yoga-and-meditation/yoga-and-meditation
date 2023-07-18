@@ -1,11 +1,14 @@
+import {Link ,Outlet} from 'react-router-dom'
+
 function Navbar() {
   return (
+   
     <div>
       <nav className="navbar navbar-expand-lg nav-background">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="">
             Sheetal Chavan
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -20,26 +23,27 @@ function Navbar() {
           <div className="collapse navbar-collapse justify-content-end gap-5" id="navbarSupportedContent">
             <ul className="navbar-nav gap-2">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/hero">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/aboutme">
                 About
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link">Services</a>
+                <Link className="nav-link" to="/services">Services</Link>
               </li>
             </ul>
-            <button className="btn" type="submit">
-              Search
+            <button className="btn" type="submit" >
+            <Link className="nav-link" to="/contacts">Contacts</Link> 
             </button>
           </div>
         </div>
       </nav>
+      <Outlet/>
     </div>
   );
 }
