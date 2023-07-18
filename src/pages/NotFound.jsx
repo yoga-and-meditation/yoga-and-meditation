@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaFacebook, FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function NotFound() {
   const [percentage, setPercentage] = useState(0);
@@ -34,17 +35,17 @@ function NotFound() {
         </div>
         <div className="social-icons">
           <a href="#your-fb-page">
-            <i className="fab fa-facebook"></i>
+            <FaFacebook/>
           </a>
-          <a href="#your-linkedin-page">
-            <i className="fab fa-linkedin-in"></i>
+          <a href="#your-fb-page">
+            <FaInstagram/>
           </a>
-          <a href="#your-instagram-page">
-            <i className="fab fa-instagram"></i>
+          <a href="#your-fb-page">
+            <FaLinkedin/>
           </a>
-         <a href="fa-regular fa-envelope">
-         <i className="fa-regular fa-envelope"></i>
-         </a>
+          <a href="#your-fb-page">
+            <FaEnvelope/>
+          </a>
         </div>
       </div>
     </div>
