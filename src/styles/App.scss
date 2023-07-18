@@ -8,7 +8,7 @@
   right: 0;
   filter: blur(10px);
   z-index: -1;
-  background-image: url("src/assets/images/yoga.jpg");
+  background-color: white;
   /*   background-color: #333; */
 
   background-size: cover;
@@ -31,6 +31,7 @@
   font-size: 35px;
   text-align: center;
   @include logo-font-style;
+  color: gold;
 }
 
 .top {
@@ -53,6 +54,7 @@ h1 {
   text-align: center;
   font-weight: 500;
   letter-spacing: 2px;
+  color: gold;
 }
 
 h3 {
@@ -67,7 +69,7 @@ h3 {
 }
 
 a {
-  color: white;
+  color: gold;
   text-decoration: none;
 }
 
@@ -78,7 +80,7 @@ i {
 
 .progress-wrapper {
   width: 100%;
-  background: white;
+  background: black;
   display: flex;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -94,7 +96,7 @@ i {
 }
 
 .progress span {
-  color: white;
+  color: black;
   position: relative;
   top: 14px;
   left: 25px;
