@@ -11,3 +11,9 @@ h1 {
 button {
   @include button-style;
 }
+
+.nav-background{
+  background-color: #ECE8E7;
+  padding: 0.5rem;
+  
+}

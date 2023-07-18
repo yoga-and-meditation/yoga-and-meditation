@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg nav-background">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             Sheetal Chavan
@@ -17,8 +17,8 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="d-flex justify-content-space-between collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <div className="collapse navbar-collapse justify-content-end gap-5" id="navbarSupportedContent">
+            <ul className="navbar-nav gap-2">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
                   Home
@@ -34,7 +34,7 @@ function Navbar() {
                 <a className="nav-link">Services</a>
               </li>
             </ul>
-            <button className="btn btn-outline-success" type="submit">
+            <button className="btn" type="submit">
               Search
             </button>
           </div>
