@@ -49,7 +49,7 @@ function NotFound() {
           <a
             href="https://www.instagram.com/sheetalkchavan/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer" /*    rel="noopener noreferrer" attribute, which is a recommended security practice when using target="_blank". This helps prevent potential security vulnerabilities when opening links in a new tab.  */
           >
             <FaInstagram />
           </a>
