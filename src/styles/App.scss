@@ -71,6 +71,13 @@ button {
       h6 {
         font-size: 2rem;
       }
+      button {
+        transition: all 0.5s ease;
+      }
+      button:hover {
+        color: #001f3f;
+        background-color: #fff;
+      }
     }
   }
 }
