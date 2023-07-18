@@ -48,9 +48,6 @@ function NotFound() {
           <a href="#your-youtube-page">
             <i className="fab fa-youtube"></i>
           </a>
-          <a href="#rss">
-            <i className="fas fa-rss"></i>
-          </a>
         </div>
       </div>
     </div>

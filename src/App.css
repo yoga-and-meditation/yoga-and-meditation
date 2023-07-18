@@ -7,8 +7,8 @@
   right: 0;
   filter: blur(10px);
   z-index: -1;
-  /*   background-image: url("src/assets/images/yoga.jpg"); */
-  background-color: #333;
+  background-image: url("src/assets/images/yoga.jpg");
+  /*   background-color: #333; */
 
   background-size: cover;
   background-position: center;
@@ -18,7 +18,7 @@
 
 .container {
   width: 600px;
-  max-width: 100%; /* Added max-width to ensure responsiveness */
+  max-width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -27,8 +27,7 @@
 }
 
 .top h2 {
-  font-size: 25px;
-  width: 160px;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -42,13 +41,13 @@
 hr {
   width: 100px;
   height: 2px; /* Added height to make the HR visible */
-  background-color: gold; /* Changed the color to white for better visibility */
+  background-color: gold; /* Changed the color to gold for better visibility */
   border: none; /* Removed border to achieve a solid line */
   margin: 0 15px;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   font-weight: 500;
   letter-spacing: 2px;
@@ -67,11 +66,11 @@ h3 {
 
 a {
   color: white;
-  text-decoration: none; /* Added to remove underlines from links */
+  text-decoration: none;
 }
 
 i {
-  font-size: 35px;
+  font-size: 40px;
   margin: 10px;
 }
 
@@ -85,7 +84,7 @@ i {
 
 .progress {
   width: 0%;
-  height: 10px;
+  height: 13px;
   background: gold;
   border-radius: 5px;
   display: flex;
@@ -95,7 +94,7 @@ i {
 .progress span {
   color: white;
   position: relative;
-  top: 13px;
+  top: 14px;
   left: 25px;
   font-weight: 800;
 }
