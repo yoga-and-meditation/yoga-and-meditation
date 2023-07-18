@@ -23,7 +23,7 @@ function NotFound() {
   }, [percentage]);
 
   return (
-    <div>
+    <div className="notFound-page-container">
       <div className="background"></div>
       <div className="container">
         <div className="top">

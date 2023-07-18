@@ -116,8 +116,20 @@ a {
   }
 }
 
-@media screen and (max-width: 400px) {
-  h1 {
+@media screen and (max-width: 360px) {
+  .notFound-page-container {
+    margin: 0 2rem;
+  }
+  hr {
+    width: 60px;
+  }
+  .top h2 {
     font-size: 30px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .container {
+    margin-top: 7rem;
   }
 }
