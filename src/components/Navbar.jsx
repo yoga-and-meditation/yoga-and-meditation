@@ -1,5 +1,6 @@
 import {Link ,Outlet} from 'react-router-dom'
-
+import {
+  FcMenu} from "react-icons/fc";
 function Navbar() {
   return (
    
@@ -8,8 +9,10 @@ function Navbar() {
         <div className="container-fluid">
           <Link className="navbar-brand" to="">
             Sheetal Chavan
+
           </Link>
-          <button
+          <FcMenu/>
+       {/*    <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -19,7 +22,7 @@ function Navbar() {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
-          </button>
+          </button> */}
           <div className="collapse navbar-collapse justify-content-end gap-5" id="navbarSupportedContent">
             <ul className="navbar-nav gap-2">
               <li className="nav-item">
