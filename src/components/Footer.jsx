@@ -1,5 +1,5 @@
 //Icons
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
 function Footer() {
   return (
     <>
@@ -31,7 +31,7 @@ function Footer() {
               <li className="list-group">
                 <a href="">
                   {" "}
-                  <FaTwitter />
+                  <FaLinkedin />
                 </a>
               </li>
             </ul>
