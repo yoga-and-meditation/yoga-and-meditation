@@ -1,12 +1,16 @@
 //Icons
-import { FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaEnvelope,
+} from "react-icons/fa";
 function Footer() {
   return (
     <>
       <div className="footer-container  d-flex">
-        <div className="logo m-5">
-          <h4>logo</h4>
-        </div>
+        <h4 className="logo">Sheetal Chavan</h4>
+
         <div className=" card about-me">
           <h4>About me </h4>
           <p className="card-text">
@@ -18,20 +22,26 @@ function Footer() {
           <div className="icons">
             <ul>
               <li className="list-group">
-                <a href="">
+                <a href="https://www.facebook.com/sheetal.k.chavan">
                   <FaFacebook />
                 </a>
               </li>
               <li className="list-group">
-                <a href="">
+                <a href="https://www.instagram.com/sheetalkchavan/">
                   {" "}
                   <FaInstagram />
                 </a>
               </li>
               <li className="list-group">
-                <a href="">
+                <a href="https://www.linkedin.com/in/sheetalchavan/">
                   {" "}
                   <FaLinkedin />
+                </a>
+              </li>
+              <li className="list-group">
+                <a href="website@sheetalchavan.com">
+                  {" "}
+                  <FaEnvelope />
                 </a>
               </li>
             </ul>
