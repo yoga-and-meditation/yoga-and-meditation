@@ -7,9 +7,10 @@ h1 {
   color: $text-color;
   font-style: italic;
 }
-.ContactForm {
+.form {
    margin-top: 10rem;
    display: flex;
+   transition: transform 1.2s ease-in-out;
    .submit-btn {
     @include button-style
    }

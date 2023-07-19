@@ -1,8 +1,21 @@
-import contactImg from "../assets/images/contact/onlineYoga.avif"
-
+import contactImg from "../assets/images/contact/onlineYoga.avif";
+import { useForm } from "react-hook-form";
 function Contacts() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  /*   <form 
+      <input {...register('firstName')} />
+      <input {...register('lastName', { required: true })} />
+      {errors.lastName && <p>Last name is required.</p>}
+      <input {...register('age', { pattern: /\d+/ })} />
+      {errors.age && <p>Please enter number for age.</p>}
+      <input type="submit" />
+    </form> */
   return (
-    <div className="ContactForm ">
+    <div className="form onSubmit={handleSubmit((data) => console.log(data))}> ">
       <div className="container">
         <h2 className="heading2 mb-5">Excited to know more?</h2>
         <h3 className="heading1 mb-5">Get in Touch</h3>
@@ -11,14 +24,16 @@ function Contacts() {
             <div className="contactForm">
               <form id="contact-form" noValidate>
                 {/* Row 1 of form */}
-                <div className="row formRow">
+                <div className="row form Row">
                   <div className="col-6">
                     <input
+                      {...register("Name", { required: true })}
                       type="text"
                       name="name"
                       className="form-control formInput"
                       placeholder="Name"
-                    ></input>
+                    />{" "}
+                    {errors.Name && <alert>Your name is required.</alert>}
                   </div>
                   <div className="col-6 mb-5">
                     <input
@@ -52,7 +67,7 @@ function Contacts() {
                   </div>
                 </div>
                 <button className="submit-btn" type="submit">
-                  Submit
+                  Send
                 </button>
               </form>
             </div>
@@ -60,7 +75,7 @@ function Contacts() {
         </div>
       </div>
       <div className="contact-img">
-        <img  src= {contactImg} alt="contact-img" />
+        <img src={contactImg} alt="contact-img" />
       </div>
     </div>
   );

@@ -3,9 +3,12 @@ import "./styles/App.scss";
 
 import Contacts from "./components/Contacts";
 
+
 function App() {
+ 
   return (
     <>
+  
       <Contacts/>
    
     </>
