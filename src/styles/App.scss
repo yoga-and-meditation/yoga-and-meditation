@@ -12,8 +12,44 @@ button {
   @include button-style;
 }
 
-.nav-background{
-  background-color: #ECE8E7;
-  padding: 0.5rem;
-  
+.logo{
+  padding: 0 2rem;
+}
+
+.navbar{
+  height: 5rem;
+  display: flex;
+  background-color: antiquewhite;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-menu li{
+  list-style: none;
+  padding: 1rem;
+}
+.hamburger{
+  font-size: 3rem;
+  display: none;
+ 
+}
+
+
+@media (max-width:800px) {
+    .hamburger{
+  display: block;
+  display: flex;
+  padding: 0 2rem;
+  cursor: pointer;
+}
+.nav-menu{
+  display: none;
+}
+
 }
