@@ -1,7 +1,12 @@
 import {Link ,Outlet} from 'react-router-dom'
+
 import {
   FcMenu} from "react-icons/fc";
 function Navbar() {
+
+
+ 
+
   return (
    
     <div>
@@ -11,8 +16,8 @@ function Navbar() {
             Sheetal Chavan
 
           </Link>
-          <FcMenu/>
-       {/*    <button
+         
+       <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -20,9 +25,12 @@ function Navbar() {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button> */}
+           
+
+          > <FcMenu/>
+            
+          </button> 
+         
           <div className="collapse navbar-collapse justify-content-end gap-5" id="navbarSupportedContent">
             <ul className="navbar-nav gap-2">
               <li className="nav-item">
