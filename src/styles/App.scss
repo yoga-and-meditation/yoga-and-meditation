@@ -16,6 +16,19 @@
     align-items: center;
     background-color: $secondary-background-color;
 
+    /* Heading style of the section */
+    .header-container {
+      text-align: center;
+      h2 {
+        padding: 1rem;
+        @include heading-2-color;
+        @include heading-2;
+      }
+      h3 {
+        @include heading-3;
+      }
+    }
+
     /* Tab container style */
     .tab-container {
       display: flex;
@@ -58,23 +71,12 @@
           border-radius: 50%;
           background: #fcfcfc;
           box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
+
           button {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-
-            .text {
-              position: absolute;
-              font-size: 1.2rem;
-              color: rgb(46, 38, 38);
-              opacity: 0;
-              border-radius: 15px;
-              padding: 0.8rem;
-              background: white;
-              box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
-                inset -3px -3px 5px rgba(0, 0, 0, 0.5);
-            }
 
             .icon {
               position: absolute;
@@ -102,21 +104,21 @@
               transform: scale(0);
               transition: 0.5s;
             }
+
+            .text {
+              position: absolute;
+              font-size: 1.2rem;
+              color: rgb(46, 38, 38);
+              opacity: 0;
+              border-radius: 15px;
+              padding: 0.8rem;
+              background: white;
+              box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+                inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+            }
           }
         }
       }
-    }
-  }
-  /* Heading style of the section */
-  .header-container {
-    text-align: center;
-    h2 {
-      padding: 1rem;
-      @include heading-2-color;
-      @include heading-2;
-    }
-    h3 {
-      @include heading-3;
     }
   }
 }

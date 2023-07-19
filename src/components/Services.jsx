@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import image1 from "../assets/images/services/yoga.jpg";
 import image2 from "../assets/images/services/meditation.jpg";
 import image3 from "../assets/images/services/retreating.jpg";
+import yogaIcon from "../assets/images/services/yoga-icon.png";
 
 function Services() {
   const [tab, setTab] = useState(1);
@@ -27,35 +28,36 @@ function Services() {
       <div className="header-container">
         <h2>What We Do?</h2>
         <h3>Our Services</h3>
-        <div className="tab-container">
-          <ul className="navigation">
-            <li className="active">
-              <button onClick={() => setTab(1)}>
-                <span className="icon">
-                  <ion-icon name="triangle-sharp"></ion-icon>
-                </span>
-                <span className="text">Yoga</span>
-              </button>
-            </li>
-            <li>
-              <button onClick={() => setTab(2)}>
-                <span className="icon">
-                  <ion-icon name="person-outline"></ion-icon>
-                </span>
-                <span className="text">Meditaion</span>
-              </button>
-            </li>
-            <li>
-              <button onClick={() => setTab(3)}>
-                <span className="icon">
-                  <ion-icon name="chatbubbles-outline"></ion-icon>
-                </span>
-                <span className="text">Retreats</span>
-              </button>
-            </li>
-          </ul>
-        </div>
       </div>
+      <div className="tab-container">
+        <ul className="navigation">
+          <li className="active">
+            <button onClick={() => setTab(1)}>
+              <span className="icon">
+                <img src={yogaIcon} alt="yoga icon" />
+              </span>
+              <span className="text">Yoga</span>
+            </button>
+          </li>
+          <li>
+            <button onClick={() => setTab(2)}>
+              <span className="icon">
+                <img src={yogaIcon} alt="yoga icon" />
+              </span>
+              <span className="text">Meditaion</span>
+            </button>
+          </li>
+          <li>
+            <button onClick={() => setTab(3)}>
+              <span className="icon">
+                <img src={yogaIcon} alt="yoga icon" />
+              </span>
+              <span className="text">Retreats</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
       {tab === 1 && (
         <section>
           <div className="card m-5 card-container">
