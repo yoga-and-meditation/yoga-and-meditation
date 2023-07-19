@@ -3,30 +3,38 @@
 /* import { useState } from 'react';
  */
 // eslint-disable-next-line react/prop-types
+
+import image1 from '../assets/images/Feedback/user1.jpg';
+import image2 from '../assets/images/Feedback/user2.jpg';
+import image3 from '../assets/images/Feedback/user3.jpg';
+
+
 const userList = [
   {
     username: "John joe",
     review:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo",
     rating: "3",
-    images: "./assets/images/Feedback/user1.jpg",
+    images: image1,
   },
   {
     username: "prinky ",
     review:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo",
     rating: "5",
-    images: "./assets/images/Feedback/user2.jpg",
+    images: image2,
   },
   {
     username: "paul",
     review:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo",
     rating: "4",
-    images: "./assets/images/Feedback/user3.jpg",
+    images: image3,
   },
 ];
 function Feedback() {
+ 
+
   return (
     <div>
       <div className="site-container">
