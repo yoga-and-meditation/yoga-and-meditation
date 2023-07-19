@@ -2,12 +2,14 @@
 
 /* ---------------------------- Mixin for button style -------------------------- */
 @mixin button-style {
-  background: linear-gradient(
+  /* The yellow-gold color, we keep it incase we need it */
+  /* background: linear-gradient(
     360deg,
     rgba(203, 157, 35, 1) 0%,
 
     rgba(249, 194, 51, 1) 100%
-  );
+  ); */
+  background-color: #b48821;
   color: $button-text-color;
   padding: 0 1.8rem;
   height: 3.6rem;
@@ -19,11 +21,13 @@
 
 /* ---------------------------- Mixin for Heading 2 color style -------------------------- */
 @mixin heading-2-color {
-  background: linear-gradient(
+ /* The yellow-gold color, we keep it incase we need it */
+  /* background: linear-gradient(
     360deg,
     rgba(203, 157, 35, 1) 0%,
     rgba(249, 194, 51, 1) 100%
-  );
+  ); */
+  background-color: #b48821;
   -webkit-background-clip: text; /* For Safari */
   -webkit-text-fill-color: transparent; /* For Safari */
   background-clip: text;
@@ -86,7 +90,8 @@
 @mixin logo-font-style {
   @font-face {
     font-family: "MoonDance-Regular";
-    src: url("path/to/MoonDance-Regular.ttf") format("truetype");
+    src: url("../assets/fonts/MoonDance/MoonDance-Regular.ttf")
+      format("truetype");
     font-weight: normal;
     font-style: normal;
   }
