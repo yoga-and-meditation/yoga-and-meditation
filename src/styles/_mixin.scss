@@ -17,6 +17,10 @@
   border: none;
   font-size: 1.4rem;
   box-shadow: 4px 8px 40px 0px rgba(142, 110, 26, 15%);
+  transition: all 0.5s ease;
+  button:hover {
+    color: #001F3F;
+  }
 }
 @mixin heading-2-color {
   background: linear-gradient(
@@ -32,7 +36,7 @@
 
 /* ---------------------------- Mixin for Heading 2 color style -------------------------- */
 @mixin heading-2-color {
- /* The yellow-gold color, we keep it incase we need it */
+  /* The yellow-gold color, we keep it incase we need it */
   /* background: linear-gradient(
     360deg,
     rgba(203, 157, 35, 1) 0%,
