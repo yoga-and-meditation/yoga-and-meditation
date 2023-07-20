@@ -28,7 +28,7 @@ function Navbar() {
               <Link  className='links'to="/services">Services</Link>
               
             </li >
-            <button><Link className='links' to='/contacts'>Contact</Link></button>
+            <li><button><Link className='links' to='/contacts'>Contact</Link></button></li>
           </ul> 
         </div>
         <div className="hamburger" onClick={toggleNav}>
