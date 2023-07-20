@@ -5,4 +5,4 @@ function Aboutme() {
   )
 }
 
-export default Aboutme
+export default Aboutme;
