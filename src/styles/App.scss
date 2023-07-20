@@ -5,19 +5,25 @@
 button {
   @include button-style;
   margin-right: 2rem;
-  .links:hover{
-    color:#000000
+  .links:hover {
+    color: #000000;
   }
 }
 
 .logo {
-  @include logo-font-style;
   padding: 0 2rem;
+  h1 {
+    @include logo-font-style;
+    font-family: "MoonDance-Regular";
+    font-size: 4rem;
+    color: #b48821;
+  }
 }
 
 .navbar {
-  height: 5rem;
+  height: 6rem;
   display: flex;
+
   background-color: $secondary-background-color;
   justify-content: space-between;
   align-items: center;
@@ -25,22 +31,26 @@ button {
 
 .nav-menu {
   @include paragraph-normal;
-
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
+  .item {
+    display: flex;
+    justify-content: center;
+  }
 }
-.links{
-text-decoration: none;
-color:black;
-font-size:1.2rem;
-.button-color{
-  color:white;
+.links {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  .button-color {
+    color: white;
+  }
 }
-}
-.link-color{
-  color:black;
+.link-color {
+  color: black;
 }
 .nav-menu li {
   list-style: none;
@@ -50,10 +60,22 @@ font-size:1.2rem;
   font-size: 3rem;
   display: none;
 }
-.links:hover{
-  opacity: .6;
+.links:hover {
+  opacity: 0.6;
 }
 
+.contact-btn {
+  button {
+    .links {
+      color: white;
+    }
+    .links:hover {
+      color: black;
+    }
+  }
+}
+
+/* Media query */
 @media (max-width: 800px) {
   .hamburger {
     display: block;
@@ -63,7 +85,8 @@ font-size:1.2rem;
   }
   .nav-menu {
     display: none;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    gap: 0;
   }
 
   .navbar.expanded {
@@ -87,8 +110,13 @@ font-size:1.2rem;
   .logo {
     position: absolute;
 
+    h1 {
+      font-size: 3rem;
+    }
+
     top: 21px;
   }
+
   button {
     @include paragraph-normal;
 
@@ -98,9 +126,8 @@ font-size:1.2rem;
     font-size: 1rem;
     color: #000000;
     margin: 2rem;
-    &:hover{
-      color:white;
+    &:hover {
+      color: white;
     }
   }
-  
 }
