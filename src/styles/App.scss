@@ -13,13 +13,14 @@ button {
 }
 
 .logo {
+  @include logo-font-style;
   padding: 0 2rem;
 }
 
 .navbar {
   height: 5rem;
   display: flex;
-  background-color: antiquewhite;
+  background-color:$secondary-background-color;
   justify-content: space-between;
   align-items: center;
 }

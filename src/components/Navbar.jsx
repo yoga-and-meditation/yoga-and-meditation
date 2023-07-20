@@ -17,24 +17,25 @@ function Navbar() {
         <div>
           <ul className="nav-menu">
             <li className="item">
-              <Link to="./componrnts/" />
+              <Link to="/hero.jsx" />
               Home
             </li>
             <li className="item">
-              <Link href="#" />
+              <Link to="/aboutme.jsx" />
               About
             </li>
             <li className="item">
-              <Link href="#" />
+              <Link to="/services.jsx" />
               Services
             </li >
-            <button className="item">Contact</button>
+            <button to='/contacts.jsx'>Contact</button>
           </ul> 
         </div>
         <div className="hamburger" onClick={toggleNav}>
           {isOpen?<GrClose/>:<FcMenu/>}
         </div> 
       </nav>
+      <Outlet/>
     </div>
   );
 }
