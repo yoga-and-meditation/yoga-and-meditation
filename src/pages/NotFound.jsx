@@ -22,6 +22,10 @@ function NotFound() {
     return () => clearInterval(interval);
   }, [percentage]);*/}
 
+  //function downloadFile() {
+   // window.open("public\docs\info.pdf");
+  //}
+
   return (
     <div className="notFound-page-container">
       <div className="background"></div>
@@ -39,7 +43,7 @@ function NotFound() {
           </div>
         </div>*/}
         <div>
-          <a href="public\docs\info.pdf" download>Click</a>
+          <a href="public\docs\info.pdf" target="_blank" >Click</a>
         </div>
         <div className="social-icons">
           <a
