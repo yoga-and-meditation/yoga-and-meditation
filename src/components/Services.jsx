@@ -4,6 +4,7 @@ import image1 from "../assets/images/services/yoga.jpg";
 import image2 from "../assets/images/services/meditation.jpg";
 import image3 from "../assets/images/services/retreating.jpg";
 import yogaGoldIcon from "../assets/images/services/yoga-gold.png";
+import yogaWhiteIcon from "../assets/images/services/yoga-white.png";
 
 function Services() {
   const [tab, setTab] = useState(1);
