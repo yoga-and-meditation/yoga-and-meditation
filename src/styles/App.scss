@@ -14,7 +14,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $secondary-background-color;
 
     /* Heading style of the section */
     .header-container {
@@ -23,9 +22,11 @@
         padding: 1rem;
         @include heading-2-color;
         @include heading-2;
+        font-size: 3.5rem;
       }
       h3 {
         @include heading-3;
+        font-size: 2.7rem;
       }
     }
 
@@ -44,6 +45,7 @@
 
         /* Tab active button style */
         .active {
+          background: #b48821;
           button {
             .icon {
               transition-delay: 0s;
@@ -51,11 +53,11 @@
             .icon::before {
               transform: scale(1);
             }
-            .text {
+            /* .text {
               opacity: 1;
               transform: translateY(7.5rem);
               transition-delay: 0.2s;
-            }
+            } */
           }
         }
 
@@ -68,10 +70,9 @@
           justify-content: center;
           padding: 4.9rem;
           border-radius: 50%;
-          /*       background: #fcfcfc;
-          box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff; */
-          background: white;
           box-shadow: 10px 22px 40px #0000 5%;
+
+          /*     box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff; */
 
           button {
             display: flex;
@@ -101,16 +102,14 @@
               content: "";
               position: absolute;
               inset: 0px;
-              background: #b48821;
               box-shadow: 10px 22px 40px #0000 5%;
               border-radius: 50%;
-              /*  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5),
-                inset 2px 2px 3px rgba(255, 255, 255, 0.25),
-                inset -3px -3px 5px rgba(0, 0, 0, 0.5);
-              
- */
               transform: scale(0);
               transition: 0.5s;
+
+              /*    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5),
+                inset 2px 2px 3px rgba(255, 255, 255, 0.25),
+                inset -3px -3px 5px rgba(0, 0, 0, 0.5); */
             }
 
             .text {
@@ -121,8 +120,8 @@
               border-radius: 15px;
               padding: 0.8rem;
               background: white;
-              box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
-                inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+              // box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+              //   inset -3px -3px 5px rgba(0, 0, 0, 0.5);
             }
           }
         }
