@@ -117,17 +117,4 @@ button {
     top: 21px;
   }
 
-  button {
-    @include paragraph-normal;
-
-    background: none;
-    border: none;
-    box-shadow: none;
-    font-size: 1rem;
-    color: #000000;
-    margin: 2rem;
-    &:hover {
-      color: white;
-    }
-  }
 }
