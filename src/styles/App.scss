@@ -67,7 +67,8 @@ font-size:1.2rem;
  */
   }
   .navbar.expanded {
-    height: 60vh;
+    background-color:$secondary-background-color;
+    height: 70vh;
   }
   .navbar.expanded .nav-menu {
     position: absolute;
