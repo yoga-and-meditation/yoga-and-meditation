@@ -1,7 +1,23 @@
-@media (max-width: $md){
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        padding: 10rem;
+@media (max-width: $md) {
+  .footer-container {
+    display: flex;
+ 
+    flex-flow: row wrap;
+  justify-content: flex-end;
+  
+   .logo {
+    padding: 3rem;
+   }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+
+      .about-me,
+      .links {
+        padding-left: 3rem;
+      }
+
     }
+  }
 }
