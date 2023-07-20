@@ -4,12 +4,8 @@
 //this is for test
 button {
   @include button-style;
-  margin-right: 2rem;
-  .links:hover{
-    text-decoration: none;
-    color: black;
-    font-size: 1.2rem;
-  }
+  margin-right: 2rem
+}
 
   
 }
@@ -24,7 +20,7 @@ button {
 .navbar {
   height: 5rem;
   display: flex;
-  background-color:$secondary-background-color;
+  background-color: $secondary-background-color;
   justify-content: space-between;
   align-items: center;
 }
@@ -39,6 +35,7 @@ button {
 }
 .links{
 text-decoration: none;
+color:black;
 font-size:1.2rem;
 }
 .link-color{
@@ -53,7 +50,8 @@ font-size:1.2rem;
   display: none;
 }
 .links:hover{
-color:white}
+  opacity: .6;
+}
 
 @media (max-width: 800px) {
   .hamburger {
@@ -64,14 +62,11 @@ color:white}
   }
   .nav-menu {
     display: none;
-    padding:.5rem
+    padding: 0.5rem;
   }
-  .navbar {
-    /*   transition: 0.5s height ease-in-out;
- */
-  }
+
   .navbar.expanded {
-    background-color:$secondary-background-color;
+    background-color: $secondary-background-color;
     height: 70vh;
   }
   .navbar.expanded .nav-menu {
@@ -106,6 +101,5 @@ color:white}
       color:white;
     }
   }
-  
   
 }
