@@ -15,48 +15,61 @@ button {
 }
 
 .footer-container {
-  width: 100%;
   height: 100vh;
-  gap: 5rem;
-  padding: 10rem;
-  //For some reason align-content doesn't work
+  background-color: $secondary-background-color;
+  display: flex;
   align-items: center;
-  justify-content: space-around;
-  .logo{
-    color: #b48821;
-    font-family: monospace;
-  }
-
-  .card {
-    border: none;
-  }
-
-  .card-text {
-    max-width: 30rem;
-  }
-
-  .icons ul {
-    font-size: 3rem;
-    display: flex;
-    gap: 2rem;
-    a {
-      color:#b48821 ;
+  justify-content:space-around;
+  // gap: 5rem;
+  .logo-container {
+    @include logo-font-style;
+    font-family: "MoonDance-Regular";
+    h4 {
+      @include logo-font-style;
+      font-size: 3rem;
     }
   }
-  h4 {
-    font-size: 2rem;
-    color:$text-color;
+  .about-me {
+    border: none;
+    background-color: transparent;
+    
+    
+    p {
+      max-width: 30rem;
+    }
+    .icons ul {
+      font-size: 3rem;
+      display: flex;
+      gap: 2rem;
+
+      :hover {
+        opacity: 0.9;
+      }
+      a {
+        color: #b48821;
+      }
+    }
+    h4 {
+      font-size: 2rem;
+      color: $text-color;
+    }
   }
   .links {
-    font-size: 1rem;
+   background-color: transparent;
+   border: none;
+    
     a {
       text-decoration: none;
       color: $text-color;
     }
+    a:hover {
+      color: #b48821;
+    }
   }
 }
+
 .copyright {
-  background-color:#e8e3d6;
+  background-color: #e1dddc;
   color: $text-color;
   font-size: 2rem;
 

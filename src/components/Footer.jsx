@@ -5,15 +5,17 @@ import {
   FaLinkedin,
   FaEnvelope,
 } from "react-icons/fa";
+import logo from "../assets/images/footer-logo/Group.png"
 function Footer() {
   return (
-    <>
-      <div className="footer-container  d-flex">
-        <h4 className="logo">Sheetal Chavan</h4>
-
-        <div className=" card about-me">
-          <h4>About me </h4>
-          <p className="card-text">
+    <footer>
+      <div className="footer-container">
+        <div className="logo-container">
+          <h4 className="logo">Yoga and Meditation <img src = {logo} alt="logo"  /></h4>
+        </div>
+        <div className=" about-me">
+          <h5>About me </h5>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
             quidem pariatur autem neque, voluptatum sit error sint. Qui,
             facilis. Consectetur temporibus ullam neque tempore, ut perferendis
@@ -47,10 +49,10 @@ function Footer() {
             </ul>
           </div>
         </div>
-
-        <div className="links">
-          <h4 className="m-3">Links</h4>
+        <div className="  links">
+          
           <ul>
+          <h5>Links</h5>
             <li className="list-group">
               <a href="">Home</a>
             </li>
@@ -69,7 +71,7 @@ function Footer() {
       <div className="copyright p-3 fixed-bottom">
         © 2023 Copyright Reserved
       </div>
-    </>
+    </footer>
   );
 }
 
