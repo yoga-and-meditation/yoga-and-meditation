@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import image1 from "../assets/images/services/yoga.jpg";
 import image2 from "../assets/images/services/meditation.jpg";
 import image3 from "../assets/images/services/retreating.jpg";
-import yogaIcon from "../assets/images/services/yoga-icon.png";
+import yogaGoldIcon from "../assets/images/services/yoga-gold.png";
 
 function Services() {
   const [tab, setTab] = useState(1);
@@ -34,7 +34,7 @@ function Services() {
           <li className="active">
             <button onClick={() => setTab(1)}>
               <span className="icon">
-                <img src={yogaIcon} alt="yoga icon" />
+                <img src={yogaGoldIcon} alt="yoga icon" />
               </span>
               <span className="text">Yoga</span>
             </button>
@@ -42,7 +42,7 @@ function Services() {
           <li>
             <button onClick={() => setTab(2)}>
               <span className="icon">
-                <img src={yogaIcon} alt="yoga icon" />
+                <img src={yogaGoldIcon} alt="yoga icon" />
               </span>
               <span className="text">Meditaion</span>
             </button>
@@ -50,7 +50,7 @@ function Services() {
           <li>
             <button onClick={() => setTab(3)}>
               <span className="icon">
-                <img src={yogaIcon} alt="yoga icon" />
+                <img src={yogaGoldIcon} alt="yoga icon" />
               </span>
               <span className="text">Retreats</span>
             </button>
