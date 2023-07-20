@@ -13,6 +13,7 @@ function Footer() {
         <div className="logo-container">
           <h4 className="logo">Yoga and Meditation</h4>
         </div>
+        <div className="contact">	
         <div className=" about-me">
           <h5>About me </h5>
           <p>
@@ -66,6 +67,7 @@ function Footer() {
               <a href="#">Contact</a>
             </li>
           </ul>
+        </div>
         </div>
       </div>
       <div className="copyright p-3 fixed-bottom">
