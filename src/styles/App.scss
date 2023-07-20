@@ -4,7 +4,13 @@
 //this is for test
 button {
   @include button-style;
-  margin-right: 2rem
+  margin-right: 2rem;
+
+  .links:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
 }
 
 .logo {
@@ -15,7 +21,7 @@ button {
 .navbar {
   height: 5rem;
   display: flex;
-  background-color:$secondary-background-color;
+  background-color: $secondary-background-color;
   justify-content: space-between;
   align-items: center;
 }
@@ -28,10 +34,10 @@ button {
   align-items: center;
   gap: 2rem;
 }
-.links{
-text-decoration: none;
-color:black;
-font-size:1.2rem;
+.links {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
 }
 .nav-menu li {
   list-style: none;
@@ -40,9 +46,6 @@ font-size:1.2rem;
 .hamburger {
   font-size: 3rem;
   display: none;
-}
-.links:hover{
-  opacity: .6;
 }
 
 @media (max-width: 800px) {
@@ -54,14 +57,11 @@ font-size:1.2rem;
   }
   .nav-menu {
     display: none;
-    padding:.5rem
+    padding: 0.5rem;
   }
-  .navbar {
-    /*   transition: 0.5s height ease-in-out;
- */
-  }
+
   .navbar.expanded {
-    background-color:$secondary-background-color;
+    background-color: $secondary-background-color;
     height: 70vh;
   }
   .navbar.expanded .nav-menu {
@@ -92,5 +92,4 @@ font-size:1.2rem;
     color: #000000;
     margin: 2rem;
   }
-  
 }
