@@ -46,7 +46,7 @@ function NotFound() {
         </div>*/}
 
         <p>Please visit us back on 17th of August until then refer to this document</p>
-        <a href="\docs\info.pdf" target="_blank" >Click Me</a>
+        <a href="\docs\info.pdf" download>Click Me</a>
 
         <div className="social-icons">
           <a
