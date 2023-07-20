@@ -17,18 +17,18 @@ function Navbar() {
         <div>
           <ul className="nav-menu">
             <li className="item">
-              <Link to="/hero.jsx" />
-              Home
+              <Link className='links'to="/hero" >Home</Link>
+              
             </li>
             <li className="item">
-              <Link to="/aboutme.jsx" />
-              About
+              <Link className='links' to="/aboutme">About</Link>
+              
             </li>
             <li className="item">
-              <Link to="/services.jsx" />
-              Services
+              <Link  className='links'to="/services">Services</Link>
+              
             </li >
-            <button to='/contacts.jsx'>Contact</button>
+            <button><Link className='links' to='/contacts'>Contact</Link></button>
           </ul> 
         </div>
         <div className="hamburger" onClick={toggleNav}>

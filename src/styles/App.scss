@@ -33,6 +33,11 @@ button {
   align-items: center;
   gap: 2rem;
 }
+.links{
+text-decoration: none;
+color:black;
+font-size:1.2rem;
+}
 .nav-menu li {
   list-style: none;
   padding: 1rem;
@@ -40,6 +45,9 @@ button {
 .hamburger {
   font-size: 3rem;
   display: none;
+}
+.links:hover{
+  opacity: .6;
 }
 
 @media (max-width: 800px) {
