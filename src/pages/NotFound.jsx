@@ -39,7 +39,7 @@ function NotFound() {
           </div>
         </div>*/}
         <div>
-          <a href="src\assets\docs\info.pdf" download>Click</a>
+          <a href="public\docs\info.pdf" download>Click</a>
         </div>
         <div className="social-icons">
           <a
