@@ -5,6 +5,7 @@ import {
   FaLinkedin,
   FaEnvelope,
 } from "react-icons/fa";
+import {Outlet, Link} from "react-router-dom";
 
 function Footer() {
   return (
@@ -54,24 +55,36 @@ function Footer() {
             <ul>
               <h5>Links</h5>
               <li className="list-group">
-                <a href="">Home</a>
+              <Link className="footer-link active" aria-current="page" to="/hero">
+                  Home
+                </Link>
               </li>
               <li className="list-group">
-                <a href="#">About Me</a>
+              <Link className="footer-link active" aria-current="page" to="/about-me">
+                  About Me
+                </Link>
               </li>
               <li className="list-group">
-                <a href="#">Services</a>
+                <Link className="footer-link active" aria-current="page" to="/demo">
+                  Demo
+                </Link>
               </li>
               <li className="list-group">
-                <a href="#">Contact</a>
+                <Link className="footer-link active" aria-current="page" to="/services">
+                  Services
+                </Link>
               </li>
             </ul>
           </div>
+          
         </div>
       </div>
       <div className="copyright p-3 fixed-bottom">
         © 2023 Copyright Reserved
       </div>
+      
+
+      
     </footer>
   );
 }

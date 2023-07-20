@@ -2,17 +2,8 @@
 @import "mixin";
 @import "media-query";
 
-h1 {
-  font-family: Roboto-Black;
-  font-weight: 900;
-  color: $text-color;
-  font-style: italic;
-}
 
-//this is for test
-button {
-  @include button-style;
-}
+//Footer Style
 
 .footer-container {
   height: 100vh;
@@ -26,7 +17,8 @@ button {
     font-family: "MoonDance-Regular";
     h4 {
       @include logo-font-style;
-      font-size: 3rem;
+      font-size: 4rem;
+     
     }
   }
 
@@ -38,6 +30,7 @@ button {
   .about-me {
     border: none;
     background-color: transparent;
+    margin-bottom: 30rem;
     
     
     
@@ -83,3 +76,4 @@ button {
   text-align: center;
   position: relative;
 }
+/**********************************/
