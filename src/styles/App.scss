@@ -10,13 +10,15 @@ h1 {
 .form {
    margin-top: 10rem;
    display: flex;
-   transition: transform 1.2s ease-in-out;
+   justify-content: space-around;
+   align-items: center;
+   
    .submit-btn {
-    @include button-style
+    @include button-style;
    }
    img {
-    width: 25rem;
-    margin-right: 5rem;
+    width: 30rem;
+   margin-right: 5rem;
     
    }
    h2 {

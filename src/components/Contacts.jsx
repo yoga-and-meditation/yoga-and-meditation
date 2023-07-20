@@ -1,4 +1,4 @@
-import contactImg from "../assets/images/contact/onlineYoga.avif";
+import contactImg from "../assets/images/contact/yogaPause.jpg";
 // import { useForm } from "react-hook-form";
 function Contacts() {
   return (
@@ -60,7 +60,7 @@ function Contacts() {
         </div>
       </div>
       <div className="contact-img">
-        <img src={contactImg} alt="contact-img" />
+        <img className="img-thumbnail" src={contactImg} alt="contact-img" />
       </div>
     </div>
   );
