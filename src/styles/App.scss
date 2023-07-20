@@ -10,6 +10,7 @@ h1 {
 //this is for test
 button {
   @include button-style;
+  margin-right: 2rem
 }
 
 .logo {
@@ -59,6 +60,7 @@ font-size:1.2rem;
   }
   .nav-menu {
     display: none;
+    padding:.5rem
   }
   .navbar {
     /*   transition: 0.5s height ease-in-out;
@@ -92,6 +94,8 @@ font-size:1.2rem;
     border: none;
     box-shadow: none;
     font-size: 1rem;
-    color: black;
+    color: #000000;
+    margin: 2rem;
   }
+  
 }
