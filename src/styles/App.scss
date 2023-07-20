@@ -4,14 +4,12 @@
 //this is for test
 button {
   @include button-style;
-  margin-right: 2rem
+  margin-right: 2rem;
+  .links:hover{
+    color:#000000
+  }
 }
 
-  
-}
-.button-color{
-  color:white
-}
 .logo {
   @include logo-font-style;
   padding: 0 2rem;
@@ -37,6 +35,9 @@ button {
 text-decoration: none;
 color:black;
 font-size:1.2rem;
+.button-color{
+  color:white;
+}
 }
 .link-color{
   color:black;
