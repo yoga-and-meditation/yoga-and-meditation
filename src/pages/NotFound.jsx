@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 import {
   FaFacebook,
   FaInstagram,
@@ -7,9 +7,9 @@ import {
 } from "react-icons/fa";
 
 function NotFound() {
-  const [percentage, setPercentage] = useState(0);
+  //const [percentage, setPercentage] = useState(0);
 
-  useEffect(() => {
+  {/*useEffect(() => {
     const progressLoad = () => {
       if (percentage >= 70) {
         setPercentage(70);
@@ -20,7 +20,7 @@ function NotFound() {
 
     const interval = setInterval(progressLoad, 90);
     return () => clearInterval(interval);
-  }, [percentage]);
+  }, [percentage]);*/}
 
   return (
     <div className="notFound-page-container">
@@ -28,15 +28,18 @@ function NotFound() {
       <div className="container">
         <div className="top">
           <hr />
-          <h2>Yoga with Sheetal</h2>
+          <h2>Yoga and Meditation</h2>
           <hr />
         </div>
-        <h1>UNDER CONSTRUCTION</h1>
+        <h1>COMING SOON</h1>
         <h3>PROGRESS</h3>
-        <div className="progress-wrapper">
+        {/*<div className="progress-wrapper">
           <div className="progress" style={{ width: `${percentage}%` }}>
             <span>{`${percentage}%`}</span>
           </div>
+        </div>*/}
+        <div>
+          <a href="src\assets\docs\info.pdf" download>Click</a>
         </div>
         <div className="social-icons">
           <a
