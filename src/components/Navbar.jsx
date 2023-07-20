@@ -17,18 +17,18 @@ function Navbar() {
         <div>
           <ul className="nav-menu">
             <li className="item">
-              <Link className='links'to="/hero" >Home</Link>
+              <Link className='links link-color'to="/hero" >Home</Link>
               
             </li>
             <li className="item">
-              <Link className='links' to="/aboutme">About</Link>
+              <Link className='links link-color' to="/aboutme">About</Link>
               
             </li>
             <li className="item">
-              <Link  className='links'to="/services">Services</Link>
+              <Link  className='links link-color'to="/services">Services</Link>
               
             </li >
-            <li><button><Link className='links' to='/contacts'>Contact</Link></button></li>
+            <li><button><Link className='links button-color' to='/contacts'>Contact</Link></button></li>
           </ul> 
         </div>
         <div className="hamburger" onClick={toggleNav}>
