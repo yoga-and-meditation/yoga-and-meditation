@@ -17,6 +17,10 @@
   border: none;
   font-size: 1.4rem;
   box-shadow: 4px 8px 40px 0px rgba(142, 110, 26, 15%);
+  transition: all 0.5s ease;
+  button:hover {
+    color: #001F3F;
+  }
 }
 
 /* ---------------------------- Mixin for Heading 2 color style -------------------------- */
