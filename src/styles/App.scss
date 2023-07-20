@@ -16,6 +16,9 @@ h1 {
    .submit-btn {
     @include button-style;
    }
+   button:hover {
+    color: #001F3F;
+  }
    img {
     width: 30rem;
    margin-right: 5rem;
