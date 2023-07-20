@@ -5,13 +5,13 @@ import {
   FaLinkedin,
   FaEnvelope,
 } from "react-icons/fa";
-import logo from "../assets/images/footer-logo/Group.png"
+
 function Footer() {
   return (
     <footer>
       <div className="footer-container">
         <div className="logo-container">
-          <h4 className="logo">Yoga and Meditation <img src = {logo} alt="logo"  /></h4>
+          <h4 className="logo">Yoga and Meditation</h4>
         </div>
         <div className=" about-me">
           <h5>About me </h5>
@@ -41,7 +41,7 @@ function Footer() {
                 </a>
               </li>
               <li className="list-group">
-                <a href="website@sheetalchavan.com">
+                <a href="info@sheetalchavan.com">
                   {" "}
                   <FaEnvelope />
                 </a>
