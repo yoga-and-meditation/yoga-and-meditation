@@ -9,7 +9,10 @@ import Contacts from "./components/Contacts";
 
 function App() {
   return (
-    <> <BrowserRouter>
+    <> 
+    <Navbar/>
+    <Hero/>
+    <BrowserRouter>
     <Routes>
       <Route path="/" element={<Navbar/>}>
         <Route path="/aboutme" element={<Aboutme/>} />
@@ -19,10 +22,9 @@ function App() {
 
       </Route>
     </Routes>
-  </BrowserRouter>
-
-      {/* <Navbar/> */}
-    </>
+  </BrowserRouter></>
+    
+  
   );
 }
 
