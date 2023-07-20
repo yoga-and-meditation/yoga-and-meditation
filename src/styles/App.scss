@@ -12,11 +12,11 @@ button {
   @include button-style;
 }
 
-.logo{
+.logo {
   padding: 0 2rem;
 }
 
-.navbar{
+.navbar {
   height: 5rem;
   display: flex;
   background-color: antiquewhite;
@@ -24,32 +24,65 @@ button {
   align-items: center;
 }
 
-.nav-menu{
+.nav-menu {
+  @include paragraph-normal;
+
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-.nav-menu li{
+.nav-menu li {
   list-style: none;
   padding: 1rem;
 }
-.hamburger{
+.hamburger {
   font-size: 3rem;
   display: none;
- 
 }
 
+@media (max-width: 800px) {
+  .hamburger {
+    display: block;
+    display: flex;
+    padding: 0 2rem;
+    cursor: pointer;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .navbar {
+    /*   transition: 0.5s height ease-in-out;
+ */
+  }
+  .navbar.expanded {
+    height: 55vh;
+  }
+  .navbar.expanded .nav-menu {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar .hamburger {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+  }
+  .logo {
+    position: absolute;
 
-@media (max-width:800px) {
-    .hamburger{
-  display: block;
-  display: flex;
-  padding: 0 2rem;
-  cursor: pointer;
-}
-.nav-menu{
-  display: none;
-}
-
+    top: 21px;
+  }
+  button {
+    @include paragraph-normal;
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-size: 1rem;
+    color: black;
+  }
 }
