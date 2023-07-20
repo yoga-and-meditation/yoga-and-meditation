@@ -22,9 +22,11 @@ function NotFound() {
     return () => clearInterval(interval);
   }, [percentage]);*/}
 
-  //function downloadFile() {
-   // window.open("public\docs\info.pdf");
-  //}
+  function downloadFile() {
+    window.open("public\docs\info.pdf");
+  }
+
+  downloadFile();
 
   return (
     <div className="notFound-page-container">
@@ -36,15 +38,16 @@ function NotFound() {
           <hr />
         </div>
         <h1>COMING SOON</h1>
-        <h3>PROGRESS</h3>
-        {/*<div className="progress-wrapper">
+        {/*<h3>PROGRESS</h3>
+        <div className="progress-wrapper">
           <div className="progress" style={{ width: `${percentage}%` }}>
             <span>{`${percentage}%`}</span>
           </div>
         </div>*/}
-        <div>
-          <a href="public\docs\info.pdf" target="_blank" >Click</a>
-        </div>
+
+        <p>Please visit us back on 17th of August until then refer to this document</p>
+        <a href="\docs\info.pdf" target="_blank" >Click Me</a>
+
         <div className="social-icons">
           <a
             href="https://www.facebook.com/sheetal.k.chavan"
