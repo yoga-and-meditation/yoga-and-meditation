@@ -8,3 +8,20 @@
     /*comment*/
   }
 }
+
+@mixin button-style {
+  /* The yellow-gold color, we keep it incase we need it */
+  /* background: linear-gradient(
+    360deg,
+    rgba(203, 157, 35, 1) 0%,
+    rgba(249, 194, 51, 1) 100%
+  ); */
+  background-color: #B48821;
+  color: white;
+  padding: 0 1.8rem;
+  height: 3.6rem;
+  border-radius: 1.2rem;
+  border: none;
+  font-size: 1.4rem;
+  box-shadow: 4px 8px 40px 0px rgba(142, 110, 26, 15%);
+}
