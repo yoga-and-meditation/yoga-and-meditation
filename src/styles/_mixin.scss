@@ -1,5 +1,6 @@
 @import "variables";
 
+//Button mixin styles
 /* ---------------------------- Mixin for button style -------------------------- */
 @mixin button-style {
   /* The yellow-gold color, we keep it in case we need it */
@@ -23,6 +24,11 @@
   }
 }
 
+@mixin card-shadow {
+  box-shadow: -16px -19px 57px 32px rgba(0, 0, 0, 0.1),
+    -30px 6px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
 /* ---------------------------- Mixin for Heading 2 color style -------------------------- */
 @mixin heading-2-color {
   /* The yellow-gold color, we keep it incase we need it */
@@ -38,6 +44,7 @@
   text-fill-color: transparent;
 }
 
+//google font mixin styles
 /* ---------------------------- Mixin for Google fonts -------------------------- */
 
 //google font mixin styles
@@ -84,13 +91,21 @@
     font-style: italic;
   }
 }
-
-// Logo Fonts mixin
+@mixin yoga {
+  @font-face {
+    font-family: "Roboto-Light";
+    src: url("../path/to/Roboto-Medium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: Light;
+  }
+}
 @mixin logo-font-style {
   @font-face {
     font-family: "MoonDance-Regular";
-    src: url("path/to/MoonDance-Regular.ttf") format("truetype");
+    src: url("../assets/fonts/MoonDance/MoonDance-Regular.ttf")
+      format("truetype");
     font-weight: normal;
     font-style: normal;
   }
+  color: #b48821;
 }
