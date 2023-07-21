@@ -76,6 +76,7 @@ function Footer() {
               </li>
             </ul>
           </div>
+          <Outlet/>
           
         </div>
       </div>
