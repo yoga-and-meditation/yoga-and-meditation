@@ -9,7 +9,8 @@ import {
 function NotFound() {
   //const [percentage, setPercentage] = useState(0);
 
-  {/*useEffect(() => {
+  {
+    /*useEffect(() => {
     const progressLoad = () => {
       if (percentage >= 70) {
         setPercentage(70);
@@ -20,8 +21,8 @@ function NotFound() {
 
     const interval = setInterval(progressLoad, 90);
     return () => clearInterval(interval);
-  }, [percentage]);*/}
-
+  }, [percentage]);*/
+  }
 
   return (
     <div className="notFound-page-container">
@@ -40,8 +41,12 @@ function NotFound() {
           </div>
         </div>*/}
 
-        <p>Please visit us back on 17th of August until then refer to this document</p>
-        <button><a href="\docs\info.pdf" download>More Info</a></button>
+        <p>Please visit us back on 17th of August</p>
+        <button>
+          <a href="\docs\info.pdf" download>
+            More Info
+          </a>
+        </button>
 
         <div className="social-icons">
           <a
