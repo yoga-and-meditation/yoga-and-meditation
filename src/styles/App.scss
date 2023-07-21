@@ -6,7 +6,6 @@ h1 {
   font-weight: 900;
   color: $text-color;
   font-style: italic;
-
 }
 //Footer Style
 
@@ -15,7 +14,7 @@ h1 {
   background-color: $secondary-background-color;
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   // gap: 5rem;
   .logo-container {
     @include logo-font-style;
@@ -23,22 +22,18 @@ h1 {
     h4 {
       @include logo-font-style;
       font-size: 4rem;
-     
     }
   }
 
   .contact {
     display: flex;
     gap: 10rem;
-  
   }
   .about-me {
     border: none;
     background-color: transparent;
     margin-bottom: 30rem;
-    
-    
-    
+
     p {
       max-width: 30rem;
     }
@@ -60,9 +55,9 @@ h1 {
     }
   }
   .links {
-   background-color: transparent;
-   border: none;
-    
+    background-color: transparent;
+    border: none;
+
     a {
       text-decoration: none;
       color: $text-color;
@@ -680,12 +675,13 @@ section {
   justify-content: center;
   margin-top: 5px;
   margin-bottom: 7rem;
-.copyright {
-  background-color: #e1dddc;
-  color: $text-color;
-  font-size: 2rem;
+  .copyright {
+    background-color: #e1dddc;
+    color: $text-color;
+    font-size: 2rem;
 
-  text-align: center;
-  position: relative;
+    text-align: center;
+    position: relative;
+  }
 }
 /**********************************/
