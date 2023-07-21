@@ -1,6 +1,37 @@
 @import "variables";
 @import "mixin";
 @import "media-query";
+h1 {
+  font-family: Roboto-Black;
+  font-weight: 900;
+  color: $text-color;
+  font-style: italic;
+}
+.form {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .submit-btn {
+    @include button-style;
+  }
+  button:hover {
+    color: #001f3f;
+  }
+  img {
+    width: 30rem;
+    margin-right: 5rem;
+  }
+  h2 {
+    @include heading-2-color;
+    font-size: 2rem;
+  }
+  h3 {
+    @include heading-3;
+    font-size: 2.5rem;
+  }
+}
 
 //this is for test
 button {
@@ -481,7 +512,7 @@ section {
       font-size: 2.5rem;
     }
   }
-  
+
   .gallery-container {
     /* This class defines the container for the gallery. */
     margin: 0 auto;

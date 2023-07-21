@@ -4,8 +4,8 @@
       flex-direction: column;
 
       img {
-        width: 100%; 
-        height: auto;//The width of the img is set to 100% and height to auto, ensuring that the image scales proportionally to fit the container on smaller screens.
+        width: 100%;
+        height: auto; //The width of the img is set to 100% and height to auto, ensuring that the image scales proportionally to fit the container on smaller screens.
       }
 
       .rectangle1,
@@ -23,5 +23,10 @@
         }
       }
     }
+  }
+}
+@media (max-width: $md) {
+  .contact-img {
+    display: none;
   }
 }
