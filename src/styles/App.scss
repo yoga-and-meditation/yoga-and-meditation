@@ -6,6 +6,71 @@ h1 {
   font-weight: 900;
   color: $text-color;
   font-style: italic;
+
+}
+//Footer Style
+
+.footer-container {
+  height: 100vh;
+  background-color: $secondary-background-color;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  // gap: 5rem;
+  .logo-container {
+    @include logo-font-style;
+    font-family: "MoonDance-Regular";
+    h4 {
+      @include logo-font-style;
+      font-size: 4rem;
+     
+    }
+  }
+
+  .contact {
+    display: flex;
+    gap: 10rem;
+  
+  }
+  .about-me {
+    border: none;
+    background-color: transparent;
+    margin-bottom: 30rem;
+    
+    
+    
+    p {
+      max-width: 30rem;
+    }
+    .icons ul {
+      font-size: 3rem;
+      display: flex;
+      gap: 2rem;
+
+      :hover {
+        opacity: 0.9;
+      }
+      a {
+        color: #b48821;
+      }
+    }
+    h4 {
+      font-size: 2rem;
+      color: $text-color;
+    }
+  }
+  .links {
+   background-color: transparent;
+   border: none;
+    
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
+    a:hover {
+      color: #b48821;
+    }
+  }
 }
 .form {
   margin-top: 10rem;
@@ -615,4 +680,12 @@ section {
   justify-content: center;
   margin-top: 5px;
   margin-bottom: 7rem;
+.copyright {
+  background-color: #e1dddc;
+  color: $text-color;
+  font-size: 2rem;
+
+  text-align: center;
+  position: relative;
 }
+/**********************************/
