@@ -119,14 +119,85 @@ button {
   }
 }
 /* Hero session  */
+
+$margin-size: 2rem;
+$circle-color: rgba(249, 194, 51, 1);
+
 h1 {
-  font-family: Roboto-Black;
+  font-family: Roboto-Black, Arial, sans-serif;
   font-weight: 900;
   color: $text-color;
   font-style: italic;
 }
+
 button {
   @include button-style;
+  margin-top: $margin-size;
+  width: 11rem;
+}
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .mb-2 {
+    margin-bottom: $margin-size;
+  }
+
+  h2 {
+    @include heading-2-color;
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 50%;
+    gap: $margin-size;
+    background-color: $secondary-background-color;
+    padding: 2rem;
+    width: 60rem;
+    height: 40rem;
+    background-image: url("../assets/images/demosession/pexels-marta.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .infodiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2rem;
+      border-radius: 1rem;
+
+      .book-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: $margin-size;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      h6 {
+        font-size: 2rem;
+      }
+      button {
+        transition: all 0.5s ease;
+      }
+      button:hover {
+        color: #001f3f;
+      }
+    }
+  }
 }
 
 .about-container {
