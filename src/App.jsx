@@ -1,4 +1,4 @@
-/* import { BrowserRouter, Routes, Route } from "react-router-dom"; */
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/App.scss";
 import Aboutme from "./components/Aboutme";
@@ -14,15 +14,17 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Aboutme />
-      <Services />
-      <Demo />
-      <Gallery />
-      <Feedback />
-      <Contacts />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Hero />
+        <Aboutme />
+        <Services />
+        <Demo />
+        <Gallery />
+        <Feedback />
+        <Contacts />
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
