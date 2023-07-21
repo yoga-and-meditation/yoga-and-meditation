@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+  .app {
+    .about-container {
+      flex-direction: column;
+
+      img {
+        width: 100%; 
+        height: auto;//The width of the img is set to 100% and height to auto, ensuring that the image scales proportionally to fit the container on smaller screens.
+      }
+
+      .rectangle1,
+      .rectangle2 {
+        display: none;
+      }
+
+      section {
+        padding-top: 2rem;
+        max-width: 100%;
+        margin-top: 2rem;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
