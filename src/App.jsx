@@ -11,8 +11,8 @@ import Gallery from "./components/Gallery";
 import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
 
-
 function App() {
+ 
   return (
     <>
       <BrowserRouter>
