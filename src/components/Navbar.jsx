@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <div>
+    <div className="navbar-container">
       <nav className={isOpen ? "navbar expanded" : "navbar"}>
         <div className="logo">
           <h1>Sheetal Chavan</h1>
@@ -34,7 +34,7 @@ function Navbar() {
             </li>
             <li className="contact-btn item">
               <button>
-                <Link className="links button-color" to="/contacts">
+                <Link className="links" to="/contacts">
                   Contact
                 </Link>
               </button>

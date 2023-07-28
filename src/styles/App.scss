@@ -3,6 +3,69 @@
 @import "media-query";
 
 /* ++++++++++ Navbar Component style sheet ++++++++++ */
+.navbar-container {
+  .navbar {
+    height: 6rem;
+    display: flex;
+    background-color: $secondary-background-color;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      padding: 0 2rem;
+
+      h1 {
+        @include logo-font-style;
+        font-family: "MoonDance-Regular";
+        font-size: 4rem;
+      }
+    }
+
+    .nav-menu {
+      @include paragraph-normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      .item {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 1rem;
+
+        .links {
+          text-decoration: none;
+          color: $text-color;
+          font-size: 1.2rem;
+
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+
+      .contact-btn {
+        margin: 0 2rem;
+        button {
+          @include button-style;
+          .links {
+            color: white;
+
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  .hamburger {
+    font-size: 3rem;
+    display: none;
+  }
+}
+
 /* ++++++++++ Hero Component style sheet ++++++++++ */
 /* ++++++++++ Aboutme Component style sheet ++++++++++ */
 
@@ -349,91 +412,77 @@
     }
   }
 }
+
 /* ++++++++++ Footer Component style sheet ++++++++++ */
+footer {
+  .footer-container {
+    background-color: $secondary-background-color;
+    display: flex;
+    justify-content: space-around;
 
-// .footer-container {
-//   height: 100vh;
-//   background-color: $secondary-background-color;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-around;
-//   // gap: 5rem;
-//   .logo-container {
-//     @include logo-font-style;
-//     font-family: "MoonDance-Regular";
-//     h4 {
-//       @include logo-font-style;
-//       font-size: 4rem;
-//     }
-//   }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      .logo {
+        @include logo-font-style;
+        font-family: "MoonDance-Regular";
+        font-size: 3rem;
+      }
+    }
 
-//   .contact {
-//     display: flex;
-//     gap: 10rem;
-//   }
-//   .about-me {
-//     border: none;
-//     background-color: transparent;
-//     margin-bottom: 30rem;
+    .about-me {
+      margin-top: 2rem;
+      border: none;
+      background-color: transparent;
 
-//     p {
-//       max-width: 30rem;
-//     }
-//     .icons ul {
-//       font-size: 3rem;
-//       display: flex;
-//       gap: 2rem;
+      p {
+        max-width: 30rem;
+      }
 
-//       :hover {
-//         opacity: 0.9;
-//       }
-//       a {
-//         color: #b48821;
-//       }
-//     }
-//     h4 {
-//       font-size: 2rem;
-//       color: $text-color;
-//     }
-//   }
-//   .links {
-//     background-color: transparent;
-//     border: none;
+      .icons {
+        ul {
+          font-size: 2.5rem;
+          display: flex;
+          gap: 2rem;
 
-//     a {
-//       text-decoration: none;
-//       color: $text-color;
-//     }
-//     a:hover {
-//       color: #b48821;
-//     }
-//   }
-// }
-// .form {
-//   margin-top: 10rem;
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
+          :hover {
+            opacity: 0.9;
+          }
+          li {
+            a {
+              color: #b48821;
+            }
+          }
+        }
+      }
+    }
 
-//   .submit-btn {
-//     @include button-style;
-//   }
-//   button:hover {
-//     color: #001f3f;
-//   }
-//   img {
-//     width: 30rem;
-//     margin-right: 5rem;
-//   }
-//   h2 {
-//     @include heading-2-color;
-//     font-size: 2rem;
-//   }
-//   h3 {
-//     @include heading-3;
-//     font-size: 2.5rem;
-//   }
-// }
+    .links {
+      margin-top: 2rem;
+      background-color: transparent;
+      border: none;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $text-color;
+
+          &:hover {
+            color: #b48821;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    background-color: #e1dddc;
+    color: $text-color;
+    font-size: 2rem;
+
+    text-align: center;
+    position: relative;
+  }
+}
 
 // //this is for test
 // button {
