@@ -119,6 +119,68 @@
 /* ++++++++++ End of Hero Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Aboutme Component style sheet ++++++++++ */
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  .about-image {
+    width: 500px;
+    height: 700px;
+  }
+
+  .rectangle1,
+  .rectangle2 {
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    width: 500px;
+    height: 700px;
+    transform: rotate(-13deg);
+    z-index: -1;
+    /*     animation: rotateAnimation 60s infinite linear; */
+  }
+  .rectangle1 {
+    border: 15px solid #f4e4d5;
+    margin-left: 50px; //Add some spacing between the rectangles
+  }
+  .rectangle2 {
+    border: 15px solid #eaeae8;
+    margin-left: -30px; /* Add some spacing between the rectangles */
+  }
+
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  section {
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+    flex-direction: column;
+    padding-top: 1rem;
+    max-width: 50vw;
+    margin-top: 2rem;
+
+    h2 {
+      @include heading-2-color;
+      font-size: 2.5rem;
+    }
+    p {
+      color: $text-color;
+      font-family: "Roboto-Medium";
+      font-size: 1.5rem;
+      max-width: 70%;
+    }
+  }
+}
 /* ++++++++++ End of Aboutme Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Service Component style sheet ++++++++++ */
@@ -359,8 +421,7 @@
     z-index: 1;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   }
-
-  /* This code applies a scale transform to the images when the user hovers over them, and also gives them a box shadow. */
+  /* Code applies scale transform and box shadow on image hover. */
 }
 /* ++++++++++ End of Gallery Component style sheet ++++++++++ */
 

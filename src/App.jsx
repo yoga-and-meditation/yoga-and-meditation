@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Hero />
-        {/* <Aboutme /> */}
+        <Aboutme />
         <Services />
         <Demo />
         <Gallery />
