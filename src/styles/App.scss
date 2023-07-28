@@ -2,7 +2,7 @@
 @import "mixin";
 @import "media-query";
 
-/* ++++++++++ Navbar Component style sheet ++++++++++ */
+/* ++++++++++ Start of Navbar Component style sheet ++++++++++ */
 .navbar-container {
   position: sticky;
   width: 100%;
@@ -70,11 +70,17 @@
     display: none;
   }
 }
+/* ++++++++++ End of Navbar Component style sheet ++++++++++ */
 
-/* ++++++++++ Hero Component style sheet ++++++++++ */
-/* ++++++++++ Aboutme Component style sheet ++++++++++ */
+/* ++++++++++ Start of Hero Component style sheet ++++++++++ */
+.hero-container {
+}
+/* ++++++++++ End of Hero Component style sheet ++++++++++ */
 
-/* ++++++++++ Service Component style sheet ++++++++++ */
+/* ++++++++++ Start of Aboutme Component style sheet ++++++++++ */
+/* ++++++++++ End of Aboutme Component style sheet ++++++++++ */
+
+/* ++++++++++ Start of Service Component style sheet ++++++++++ */
 .service-container {
   padding: 1.5rem;
   width: 80%;
@@ -203,8 +209,9 @@
     }
   }
 }
+/* ++++++++++ End of Service Component style sheet ++++++++++ */
 
-/* ++++++++++ Demo Component style sheet ++++++++++ */
+/* ++++++++++ Start of Demo Component style sheet ++++++++++ */
 .demo-container {
   /* Variables only for Demo component use */
   $margin-size: 2rem;
@@ -274,8 +281,9 @@
     }
   }
 }
+/* ++++++++++ End of Demo Component style sheet ++++++++++ */
 
-/* ++++++++++ Gallery Component style sheet ++++++++++ */
+/* ++++++++++ Start of Gallery Component style sheet ++++++++++ */
 .gallery-container {
   /* This class defines the container for the gallery. */
   margin: 0 auto;
@@ -313,8 +321,9 @@
 
   /* This code applies a scale transform to the images when the user hovers over them, and also gives them a box shadow. */
 }
+/* ++++++++++ End of Gallery Component style sheet ++++++++++ */
 
-/* ++++++++++ Feedback Component style sheet ++++++++++ */
+/* ++++++++++ Start of Feedback Component style sheet ++++++++++ */
 .feedback-container {
   .site-container {
     background-color: #ece8e7;
@@ -384,8 +393,9 @@
     }
   }
 }
+/* ++++++++++ End of Feedback Component style sheet ++++++++++ */
 
-/* ++++++++++ Contact Component style sheet ++++++++++ */
+/* ++++++++++ Start of Contact Component style sheet ++++++++++ */
 .contact-container {
   margin-top: 10rem;
   margin-bottom: 3rem;
@@ -417,8 +427,9 @@
     }
   }
 }
+/* ++++++++++ End of Contact Component style sheet ++++++++++ */
 
-/* ++++++++++ Footer Component style sheet ++++++++++ */
+/* ++++++++++ Start of Footer Component style sheet ++++++++++ */
 footer {
   .footer-container {
     background-color: $secondary-background-color;
@@ -488,6 +499,7 @@ footer {
     position: relative;
   }
 }
+/* ++++++++++ End of Footer Component style sheet ++++++++++ */
 
 // /* Hero session  */
 
