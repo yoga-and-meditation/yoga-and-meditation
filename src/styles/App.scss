@@ -1,371 +1,16 @@
 @import "variables";
 @import "mixin";
 @import "media-query";
-h1 {
-  font-family: Roboto-Black;
-  font-weight: 900;
-  color: $text-color;
-  font-style: italic;
-}
-//Footer Style
 
-.footer-container {
-  height: 100vh;
-  background-color: $secondary-background-color;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  // gap: 5rem;
-  .logo-container {
-    @include logo-font-style;
-    font-family: "MoonDance-Regular";
-    h4 {
-      @include logo-font-style;
-      font-size: 4rem;
-    }
-  }
+/* ++++++++++ Navbar Component style sheet ++++++++++ */
+/* ++++++++++ Hero Component style sheet ++++++++++ */
+/* ++++++++++ Aboutme Component style sheet ++++++++++ */
 
-  .contact {
-    display: flex;
-    gap: 10rem;
-  }
-  .about-me {
-    border: none;
-    background-color: transparent;
-    margin-bottom: 30rem;
-
-    p {
-      max-width: 30rem;
-    }
-    .icons ul {
-      font-size: 3rem;
-      display: flex;
-      gap: 2rem;
-
-      :hover {
-        opacity: 0.9;
-      }
-      a {
-        color: #b48821;
-      }
-    }
-    h4 {
-      font-size: 2rem;
-      color: $text-color;
-    }
-  }
-  .links {
-    background-color: transparent;
-    border: none;
-
-    a {
-      text-decoration: none;
-      color: $text-color;
-    }
-    a:hover {
-      color: #b48821;
-    }
-  }
-}
-.form {
-  margin-top: 10rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  .submit-btn {
-    @include button-style;
-  }
-  button:hover {
-    color: #001f3f;
-  }
-  img {
-    width: 30rem;
-    margin-right: 5rem;
-  }
-  h2 {
-    @include heading-2-color;
-    font-size: 2rem;
-  }
-  h3 {
-    @include heading-3;
-    font-size: 2.5rem;
-  }
-}
-
-//this is for test
-button {
-  @include button-style;
-  margin-right: 2rem;
-  .links:hover {
-    color: #000000;
-  }
-}
-
-.logo {
-  padding: 0 2rem;
-  h1 {
-    @include logo-font-style;
-    font-family: "MoonDance-Regular";
-    font-size: 4rem;
-    color: #b48821;
-  }
-}
-
-.navbar {
-  height: 6rem;
-  display: flex;
-
-  background-color: $secondary-background-color;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-menu {
-  @include paragraph-normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-
-  .item {
-    display: flex;
-    justify-content: center;
-  }
-}
-.links {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-  .button-color {
-    color: white;
-  }
-}
-.link-color {
-  color: black;
-}
-.nav-menu li {
-  list-style: none;
-  padding: 1rem;
-}
-.hamburger {
-  font-size: 3rem;
-  display: none;
-}
-.links:hover {
-  opacity: 0.6;
-}
-
-.contact-btn {
-  button {
-    .links {
-      color: white;
-    }
-    .links:hover {
-      color: black;
-    }
-  }
-}
-
-/* Media query */
-@media (max-width: 800px) {
-  .hamburger {
-    display: block;
-    display: flex;
-    padding: 0 2rem;
-    cursor: pointer;
-  }
-  .nav-menu {
-    display: none;
-    /* padding: 0.5rem; */
-    gap: 0;
-  }
-
-  .navbar.expanded {
-    background-color: $secondary-background-color;
-    height: 70vh;
-  }
-  .navbar.expanded .nav-menu {
-    position: absolute;
-    top: 120px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .navbar .hamburger {
-    display: block;
-    position: absolute;
-    top: 2px;
-    right: 10px;
-  }
-  .logo {
-    position: absolute;
-
-    h1 {
-      font-size: 3rem;
-    }
-
-    top: 21px;
-  }
-}
-/* Hero session  */
-
-$margin-size: 2rem;
-$circle-color: rgba(249, 194, 51, 1);
-
-h1 {
-  font-family: Roboto-Black, Arial, sans-serif;
-  font-weight: 900;
-  color: $text-color;
-  font-style: italic;
-}
-
-button {
-  @include button-style;
-  margin-top: $margin-size;
-  width: 11rem;
-}
-
-/* Demo Session Style Start */
-.demo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-  .mb-2 {
-    margin-bottom: $margin-size;
-  }
-
-  h2 {
-    @include heading-2-color;
-    font-size: 2.4rem;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    width: 50%;
-    gap: $margin-size;
-    background-color: $secondary-background-color;
-    padding: 2rem;
-    width: 60rem;
-    height: 40rem;
-    background-image: url("../assets/images/demosession/pexels-marta.jpg");
-    background-size: cover;
-    background-position: center;
-
-    .infodiv {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 50%;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 2rem;
-      border-radius: 1rem;
-
-      .book-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: $margin-size;
-        width: 50%;
-        margin: 0 auto;
-      }
-
-      h6 {
-        font-size: 2rem;
-      }
-      button {
-        transition: all 0.5s ease;
-      }
-      button:hover {
-        color: #001f3f;
-      }
-    }
-  }
-}
-/* Demo Session Style End */
-
-.about-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  h2 {
-    @include heading-2-color;
-  }
-
-  img {
-    width: 500px;
-    height: 700px;
-    position: relative;
-    z-index: 1;
-  }
-
-  .rectangle1,
-  .rectangle2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500px;
-    height: 700px;
-    transform: rotate(-45deg);
-    z-index: -1;
-    //animation: rotateAnimation 60s infinite linear;
-  }
-
-  .rectangle1 {
-    border: 15px solid #f4e4d5;
-    margin-left: 50px; /* Add some spacing between the rectangles */
-  }
-
-  .rectangle2 {
-    border: 15px solid #eaeae8;
-    margin-left: -30px; /* Add some spacing between the rectangles */
-  }
-
-  /*  */
-  @keyframes rotateAnimation {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-}
-section {
-  flex: 1;
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
-  padding-top: 1rem;
-
-  max-width: 50vw;
-  margin-top: 2rem;
-
-  p {
-    color: $text-color;
-    font-family: "Roboto-Medium";
-    max-width: 70%;
-  }
-}
-
-/* Service container style */
+/* ++++++++++ Service Component style sheet ++++++++++ */
 .service-container {
-  margin-top: 3rem;
   padding: 1.5rem;
   width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 3rem auto;
 
   /* Heading style of the section */
   .header-container {
@@ -405,11 +50,6 @@ section {
           .icon::before {
             transform: scale(1);
           }
-          /* .text {
-              opacity: 1;
-              transform: translateY(7.5rem);
-              transition-delay: 0.2s;
-            } */
         }
       }
 
@@ -458,230 +98,598 @@ section {
             border-radius: 50%;
             transform: scale(0);
             transition: 0.5s;
-
-            /*    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5),
-                inset 2px 2px 3px rgba(255, 255, 255, 0.25),
-                inset -3px -3px 5px rgba(0, 0, 0, 0.5); */
-          }
-
-          .text {
-            position: absolute;
-            font-size: 1.2rem;
-            color: rgb(46, 38, 38);
-            opacity: 0;
-            border-radius: 15px;
-            padding: 0.8rem;
-            background: white;
-            // box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
-            //   inset -3px -3px 5px rgba(0, 0, 0, 0.5);
           }
         }
       }
     }
   }
+
+  /* Service section style sheet */
+  section {
+    display: flex;
+    justify-content: center;
+
+    .card-container {
+      border-radius: 1rem;
+      box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
+      width: 80%;
+      .img-fluid {
+        height: 30rem;
+        width: 45rem;
+      }
+
+      .subscribe-btn {
+        @include button-style;
+      }
+
+      .card-text {
+        font-size: 1.4rem;
+        padding: 0.6rem;
+        color: $text-color;
+        @include paragraph-normal;
+      }
+      h3 {
+        @include heading-3;
+        font-size: 2.5rem;
+      }
+    }
+  }
 }
 
-.hero {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  background: linear-gradient(
-    360deg,
-    rgba(255, 255, 255, 0) 50%,
-    rgba(209, 204, 204, 0.445) 50%
-  );
-}
-.hero-heading {
-  @include yoga;
-  font-weight: 100;
-  font-size: 300px;
-  color: rgba(29, 28, 26, 0.805);
-  padding: 0rem 5rem;
-  position: absolute;
-  left: 5rem;
-  z-index: 2;
-}
-.name {
-  top: 18rem;
-  left: 10rem;
-  position: absolute;
-}
-.ball {
-  width: 700px;
-  height: 700px;
-  background-color: rgb(215, 167, 39);
-  border-radius: 50%;
+/* ++++++++++ Demo Component style sheet ++++++++++ */
+.demo-container {
+  /* Variables only for Demo component use */
+  $margin-size: 2rem;
+  $circle-color: rgba(249, 194, 51, 1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  top: 8rem;
-  left: 50rem;
-}
-/*  @-webkit-keyframes circle{
-    0%{
-      transform: rotate(0deg)translate(-160px)rotate(0deg);
-    }
-    100%{
-      transform :rotate(360deg)translate(-165px)rotate(-360deg);
-    }
-  } */
-.gif {
-  width: 90rem;
-  height: 55rem;
-  position: absolute;
-  left: -30rem;
-  bottom: 1rem;
-}
-@media only screen and (max-width: 700px) {
-  .ball {
-    position: relative;
-    left: 35rem;
+
+  .mb-2 {
+    margin-bottom: $margin-size;
   }
-  .hero {
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(
-      360deg,
-      rgba(255, 255, 255, 0) 39%,
-      rgba(209, 204, 204, 0.445) 39%
-    );
-  }
-}
-section {
-  display: flex;
-  justify-content: center;
-
-  .card-container {
-    border-radius: 1rem;
-    box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
-    width: 80%;
-    .img-fluid {
-      height: 30rem;
-      width: 45rem;
-    }
-
-    .subscribe-btn {
-      @include button-style;
-    }
-    .card-text {
-      font-size: 1.4rem;
-      padding: 0.6rem;
-      color: $text-color;
-      @include paragraph-normal;
-    }
-    h3 {
-      @include heading-3;
-      font-size: 2.5rem;
-    }
-  }
-
-  .gallery-container {
-    /* This class defines the container for the gallery. */
-    margin: 0 auto;
-    width: 100%;
-    max-width: 120rem;
-    padding: 0 2rem;
-
-    /* This code centers the container and sets its maximum width. */
-
-    h2 {
-      /* This class defines the heading for the gallery. */
-      @include heading-2-color;
-      margin: 2rem;
-      text-align: center;
-    }
-
-    /* This code applies the `heading-2-color` mixin to the heading, which sets its color to the same color as the `h2` heading element in the JSX code. */
-
-    .gallery-image {
-      /* This class defines the styles for the gallery images. */
-      transition: all 0.3s ease-in-out;
-      box-sizing: border-box;
-      position: relative;
-      padding: 1rem;
-    }
-
-    /* This code applies a transition to the images, which will cause them to scale up slightly when the user hovers over them. */
-
-    .gallery-image:hover {
-      /* This class defines the styles for the gallery images when the user hovers over them. */
-      transform: scale(1.05);
-      z-index: 1;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    /* This code applies a scale transform to the images when the user hovers over them, and also gives them a box shadow. */
-  }
-}
-
-/* Feedback */
-
-.site-container {
-  background-color: #ece8e7;
-  padding: 3rem 10rem;
-}
-.article-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  gap: 3rem;
-}
-
-.article-image {
-  width: 8rem;
-  height: 8rem;
-  margin: 0 60px;
-
-  border-radius: 50%;
-  border: 5px solid rgba(190, 143, 57, 0.937);
-  overflow: hidden;
-  transform: translatey(-100px);
-}
-.article-image img {
-  max-width: 100%;
-  height: 100%;
-}
-.article-card {
-  width: 20rem;
-  height: 10rem;
-  background: white;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0px 10px 33px -3px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  cursor: pointer;
-}
-.article-card:hover {
-  height: 20rem;
-}
-.article-content {
-  padding: 10px 20px;
-  text-align: center;
-  transform: translatey(-100px);
-  opacity: 0;
-  transition: 0.3s;
-}
-.article-content1 {
-  transform: translatey(-100px);
-  text-align: center;
-  margin-top: 10px;
-}
-.article-card:hover > .article-content {
-  opacity: 1;
-  transform: translateY(-100px);
-}
-.feedback-heading {
-  color: rgba(190, 143, 57, 0.937);
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-  margin-bottom: 7rem;
-  .copyright {
-    background-color: #e1dddc;
-    color: $text-color;
-    font-size: 2rem;
-
+  h2 {
+    @include heading-2-color;
+    font-size: 2.4rem;
     text-align: center;
-    position: relative;
+    padding: 1rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 50%;
+    gap: $margin-size;
+    background-color: $secondary-background-color;
+    padding: 2rem;
+    width: 60rem;
+    height: 40rem;
+    background-image: url("../assets/images/demosession/pexels-marta.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .infodiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2rem;
+      border-radius: 1rem;
+
+      .book-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: $margin-size;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      h6 {
+        font-size: 2rem;
+      }
+      button {
+        @include button-style;
+        margin-top: $margin-size;
+        width: 11rem;
+        transition: all 0.5s ease;
+      }
+      button:hover {
+        color: #001f3f;
+      }
+    }
   }
 }
-/**********************************/
+
+/* ++++++++++ Gallery Component style sheet ++++++++++ */
+/* ++++++++++ Feedback Component style sheet ++++++++++ */
+/* ++++++++++ Contact Component style sheet ++++++++++ */
+/* ++++++++++ Footer Component style sheet ++++++++++ */
+
+// h1 {
+//   font-family: Roboto-Black;
+//   font-weight: 900;
+//   color: $text-color;
+//   font-style: italic;
+// }
+// //Footer Style
+
+// .footer-container {
+//   height: 100vh;
+//   background-color: $secondary-background-color;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+//   // gap: 5rem;
+//   .logo-container {
+//     @include logo-font-style;
+//     font-family: "MoonDance-Regular";
+//     h4 {
+//       @include logo-font-style;
+//       font-size: 4rem;
+//     }
+//   }
+
+//   .contact {
+//     display: flex;
+//     gap: 10rem;
+//   }
+//   .about-me {
+//     border: none;
+//     background-color: transparent;
+//     margin-bottom: 30rem;
+
+//     p {
+//       max-width: 30rem;
+//     }
+//     .icons ul {
+//       font-size: 3rem;
+//       display: flex;
+//       gap: 2rem;
+
+//       :hover {
+//         opacity: 0.9;
+//       }
+//       a {
+//         color: #b48821;
+//       }
+//     }
+//     h4 {
+//       font-size: 2rem;
+//       color: $text-color;
+//     }
+//   }
+//   .links {
+//     background-color: transparent;
+//     border: none;
+
+//     a {
+//       text-decoration: none;
+//       color: $text-color;
+//     }
+//     a:hover {
+//       color: #b48821;
+//     }
+//   }
+// }
+// .form {
+//   margin-top: 10rem;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+
+//   .submit-btn {
+//     @include button-style;
+//   }
+//   button:hover {
+//     color: #001f3f;
+//   }
+//   img {
+//     width: 30rem;
+//     margin-right: 5rem;
+//   }
+//   h2 {
+//     @include heading-2-color;
+//     font-size: 2rem;
+//   }
+//   h3 {
+//     @include heading-3;
+//     font-size: 2.5rem;
+//   }
+// }
+
+// //this is for test
+// button {
+//   @include button-style;
+//   margin-right: 2rem;
+//   .links:hover {
+//     color: #000000;
+//   }
+// }
+
+// .logo {
+//   padding: 0 2rem;
+//   h1 {
+//     @include logo-font-style;
+//     font-family: "MoonDance-Regular";
+//     font-size: 4rem;
+//     color: #b48821;
+//   }
+// }
+
+// .navbar {
+//   height: 6rem;
+//   display: flex;
+
+//   background-color: $secondary-background-color;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// .nav-menu {
+//   @include paragraph-normal;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 2rem;
+
+//   .item {
+//     display: flex;
+//     justify-content: center;
+//   }
+// }
+// .links {
+//   text-decoration: none;
+//   color: black;
+//   font-size: 1.2rem;
+//   .button-color {
+//     color: white;
+//   }
+// }
+// .link-color {
+//   color: black;
+// }
+// .nav-menu li {
+//   list-style: none;
+//   padding: 1rem;
+// }
+// .hamburger {
+//   font-size: 3rem;
+//   display: none;
+// }
+// .links:hover {
+//   opacity: 0.6;
+// }
+
+// .contact-btn {
+//   button {
+//     .links {
+//       color: white;
+//     }
+//     .links:hover {
+//       color: black;
+//     }
+//   }
+// }
+
+// /* Media query */
+// @media (max-width: 800px) {
+//   .hamburger {
+//     display: block;
+//     display: flex;
+//     padding: 0 2rem;
+//     cursor: pointer;
+//   }
+//   .nav-menu {
+//     display: none;
+//     /* padding: 0.5rem; */
+//     gap: 0;
+//   }
+
+//   .navbar.expanded {
+//     background-color: $secondary-background-color;
+//     height: 70vh;
+//   }
+//   .navbar.expanded .nav-menu {
+//     position: absolute;
+//     top: 120px;
+//     left: 0;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   .navbar .hamburger {
+//     display: block;
+//     position: absolute;
+//     top: 2px;
+//     right: 10px;
+//   }
+//   .logo {
+//     position: absolute;
+
+//     h1 {
+//       font-size: 3rem;
+//     }
+
+//     top: 21px;
+//   }
+// }
+// /* Hero session  */
+
+// .about-container {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+
+//   h2 {
+//     @include heading-2-color;
+//   }
+
+//   img {
+//     width: 500px;
+//     height: 700px;
+//     position: relative;
+//     z-index: 1;
+//   }
+
+//   .rectangle1,
+//   .rectangle2 {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 500px;
+//     height: 700px;
+//     transform: rotate(-45deg);
+//     z-index: -1;
+//     //animation: rotateAnimation 60s infinite linear;
+//   }
+
+//   .rectangle1 {
+//     border: 15px solid #f4e4d5;
+//     margin-left: 50px; /* Add some spacing between the rectangles */
+//   }
+
+//   .rectangle2 {
+//     border: 15px solid #eaeae8;
+//     margin-left: -30px; /* Add some spacing between the rectangles */
+//   }
+
+//   /*  */
+//   @keyframes rotateAnimation {
+//     0% {
+//       transform: rotate(0);
+//     }
+//     100% {
+//       transform: rotate(360deg);
+//     }
+//   }
+// }
+// section {
+//   flex: 1;
+//   display: flex;
+//   gap: 2rem;
+//   flex-direction: column;
+//   padding-top: 1rem;
+
+//   max-width: 50vw;
+//   margin-top: 2rem;
+
+//   p {
+//     color: $text-color;
+//     font-family: "Roboto-Medium";
+//     max-width: 70%;
+//   }
+// }
+
+// /* Service container style */
+
+// .hero {
+//   width: 100%;
+//   height: 100vh;
+//   position: fixed;
+//   background: linear-gradient(
+//     360deg,
+//     rgba(255, 255, 255, 0) 50%,
+//     rgba(209, 204, 204, 0.445) 50%
+//   );
+// }
+// .hero-heading {
+//   @include yoga;
+//   font-weight: 100;
+//   font-size: 300px;
+//   color: rgba(29, 28, 26, 0.805);
+//   padding: 0rem 5rem;
+//   position: absolute;
+//   left: 5rem;
+//   z-index: 2;
+// }
+// .name {
+//   top: 18rem;
+//   left: 10rem;
+//   position: absolute;
+// }
+// .ball {
+//   width: 700px;
+//   height: 700px;
+//   background-color: rgb(215, 167, 39);
+//   border-radius: 50%;
+//   position: relative;
+//   top: 8rem;
+//   left: 50rem;
+// }
+// /*  @-webkit-keyframes circle{
+//     0%{
+//       transform: rotate(0deg)translate(-160px)rotate(0deg);
+//     }
+//     100%{
+//       transform :rotate(360deg)translate(-165px)rotate(-360deg);
+//     }
+//   } */
+// .gif {
+//   width: 90rem;
+//   height: 55rem;
+//   position: absolute;
+//   left: -30rem;
+//   bottom: 1rem;
+// }
+// @media only screen and (max-width: 700px) {
+//   .ball {
+//     position: relative;
+//     left: 35rem;
+//   }
+//   .hero {
+//     height: 100vh;
+//     width: 100%;
+//     background: linear-gradient(
+//       360deg,
+//       rgba(255, 255, 255, 0) 39%,
+//       rgba(209, 204, 204, 0.445) 39%
+//     );
+//   }
+// }
+// section {
+//   display: flex;
+//   justify-content: center;
+
+//   .card-container {
+//     border-radius: 1rem;
+//     box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
+//     width: 80%;
+//     .img-fluid {
+//       height: 30rem;
+//       width: 45rem;
+//     }
+
+//     .subscribe-btn {
+//       @include button-style;
+//     }
+//     .card-text {
+//       font-size: 1.4rem;
+//       padding: 0.6rem;
+//       color: $text-color;
+//       @include paragraph-normal;
+//     }
+//     h3 {
+//       @include heading-3;
+//       font-size: 2.5rem;
+//     }
+//   }
+
+//   .gallery-container {
+//     /* This class defines the container for the gallery. */
+//     margin: 0 auto;
+//     width: 100%;
+//     max-width: 120rem;
+//     padding: 0 2rem;
+
+//     /* This code centers the container and sets its maximum width. */
+
+//     h2 {
+//       /* This class defines the heading for the gallery. */
+//       @include heading-2-color;
+//       margin: 2rem;
+//       text-align: center;
+//     }
+
+//     /* This code applies the `heading-2-color` mixin to the heading, which sets its color to the same color as the `h2` heading element in the JSX code. */
+
+//     .gallery-image {
+//       /* This class defines the styles for the gallery images. */
+//       transition: all 0.3s ease-in-out;
+//       box-sizing: border-box;
+//       position: relative;
+//       padding: 1rem;
+//     }
+
+//     /* This code applies a transition to the images, which will cause them to scale up slightly when the user hovers over them. */
+
+//     .gallery-image:hover {
+//       /* This class defines the styles for the gallery images when the user hovers over them. */
+//       transform: scale(1.05);
+//       z-index: 1;
+//       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+//     }
+
+//     /* This code applies a scale transform to the images when the user hovers over them, and also gives them a box shadow. */
+//   }
+// }
+
+// /* Feedback */
+
+// .site-container {
+//   background-color: #ece8e7;
+//   padding: 3rem 10rem;
+// }
+// .article-container {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+
+//   gap: 3rem;
+// }
+
+// .article-image {
+//   width: 8rem;
+//   height: 8rem;
+//   margin: 0 60px;
+
+//   border-radius: 50%;
+//   border: 5px solid rgba(190, 143, 57, 0.937);
+//   overflow: hidden;
+//   transform: translatey(-100px);
+// }
+// .article-image img {
+//   max-width: 100%;
+//   height: 100%;
+// }
+// .article-card {
+//   width: 20rem;
+//   height: 10rem;
+//   background: white;
+//   border-radius: 20px;
+//   padding: 30px;
+//   box-shadow: 0px 10px 33px -3px rgba(0, 0, 0, 0.1);
+//   transition: 0.3s;
+//   cursor: pointer;
+// }
+// .article-card:hover {
+//   height: 20rem;
+// }
+// .article-content {
+//   padding: 10px 20px;
+//   text-align: center;
+//   transform: translatey(-100px);
+//   opacity: 0;
+//   transition: 0.3s;
+// }
+// .article-content1 {
+//   transform: translatey(-100px);
+//   text-align: center;
+//   margin-top: 10px;
+// }
+// .article-card:hover > .article-content {
+//   opacity: 1;
+//   transform: translateY(-100px);
+// }
+// .feedback-heading {
+//   color: rgba(190, 143, 57, 0.937);
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 5px;
+//   margin-bottom: 7rem;
+//   .copyright {
+//     background-color: #e1dddc;
+//     color: $text-color;
+//     font-size: 2rem;
+
+//     text-align: center;
+//     position: relative;
+//   }
+// }
+// /**********************************/

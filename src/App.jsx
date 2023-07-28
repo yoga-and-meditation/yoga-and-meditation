@@ -12,21 +12,20 @@ import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
 
 function App() {
- 
   return (
-    <>
+    <div className="app">
       <BrowserRouter>
-        <Navbar />
-        <Hero />
-        <Aboutme />
+        {/*   <Navbar /> */}
+        {/* <Hero />
+        <Aboutme /> */}
         <Services />
         <Demo />
-        <Gallery />
-        <Feedback />
-        <Contacts />
-        <Footer />
+        {/* <Gallery /> */}
+        {/* <Feedback /> */}
+        {/* <Contacts /> */}
+        {/* <Footer /> */}
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
