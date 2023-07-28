@@ -536,14 +536,13 @@ footer {
     background-color: #e1dddc;
     color: $text-color;
     font-size: 2rem;
-
     text-align: center;
     position: relative;
   }
 }
 /* ++++++++++ End of Footer Component style sheet ++++++++++ */
 
-// /* Hero session  */
+/* About component style sheet */
 
 // .about-container {
 //   display: flex;
@@ -610,8 +609,7 @@ footer {
 //   }
 // }
 
-// /* Service container style */
-
+/* Hero section version 1 style */
 // .hero {
 //   width: 100%;
 //   height: 100vh;
@@ -676,87 +674,3 @@ footer {
 //     );
 //   }
 // }
-// section {
-//   display: flex;
-//   justify-content: center;
-
-//   .card-container {
-//     border-radius: 1rem;
-//     box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
-//     width: 80%;
-//     .img-fluid {
-//       height: 30rem;
-//       width: 45rem;
-//     }
-
-//     .subscribe-btn {
-//       @include button-style;
-//     }
-//     .card-text {
-//       font-size: 1.4rem;
-//       padding: 0.6rem;
-//       color: $text-color;
-//       @include paragraph-normal;
-//     }
-//     h3 {
-//       @include heading-3;
-//       font-size: 2.5rem;
-//     }
-//   }
-
-//   .gallery-container {
-//     /* This class defines the container for the gallery. */
-//     margin: 0 auto;
-//     width: 100%;
-//     max-width: 120rem;
-//     padding: 0 2rem;
-
-//     /* This code centers the container and sets its maximum width. */
-
-//     h2 {
-//       /* This class defines the heading for the gallery. */
-//       @include heading-2-color;
-//       margin: 2rem;
-//       text-align: center;
-//     }
-
-//     /* This code applies the `heading-2-color` mixin to the heading, which sets its color to the same color as the `h2` heading element in the JSX code. */
-
-//     .gallery-image {
-//       /* This class defines the styles for the gallery images. */
-//       transition: all 0.3s ease-in-out;
-//       box-sizing: border-box;
-//       position: relative;
-//       padding: 1rem;
-//     }
-
-//     /* This code applies a transition to the images, which will cause them to scale up slightly when the user hovers over them. */
-
-//     .gallery-image:hover {
-//       /* This class defines the styles for the gallery images when the user hovers over them. */
-//       transform: scale(1.05);
-//       z-index: 1;
-//       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-//     }
-
-//     /* This code applies a scale transform to the images when the user hovers over them, and also gives them a box shadow. */
-//   }
-// }
-
-// /* Feedback */
-// .feedback-heading {
-//   color: rgba(190, 143, 57, 0.937);
-//   display: flex;
-//   justify-content: center;
-//   margin-top: 5px;
-//   margin-bottom: 7rem;
-//   .copyright {
-//     background-color: #e1dddc;
-//     color: $text-color;
-//     font-size: 2rem;
-
-//     text-align: center;
-//     position: relative;
-//   }
-// }
-// /**********************************/
