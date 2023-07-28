@@ -4,6 +4,10 @@
 
 /* ++++++++++ Navbar Component style sheet ++++++++++ */
 .navbar-container {
+  position: sticky;
+  width: 100%;
+  z-index: 100;
+  top: 0;
   .navbar {
     height: 6rem;
     display: flex;
@@ -12,6 +16,7 @@
     align-items: center;
 
     .logo {
+      /* Remove the space between 'i' and '.logo' */
       padding: 0 2rem;
 
       h1 {
