@@ -20,8 +20,8 @@ function App() {
         <Aboutme /> */}
         <Services />
         <Demo />
-        {/* <Gallery /> */}
-        {/* <Feedback /> */}
+        <Gallery />
+        {<Feedback />}
         {/* <Contacts /> */}
         {/* <Footer /> */}
       </BrowserRouter>

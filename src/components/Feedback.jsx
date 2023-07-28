@@ -4,10 +4,9 @@
  */
 // eslint-disable-next-line react/prop-types
 
-import image1 from '../assets/images/Feedback/user1.jpg';
-import image2 from '../assets/images/Feedback/user2.jpg';
-import image3 from '../assets/images/Feedback/user3.jpg';
-
+import image1 from "../assets/images/Feedback/user1.jpg";
+import image2 from "../assets/images/Feedback/user2.jpg";
+import image3 from "../assets/images/Feedback/user3.jpg";
 
 const userList = [
   {
@@ -33,10 +32,8 @@ const userList = [
   },
 ];
 function Feedback() {
- 
-
   return (
-    <div>
+    <div className="feedback-container">
       <div className="site-container">
         <h2 className="feedback-heading">Customer FeedBacks</h2>
         <div className="article-container">
@@ -47,7 +44,7 @@ function Feedback() {
               </figure>
               <div className="article-content1">
                 <h3>{user.username}</h3>
-              
+
                 <p>&#11088;&#11088;&#11088;</p>
               </div>
               <div className="article-content">
@@ -62,4 +59,3 @@ function Feedback() {
 }
 
 export default Feedback;
- 

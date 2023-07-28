@@ -208,16 +208,117 @@
 }
 
 /* ++++++++++ Gallery Component style sheet ++++++++++ */
+.gallery-container {
+  /* This class defines the container for the gallery. */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 2rem;
+
+  /* This code centers the container and sets its maximum width. */
+
+  h2 {
+    /* This class defines the heading for the gallery. */
+    @include heading-2-color;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  /* This code applies the `heading-2-color` mixin to the heading, which sets its color to the same color as the `h2` heading element in the JSX code. */
+
+  .gallery-image {
+    /* This class defines the styles for the gallery images. */
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    position: relative;
+    padding: 1rem;
+  }
+
+  /* This code applies a transition to the images, which will cause them to scale up slightly when the user hovers over them. */
+
+  .gallery-image:hover {
+    /* This class defines the styles for the gallery images when the user hovers over them. */
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  /* This code applies a scale transform to the images when the user hovers over them, and also gives them a box shadow. */
+}
+
 /* ++++++++++ Feedback Component style sheet ++++++++++ */
+.feedback-container {
+  .site-container {
+    background-color: #ece8e7;
+    padding: 3rem 10rem;
+
+    .feedback-heading {
+      color: rgba(190, 143, 57, 0.937);
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+      margin-bottom: 7rem;
+    }
+
+    .article-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+
+      .article-card {
+        width: 20rem;
+        height: 10rem;
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0px 10px 33px -3px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        cursor: pointer;
+
+        .article-image {
+          width: 8rem;
+          height: 8rem;
+          margin: 0 60px;
+          border-radius: 50%;
+          border: 5px solid rgba(190, 143, 57, 0.937);
+          overflow: hidden;
+          transform: translatey(-100px);
+
+          img {
+            max-width: 100%;
+            height: 100%;
+          }
+        }
+
+        .article-content {
+          padding: 10px 20px;
+          text-align: center;
+          transform: translatey(-100px);
+          opacity: 0;
+          transition: 0.3s;
+        }
+        .article-content1 {
+          transform: translatey(-100px);
+          text-align: center;
+          margin-top: 10px;
+        }
+
+        &:hover {
+          height: 20rem;
+
+          > .article-content {
+            opacity: 1;
+            transform: translateY(-100px);
+          }
+        }
+      }
+    }
+  }
+}
 /* ++++++++++ Contact Component style sheet ++++++++++ */
 /* ++++++++++ Footer Component style sheet ++++++++++ */
 
-// h1 {
-//   font-family: Roboto-Black;
-//   font-weight: 900;
-//   color: $text-color;
-//   font-style: italic;
-// }
 // //Footer Style
 
 // .footer-container {
