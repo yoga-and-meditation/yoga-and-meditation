@@ -136,8 +136,8 @@
     position: absolute;
     top: 0;
     left: 10rem;
-    width: 500px;
-    height: 700px;
+    width: 530px;
+    height: 730px;
     transform: rotate(-13deg);
     z-index: -1;
     /*     animation: rotateAnimation 60s infinite linear; */
@@ -167,11 +167,11 @@
     flex-direction: column;
     padding-top: 1rem;
     max-width: 50vw;
-    margin-top: 2rem;
+    /*    margin-top: 2rem; */
 
     h2 {
       @include heading-2-color;
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     }
     p {
       color: $text-color;
@@ -287,6 +287,9 @@
     justify-content: center;
 
     .card-container {
+      border: none;
+      background: gold;
+      outline: none;
       border-radius: 1rem;
       box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
       width: 80%;
@@ -319,28 +322,30 @@
   /* Variables only for Demo component use */
   $margin-size: 2rem;
   $circle-color: rgba(249, 194, 51, 1);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
 
+  border: 1px solid red;
+
   .mb-2 {
     margin-bottom: $margin-size;
   }
   h2 {
     @include heading-2-color;
-    font-size: 2.4rem;
+    font-size: 3.5rem;
     text-align: center;
     padding: 1rem;
   }
 
   .info {
+    border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: start;
-    width: 50%;
+    /*  width: 50%; */
     gap: $margin-size;
     background-color: $secondary-background-color;
     padding: 2rem;
@@ -601,7 +606,25 @@ footer {
     position: relative;
   }
 }
+
 /* ++++++++++ End of Footer Component style sheet ++++++++++ */
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* This part of code should be discussed before removing it  */
 
 /* About component style sheet */
 
