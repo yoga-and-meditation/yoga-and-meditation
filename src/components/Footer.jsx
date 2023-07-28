@@ -1,15 +1,48 @@
+import { Outlet, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 //Icons
 import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaEnvelope,
+  FaArrowUp,
 } from "react-icons/fa";
-import { Outlet, Link } from "react-router-dom";
 
 function Footer() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <footer>
+      {isVisible && (
+        <button className="scroll-to-top" onClick={scrollToTop}>
+          <FaArrowUp />
+        </button>
+      )}
+
       <div className="footer-container">
         <div className="logo-container">
           <h4 className="logo">Yoga and Meditation</h4>

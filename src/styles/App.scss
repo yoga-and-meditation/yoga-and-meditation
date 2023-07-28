@@ -171,7 +171,7 @@
 
     h2 {
       @include heading-2-color;
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
     p {
       color: $text-color;
@@ -196,7 +196,7 @@
       padding: 1rem;
       @include heading-2-color;
       @include heading-2;
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
     h3 {
       @include heading-3;
@@ -328,20 +328,17 @@
   justify-content: center;
   position: relative;
 
-  border: 1px solid red;
-
   .mb-2 {
     margin-bottom: $margin-size;
   }
   h2 {
     @include heading-2-color;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
-    padding: 1rem;
+    padding: 3rem;
   }
 
   .info {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -404,8 +401,10 @@
   h2 {
     /* This class defines the heading for the gallery. */
     @include heading-2-color;
-    margin: 2rem;
+    margin-top: 12rem;
+    margin-bottom: 3rem;
     text-align: center;
+    font-size: 3rem;
   }
 
   /* This code applies the `heading-2-color` mixin to the heading, which sets its color to the same color as the `h2` heading element in the JSX code. */
@@ -438,11 +437,12 @@
     padding: 3rem 10rem;
 
     .feedback-heading {
-      color: rgba(190, 143, 57, 0.937);
+      @include heading-2-color;
       display: flex;
       justify-content: center;
       margin-top: 5px;
       margin-bottom: 7rem;
+      font-size: 3rem;
     }
 
     .article-container {
@@ -514,7 +514,7 @@
   .form-container {
     h2 {
       @include heading-2-color;
-      font-size: 2rem;
+      font-size: 3rem;
       margin-bottom: 2rem;
     }
 
@@ -539,14 +539,41 @@
 
 /* ++++++++++ Start of Footer Component style sheet ++++++++++ */
 footer {
+  background: $secondary-background-color;
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #b48821;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      color: $text-color;
+    }
+  }
   .footer-container {
-    background-color: $secondary-background-color;
     display: flex;
     justify-content: space-around;
+
+    h5 {
+      font-size: 1.7rem;
+    }
 
     .logo-container {
       display: flex;
       align-items: center;
+
       .logo {
         @include logo-font-style;
         font-family: "MoonDance-Regular";
@@ -556,16 +583,15 @@ footer {
 
     .about-me {
       margin-top: 2rem;
-      border: none;
-      background-color: transparent;
 
       p {
         max-width: 30rem;
+        font-size: 1.2rem;
       }
 
       .icons {
         ul {
-          font-size: 2.5rem;
+          font-size: 2.9rem;
           display: flex;
           gap: 2rem;
 
@@ -584,12 +610,13 @@ footer {
     .links {
       margin-top: 2rem;
       background-color: transparent;
-      border: none;
+      /*  border: none; */
 
       li {
         a {
           text-decoration: none;
           color: $text-color;
+          font-size: 1.2rem;
 
           &:hover {
             color: #b48821;
@@ -601,9 +628,8 @@ footer {
   .copyright {
     background-color: #e1dddc;
     color: $text-color;
-    font-size: 2rem;
+    font-size: 1.3rem;
     text-align: center;
-    position: relative;
   }
 }
 
