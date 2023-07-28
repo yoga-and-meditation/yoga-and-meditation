@@ -285,12 +285,12 @@
   .service-section {
     display: flex;
     justify-content: center;
-
     .card-container {
+      background-image: url("../assets/images/wave.svg");
+      background-size: cover;
+      outline: none;
       border: none;
 
-      outline: none;
-      border-radius: 1rem;
       box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
       width: 80%;
       .img-fluid {
@@ -540,6 +540,7 @@
 /* ++++++++++ Start of Footer Component style sheet ++++++++++ */
 footer {
   background: $secondary-background-color;
+  /*   background-image: url("../assets/images/wave.svg"); */
 
   .scroll-to-top {
     position: fixed;
