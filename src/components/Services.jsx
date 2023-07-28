@@ -99,7 +99,7 @@ function Services() {
         </ul>
       </div>
 
-      <section>
+      <section className="service-section">
         {serviceData.map(
           (service, index) =>
             tab === index + 1 && (

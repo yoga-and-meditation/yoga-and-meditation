@@ -105,7 +105,7 @@
   }
 
   /* Service section style sheet */
-  section {
+  .service-section {
     display: flex;
     justify-content: center;
 
@@ -316,10 +316,40 @@
     }
   }
 }
-/* ++++++++++ Contact Component style sheet ++++++++++ */
-/* ++++++++++ Footer Component style sheet ++++++++++ */
 
-// //Footer Style
+/* ++++++++++ Contact Component style sheet ++++++++++ */
+.contact-container {
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .form-container {
+    h2 {
+      @include heading-2-color;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      @include heading-3;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .submit-btn {
+      @include button-style;
+    }
+  }
+  .contact-img {
+    img {
+      width: 30rem;
+      margin-right: 5rem;
+    }
+  }
+}
+/* ++++++++++ Footer Component style sheet ++++++++++ */
 
 // .footer-container {
 //   height: 100vh;
@@ -722,62 +752,6 @@
 // }
 
 // /* Feedback */
-
-// .site-container {
-//   background-color: #ece8e7;
-//   padding: 3rem 10rem;
-// }
-// .article-container {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-
-//   gap: 3rem;
-// }
-
-// .article-image {
-//   width: 8rem;
-//   height: 8rem;
-//   margin: 0 60px;
-
-//   border-radius: 50%;
-//   border: 5px solid rgba(190, 143, 57, 0.937);
-//   overflow: hidden;
-//   transform: translatey(-100px);
-// }
-// .article-image img {
-//   max-width: 100%;
-//   height: 100%;
-// }
-// .article-card {
-//   width: 20rem;
-//   height: 10rem;
-//   background: white;
-//   border-radius: 20px;
-//   padding: 30px;
-//   box-shadow: 0px 10px 33px -3px rgba(0, 0, 0, 0.1);
-//   transition: 0.3s;
-//   cursor: pointer;
-// }
-// .article-card:hover {
-//   height: 20rem;
-// }
-// .article-content {
-//   padding: 10px 20px;
-//   text-align: center;
-//   transform: translatey(-100px);
-//   opacity: 0;
-//   transition: 0.3s;
-// }
-// .article-content1 {
-//   transform: translatey(-100px);
-//   text-align: center;
-//   margin-top: 10px;
-// }
-// .article-card:hover > .article-content {
-//   opacity: 1;
-//   transform: translateY(-100px);
-// }
 // .feedback-heading {
 //   color: rgba(190, 143, 57, 0.937);
 //   display: flex;

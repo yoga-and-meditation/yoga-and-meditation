@@ -22,7 +22,7 @@ function App() {
         <Demo />
         <Gallery />
         {<Feedback />}
-        {/* <Contacts /> */}
+        {<Contacts />}
         {/* <Footer /> */}
       </BrowserRouter>
     </div>

@@ -1,9 +1,9 @@
 import contactImg from "../assets/images/contact/yogaPause.jpg";
-// import { useForm } from "react-hook-form";
+
 function Contacts() {
   return (
-    <div className="form">
-      <div className="container">
+    <div className="form contact-container">
+      <div className="container form-container">
         <h2 className="heading2 mb-5">Excited to know more?</h2>
         <h3 className="heading1 mb-5">Get in Touch</h3>
         <div className="row">
