@@ -1,3 +1,69 @@
+@media (max-width: 320px) {
+  .app {
+    /* Start of Service Component media query  */
+
+    .service-container {
+      width: 100%;
+      padding: 1rem;
+      margin: 0 auto;
+      .header-container {
+        h2 {
+          font-size: 1.7rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+
+      .tab-container {
+        .navigation {
+          width: 100%;
+
+          .active {
+            width: 4rem;
+            height: 4rem;
+          }
+          li {
+            margin: 0 auto;
+            padding: 1rem;
+            button {
+              .icon {
+                width: 4rem;
+                height: 4rem;
+
+                img {
+                  height: 2.5rem;
+                  width: 2.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .service-section {
+        width: 100%;
+        border: 1px solid green;
+        .card-container {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          .img-fluid {
+            height: 100%;
+            width: 100%;
+          }
+          h3 {
+            font-size: 1.5rem;
+          }
+          .card-text {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 800px) {
   .app {
     /* ++++++++++ Start Navbar Component media query ++++++++++ */
