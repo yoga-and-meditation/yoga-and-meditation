@@ -44,7 +44,8 @@
           font-size: 1.2rem;
 
           &:hover {
-            opacity: 0.6;
+            border-bottom: 4px solid #b48821;
+            transition: ease-in-out;
           }
         }
       }
@@ -620,7 +621,8 @@ footer {
           font-size: 1.2rem;
 
           &:hover {
-            color: #b48821;
+            border-bottom: 4px solid #b48821;
+            transition: ease-in-out;
           }
         }
       }
