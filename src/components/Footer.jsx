@@ -65,19 +65,16 @@ function Footer() {
               </li>
               <li className="list-group">
                 <a href="https://www.instagram.com/sheetalkchavan/">
-                  {" "}
                   <FaInstagram />
                 </a>
               </li>
               <li className="list-group">
                 <a href="https://www.linkedin.com/in/sheetalchavan/">
-                  {" "}
                   <FaLinkedin />
                 </a>
               </li>
               <li className="list-group">
                 <a href="website@sheetalchavan.com">
-                  {" "}
                   <FaEnvelope />
                 </a>
               </li>
