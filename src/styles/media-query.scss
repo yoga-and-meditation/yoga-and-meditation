@@ -1,72 +1,315 @@
-/* Media query max-width 320px */
+/* ++++++++++ Media Query max width of 320px ++++++++++ */
 @media (max-width: $xs) {
   .app {
-    /* Start of Service Component media query  */
-
-    .service-container {
-      width: 100%;
-      padding: 1rem;
-      margin: 0 auto;
-      .header-container {
-        h2 {
-          font-size: 1.7rem;
-        }
-        h3 {
-          font-size: 1.5rem;
-        }
-      }
-
-      .tab-container {
-        .navigation {
-          width: 100%;
-
-          .active {
-            width: 4rem;
-            height: 4rem;
-          }
-          li {
-            margin: 0 auto;
-            padding: 1rem;
-            button {
-              .icon {
-                width: 4rem;
-                height: 4rem;
-
-                img {
-                  height: 2.5rem;
-                  width: 2.5rem;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .service-section {
-        width: 100%;
-        border: 1px solid green;
-        .card-container {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-
-          .img-fluid {
-            height: 100%;
-            width: 100%;
-          }
-          h3 {
-            font-size: 1.5rem;
-          }
-          .card-text {
-            font-size: 1rem;
-          }
-        }
-      }
+    /*----- Start of Navbar component media query----- */
+    .navbar-container {
     }
+    /*----- End of Navbar component media query----- */
+
+    /*----- Start of Hero component media query----- */
+    .hero-container {
+    }
+    /*----- End of Hero component media query----- */
+
+    /*----- Start of Aboutme component media query----- */
+    .about-container {
+    }
+    /*----- End of Aboutme component media query----- */
+
+    /*----- Start of Service component media query----- */
+    .service-container {
+    }
+    /*----- End of Service component media query----- */
+
+    /*----- Start of Gallery component media query----- */
+    .gallery-container {
+    }
+    /*----- End of Gallery component media query----- */
+
+    /*----- Start of Feedback component media query----- */
+    .feedback-container {
+    }
+    /*----- End of Feedback component media query----- */
+
+    /*----- Start of Demo component media query----- */
+    .demo-container {
+    }
+    /*----- End of Demo component media query----- */
+
+    /*----- Start of Contact component media query----- */
+    .contact-container {
+    }
+    /*----- End of Contact component media query----- */
+
+    /*----- Start of Footer component media query----- */
+    footer {
+    }
+    /*----- Start of Footer component media query----- */
   }
 }
 
-/* Media query  max-width 576px*/
+/* ++++++++++ Media Query max width of 576px ++++++++++ */
+@media (max-width: $sm) {
+  .app {
+    /*----- Start of Navbar component media query----- */
+    .navbar-container {
+    }
+    /*----- End of Navbar component media query----- */
+
+    /*----- Start of Hero component media query----- */
+    .hero-container {
+    }
+    /*----- End of Hero component media query----- */
+
+    /*----- Start of Aboutme component media query----- */
+    .about-container {
+    }
+    /*----- End of Aboutme component media query----- */
+
+    /*----- Start of Service component media query----- */
+    .service-container {
+    }
+    /*----- End of Service component media query----- */
+
+    /*----- Start of Gallery component media query----- */
+    .gallery-container {
+    }
+    /*----- End of Gallery component media query----- */
+
+    /*----- Start of Feedback component media query----- */
+    .feedback-container {
+    }
+    /*----- End of Feedback component media query----- */
+
+    /*----- Start of Demo component media query----- */
+    .demo-container {
+    }
+    /*----- End of Demo component media query----- */
+
+    /*----- Start of Contact component media query----- */
+    .contact-container {
+    }
+    /*----- End of Contact component media query----- */
+
+    /*----- Start of Footer component media query----- */
+    footer {
+    }
+    /*----- Start of Footer component media query----- */
+  }
+}
+
+/* ++++++++++ Media Query max width of 768px ++++++++++ */
+@media (max-width: $md) {
+  .app {
+    /*----- Start of Navbar component media query----- */
+    .navbar-container {
+    }
+    /*----- End of Navbar component media query----- */
+
+    /*----- Start of Hero component media query----- */
+    .hero-container {
+    }
+    /*----- End of Hero component media query----- */
+
+    /*----- Start of Aboutme component media query----- */
+    .about-container {
+    }
+    /*----- End of Aboutme component media query----- */
+
+    /*----- Start of Service component media query----- */
+    .service-container {
+    }
+    /*----- End of Service component media query----- */
+
+    /*----- Start of Gallery component media query----- */
+    .gallery-container {
+    }
+    /*----- End of Gallery component media query----- */
+
+    /*----- Start of Feedback component media query----- */
+    .feedback-container {
+    }
+    /*----- End of Feedback component media query----- */
+
+    /*----- Start of Demo component media query----- */
+    .demo-container {
+    }
+    /*----- End of Demo component media query----- */
+
+    /*----- Start of Contact component media query----- */
+    .contact-container {
+    }
+    /*----- End of Contact component media query----- */
+
+    /*----- Start of Footer component media query----- */
+    footer {
+    }
+    /*----- Start of Footer component media query----- */
+  }
+}
+
+/* ++++++++++ Media Query max width of 992px ++++++++++ */
+@media (max-width: $lg) {
+  .app {
+    /*----- Start of Navbar component media query----- */
+    .navbar-container {
+    }
+    /*----- End of Navbar component media query----- */
+
+    /*----- Start of Hero component media query----- */
+    .hero-container {
+    }
+    /*----- End of Hero component media query----- */
+
+    /*----- Start of Aboutme component media query----- */
+    .about-container {
+    }
+    /*----- End of Aboutme component media query----- */
+
+    /*----- Start of Service component media query----- */
+    .service-container {
+    }
+    /*----- End of Service component media query----- */
+
+    /*----- Start of Gallery component media query----- */
+    .gallery-container {
+    }
+    /*----- End of Gallery component media query----- */
+
+    /*----- Start of Feedback component media query----- */
+    .feedback-container {
+    }
+    /*----- End of Feedback component media query----- */
+
+    /*----- Start of Demo component media query----- */
+    .demo-container {
+    }
+    /*----- End of Demo component media query----- */
+
+    /*----- Start of Contact component media query----- */
+    .contact-container {
+    }
+    /*----- End of Contact component media query----- */
+
+    /*----- Start of Footer component media query----- */
+    footer {
+    }
+    /*----- Start of Footer component media query----- */
+  }
+}
+
+/* ++++++++++ Media Query max width of 1200px ++++++++++ */
+@media (max-width: $xl) {
+  .app {
+    /*----- Start of Navbar component media query----- */
+    .navbar-container {
+    }
+    /*----- End of Navbar component media query----- */
+
+    /*----- Start of Hero component media query----- */
+    .hero-container {
+    }
+    /*----- End of Hero component media query----- */
+
+    /*----- Start of Aboutme component media query----- */
+    .about-container {
+    }
+    /*----- End of Aboutme component media query----- */
+
+    /*----- Start of Service component media query----- */
+    .service-container {
+    }
+    /*----- End of Service component media query----- */
+
+    /*----- Start of Gallery component media query----- */
+    .gallery-container {
+    }
+    /*----- End of Gallery component media query----- */
+
+    /*----- Start of Feedback component media query----- */
+    .feedback-container {
+    }
+    /*----- End of Feedback component media query----- */
+
+    /*----- Start of Demo component media query----- */
+    .demo-container {
+    }
+    /*----- End of Demo component media query----- */
+
+    /*----- Start of Contact component media query----- */
+    .contact-container {
+    }
+    /*----- End of Contact component media query----- */
+
+    /*----- Start of Footer component media query----- */
+    footer {
+    }
+    /*----- Start of Footer component media query----- */
+  }
+}
+
+/* ++++++++++ Media Query max width of 1400px ++++++++++ */
+@media (max-width: $xxl) {
+  .app {
+    /*----- Start of Navbar component media query----- */
+    .navbar-container {
+    }
+    /*----- End of Navbar component media query----- */
+
+    /*----- Start of Hero component media query----- */
+    .hero-container {
+    }
+    /*----- End of Hero component media query----- */
+
+    /*----- Start of Aboutme component media query----- */
+    .about-container {
+    }
+    /*----- End of Aboutme component media query----- */
+
+    /*----- Start of Service component media query----- */
+    .service-container {
+    }
+    /*----- End of Service component media query----- */
+
+    /*----- Start of Gallery component media query----- */
+    .gallery-container {
+    }
+    /*----- End of Gallery component media query----- */
+
+    /*----- Start of Feedback component media query----- */
+    .feedback-container {
+    }
+    /*----- End of Feedback component media query----- */
+
+    /*----- Start of Demo component media query----- */
+    .demo-container {
+    }
+    /*----- End of Demo component media query----- */
+
+    /*----- Start of Contact component media query----- */
+    .contact-container {
+    }
+    /*----- End of Contact component media query----- */
+
+    /*----- Start of Footer component media query----- */
+    footer {
+    }
+    /*----- Start of Footer component media query----- */
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+we need to adujust this media query to the above breakpoints
+*/
 @media (max-width: 800px) {
   .app {
     /* ++++++++++ Start Navbar Component media query ++++++++++ */

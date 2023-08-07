@@ -313,76 +313,6 @@
 }
 /* ++++++++++ End of Service Component style sheet ++++++++++ */
 
-/* ++++++++++ Start of Demo Component style sheet ++++++++++ */
-.demo-container {
-  /* Variables only for Demo component use */
-  @include section-padding-style;
-  border: 1px solid green;
-  $margin-size: 2rem;
-  $circle-color: rgba(249, 194, 51, 1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-  .mb-2 {
-    margin-bottom: $margin-size;
-  }
-  h2 {
-    @include heading-2-style;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    /*  width: 50%; */
-    gap: $margin-size;
-    background-color: $secondary-background-color;
-    padding: 2rem;
-    width: 60rem;
-    height: 40rem;
-    background-image: url("../assets/images/demosession/pexels-marta.jpg");
-    background-size: cover;
-    background-position: center;
-
-    .infodiv {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 50%;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 2rem;
-      border-radius: 1rem;
-
-      .book-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: $margin-size;
-        width: 50%;
-        margin: 0 auto;
-      }
-
-      h6 {
-        font-size: 2rem;
-      }
-      button {
-        @include button-style;
-        margin-top: $margin-size;
-        width: 11rem;
-        transition: all 0.5s ease;
-      }
-      button:hover {
-        color: #001f3f;
-      }
-    }
-  }
-}
-/* ++++++++++ End of Demo Component style sheet ++++++++++ */
-
 /* ++++++++++ Start of Gallery Component style sheet ++++++++++ */
 .gallery-container {
   /* This class defines the container for the gallery. */
@@ -490,6 +420,76 @@
   }
 }
 /* ++++++++++ End of Feedback Component style sheet ++++++++++ */
+
+/* ++++++++++ Start of Demo Component style sheet ++++++++++ */
+.demo-container {
+  /* Variables only for Demo component use */
+  @include section-padding-style;
+  border: 1px solid green;
+  $margin-size: 2rem;
+  $circle-color: rgba(249, 194, 51, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .mb-2 {
+    margin-bottom: $margin-size;
+  }
+  h2 {
+    @include heading-2-style;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    /*  width: 50%; */
+    gap: $margin-size;
+    background-color: $secondary-background-color;
+    padding: 2rem;
+    width: 60rem;
+    height: 40rem;
+    background-image: url("../assets/images/demosession/pexels-marta.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .infodiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2rem;
+      border-radius: 1rem;
+
+      .book-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: $margin-size;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      h6 {
+        font-size: 2rem;
+      }
+      button {
+        @include button-style;
+        margin-top: $margin-size;
+        width: 11rem;
+        transition: all 0.5s ease;
+      }
+      button:hover {
+        color: #001f3f;
+      }
+    }
+  }
+}
+/* ++++++++++ End of Demo Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Contact Component style sheet ++++++++++ */
 .contact-container {
