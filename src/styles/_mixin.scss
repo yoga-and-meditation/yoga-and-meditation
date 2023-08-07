@@ -24,16 +24,8 @@
   }
 }
 @mixin heading-2-style {
-  background: linear-gradient(
-    360deg,
-    rgba(203, 157, 35, 1) 0%,
-    rgba(249, 194, 51, 1) 100%
-  );
+  color: #b48821;
   font-size: 3rem;
-  -webkit-background-clip: text; /* For Safari */
-  -webkit-text-fill-color: transparent; /* For Safari */
-  background-clip: text;
-  text-fill-color: transparent;
 }
 
 @mixin card-shadow {
@@ -42,19 +34,6 @@
   border-radius: 1rem;
 }
 /* ---------------------------- Mixin for Heading 2 color style -------------------------- */
-@mixin heading-2-color {
-  /* The yellow-gold color, we keep it incase we need it */
-  /* background: linear-gradient(
-    360deg,
-    rgba(203, 157, 35, 1) 0%,
-    rgba(249, 194, 51, 1) 100%
-  ); */
-  background-color: #b48821;
-  -webkit-background-clip: text; /* For Safari */
-  -webkit-text-fill-color: transparent; /* For Safari */
-  background-clip: text;
-  text-fill-color: transparent;
-}
 
 //google font mixin styles
 /* ---------------------------- Mixin for Google fonts -------------------------- */

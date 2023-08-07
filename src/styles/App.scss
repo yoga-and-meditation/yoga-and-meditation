@@ -397,7 +397,7 @@
 
   h2 {
     /* This class defines the heading for the gallery. */
-    @include heading-2-color;
+    @include heading-2-style;
     margin-top: 12rem;
     margin-bottom: 3rem;
     text-align: center;
