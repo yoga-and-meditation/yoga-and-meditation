@@ -352,15 +352,17 @@ we need to adujust this media query to the above breakpoints
           display: flex;
           flex-direction: column;
         }
-      }bout-container {
+      }
+      bout-container {
         flex-direction: column;
-  
+
         img {
+        }
+        /* ++++++++++ End Navbar Component media query ++++++++++ */
+      }
     }
-    /* ++++++++++ End Navbar Component media query ++++++++++ */
   }
 }
-
 /* @media (max-width: 768px) {
   .app {
     .about-container {
