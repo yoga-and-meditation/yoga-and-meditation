@@ -193,7 +193,6 @@
   .header-container {
     text-align: center;
     h2 {
-      padding: 1rem;
       @include heading-2-style;
       @include heading-2;
     }
@@ -332,8 +331,6 @@
   }
   h2 {
     @include heading-2-style;
-    text-align: center;
-    padding: 3rem;
   }
 
   .info {
@@ -396,9 +393,6 @@
   h2 {
     /* This class defines the heading for the gallery. */
     @include heading-2-style;
-    margin-top: 12rem;
-    margin-bottom: 3rem;
-    text-align: center;
   }
 
   /* This code applies the `heading-2-color` mixin to the heading, which sets its color to the same color as the `h2` heading element in the JSX code. */
@@ -426,7 +420,7 @@
 /* ++++++++++ Start of Feedback Component style sheet ++++++++++ */
 .feedback-container {
   background-color: #ece8e7;
-  margin-top: 5rem;
+
   .site-container {
     @include section-padding-style;
     border: 1px solid green;
@@ -437,8 +431,6 @@
       @include heading-2-style;
       display: flex;
       justify-content: center;
-      margin-top: 5px;
-      margin-bottom: 7rem;
     }
 
     .article-container {
@@ -510,7 +502,6 @@
   .form-container {
     h2 {
       @include heading-2-style;
-      margin-bottom: 2rem;
     }
 
     h3 {
