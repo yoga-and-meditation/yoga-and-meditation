@@ -23,12 +23,13 @@
     color: #001f3f;
   }
 }
-@mixin heading-2-color {
+@mixin heading-2-style {
   background: linear-gradient(
     360deg,
     rgba(203, 157, 35, 1) 0%,
     rgba(249, 194, 51, 1) 100%
   );
+  font-size: 3rem;
   -webkit-background-clip: text; /* For Safari */
   -webkit-text-fill-color: transparent; /* For Safari */
   background-clip: text;

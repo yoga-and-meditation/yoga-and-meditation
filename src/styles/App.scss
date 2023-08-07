@@ -170,8 +170,7 @@
     /*    margin-top: 2rem; */
 
     h2 {
-      @include heading-2-color;
-      font-size: 3rem;
+      @include heading-2-style;
     }
     p {
       color: $text-color;
@@ -194,9 +193,8 @@
     text-align: center;
     h2 {
       padding: 1rem;
-      @include heading-2-color;
+      @include heading-2-style;
       @include heading-2;
-      font-size: 3rem;
     }
     h3 {
       @include heading-3;
@@ -332,8 +330,7 @@
     margin-bottom: $margin-size;
   }
   h2 {
-    @include heading-2-color;
-    font-size: 3rem;
+    @include heading-2-style;
     text-align: center;
     padding: 3rem;
   }
@@ -404,7 +401,6 @@
     margin-top: 12rem;
     margin-bottom: 3rem;
     text-align: center;
-    font-size: 3rem;
   }
 
   /* This code applies the `heading-2-color` mixin to the heading, which sets its color to the same color as the `h2` heading element in the JSX code. */
@@ -437,12 +433,11 @@
     padding: 3rem 10rem;
 
     .feedback-heading {
-      @include heading-2-color;
+      @include heading-2-style;
       display: flex;
       justify-content: center;
       margin-top: 5px;
       margin-bottom: 7rem;
-      font-size: 3rem;
     }
 
     .article-container {
@@ -513,8 +508,7 @@
 
   .form-container {
     h2 {
-      @include heading-2-color;
-      font-size: 3rem;
+      @include heading-2-style;
       margin-bottom: 2rem;
     }
 
