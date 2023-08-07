@@ -120,6 +120,8 @@
 
 /* ++++++++++ Start of Aboutme Component style sheet ++++++++++ */
 .about-container {
+  @include section-padding-style;
+  border: 1px solid green;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -184,9 +186,8 @@
 
 /* ++++++++++ Start of Service Component style sheet ++++++++++ */
 .service-container {
-  padding: 1.5rem;
-  width: 80%;
-  margin: 3rem auto;
+  @include section-padding-style;
+  border: 1px solid green;
 
   /* Heading style of the section */
   .header-container {
@@ -318,6 +319,8 @@
 /* ++++++++++ Start of Demo Component style sheet ++++++++++ */
 .demo-container {
   /* Variables only for Demo component use */
+  @include section-padding-style;
+  border: 1px solid green;
   $margin-size: 2rem;
   $circle-color: rgba(249, 194, 51, 1);
   display: flex;
@@ -388,10 +391,7 @@
 /* ++++++++++ Start of Gallery Component style sheet ++++++++++ */
 .gallery-container {
   /* This class defines the container for the gallery. */
-  margin: 0 auto;
-  width: 100%;
-  max-width: 120rem;
-  padding: 0 2rem;
+  @include section-padding-style;
 
   /* This code centers the container and sets its maximum width. */
 
@@ -427,9 +427,12 @@
 
 /* ++++++++++ Start of Feedback Component style sheet ++++++++++ */
 .feedback-container {
+  background-color: #ece8e7;
   margin-top: 5rem;
   .site-container {
-    background-color: #ece8e7;
+    @include section-padding-style;
+    border: 1px solid green;
+
     padding: 3rem 10rem;
 
     .feedback-heading {
@@ -500,8 +503,8 @@
 
 /* ++++++++++ Start of Contact Component style sheet ++++++++++ */
 .contact-container {
-  margin-top: 10rem;
-  margin-bottom: 3rem;
+  @include section-padding-style;
+  border: 1px solid green;
   display: flex;
   justify-content: space-around;
   align-items: center;
