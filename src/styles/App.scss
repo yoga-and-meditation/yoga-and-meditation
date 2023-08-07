@@ -199,7 +199,6 @@
     }
     h3 {
       @include heading-3;
-      font-size: 2.7rem;
     }
   }
 
@@ -309,7 +308,6 @@
       }
       h3 {
         @include heading-3;
-        font-size: 2.5rem;
       }
     }
   }
@@ -517,7 +515,6 @@
 
     h3 {
       @include heading-3;
-      font-size: 2.5rem;
       margin-bottom: 1.5rem;
     }
 
