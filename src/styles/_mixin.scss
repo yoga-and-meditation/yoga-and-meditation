@@ -1,15 +1,7 @@
 @import "variables";
 
-//Button mixin styles
 /* ---------------------------- Mixin for button style -------------------------- */
 @mixin button-style {
-  /* The yellow-gold color, we keep it in case we need it */
-  /* background: linear-gradient(
-    360deg,
-    rgba(203, 157, 35, 1) 0%,
-    rgba(249, 194, 51, 1) 100%
-  ); */
-
   background-color: #b48821;
   color: $button-text-color;
   padding: 0 1rem;
@@ -24,33 +16,29 @@
   }
 }
 
-/* Heading 2 style mixin */
+/* ---------------------------- Mixin for heading 2 style -------------------------- */
 @mixin heading-2-style {
   color: #b48821;
   font-size: 3rem;
 }
 
-/* Card shadow mixin */
+/* ---------------------------- Mixin for card shadow style -------------------------- */
 @mixin card-shadow {
   box-shadow: -16px -19px 57px 32px rgba(0, 0, 0, 0.1),
     -30px 6px 15px -3px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
 }
 
-/* section padding style mixin */
-
+/* ---------------------------- Mixin for section padding style -------------------------- */
 @mixin section-padding-style {
   margin: 0 auto;
   width: 100%;
   max-width: 120rem;
   padding: 0 2rem;
 }
-/* ---------------------------- Mixin for Heading 2 color style -------------------------- */
 
-//google font mixin styles
 /* ---------------------------- Mixin for Google fonts -------------------------- */
 
-//google font mixin styles
 @mixin heading-1 {
   @font-face {
     font-family: "Roboto-Black";
@@ -59,6 +47,7 @@
     font-style: normal;
   }
 }
+
 @mixin heading-2 {
   @font-face {
     font-family: "Roboto-Medium";
@@ -67,7 +56,6 @@
     font-style: normal;
   }
 }
-
 @mixin heading-3 {
   @font-face {
     font-family: "Roboto-Medium";
