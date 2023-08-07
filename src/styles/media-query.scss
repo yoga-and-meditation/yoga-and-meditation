@@ -338,7 +338,10 @@ we need to adujust this media query to the above breakpoints
         }
       }
       .expanded {
-        background-color: $secondary-background-color; /* Use the defined variable here */
+        background-color: $secondary-background-color; /* Use the defined variablebout-container {
+          flex-direction: column;
+    
+          img { here */
         min-height: 55vh;
 
         .nav-menu {
@@ -349,7 +352,10 @@ we need to adujust this media query to the above breakpoints
           display: flex;
           flex-direction: column;
         }
-      }
+      }bout-container {
+        flex-direction: column;
+  
+        img {
     }
     /* ++++++++++ End Navbar Component media query ++++++++++ */
   }
