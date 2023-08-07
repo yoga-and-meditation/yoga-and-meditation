@@ -19,9 +19,9 @@ function App() {
         <Hero />
         <Aboutme />
         <Services />
-        <Demo />
         <Gallery />
         <Feedback />
+        <Demo />
         <Contacts />
         <Footer />
       </BrowserRouter>
