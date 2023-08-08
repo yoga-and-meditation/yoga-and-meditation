@@ -298,6 +298,56 @@
   }
 }
 
+/* ++++++++++ Media Query max width of 1600px ++++++++++ */
+@media (max-width: $xxxl) {
+  .app {
+    /*----- Start of Navbar component media query----- */
+    .navbar-container {
+    }
+    /*----- End of Navbar component media query----- */
+
+    /*----- Start of Hero component media query----- */
+    .hero-container {
+    }
+    /*----- End of Hero component media query----- */
+
+    /*----- Start of Aboutme component media query----- */
+    .about-container {
+    }
+    /*----- End of Aboutme component media query----- */
+
+    /*----- Start of Service component media query----- */
+    .service-container {
+    }
+    /*----- End of Service component media query----- */
+
+    /*----- Start of Gallery component media query----- */
+    .gallery-container {
+    }
+    /*----- End of Gallery component media query----- */
+
+    /*----- Start of Feedback component media query----- */
+    .feedback-container {
+    }
+    /*----- End of Feedback component media query----- */
+
+    /*----- Start of Demo component media query----- */
+    .demo-container {
+    }
+    /*----- End of Demo component media query----- */
+
+    /*----- Start of Contact component media query----- */
+    .contact-container {
+    }
+    /*----- End of Contact component media query----- */
+
+    /*----- Start of Footer component media query----- */
+    footer {
+    }
+    /*----- Start of Footer component media query----- */
+  }
+}
+
 /* 
 
 
