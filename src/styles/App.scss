@@ -97,7 +97,7 @@
     h2 {
       @include logo-font-style;
       font-family: "MoonDance-Regular";
-      font-size: 4.5rem; top: 26rem;
+      font-size: 4.5rem; top: 28rem;
       left: 18rem;
       position: absolute;
 
@@ -105,13 +105,13 @@
     
   }
   .ball {
-    width: 40rem;
-    height: 40rem;
+    width: 38rem;
+    height: 38rem;
     background-color: #b68a23;
     border-radius: 50%;
     border: #e4e4e48d 2rem solid;
     position: relative;
-    left: 55rem;
+    left: 50rem;
     top:6rem;
 
     .gif {
