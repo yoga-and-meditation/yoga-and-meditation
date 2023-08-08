@@ -1,5 +1,5 @@
-/* ++++++++++ Media Query max width of 320px ++++++++++ */
-@media (max-width: $xs) {
+/* ++++++++++ Media Query for Phone screen with max width of 599px ++++++++++ */
+@media (max-width: $phone-screen) {
   .app {
     /*----- Start of Navbar component media query----- */
     .navbar-container {
@@ -10,8 +10,8 @@
     .hero-container {
       width: 100vw;
       height: 100vh;
-      padding:0 8rem ;
-    
+      padding: 0 8rem;
+
       background: linear-gradient(
         360deg,
         rgba(255, 255, 255, 0) 50%,
@@ -31,12 +31,11 @@
         h2 {
           @include logo-font-style;
           font-family: "MoonDance-Regular";
-          font-size: 4.5rem; top: 28rem;
+          font-size: 4.5rem;
+          top: 28rem;
           left: 18rem;
           position: absolute;
-    
         }
-        
       }
       .ball {
         width: 10rem;
@@ -46,8 +45,8 @@
         border: #e4e4e48d 2rem solid;
         position: relative;
         left: 40rem;
-        top:6rem;
-    
+        top: 6rem;
+
         .gif {
           width: 92rem;
           height: 60rem;
@@ -96,8 +95,8 @@
   }
 }
 
-/* ++++++++++ Media Query max width of 576px ++++++++++ */
-@media (max-width: $sm) {
+/* ++++++++++ Media Query for Tablet screen with min 600px and max 1023px  ++++++++++ */
+@media (min-width: $tablet-screen-min) and (max-width: $tablet-screen-max) {
   .app {
     /*----- Start of Navbar component media query----- */
     .navbar-container {
@@ -108,23 +107,21 @@
     .hero-container {
       width: 100%;
       height: 100vh;
-/*       padding:0 1rem ;
- */    
-      
+      /*       padding:0 1rem ;
+ */
+
       .hero-heading {
         h1 {
           font-size: 50%;
-        
         }
         h2 {
           @include logo-font-style;
           font-family: "MoonDance-Regular";
-          font-size: 4.5rem; top: 28rem;
+          font-size: 4.5rem;
+          top: 28rem;
           left: 18rem;
           position: absolute;
-    
         }
-        
       }
       .ball {
         width: 1rem;
@@ -134,8 +131,8 @@
         border: #e4e4e48d 2rem solid;
         position: relative;
         left: 40rem;
-        top:6rem;
-    
+        top: 6rem;
+
         .gif {
           width: 92rem;
           height: 60rem;
@@ -184,8 +181,8 @@
   }
 }
 
-/* ++++++++++ Media Query max width of 768px ++++++++++ */
-@media (max-width: $md) {
+/* ++++++++++ Media Query for Desktop screen with min width of 1024px ++++++++++ */
+@media (min-width: $desktop) {
   .app {
     /*----- Start of Navbar component media query----- */
     .navbar-container {
@@ -193,10 +190,11 @@
     /*----- End of Navbar component media query----- */
 
     /*----- Start of Hero component media query----- */
-    .hero-container {width: 100vw;
+    .hero-container {
+      width: 100vw;
       height: 100vh;
-      padding:0 8rem ;
-    
+      padding: 0 8rem;
+
       background: linear-gradient(
         360deg,
         rgba(255, 255, 255, 0) 50%,
@@ -205,10 +203,11 @@
       .hero-heading {
         h1 {
           @include yoga;
-          .hero-container { width: 100vw;
+          .hero-container {
+            width: 100vw;
             height: 100vh;
-            padding:0 8rem ;
-          
+            padding: 0 8rem;
+
             background: linear-gradient(
               360deg,
               rgba(255, 255, 255, 0) 50%,
@@ -228,12 +227,11 @@
               h2 {
                 @include logo-font-style;
                 font-family: "MoonDance-Regular";
-                font-size: 4.5rem; top: 28rem;
+                font-size: 4.5rem;
+                top: 28rem;
                 left: 18rem;
                 position: absolute;
-          
               }
-              
             }
             .ball {
               width: 35rem;
@@ -243,8 +241,8 @@
               border: #e4e4e48d 2rem solid;
               position: relative;
               left: 40rem;
-              top:6rem;
-          
+              top: 6rem;
+
               .gif {
                 width: 92rem;
                 height: 60rem;
@@ -254,7 +252,7 @@
               }
             }
           }
-          font-size: .5rem;
+          font-size: 0.5rem;
           color: rgba(29, 28, 26, 0.805);
           position: absolute;
           left: 13rem;
@@ -264,12 +262,11 @@
         h2 {
           @include logo-font-style;
           font-family: "MoonDance-Regular";
-          font-size: 4.5rem; top: 28rem;
+          font-size: 4.5rem;
+          top: 28rem;
           left: 18rem;
           position: absolute;
-    
         }
-        
       }
       .ball {
         width: 35rem;
@@ -279,397 +276,8 @@
         border: #e4e4e48d 2rem solid;
         position: relative;
         left: 40rem;
-        top:6rem;
-    
-        .gif {
-          width: 92rem;
-          height: 60rem;
-          position: absolute;
-          right: -22rem;
-          bottom: -5rem;
-        }
-      }
-    }
-    /*----- End of Hero component media query----- */
+        top: 6rem;
 
-    /*----- Start of Aboutme component media query----- */
-    .about-container {
-    }
-    /*----- End of Aboutme component media query----- */
-
-    /*----- Start of Service component media query----- */
-    .service-container {
-    }
-    /*----- End of Service component media query----- */
-
-    /*----- Start of Gallery component media query----- */
-    .gallery-container {
-    }
-    /*----- End of Gallery component media query----- */
-
-    /*----- Start of Feedback component media query----- */
-    .feedback-container {
-    }
-    /*----- End of Feedback component media query----- */
-
-    /*----- Start of Demo component media query----- */
-    .demo-container {
-    }
-    /*----- End of Demo component media query----- */
-
-    /*----- Start of Contact component media query----- */
-    .contact-container {
-    }
-    /*----- End of Contact component media query----- */
-
-    /*----- Start of Footer component media query----- */
-    footer {
-    }
-    /*----- Start of Footer component media query----- */
-  }
-}
-
-/* ++++++++++ Media Query max width of 992px ++++++++++ */
-@media (max-width: $lg) {
-  .app {
-    /*----- Start of Navbar component media query----- */
-    .navbar-container {
-    }
-    /*----- End of Navbar component media query----- */
-
-    /*----- Start of Hero component media query----- */
-    .hero-container {
-      width: 100vw;
-      height: 100vh;
-      padding:0 8rem ;
-    
-      background: linear-gradient(
-        360deg,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(209, 204, 204, 0.445) 50%
-      );
-      .hero-heading {
-        h1 {
-          @include yoga;
-          font-weight: 300;
-          font-size: 10rem;
-          color: rgba(29, 28, 26, 0.805);
-          position: absolute;
-          left: 13rem;
-          top: 8rem;
-          z-index: 2;
-        }
-        h2 {
-          @include logo-font-style;
-          font-family: "MoonDance-Regular";
-          font-size: 4.5rem; top: 28rem;
-          left: 18rem;
-          position: absolute;
-    
-        }
-        
-      }
-      .ball {
-        width: 35rem;
-        height: 35rem;
-        background-color: #b68a23;
-        border-radius: 50%;
-        border: #e4e4e48d 2rem solid;
-        position: relative;
-        left: 40rem;
-        top:6rem;
-    
-        .gif {
-          width: 92rem;
-          height: 60rem;
-          position: absolute;
-          right: -22rem;
-          bottom: -5rem;
-        }
-      }
-    }
-    /*----- End of Hero component media query----- */
-
-    /*----- Start of Aboutme component media query----- */
-    .about-container {
-    }
-    /*----- End of Aboutme component media query----- */
-
-    /*----- Start of Service component media query----- */
-    .service-container {
-    }
-    /*----- End of Service component media query----- */
-
-    /*----- Start of Gallery component media query----- */
-    .gallery-container {
-    }
-    /*----- End of Gallery component media query----- */
-
-    /*----- Start of Feedback component media query----- */
-    .feedback-container {
-    }
-    /*----- End of Feedback component media query----- */
-
-    /*----- Start of Demo component media query----- */
-    .demo-container {
-    }
-    /*----- End of Demo component media query----- */
-
-    /*----- Start of Contact component media query----- */
-    .contact-container {
-    }
-    /*----- End of Contact component media query----- */
-
-    /*----- Start of Footer component media query----- */
-    footer {
-    }
-    /*----- Start of Footer component media query----- */
-  }
-}
-
-/* ++++++++++ Media Query max width of 1200px ++++++++++ */
-@media (max-width: $xl) {
-  .app {
-    /*----- Start of Navbar component media query----- */
-    .navbar-container {
-    }
-    /*----- End of Navbar component media query----- */
-
-    /*----- Start of Hero component media query----- */
-    .hero-container {  width: 100vw;
-      height: 100vh;
-      padding:0 8rem ;
-    
-      background: linear-gradient(
-        360deg,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(209, 204, 204, 0.445) 50%
-      );
-      .hero-heading {
-        h1 {
-          @include yoga;
-          font-weight: 300;
-          font-size: 12rem;
-          color: rgba(29, 28, 26, 0.805);
-          position: absolute;
-          left: 13rem;
-          top: 8rem;
-          z-index: 2;
-        }
-        h2 {
-          @include logo-font-style;
-          font-family: "MoonDance-Regular";
-          font-size: 4.5rem; top: 28rem;
-          left: 18rem;
-          position: absolute;
-    
-        }
-        
-      }
-      .ball {
-        width: 35rem;
-        height: 35rem;
-        background-color: #b68a23;
-        border-radius: 50%;
-        border: #e4e4e48d 2rem solid;
-        position: relative;
-        left: 40rem;
-        top:6rem;
-    
-        .gif {
-          width: 92rem;
-          height: 60rem;
-          position: absolute;
-          right: -22rem;
-          bottom: -5rem;
-        }
-      }
-    }
-    /*----- End of Hero component media query----- */
-
-    /*----- Start of Aboutme component media query----- */
-    .about-container {
-    }
-    /*----- End of Aboutme component media query----- */
-
-    /*----- Start of Service component media query----- */
-    .service-container {
-    }
-    /*----- End of Service component media query----- */
-
-    /*----- Start of Gallery component media query----- */
-    .gallery-container {
-    }
-    /*----- End of Gallery component media query----- */
-
-    /*----- Start of Feedback component media query----- */
-    .feedback-container {
-    }
-    /*----- End of Feedback component media query----- */
-
-    /*----- Start of Demo component media query----- */
-    .demo-container {
-    }
-    /*----- End of Demo component media query----- */
-
-    /*----- Start of Contact component media query----- */
-    .contact-container {
-    }
-    /*----- End of Contact component media query----- */
-
-    /*----- Start of Footer component media query----- */
-    footer {
-    }
-    /*----- Start of Footer component media query----- */
-  }
-}
-
-/* ++++++++++ Media Query max width of 1400px ++++++++++ */
-@media (max-width: $xxl) {
-  .app {
-    /*----- Start of Navbar component media query----- */
-    .navbar-container {
-    }
-    /*----- End of Navbar component media query----- */
-
-    /*----- Start of Hero component media query----- */
-    .hero-container { width: 100vw;
-      height: 100vh;
-      padding:0 8rem ;
-    
-      background: linear-gradient(
-        360deg,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(209, 204, 204, 0.445) 50%
-      );
-      .hero-heading {
-        h1 {
-          @include yoga;
-          font-weight: 300;
-          font-size: 12rem;
-          color: rgba(29, 28, 26, 0.805);
-          position: absolute;
-          left: 13rem;
-          top: 8rem;
-          z-index: 2;
-        }
-        h2 {
-          @include logo-font-style;
-          font-family: "MoonDance-Regular";
-          font-size: 4.5rem; top: 28rem;
-          left: 18rem;
-          position: absolute;
-    
-        }
-        
-      }
-      .ball {
-        width: 35rem;
-        height: 35rem;
-        background-color: #b68a23;
-        border-radius: 50%;
-        border: #e4e4e48d 2rem solid;
-        position: relative;
-        left: 40rem;
-        top:6rem;
-    
-        .gif {
-          width: 92rem;
-          height: 60rem;
-          position: absolute;
-          right: -22rem;
-          bottom: -5rem;
-        }
-      }
-    }
-    /*----- End of Hero component media query----- */
-
-    /*----- Start of Aboutme component media query----- */
-    .about-container {
-    }
-    /*----- End of Aboutme component media query----- */
-
-    /*----- Start of Service component media query----- */
-    .service-container {
-    }
-    /*----- End of Service component media query----- */
-
-    /*----- Start of Gallery component media query----- */
-    .gallery-container {
-    }
-    /*----- End of Gallery component media query----- */
-
-    /*----- Start of Feedback component media query----- */
-    .feedback-container {
-    }
-    /*----- End of Feedback component media query----- */
-
-    /*----- Start of Demo component media query----- */
-    .demo-container {
-    }
-    /*----- End of Demo component media query----- */
-
-    /*----- Start of Contact component media query----- */
-    .contact-container {
-    }
-    /*----- End of Contact component media query----- */
-
-    /*----- Start of Footer component media query----- */
-    footer {
-    }
-    /*----- Start of Footer component media query----- */
-  }
-}
-
-/* ++++++++++ Media Query max width of 1600px ++++++++++ */
-@media (max-width: $xxxl) {
-  .app {
-    /*----- Start of Navbar component media query----- */
-    .navbar-container {
-    }
-    /*----- End of Navbar component media query----- */
-
-    /*----- Start of Hero component media query----- */
-    .hero-container { width: 100vw;
-      height: 100vh;
-      padding:0 8rem ;
-    
-      background: linear-gradient(
-        360deg,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(209, 204, 204, 0.445) 50%
-      );
-      .hero-heading {
-        h1 {
-          @include yoga;
-          font-weight: 300;
-          font-size: 16rem;
-          color: rgba(29, 28, 26, 0.805);
-          position: absolute;
-          left: 13rem;
-          top: 8rem;
-          z-index: 2;
-        }
-        h2 {
-          @include logo-font-style;
-          font-family: "MoonDance-Regular";
-          font-size: 4.5rem; top: 28rem;
-          left: 18rem;
-          position: absolute;
-    
-        }
-        
-      }
-      .ball {
-        width: 35rem;
-        height: 35rem;
-        background-color: #b68a23;
-        border-radius: 50%;
-        border: #e4e4e48d 2rem solid;
-        position: relative;
-        left: 40rem;
-        top:6rem;
-    
         .gif {
           width: 92rem;
           height: 60rem;
