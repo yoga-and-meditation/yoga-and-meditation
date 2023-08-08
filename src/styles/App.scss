@@ -107,13 +107,13 @@
     position: relative;
     left: 80rem;
 
-    .gif {
+   .gif {
       width: 110rem;
       height: 70rem;
       position: absolute;
       left: -35rem;
       bottom: 1rem;
-    }
+    } 
   }
 }
 /* ++++++++++ End of Hero Component style sheet ++++++++++ */
@@ -361,6 +361,7 @@
       @include heading-2-style;
       display: flex;
       justify-content: center;
+      padding-bottom: 8rem;
     }
 
     .article-container {
