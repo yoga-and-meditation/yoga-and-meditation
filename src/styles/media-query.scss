@@ -7,10 +7,7 @@
     /*----- End of Navbar component media query----- */
 
     /*----- Start of Hero component media query----- */
-    .hero-container {
-      width: 100vw;
-      height: 100vh;
-      padding: 0 8rem;
+    .hero-container { padding: 4rem 8rem;
 
       background: linear-gradient(
         360deg,
@@ -21,19 +18,19 @@
         h1 {
           @include yoga;
           font-weight: 300;
-          font-size: 1rem;
+          font-size: 7rem;
           color: rgba(29, 28, 26, 0.805);
-          position: absolute;
-          left: 13rem;
-          top: 8rem;
+         position: absolute;
+          left: 2rem;
+          top: 2rem; 
           z-index: 2;
         }
         h2 {
           @include logo-font-style;
           font-family: "MoonDance-Regular";
-          font-size: 4.5rem;
-          top: 28rem;
-          left: 18rem;
+          font-size: 3rem;
+          top: 10rem;
+          left: 10rem;
           position: absolute;
         }
       }
@@ -42,19 +39,20 @@
         height: 10rem;
         background-color: #b68a23;
         border-radius: 50%;
-        border: #e4e4e48d 2rem solid;
+        border: #e4e4e48d .5rem solid;
         position: relative;
-        left: 40rem;
-        top: 6rem;
-
+        left:10rem;    
+    /* 
         .gif {
-          width: 92rem;
-          height: 60rem;
+          width: 110rem;
+          height: 70rem;
           position: absolute;
-          right: -22rem;
+          right: rem;
           bottom: -5rem;
-        }
+        } */
       }
+     
+
     }
     /*----- End of Hero component media query----- */
 
@@ -104,43 +102,53 @@
     /*----- End of Navbar component media query----- */
 
     /*----- Start of Hero component media query----- */
-    .hero-container {
-      width: 100%;
-      height: 100vh;
-      /*       padding:0 1rem ;
- */
+    .hero-container { padding: 4rem 8rem;
 
+      background: linear-gradient(
+        360deg,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(209, 204, 204, 0.445) 50%
+      );
       .hero-heading {
         h1 {
-          font-size: 50%;
+          @include yoga;
+          font-weight: 300;
+          font-size: 7rem;
+          color: rgba(29, 28, 26, 0.805);
+         position: absolute;
+          left: 2rem;
+          top: 2rem; 
+          z-index: 2;
         }
         h2 {
           @include logo-font-style;
           font-family: "MoonDance-Regular";
-          font-size: 4.5rem;
-          top: 28rem;
-          left: 18rem;
+          font-size: 3rem;
+          top: 10rem;
+          left: 10rem;
           position: absolute;
         }
       }
       .ball {
-        width: 1rem;
-        height: 1rem;
+        width: 18rem;
+        height: 18rem;
         background-color: #b68a23;
         border-radius: 50%;
-        border: #e4e4e48d 2rem solid;
+        border: #e4e4e48d .5rem solid;
         position: relative;
-        left: 40rem;
-        top: 6rem;
-
+        left:10rem;    
+    /* 
         .gif {
-          width: 92rem;
-          height: 60rem;
+          width: 110rem;
+          height: 70rem;
           position: absolute;
-          right: -22rem;
+          right: rem;
           bottom: -5rem;
-        }
+        } */
       }
+     
+    
+      
     }
     /*----- End of Hero component media query----- */
 
@@ -191,9 +199,7 @@
 
     /*----- Start of Hero component media query----- */
     .hero-container {
-      width: 100vw;
-      height: 100vh;
-      padding: 0 8rem;
+      padding: 4rem 8rem;
 
       background: linear-gradient(
         360deg,
@@ -203,89 +209,41 @@
       .hero-heading {
         h1 {
           @include yoga;
-          .hero-container {
-            width: 100vw;
-            height: 100vh;
-            padding: 0 8rem;
-
-            background: linear-gradient(
-              360deg,
-              rgba(255, 255, 255, 0) 50%,
-              rgba(209, 204, 204, 0.445) 50%
-            );
-            .hero-heading {
-              h1 {
-                @include yoga;
-                font-weight: 300;
-                font-size: 16rem;
-                color: rgba(29, 28, 26, 0.805);
-                position: absolute;
-                left: 13rem;
-                top: 8rem;
-                z-index: 2;
-              }
-              h2 {
-                @include logo-font-style;
-                font-family: "MoonDance-Regular";
-                font-size: 4.5rem;
-                top: 28rem;
-                left: 18rem;
-                position: absolute;
-              }
-            }
-            .ball {
-              width: 35rem;
-              height: 35rem;
-              background-color: #b68a23;
-              border-radius: 50%;
-              border: #e4e4e48d 2rem solid;
-              position: relative;
-              left: 40rem;
-              top: 6rem;
-
-              .gif {
-                width: 92rem;
-                height: 60rem;
-                position: absolute;
-                right: -22rem;
-                bottom: -5rem;
-              }
-            }
-          }
-          font-size: 0.5rem;
+          font-weight: 300;
+          font-size: 10rem;
           color: rgba(29, 28, 26, 0.805);
-          position: absolute;
-          left: 13rem;
-          top: 8rem;
+         position: absolute;
+          left: 8rem;
+          top: 13rem; 
           z-index: 2;
         }
         h2 {
           @include logo-font-style;
           font-family: "MoonDance-Regular";
-          font-size: 4.5rem;
-          top: 28rem;
+          font-size: 4rem;
+          top: 22rem;
           left: 18rem;
           position: absolute;
         }
       }
       .ball {
-        width: 35rem;
-        height: 35rem;
+        width: 30rem;
+        height: 30rem;
         background-color: #b68a23;
         border-radius: 50%;
         border: #e4e4e48d 2rem solid;
         position: relative;
-        left: 40rem;
-        top: 6rem;
-
+        left:22rem;    
+    /* 
         .gif {
-          width: 92rem;
-          height: 60rem;
+          width: 110rem;
+          height: 70rem;
           position: absolute;
-          right: -22rem;
+          right: rem;
           bottom: -5rem;
-        }
+        } */
       }
+     
     }
     /*----- End of Hero component media query----- */
 
@@ -325,3 +283,101 @@
     /*----- Start of Footer component media query----- */
   }
 }
+
+@media (max-width: 800px) {
+  .app {
+    /* ++++++++++ Start Navbar Component media query ++++++++++ */
+    .navbar-container {
+      .hamburger {
+        display: block;
+        padding: 0 1rem;
+        cursor: pointer;
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        color: #B48821;
+      }
+      .navbar {
+        .nav-menu {
+          display: none;
+          gap: 0;
+        }
+        .logo {
+          position: absolute;
+          h1 {
+            font-size: 3rem;
+          }
+          top: 21px;
+        }
+      }
+      .expanded {
+        background-color: $secondary-background-color; /* Use the defined variablebout-container {
+          flex-direction: column;
+          img { here */
+        min-height: 55vh;
+        .nav-menu {
+          position: absolute;
+          top: 120px;
+          left: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      bout-container {
+        flex-direction: column;
+        img {
+        }
+        /* ++++++++++ End Navbar Component media query ++++++++++ */
+      }
+    }
+  }
+}
+/* @media (max-width: 768px) {
+  .app {
+    .about-container {
+      flex-direction: column;
+      img {
+        width: 100%;
+        height: auto; //The width of the img is set to 100% and height to auto, ensuring that the image scales proportionally to fit the container on smaller screens.
+      }
+      .rectangle1,
+      .rectangle2 {
+        display: none;
+      }
+      section {
+        padding-top: 2rem;
+        max-width: 100%;
+        margin-top: 2rem;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $md) {
+  .contact-img {
+    display: none;
+  }
+}
+@media (max-width: $md) {
+  .footer-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    .logo {
+      padding: 3rem;
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      .about-me,
+      .links {
+        padding-left: 3rem;
+      }
+    }
+  }
+}
+ */

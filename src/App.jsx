@@ -15,8 +15,8 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <Navbar />
-        <Hero />
+{/*         <Navbar />
+ */}        <Hero />
         <Aboutme />
         <Services />
         <Gallery />

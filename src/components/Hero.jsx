@@ -5,13 +5,14 @@ function Hero() {
     <div className="hero-container">
       <div className="hero-heading">
         <h1>Yoga</h1>
-        <img src={name} className="name" />
-      </div>
+        <h2>Sheetal</h2>
+{/*         <img src={name} className="name" />
+ */}      </div>
 
       {
         <div className="ball">
-          <img src={gif1} className="gif"></img>
-        </div>
+{/*           <img src={gif1} className="gif"></img>
+ */}        </div>
       }
     </div>
   );
