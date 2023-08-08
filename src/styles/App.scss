@@ -75,7 +75,8 @@
 /* ++++++++++ Start of Hero Component style sheet ++++++++++ */
 .hero-container {
   width: 100%;
-  height: 85vh;
+  height: 100vh;
+  padding: 0 8rem;
 
   background: linear-gradient(
     360deg,
@@ -86,36 +87,42 @@
     h1 {
       @include yoga;
       font-weight: 300;
-      font-size: 19rem;
+      font-size: 18rem;
       color: rgba(29, 28, 26, 0.805);
       position: absolute;
-      left: 46rem;
-      top: 3rem;
+      left: 15rem;
+      top: 8rem;
       z-index: 2;
     }
-    .name {
-      top: 23rem;
-      left: 46rem;
+    h2 {
+      @include logo-font-style;
+      font-family: "MoonDance-Regular";
+      font-size: 4.5rem;
+      top: 28rem;
+      left: 18rem;
       position: absolute;
     }
   }
   .ball {
-    width: 56rem;
-    height: 56rem;
-    background-color: rgb(215, 167, 39);
+    width: 38rem;
+    height: 38rem;
+    background-color: #b68a23;
     border-radius: 50%;
+    border: #e4e4e48d 2rem solid;
     position: relative;
-    left: 80rem;
+    left: 50rem;
+    top: 6rem;
 
     .gif {
       width: 110rem;
       height: 70rem;
       position: absolute;
-      left: -35rem;
-      bottom: 1rem;
+      right: -22rem;
+      bottom: -5rem;
     }
   }
 }
+
 /* ++++++++++ End of Hero Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Aboutme Component style sheet ++++++++++ */
@@ -498,27 +505,33 @@
   @include section-padding-style;
   border: 1px solid green;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 
-  .form-container {
-    h2 {
-      @include heading-2-style;
-    }
+  .contact-sub-container {
+    display: flex;
 
-    h3 {
-      @include heading-3;
-      margin-bottom: 1.5rem;
-    }
+    .form-container {
+      h2 {
+        @include heading-2-style;
+        text-align: center;
+        padding: 2rem;
+      }
 
-    .submit-btn {
-      @include button-style;
+      h3 {
+        @include heading-3;
+        text-align: center;
+      }
+
+      .submit-btn {
+        @include button-style;
+      }
     }
-  }
-  .contact-img {
-    img {
-      width: 30rem;
-      margin-right: 5rem;
+    .contact-img {
+      img {
+        width: 30rem;
+      }
     }
   }
 }

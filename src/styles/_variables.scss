@@ -6,9 +6,7 @@ $text-color: #333;
 $button-text-color: white;
 
 //Media Query breakpoints
-$xs: 320px;
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1400px;
+$phone-screen: 599px;
+$tablet-screen-min: 600px;
+$tablet-screen-max: 1023px;
+$desktop: 1024px;

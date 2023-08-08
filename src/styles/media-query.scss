@@ -1,5 +1,5 @@
-/* ++++++++++ Media Query max width of 320px ++++++++++ */
-@media (max-width: $xs) {
+/* ++++++++++ Media Query for Phone screen with max width of 599px ++++++++++ */
+@media (max-width: $phone-screen) {
   .app {
     /*----- Start of Navbar component media query----- */
     .navbar-container {
@@ -8,8 +8,9 @@
 
     /*----- Start of Hero component media query----- */
     .hero-container {
-    }
-    /*----- End of Hero component media query----- */
+      width: 100vw;
+      height: 100vh;
+      padding: 0 8rem;
 
     /*----- Start of Aboutme component media query----- */
     .about-container {
@@ -421,90 +422,304 @@ we need to adujust this media query to the above breakpoints
 
         .logo {
           position: absolute;
-          h1 {
-            font-size: 3rem;
-          }
-          top: 21px;
+          left: 13rem;
+          top: 8rem;
+          z-index: 2;
         }
-      }
-      .expanded {
-        background-color: $secondary-background-color; /* Use the defined variablebout-container {
-          flex-direction: column;
-    
-          img { here */
-        min-height: 55vh;
-
-        .nav-menu {
+        h2 {
+          @include logo-font-style;
+          font-family: "MoonDance-Regular";
+          font-size: 4.5rem;
+          top: 28rem;
+          left: 18rem;
           position: absolute;
-          top: 120px;
-          left: 0;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
         }
       }
-      bout-container {
-        flex-direction: column;
+      .ball {
+        width: 10rem;
+        height: 10rem;
+        background-color: #b68a23;
+        border-radius: 50%;
+        border: #e4e4e48d 2rem solid;
+        position: relative;
+        left: 40rem;
+        top: 6rem;
 
-        img {
+        .gif {
+          width: 92rem;
+          height: 60rem;
+          position: absolute;
+          right: -22rem;
+          bottom: -5rem;
         }
-        /* ++++++++++ End Navbar Component media query ++++++++++ */
       }
     }
-  }
-}
-/* @media (max-width: 768px) {
-  .app {
+    /*----- End of Hero component media query----- */
+
+    /*----- Start of Aboutme component media query----- */
     .about-container {
-      flex-direction: column;
+    }
+    /*----- End of Aboutme component media query----- */
 
-      img {
-        width: 100%;
-        height: auto; //The width of the img is set to 100% and height to auto, ensuring that the image scales proportionally to fit the container on smaller screens.
+    /*----- Start of Service component media query----- */
+    .service-container {
+    }
+    /*----- End of Service component media query----- */
+
+    /*----- Start of Gallery component media query----- */
+    .gallery-container {
+    }
+    /*----- End of Gallery component media query----- */
+
+    /*----- Start of Feedback component media query----- */
+    .feedback-container {
+    }
+    /*----- End of Feedback component media query----- */
+
+    /*----- Start of Demo component media query----- */
+    .demo-container {
+    }
+    /*----- End of Demo component media query----- */
+
+    /*----- Start of Contact component media query----- */
+    .contact-container {
+    }
+    /*----- End of Contact component media query----- */
+
+    /*----- Start of Footer component media query----- */
+    footer {
+    }
+    /*----- Start of Footer component media query----- */
+  }
+}
+
+/* ++++++++++ Media Query for Tablet screen with min 600px and max 1023px  ++++++++++ */
+@media (min-width: $tablet-screen-min) and (max-width: $tablet-screen-max) {
+  .app {
+    /*----- Start of Navbar component media query----- */
+    .navbar-container {
+    }
+    /*----- End of Navbar component media query----- */
+
+    /*----- Start of Hero component media query----- */
+    .hero-container {
+      width: 100%;
+      height: 100vh;
+      /*       padding:0 1rem ;
+ */
+
+      .hero-heading {
+        h1 {
+          font-size: 50%;
+        }
+        h2 {
+          @include logo-font-style;
+          font-family: "MoonDance-Regular";
+          font-size: 4.5rem;
+          top: 28rem;
+          left: 18rem;
+          position: absolute;
+        }
       }
+      .ball {
+        width: 1rem;
+        height: 1rem;
+        background-color: #b68a23;
+        border-radius: 50%;
+        border: #e4e4e48d 2rem solid;
+        position: relative;
+        left: 40rem;
+        top: 6rem;
 
-      .rectangle1,
-      .rectangle2 {
-        display: none;
-      }
-
-      section {
-        padding-top: 2rem;
-        max-width: 100%;
-        margin-top: 2rem;
-
-        p {
-          font-size: 14px;
+        .gif {
+          width: 92rem;
+          height: 60rem;
+          position: absolute;
+          right: -22rem;
+          bottom: -5rem;
         }
       }
     }
-  }
-}
-@media (max-width: $md) {
-  .contact-img {
-    display: none;
-  }
-}
-@media (max-width: $md) {
-  .footer-container {
-    display: flex;
+    /*----- End of Hero component media query----- */
 
-    flex-flow: row wrap;
-    justify-content: flex-end;
-
-    .logo {
-      padding: 3rem;
+    /*----- Start of Aboutme component media query----- */
+    .about-container {
     }
-    .contact {
-      display: flex;
-      flex-direction: column;
-      justify-items: center;
+    /*----- End of Aboutme component media query----- */
 
-      .about-me,
-      .links {
-        padding-left: 3rem;
+    /*----- Start of Service component media query----- */
+    .service-container {
+    }
+    /*----- End of Service component media query----- */
+
+    /*----- Start of Gallery component media query----- */
+    .gallery-container {
+    }
+    /*----- End of Gallery component media query----- */
+
+    /*----- Start of Feedback component media query----- */
+    .feedback-container {
+    }
+    /*----- End of Feedback component media query----- */
+
+    /*----- Start of Demo component media query----- */
+    .demo-container {
+    }
+    /*----- End of Demo component media query----- */
+
+    /*----- Start of Contact component media query----- */
+    .contact-container {
+    }
+    /*----- End of Contact component media query----- */
+
+    /*----- Start of Footer component media query----- */
+    footer {
+    }
+    /*----- Start of Footer component media query----- */
+  }
+}
+
+/* ++++++++++ Media Query for Desktop screen with min width of 1024px ++++++++++ */
+@media (min-width: $desktop) {
+  .app {
+    /*----- Start of Navbar component media query----- */
+    .navbar-container {
+    }
+    /*----- End of Navbar component media query----- */
+
+    /*----- Start of Hero component media query----- */
+    .hero-container {
+      width: 100vw;
+      height: 100vh;
+      padding: 0 8rem;
+
+      background: linear-gradient(
+        360deg,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(209, 204, 204, 0.445) 50%
+      );
+      .hero-heading {
+        h1 {
+          @include yoga;
+          .hero-container {
+            width: 100vw;
+            height: 100vh;
+            padding: 0 8rem;
+
+            background: linear-gradient(
+              360deg,
+              rgba(255, 255, 255, 0) 50%,
+              rgba(209, 204, 204, 0.445) 50%
+            );
+            .hero-heading {
+              h1 {
+                @include yoga;
+                font-weight: 300;
+                font-size: 16rem;
+                color: rgba(29, 28, 26, 0.805);
+                position: absolute;
+                left: 13rem;
+                top: 8rem;
+                z-index: 2;
+              }
+              h2 {
+                @include logo-font-style;
+                font-family: "MoonDance-Regular";
+                font-size: 4.5rem;
+                top: 28rem;
+                left: 18rem;
+                position: absolute;
+              }
+            }
+            .ball {
+              width: 35rem;
+              height: 35rem;
+              background-color: #b68a23;
+              border-radius: 50%;
+              border: #e4e4e48d 2rem solid;
+              position: relative;
+              left: 40rem;
+              top: 6rem;
+
+              .gif {
+                width: 92rem;
+                height: 60rem;
+                position: absolute;
+                right: -22rem;
+                bottom: -5rem;
+              }
+            }
+          }
+          font-size: 0.5rem;
+          color: rgba(29, 28, 26, 0.805);
+          position: absolute;
+          left: 13rem;
+          top: 8rem;
+          z-index: 2;
+        }
+        h2 {
+          @include logo-font-style;
+          font-family: "MoonDance-Regular";
+          font-size: 4.5rem;
+          top: 28rem;
+          left: 18rem;
+          position: absolute;
+        }
+      }
+      .ball {
+        width: 35rem;
+        height: 35rem;
+        background-color: #b68a23;
+        border-radius: 50%;
+        border: #e4e4e48d 2rem solid;
+        position: relative;
+        left: 40rem;
+        top: 6rem;
+
+        .gif {
+          width: 92rem;
+          height: 60rem;
+          position: absolute;
+          right: -22rem;
+          bottom: -5rem;
+        }
       }
     }
+    /*----- End of Hero component media query----- */
+
+    /*----- Start of Aboutme component media query----- */
+    .about-container {
+    }
+    /*----- End of Aboutme component media query----- */
+
+    /*----- Start of Service component media query----- */
+    .service-container {
+    }
+    /*----- End of Service component media query----- */
+
+    /*----- Start of Gallery component media query----- */
+    .gallery-container {
+    }
+    /*----- End of Gallery component media query----- */
+
+    /*----- Start of Feedback component media query----- */
+    .feedback-container {
+    }
+    /*----- End of Feedback component media query----- */
+
+    /*----- Start of Demo component media query----- */
+    .demo-container {
+    }
+    /*----- End of Demo component media query----- */
+
+    /*----- Start of Contact component media query----- */
+    .contact-container {
+    }
+    /*----- End of Contact component media query----- */
+
+    /*----- Start of Footer component media query----- */
+    footer {
+    }
+    /*----- Start of Footer component media query----- */
   }
 }
- */

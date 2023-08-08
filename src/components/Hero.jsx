@@ -7,9 +7,12 @@ function Hero() {
         <h1>Yoga</h1>
         <img src={name} className="name" />
       </div>
-      <div className="ball">
-        <img src={gif1} className="gif"></img>
-      </div>
+
+      {
+        <div className="ball">
+          <img src={gif1} className="gif"></img>
+        </div>
+      }
     </div>
   );
 }
