@@ -19,8 +19,8 @@ function App() {
         <Hero />
         <Aboutme />
         <Services />
-         <Gallery />
-      <Feedback />
+        <Gallery />
+        <Feedback />
         <Demo />
         <Contacts />
         <Footer />
