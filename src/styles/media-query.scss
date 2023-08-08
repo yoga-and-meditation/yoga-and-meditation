@@ -107,7 +107,15 @@
     /*----- End of Navbar component media query----- */
 
     /*----- Start of Hero component media query----- */
-    .hero-container {
+    .hero-container {.ball{
+      position: relative;
+      left:35rem
+    }
+    .hero{
+      height: 100vh;
+      width: 100%;
+      background: linear-gradient(360deg, rgba(255,255,255,0) 39%,  rgba(209, 204, 204, 0.445) 39%);
+    }
     }
     /*----- End of Hero component media query----- */
 
@@ -207,7 +215,50 @@
     /*----- End of Navbar component media query----- */
 
     /*----- Start of Hero component media query----- */
-    .hero-container {
+    .hero-container {  width: 100%;
+      height: 100vh;
+      padding:0 5rem ;
+    
+      background: linear-gradient(
+        360deg,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(209, 204, 204, 0.445) 50%
+      );
+      .hero-heading {
+        h1 {
+          @include yoga;
+          font-weight: 300;
+          font-size: 10rem;
+          color: rgba(29, 28, 26, 0.805);
+          position: absolute;
+          left: 10rem;
+          top: 8rem;
+          z-index: 2;
+        }
+        .name {
+          top: 22rem;
+          left: 10rem;
+          position: absolute;
+        }
+      }
+      .ball {
+        width:25rem;
+        height:25rem;
+        background-color: #b68a23;
+        border-radius: 50%;
+        border: #e4e4e48d 2rem solid;
+        position: relative;
+        left: 30rem;
+        top:8rem;
+    
+        .gif {
+          width: 100rem;
+          height: 60rem;
+          position: absolute;
+          right: -22rem;
+          bottom: -5rem;
+        }
+      }
     }
     /*----- End of Hero component media query----- */
 
@@ -257,7 +308,50 @@
     /*----- End of Navbar component media query----- */
 
     /*----- Start of Hero component media query----- */
-    .hero-container {
+    .hero-container { width: 100%;
+      height: 100vh;
+      padding:0 8rem ;
+    
+      background: linear-gradient(
+        360deg,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(209, 204, 204, 0.445) 50%
+      );
+      .hero-heading {
+        h1 {
+          @include yoga;
+          font-weight: 300;
+          font-size: 15rem;
+          color: rgba(29, 28, 26, 0.805);
+          position: absolute;
+          left: 10rem;
+          top: 8rem;
+          z-index: 2;
+        }
+        .name {
+          top: 22rem;
+          left: 10rem;
+          position: absolute;
+        }
+      }
+      .ball {
+        width: 30rem;
+        height: 30rem;
+        background-color: #b68a23;
+        border-radius: 50%;
+        border: #e4e4e48d 2rem solid;
+        position: relative;
+        left: 30rem;
+        top:8rem;
+    
+        .gif {
+          width: 70rem;
+          height: 40rem;
+          position: absolute;
+          right: -22rem;
+          bottom: -5rem;
+        }
+      }
     }
     /*----- End of Hero component media query----- */
 
