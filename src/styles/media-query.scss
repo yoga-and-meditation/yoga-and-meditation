@@ -93,8 +93,13 @@
 
     /*----- Start of Footer component media query----- */
     footer {
+      .footer-container{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+      }
     }
-    /*----- Start of Footer component media query----- */
+    /*----- End of Footer component media query----- */
   }
 }
 
@@ -144,7 +149,7 @@
     /*----- Start of Footer component media query----- */
     footer {
     }
-    /*----- Start of Footer component media query----- */
+    /*----- End of Footer component media query----- */
   }
 }
 
@@ -193,8 +198,9 @@
 
     /*----- Start of Footer component media query----- */
     footer {
+      
     }
-    /*----- Start of Footer component media query----- */
+    /*----- End of Footer component media query----- */
   }
 }
 
@@ -293,6 +299,8 @@
 
     /*----- Start of Footer component media query----- */
     footer {
+
+    
     }
     /*----- Start of Footer component media query----- */
   }
