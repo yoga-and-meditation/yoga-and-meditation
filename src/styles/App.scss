@@ -330,6 +330,7 @@
   h2 {
     /* This class defines the heading for the gallery. */
     @include heading-2-style;
+    text-align: center;
   }
 
   /* This code applies the `heading-2-color` mixin to the heading, which sets its color to the same color as the `h2` heading element in the JSX code. */
