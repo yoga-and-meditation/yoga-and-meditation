@@ -65,16 +65,17 @@
   .app {
     .hero-container { display: flex;
       justify-content: center;
-      border: 1px solid green;  
+
       .hero { 
         width:90%;
-         border: 1px solid rgb(222, 148, 53);
         display: flex;
         justify-content: center;
+        align-items: center;
+        gap:1rem;
+        flex-direction: column;
         background: none;
         .col1 {
           width: 100%;
-          border: 1px solid rgb(53, 56, 222);
 
            margin-left: 0;
           margin-top: 0;
@@ -84,26 +85,28 @@
           text-align: center;
             font-size: 8rem;
           }
-          h2 {
+          h2 {          text-align: center;
+
             font-size: 3rem;
           }
         } 
         .col2 {
-          width: 100%;
-          border: 1px solid rgb(8, 8, 38);
+          
          position: relative;
           order: 2;
            margin-left: 0;
         .ball {
          
-            width: 10rem;
-            height: 10rem;       
+            width: 18rem;
+            height: 18rem;       
                   margin-left: 0;
                   right: 10rem;
+                  transform: translateX(20px);
+
            }
           img {
-            width: 15rem;
-            height: 14rem;
+            width: 18rem;
+            height: 15rem;
            /*   margin-left: 5rem; */
             margin-top: 1rem; 
           }
