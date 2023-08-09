@@ -509,9 +509,13 @@
   align-items: center;
 
   .contact-sub-container {
+    width: 100%;
     display: flex;
+    border: 2px solid black;
 
     .form-container {
+      width: 60%;
+      border: 2px solid red;
       h2 {
         @include heading-2-style;
         text-align: center;
