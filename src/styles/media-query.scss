@@ -1,327 +1,131 @@
-/* ++++++++++ Media Query for Phone screen with max width of 599px ++++++++++ */
-@media (max-width: $phone-screen) {
+@media (min-width: 1150px) and (max-width: 1300px) {
   .app {
-    /*----- Start of Navbar component media query----- */
-    .navbar-container {
-    }
-    /*----- End of Navbar component media query----- */
-
-    /*----- Start of Hero component media query----- */
     .hero-container {
-      width: 100vw;
-      height: 100vh;
-      padding: 0 8rem;
-
-      background: linear-gradient(
-        360deg,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(209, 204, 204, 0.445) 50%
-      );
-      .hero-heading {
-        h1 {
-          @include yoga;
-          font-weight: 300;
-          font-size: 1rem;
-          color: rgba(29, 28, 26, 0.805);
-          position: absolute;
-          left: 13rem;
-          top: 8rem;
-          z-index: 2;
-        }
-        h2 {
-          @include logo-font-style;
-          font-family: "MoonDance-Regular";
-          font-size: 4.5rem;
-          top: 28rem;
-          left: 18rem;
-          position: absolute;
-        }
-      }
-      .ball {
-        width: 10rem;
-        height: 10rem;
-        background-color: #b68a23;
-        border-radius: 50%;
-        border: #e4e4e48d 2rem solid;
-        position: relative;
-        left: 40rem;
-        top: 6rem;
-
-        .gif {
-          width: 92rem;
-          height: 60rem;
-          position: absolute;
-          right: -22rem;
-          bottom: -5rem;
-        }
-      }
-    }
-    /*----- End of Hero component media query----- */
-
-    /*----- Start of Aboutme component media query----- */
-    .about-container {
-    }
-    /*----- End of Aboutme component media query----- */
-
-    /*----- Start of Service component media query----- */
-    .service-container {
-    }
-    /*----- End of Service component media query----- */
-
-    /*----- Start of Gallery component media query----- */
-    .gallery-container {
-    }
-    /*----- End of Gallery component media query----- */
-
-    /*----- Start of Feedback component media query----- */
-    .feedback-container {
-    }
-    /*----- End of Feedback component media query----- */
-
-    /*----- Start of Demo component media query----- */
-    .demo-container {
-    }
-    /*----- End of Demo component media query----- */
-
-    /*----- Start of Contact component media query----- */
-    .contact-container {
-    }
-    /*----- End of Contact component media query----- */
-
-    /*----- Start of Footer component media query----- */
-    footer {
-    }
-    /*----- Start of Footer component media query----- */
-  }
-}
-
-/* ++++++++++ Media Query for Tablet screen with min 600px and max 1023px  ++++++++++ */
-@media (min-width: $tablet-screen-min) and (max-width: $tablet-screen-max) {
-  .app {
-    /*----- Start of Navbar component media query----- */
-    .navbar-container {
-    }
-    /*----- End of Navbar component media query----- */
-
-    /*----- Start of Hero component media query----- */
-    .hero-container {
-      width: 100%;
-      height: 100vh;
-      /*       padding:0 1rem ;
- */
-
-      .hero-heading {
-        h1 {
-          font-size: 50%;
-        }
-        h2 {
-          @include logo-font-style;
-          font-family: "MoonDance-Regular";
-          font-size: 4.5rem;
-          top: 28rem;
-          left: 18rem;
-          position: absolute;
-        }
-      }
-      .ball {
-        width: 1rem;
-        height: 1rem;
-        background-color: #b68a23;
-        border-radius: 50%;
-        border: #e4e4e48d 2rem solid;
-        position: relative;
-        left: 40rem;
-        top: 6rem;
-
-        .gif {
-          width: 92rem;
-          height: 60rem;
-          position: absolute;
-          right: -22rem;
-          bottom: -5rem;
-        }
-      }
-    }
-    /*----- End of Hero component media query----- */
-
-    /*----- Start of Aboutme component media query----- */
-    .about-container {
-    }
-    /*----- End of Aboutme component media query----- */
-
-    /*----- Start of Service component media query----- */
-    .service-container {
-    }
-    /*----- End of Service component media query----- */
-
-    /*----- Start of Gallery component media query----- */
-    .gallery-container {
-    }
-    /*----- End of Gallery component media query----- */
-
-    /*----- Start of Feedback component media query----- */
-    .feedback-container {
-    }
-    /*----- End of Feedback component media query----- */
-
-    /*----- Start of Demo component media query----- */
-    .demo-container {
-    }
-    /*----- End of Demo component media query----- */
-
-    /*----- Start of Contact component media query----- */
-    .contact-container {
-    }
-    /*----- End of Contact component media query----- */
-
-    /*----- Start of Footer component media query----- */
-    footer {
-    }
-    /*----- Start of Footer component media query----- */
-  }
-}
-
-/* ++++++++++ Media Query for Desktop screen with min width of 1024px ++++++++++ */
-@media (min-width: $desktop) {
-  .app {
-    /*----- Start of Navbar component media query----- */
-    .navbar-container {
-    }
-    /*----- End of Navbar component media query----- */
-
-    /*----- Start of Hero component media query----- */
-    .hero-container {
-      width: 100vw;
-      height: 100vh;
-      padding: 0 8rem;
-
-      background: linear-gradient(
-        360deg,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(209, 204, 204, 0.445) 50%
-      );
-      .hero-heading {
-        h1 {
-          @include yoga;
-          .hero-container {
-            width: 100vw;
-            height: 100vh;
-            padding: 0 8rem;
-
-            background: linear-gradient(
-              360deg,
-              rgba(255, 255, 255, 0) 50%,
-              rgba(209, 204, 204, 0.445) 50%
-            );
-            .hero-heading {
-              h1 {
-                @include yoga;
-                font-weight: 300;
-                font-size: 16rem;
-                color: rgba(29, 28, 26, 0.805);
-                position: absolute;
-                left: 13rem;
-                top: 8rem;
-                z-index: 2;
-              }
-              h2 {
-                @include logo-font-style;
-                font-family: "MoonDance-Regular";
-                font-size: 4.5rem;
-                top: 28rem;
-                left: 18rem;
-                position: absolute;
-              }
-            }
-            .ball {
-              width: 35rem;
-              height: 35rem;
-              background-color: #b68a23;
-              border-radius: 50%;
-              border: #e4e4e48d 2rem solid;
-              position: relative;
-              left: 40rem;
-              top: 6rem;
-
-              .gif {
-                width: 92rem;
-                height: 60rem;
-                position: absolute;
-                right: -22rem;
-                bottom: -5rem;
-              }
-            }
+      .hero {
+        .col1 {
+          margin-bottom: 20rem;
+          margin-top: 0.5rem;
+          margin-left: 150px;
+          h1 {
+            font-size: 14rem;
           }
-          font-size: 0.5rem;
-          color: rgba(29, 28, 26, 0.805);
-          position: absolute;
-          left: 13rem;
-          top: 8rem;
-          z-index: 2;
+          h2 {
+            font-size: 3rem;
+          }
         }
-        h2 {
-          @include logo-font-style;
-          font-family: "MoonDance-Regular";
-          font-size: 4.5rem;
-          top: 28rem;
-          left: 18rem;
-          position: absolute;
-        }
-      }
-      .ball {
-        width: 35rem;
-        height: 35rem;
-        background-color: #b68a23;
-        border-radius: 50%;
-        border: #e4e4e48d 2rem solid;
-        position: relative;
-        left: 40rem;
-        top: 6rem;
-
-        .gif {
-          width: 92rem;
-          height: 60rem;
-          position: absolute;
-          right: -22rem;
-          bottom: -5rem;
-        }
+        .col2 {
+          margin-left: -10rem;
+          .ball {
+            width: 30rem;
+            height: 30rem;
+          }
+          .img {
+            width: 28rem;
+            height: 20rem;
+            margin-right: 4rem;
+          }
+        }    
       }
     }
-    /*----- End of Hero component media query----- */
+  }
+}
 
-    /*----- Start of Aboutme component media query----- */
-    .about-container {
+@media (min-width: 900px) and (max-width: 1150px) {
+  .app {
+    .hero-container {
+      .hero {
+        .col1 {
+          margin-bottom: 20rem;
+          margin-top: 0.5rem;
+          margin-left: 120px;
+          h1 {
+            font-size: 10rem;
+          }h2 {
+            font-size: 3rem;
+          }
+        }
+        .col2 {
+          margin-left: -10rem;
+          .ball {
+            width: 26rem;
+            height: 26rem;
+          }
+          .img {
+            width: 25rem;
+            height: 18rem;
+            margin-right: 4rem;
+          }
+        }
+      }
     }
-    /*----- End of Aboutme component media query----- */
+  }
+}
 
-    /*----- Start of Service component media query----- */
-    .service-container {
+@media (min-width: 500px) and (max-width: 900px) {
+  .app {
+    .hero-container {
+      .hero {
+        background: none;
+        .col1 {
+          margin-left: 10rem;
+          margin-top: 0;
+          margin-bottom: 0;
+          order: 1;
+          h1 {
+            font-size: 8rem;
+          }
+          h2 {
+            font-size: 3rem;
+          }
+        } 
+        .col2 {
+          align-items: start;
+          order: 2;
+          margin-left: 2rem;
+          .ball {
+            width: 20rem;
+            height: 20rem;
+            margin-left: 0;
+          }
+          img {
+            width: 20rem;
+            height: 18rem;
+            margin-left: 1rem;
+            margin-top: 8rem;
+          }
+        }
+      }
     }
-    /*----- End of Service component media query----- */
-
-    /*----- Start of Gallery component media query----- */
-    .gallery-container {
+  }
+}
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .app {
+    .hero-container {
+      .hero {
+        .col1 {
+          margin-bottom: 20rem;
+          margin-top: 0.5rem;
+          margin-left: 12rem;
+          h1 {
+            font-size: 15rem;
+          }
+          h2 {
+            font-size: 4rem;
+          }
+        }
+        .col2 {
+          margin-left: -10rem;
+         .ball {
+            width: 32rem;
+            height: 32rem;
+          }
+          .img {
+            width: 28rem;
+            height: 20rem;
+            margin-right: 4rem;
+          }
+        }
+      }
     }
-    /*----- End of Gallery component media query----- */
-
-    /*----- Start of Feedback component media query----- */
-    .feedback-container {
-    }
-    /*----- End of Feedback component media query----- */
-
-    /*----- Start of Demo component media query----- */
-    .demo-container {
-    }
-    /*----- End of Demo component media query----- */
-
-    /*----- Start of Contact component media query----- */
-    .contact-container {
-    }
-    /*----- End of Contact component media query----- */
-
-    /*----- Start of Footer component media query----- */
-    footer {
-    }
-    /*----- Start of Footer component media query----- */
   }
 }
