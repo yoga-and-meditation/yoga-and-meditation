@@ -51,7 +51,7 @@ function Contacts() {
                     </div>
                   </div>
                   <button className="submit-btn" type="submit">
-                    Submit
+                    Send
                   </button>
                 </form>
               </div>

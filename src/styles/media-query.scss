@@ -188,6 +188,23 @@
 
     /*----- Start of Contact component media query----- */
     .contact-container {
+      width: 99%;
+
+      .contact-sub-container {
+        .form-container {
+          width: 100%;
+
+          h2 {
+            font-size: 2.5rem;
+          }
+          h3 {
+            font-size: 2rem;
+          }
+        }
+        .contact-img {
+          display: none;
+        }
+      }
     }
     /*----- End of Contact component media query----- */
 
@@ -333,6 +350,16 @@
 
     /*----- Start of Contact component media query----- */
     .contact-container {
+      width: 99%;
+
+      .contact-sub-container {
+        .form-container {
+          width: 100%;
+        }
+        .submit-btn {
+          font-size: 1.7rem;
+        }
+      }
     }
     /*----- End of Contact component media query----- */
 
