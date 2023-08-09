@@ -145,8 +145,8 @@
     position: absolute;
     top: 0;
     left: 3rem;
-    width: 500px;
-    height: 730px;
+    width: 450px;
+    height: 630px;
     transform: rotate(-13deg);
     z-index: -1;
     /*     animation: rotateAnimation 60s infinite linear; */
@@ -157,6 +157,7 @@
   }
   .rectangle2 {
     border: 15px solid #eaeae8;
+    margin-top: -10px;
     margin-left: -30px; /* Add some spacing between the rectangles */
   }
 
