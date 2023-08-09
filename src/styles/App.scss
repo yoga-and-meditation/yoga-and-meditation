@@ -194,7 +194,6 @@
 /* ++++++++++ Start of Service Component style sheet ++++++++++ */
 .service-container {
   @include section-padding-style;
-  border: 1px solid green;
 
   /* Heading style of the section */
   .header-container {
@@ -361,7 +360,6 @@
 
   .site-container {
     @include section-padding-style;
-    border: 1px solid green;
 
     padding: 3rem 10rem;
 
@@ -434,7 +432,6 @@
 .demo-container {
   /* Variables only for Demo component use */
   @include section-padding-style;
-  border: 1px solid green;
   $margin-size: 2rem;
   $circle-color: rgba(249, 194, 51, 1);
   display: flex;
