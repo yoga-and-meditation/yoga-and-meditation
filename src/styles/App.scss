@@ -502,7 +502,6 @@
 /* ++++++++++ Start of Contact Component style sheet ++++++++++ */
 .contact-container {
   @include section-padding-style;
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -511,30 +510,32 @@
   .contact-sub-container {
     width: 100%;
     display: flex;
-    border: 2px solid black;
 
     .form-container {
-      width: 60%;
-      border: 2px solid red;
+      width: 65%;
+      padding: 1.5rem;
+
       h2 {
         @include heading-2-style;
-        text-align: center;
-        padding: 2rem;
+        padding: 1.5rem 0;
       }
 
       h3 {
         @include heading-3;
-        text-align: center;
-      }
-
-      .submit-btn {
-        @include button-style;
+        padding-bottom: 1rem;
       }
     }
+
+    .submit-btn {
+      @include button-style;
+    }
+
     .contact-img {
-      img {
-        width: 30rem;
-      }
+      margin: 1.6rem;
+      width: 35%;
+      background-image: url("../assets//images/contact/yogaPause.jpg");
+      background-position: center;
+      background-size: cover;
     }
   }
 }

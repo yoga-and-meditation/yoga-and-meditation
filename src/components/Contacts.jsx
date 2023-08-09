@@ -1,12 +1,10 @@
-import contactImg from "../assets/images/contact/yogaPause.jpg";
-
 function Contacts() {
   return (
     <div className="form contact-container">
-      <h2>Excited to know more?</h2>
-      <h3>Get in Touch</h3>
       <div className="contact-sub-container">
         <div className="container form-container">
+          <h2>Excited to know more?</h2>
+          <h3>Get in Touch</h3>
           <div className="row">
             <div className="col-12 text-center">
               <div className="contactForm">
@@ -60,9 +58,7 @@ function Contacts() {
             </div>
           </div>
         </div>
-        <div className="contact-img">
-          <img className="img-thumbnail" src={contactImg} alt="contact-img" />
-        </div>
+        <div className="contact-img img-thumbnail"></div>
       </div>
     </div>
   );
