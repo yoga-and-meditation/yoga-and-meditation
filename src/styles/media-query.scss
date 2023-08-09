@@ -63,15 +63,25 @@
 
 @media (min-width: 500px) and (max-width: 900px) {
   .app {
-    .hero-container {
-      .hero {
+    .hero-container { display: flex;
+      justify-content: center;
+      border: 1px solid green;  
+      .hero { 
+        width:90%;
+         border: 1px solid rgb(222, 148, 53);
+        display: flex;
+        justify-content: center;
         background: none;
         .col1 {
-          margin-left: 10rem;
+          width: 100%;
+          border: 1px solid rgb(53, 56, 222);
+
+           margin-left: 0;
           margin-top: 0;
           margin-bottom: 0;
           order: 1;
           h1 {
+          text-align: center;
             font-size: 8rem;
           }
           h2 {
@@ -79,19 +89,23 @@
           }
         } 
         .col2 {
-          align-items: start;
+          width: 100%;
+          border: 1px solid rgb(8, 8, 38);
+         position: relative;
           order: 2;
-          margin-left: 2rem;
-          .ball {
-            width: 20rem;
-            height: 20rem;
-            margin-left: 0;
-          }
+           margin-left: 0;
+        .ball {
+         
+            width: 10rem;
+            height: 10rem;       
+                  margin-left: 0;
+                  right: 10rem;
+           }
           img {
-            width: 20rem;
-            height: 18rem;
-            margin-left: 1rem;
-            margin-top: 8rem;
+            width: 15rem;
+            height: 14rem;
+           /*   margin-left: 5rem; */
+            margin-top: 1rem; 
           }
         }
       }

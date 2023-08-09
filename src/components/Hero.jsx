@@ -10,8 +10,8 @@ function Hero() {
          </div>
          <div className='col2 '>
     
-          <img className="img" src={gif1}></img>
-          <div className='ball'> </div> </div>
+{/*           <img className="img" src={gif1}></img>
+ */}          <div className='ball'> </div> </div>
     </div></div>
   );
 }
