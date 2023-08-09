@@ -128,7 +128,7 @@
 /* ++++++++++ Start of Aboutme Component style sheet ++++++++++ */
 .about-container {
   @include section-padding-style;
- 
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -136,15 +136,15 @@
   z-index: 1;
 
   .about-image {
-    width: 500px;
-    height: 700px;
+    width: 400px;
+    height: 600px;
   }
 
   .rectangle1,
   .rectangle2 {
     position: absolute;
     top: 0;
-    left: 10rem;
+    left: 3rem;
     width: 500px;
     height: 730px;
     transform: rotate(-13deg);
