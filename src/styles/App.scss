@@ -128,64 +128,72 @@
 /* ++++++++++ Start of Aboutme Component style sheet ++++++++++ */
 .about-container {
   @include section-padding-style;
-  border: 1px solid green;
+  margin-bottom: 15rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
   z-index: 1;
 
-  .about-image {
-    width: 500px;
-    height: 700px;
-  }
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 40%;
 
-  .rectangle1,
-  .rectangle2 {
-    position: absolute;
-    top: 0;
-    left: 10rem;
-    width: 530px;
-    height: 730px;
-    transform: rotate(-13deg);
-    z-index: -1;
-    /*     animation: rotateAnimation 60s infinite linear; */
-  }
-  .rectangle1 {
-    border: 15px solid #f4e4d5;
-    margin-left: 50px; //Add some spacing between the rectangles
-  }
-  .rectangle2 {
-    border: 15px solid #eaeae8;
-    margin-left: -30px; /* Add some spacing between the rectangles */
-  }
-
-  @keyframes rotateAnimation {
-    0% {
-      transform: rotate(0);
+    .about-image {
+      margin-left: 4rem;
+      width: 400px;
+      height: 570px;
     }
-    100% {
-      transform: rotate(360deg);
+
+    .rectangle1,
+    .rectangle2 {
+      position: absolute;
+      top: 0;
+      width: 450px;
+      height: 630px;
+      transform: rotate(-13deg);
+      z-index: -1;
+      /*   animation: rotateAnimation 60s infinite linear; */
+    }
+
+    .rectangle1 {
+      border: 15px solid #f4e4d5;
+      margin-left: 60px; //Add some spacing between the rectangles
+    }
+    .rectangle2 {
+      border: 15px solid #eaeae8;
+      margin-top: -20px;
+      margin-left: -30px; /* Add some spacing between the rectangles */
+    }
+
+    @keyframes rotateAnimation {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
   }
 
-  section {
+  .content-container {
+    padding: 4rem;
+    width: 60%;
     display: flex;
     flex: 1;
-    gap: 2rem;
     flex-direction: column;
-    padding-top: 1rem;
-    max-width: 50vw;
-    /*    margin-top: 2rem; */
+    align-items: center;
+    gap: 2rem;
 
     h2 {
       @include heading-2-style;
+      text-align: center;
     }
     p {
       color: $text-color;
       font-family: "Roboto-Medium";
       font-size: 1.5rem;
-      max-width: 70%;
     }
   }
 }
