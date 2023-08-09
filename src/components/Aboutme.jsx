@@ -1,4 +1,4 @@
-import sheetalImg from "../assets/images/My project-1.png";
+import sheetalImg from "../assets/images/about/profile.png";
 
 function Aboutme() {
   return (
