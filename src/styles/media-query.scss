@@ -85,6 +85,23 @@
 
     /*----- Start of Contact component media query----- */
     .contact-container {
+      width: 99%;
+
+      .contact-sub-container {
+        .form-container {
+          width: 100%;
+
+          h2 {
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 1.5rem;
+          }
+        }
+        .contact-img {
+          display: none;
+        }
+      }
     }
     /*----- End of Contact component media query----- */
 
