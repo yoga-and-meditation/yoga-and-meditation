@@ -9,23 +9,6 @@ import meditationWhiteIcon from "../assets/images/services/meditation-white.png"
 import meditationGoldIcon from "../assets/images/services/meditation-gold.png";
 const serviceData = [
   {
-    title: "Yoga",
-    activeIcon: yogaWhiteIcon,
-    inActiveIcon: yogaGoldIcon,
-    image: image1,
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Veniam hic provident at unde porro odio voluptas repellat
-    soluta! Ducimus voluptatem vero odio voluptatibus fugiat
-    soluta asperiores, ullam reiciendis vel hic culpa
-    architecto. Perferendis ducimus accusantium perspiciatis
-    qui, accusamus libero earum laudantium maiores voluptatem
-    officiis! Vel quos aliquam tenetur a possimus! asperiores,
-    ullam reiciendis vel hic culpa architecto. Perferendis
-    ducimus accusantium perspiciatis qui, accusamus libero earum
-    laudantium maiores voluptatem officiis! Vel quos aliquam
-    tenetur a possimus!`,
-  },
-  {
     title: "Meditation",
     activeIcon: meditationWhiteIcon,
     inActiveIcon: meditationGoldIcon,
@@ -43,10 +26,10 @@ const serviceData = [
     tenetur a possimus!`,
   },
   {
-    title: "Retreats",
+    title: "Yoga",
     activeIcon: yogaWhiteIcon,
     inActiveIcon: yogaGoldIcon,
-    image: image3,
+    image: image1,
     text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
     Veniam hic provident at unde porro odio voluptas repellat
     soluta! Ducimus voluptatem vero odio voluptatibus fugiat
@@ -71,8 +54,7 @@ function Services() {
   return (
     <div className="service-container">
       <div className="header-container">
-        <h2>What We Do?</h2>
-        <h3>Our Services</h3>
+        <h2>Join our courses</h2>
       </div>
       <div className="tab-container">
         <ul className="navigation">
@@ -93,7 +75,6 @@ function Services() {
                     alt={`${service.title} icon`}
                   />
                 </span>
-                {/*   <span className="text">{service.title}</span> */}
               </div>
             </li>
           ))}
