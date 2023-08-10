@@ -68,42 +68,6 @@
     }
     /*----- End of Service component media query----- */
 
-    /*----- Start of Gallery component media query----- */
-    .gallery-container {
-      /* Responsiveness */
-      /* Small devices (portrait phones, less than 600px) */
-      @media (max-width: 600px) {
-        .gallery-container {
-          padding: 10px;
-        }
-      }
-
-      /* Medium devices (tablets, 600px and up) */
-      @media (min-width: 600px) {
-        .gallery-masonry {
-          column-count: 2;
-          column-gap: 10px;
-        }
-      }
-
-      /* Large devices (desktops, 992px and up) */
-      @media (min-width: 992px) {
-        .gallery-masonry {
-          column-count: 3;
-          column-gap: 15px;
-        }
-      }
-
-      /* Extra large devices (large desktops, 1200px and up) */
-      @media (min-width: 1200px) {
-        .gallery-masonry {
-          column-count: 4;
-          column-gap: 20px;
-        }
-      }
-    }
-    /*----- End of Gallery component media query----- */
-
     /*----- Start of Feedback component media query----- */
     .feedback-container {
     }
