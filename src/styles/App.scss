@@ -522,6 +522,8 @@ h2 {
   background-size: cover;
   background-position: center;
   $margin-size: 2rem;
+  width: 80%;
+  margin: 0 auto;
 
   .mb-2 {
     margin-bottom: $margin-size;
