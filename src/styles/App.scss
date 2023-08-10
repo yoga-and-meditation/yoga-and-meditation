@@ -505,6 +505,7 @@ h2 {
   @include heading-2-style;
   margin-bottom: 2rem; // Assuming you want the margin at the top level as well.
   text-align: center;
+  padding: 3rem;
 }
 
 .demo {
@@ -522,7 +523,7 @@ h2 {
   background-size: cover;
   background-position: center;
   $margin-size: 2rem;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 
   .mb-2 {
@@ -532,7 +533,6 @@ h2 {
   .demo-session-description {
     padding: 2rem;
     width: 30rem;
-    height: 50rem;
     margin: 5rem;
     display: flex;
     flex-direction: column;
@@ -552,7 +552,7 @@ h2 {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: $margin-size;
+      gap: 1rem;
       width: 80%; // reduced width since it's now inside the demo-session-description
 
       ul {
