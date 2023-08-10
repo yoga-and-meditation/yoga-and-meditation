@@ -58,7 +58,7 @@ function Contacts() {
             </div>
           </div>
         </div>
-        <div className="contact-img img-thumbnail"></div>
+        <div className="contact-img"></div>
       </div>
     </div>
   );

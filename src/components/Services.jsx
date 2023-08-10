@@ -5,7 +5,8 @@ import image2 from "../assets/images/services/meditation.jpg";
 import image3 from "../assets/images/services/retreating.jpg";
 import yogaGoldIcon from "../assets/images/services/yoga-gold.png";
 import yogaWhiteIcon from "../assets/images/services/yoga-white.png";
-
+import meditationWhiteIcon from "../assets/images/services/meditation-white.png";
+import meditationGoldIcon from "../assets/images/services/meditation-gold.png";
 const serviceData = [
   {
     title: "Yoga",
@@ -26,8 +27,8 @@ const serviceData = [
   },
   {
     title: "Meditation",
-    activeIcon: yogaWhiteIcon,
-    inActiveIcon: yogaGoldIcon,
+    activeIcon: meditationWhiteIcon,
+    inActiveIcon: meditationGoldIcon,
     image: image2,
     text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
     Veniam hic provident at unde porro odio voluptas repellat
