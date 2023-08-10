@@ -625,10 +625,12 @@ h2 {
 
     .contact-img {
       margin: 1.6rem;
-      width: 35%;
+      width: 40%;
+     
       background-image: url("../assets//images/contact/contact.png");
       background-position: center;
-      background-size: cover;
+      background-size:contain;
+      background-repeat: no-repeat;
     }
   }
 }
