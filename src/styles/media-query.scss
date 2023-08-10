@@ -166,6 +166,80 @@
 
     /*----- Start of Demo component media query----- */
     .demo-container {
+      h2 {
+        @include heading-2-style;
+        margin-bottom: 2rem;
+      }
+
+      .demo-container {
+        display: flex;
+        flex-direction: row;
+        // ... (rest of your styles)
+      }
+
+      .booking-info-container {
+        // ... (your existing styles)
+      }
+
+      .demo-session-description {
+        // ... (your existing styles)
+      }
+
+      // Mobile devices
+      @media (max-width: 480px) {
+        .demo-container {
+          flex-direction: column;
+        }
+
+        .demo-session-description,
+        .booking-info-container {
+          width: 100%;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .booking-info-container h6 {
+          font-size: 1.2rem;
+        }
+
+        // You can adjust other elements as well for mobile devices
+      }
+
+      // Tablet devices
+      @media (min-width: 481px) and (max-width: 768px) {
+        .demo-container {
+          flex-direction: column;
+        }
+
+        .demo-session-description,
+        .booking-info-container {
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        .booking-info-container h6 {
+          font-size: 1.5rem;
+        }
+
+        // Adjust other elements as needed for tablets
+      }
+
+      // Desktop devices
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .demo-session-description,
+        .booking-info-container {
+          width: 70%;
+          margin: 0 auto;
+        }
+
+        // Adjust other elements as needed for desktops
+      }
     }
     /*----- End of Demo component media query----- */
 
