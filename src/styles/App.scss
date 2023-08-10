@@ -293,7 +293,7 @@
       /* Tab active button style */
       .active {
         background: #b48821;
-        button {
+        .button {
           .icon {
             transition-delay: 0s;
           }
@@ -315,7 +315,7 @@
         /*       box-shadow: 10px 22px 40px #0000 5%; */
         box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
 
-        button {
+        .button {
           display: flex;
           align-items: center;
           justify-content: center;

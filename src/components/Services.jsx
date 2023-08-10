@@ -82,7 +82,7 @@ function Services() {
               className={tab === index + 1 ? "active" : ""}
               onClick={() => handleTabClick(index)}
             >
-              <button>
+              <div className="button">
                 <span className="icon">
                   <img
                     src={
@@ -94,7 +94,7 @@ function Services() {
                   />
                 </span>
                 {/*   <span className="text">{service.title}</span> */}
-              </button>
+              </div>
             </li>
           ))}
         </ul>
