@@ -132,11 +132,6 @@
     }
     /*----- End of Service component media query----- */
 
-    /*----- Start of Gallery component media query----- */
-    .gallery-container {
-    }
-    /*----- End of Gallery component media query----- */
-
     /*----- Start of Feedback component media query----- */
     .feedback-container {
     }
@@ -144,6 +139,55 @@
 
     /*----- Start of Demo component media query----- */
     .demo-container {
+      // Mobile devices
+      @media (max-width: 480px) {
+        .demo-container {
+          flex-direction: column;
+        }
+
+        .demo-session-description,
+        .booking-info-container {
+          width: 100%;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .booking-info-container h6 {
+          font-size: 1.2rem;
+        }
+      }
+
+      // Tablet devices
+      @media (min-width: 481px) and (max-width: 768px) {
+        .demo-container {
+          flex-direction: column;
+        }
+
+        .demo-session-description,
+        .booking-info-container {
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        .booking-info-container h6 {
+          font-size: 1.5rem;
+        }
+      }
+
+      // Desktop devices
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .demo-session-description,
+        .booking-info-container {
+          width: 70%;
+          margin: 0 auto;
+        }
+      }
     }
     /*----- End of Demo component media query----- */
 
