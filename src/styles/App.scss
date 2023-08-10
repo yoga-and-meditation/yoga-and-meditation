@@ -437,8 +437,7 @@ h2 {
 }
 
 .demo {
-  width: 80%;
-  margin: 0 auto;
+  @include section-padding-style;
 }
 
 .demo-container {

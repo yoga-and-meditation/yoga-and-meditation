@@ -154,11 +154,6 @@
     }
     /*----- End of Service component media query----- */
 
-    /*----- Start of Gallery component media query----- */
-    .gallery-container {
-    }
-    /*----- End of Gallery component media query----- */
-
     /*----- Start of Feedback component media query----- */
     .feedback-container {
     }
@@ -166,25 +161,6 @@
 
     /*----- Start of Demo component media query----- */
     .demo-container {
-      h2 {
-        @include heading-2-style;
-        margin-bottom: 2rem;
-      }
-
-      .demo-container {
-        display: flex;
-        flex-direction: row;
-        // ... (rest of your styles)
-      }
-
-      .booking-info-container {
-        // ... (your existing styles)
-      }
-
-      .demo-session-description {
-        // ... (your existing styles)
-      }
-
       // Mobile devices
       @media (max-width: 480px) {
         .demo-container {
@@ -203,8 +179,6 @@
         .booking-info-container h6 {
           font-size: 1.2rem;
         }
-
-        // You can adjust other elements as well for mobile devices
       }
 
       // Tablet devices
@@ -226,8 +200,6 @@
         .booking-info-container h6 {
           font-size: 1.5rem;
         }
-
-        // Adjust other elements as needed for tablets
       }
 
       // Desktop devices
@@ -237,8 +209,6 @@
           width: 70%;
           margin: 0 auto;
         }
-
-        // Adjust other elements as needed for desktops
       }
     }
     /*----- End of Demo component media query----- */
