@@ -174,17 +174,6 @@
 
     /*----- Start of Hero component media query----- */
     .hero-container {
-      width: 100vw;
-      height: 100vh;
-      padding: 0 8rem;
-
-      background: linear-gradient(
-        360deg,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(209, 204, 204, 0.445) 50%
-      );
-      .hero-heading {
-        
     }
     /*----- End of Hero component media query----- */
 
@@ -222,5 +211,6 @@
     footer {
     }
     /*----- Start of Footer component media query----- */
-  }
+  
+}
 }
