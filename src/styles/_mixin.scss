@@ -20,6 +20,14 @@
 @mixin heading-2-style {
   color: #b48821;
   font-size: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2rem;
+  }
 }
 
 /* ---------------------------- Mixin for card shadow style -------------------------- */
