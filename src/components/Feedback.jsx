@@ -4,9 +4,9 @@
  */
 // eslint-disable-next-line react/prop-types
 
-import image1 from "../assets/images/Feedback/user1.jpg";
-import image2 from "../assets/images/Feedback/user2.jpg";
-import image3 from "../assets/images/Feedback/user3.jpg";
+import image1 from "../assets/images/Feedback/user1.png";
+import image2 from "../assets/images/Feedback/user2.png";
+import image3 from "../assets/images/Feedback/user3.png";
 
 const userList = [
   {
