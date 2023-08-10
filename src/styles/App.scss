@@ -128,13 +128,12 @@
 /* ++++++++++ Start of Aboutme Component style sheet ++++++++++ */
 .about-container {
   @include section-padding-style;
-
+  border: 2px solid green;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
   z-index: 1;
-
+  position: relative;
   .about-image {
     width: 400px;
     height: 600px;
@@ -142,9 +141,10 @@
 
   .rectangle1,
   .rectangle2 {
+
     position: absolute;
-    top: 0;
-    left: 3rem;
+   top: 0;
+    left: 10rem; 
     width: 450px;
     height: 630px;
     transform: rotate(-13deg);
@@ -152,22 +152,13 @@
     /*     animation: rotateAnimation 60s infinite linear; */
   }
   .rectangle1 {
-    border: 15px solid #f4e4d5;
+    border: 15px solid #b68a2352;
     margin-left: 50px; //Add some spacing between the rectangles
   }
   .rectangle2 {
     border: 15px solid #eaeae8;
-    margin-top: -10px;
-    margin-left: -30px; /* Add some spacing between the rectangles */
-  }
-
-  @keyframes rotateAnimation {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+    margin-top: -50px;
+    margin-left: -10px; /* Add some spacing between the rectangles */
   }
 
   section {
