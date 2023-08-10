@@ -331,6 +331,7 @@
 .gallery-container {
   /* This class defines the container for the gallery. */
   @include section-padding-style;
+  border: 1px solid green;
 
   /* This code centers the container and sets its maximum width. */
 
