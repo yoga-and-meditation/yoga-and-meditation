@@ -165,7 +165,7 @@
       display: flex;
       align-items: center;
       margin-left: 0rem;
-/*       margin-left: -8rem;
+      /*       margin-left: -8rem;
  */
       .img {
         width: 45rem;
@@ -226,7 +226,6 @@
       height: 630px;
       transform: rotate(-13deg);
       z-index: -1;
-   
     }
 
     .rectangle1 {
@@ -238,8 +237,6 @@
       margin-top: -25px;
       margin-left: -30px; /* Add some spacing between the rectangles */
     }
-
-    
   }
 
   .content-container {
@@ -368,7 +365,7 @@
       border: none;
 
       box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
-      width: 95%;
+      width: 100%;
       .img-fluid {
         height: 30rem;
         width: 45rem;
@@ -626,10 +623,10 @@ h2 {
     .contact-img {
       margin: 1.6rem;
       width: 40%;
-     
+
       background-image: url("../assets//images/contact/contact.png");
       background-position: center;
-      background-size:contain;
+      background-size: contain;
       background-repeat: no-repeat;
     }
   }
