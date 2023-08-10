@@ -509,9 +509,9 @@ h2 {
 
 .demo {
   @include section-padding-style;
-  border: 1px solid green;
-  $margin-size: 2rem;
-  $circle-color: rgba(249, 194, 51, 1);
+}
+
+.demo-container {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -585,7 +585,6 @@ h2 {
     }
   }
 }
-
 /* ++++++++++ End of Demo Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Contact Component style sheet ++++++++++ */
