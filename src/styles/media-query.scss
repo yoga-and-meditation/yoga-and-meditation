@@ -209,3 +209,34 @@
   
 }
 }
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .app {
+    .hero-container {
+      .hero {
+        .col1 {
+          margin-bottom: 20rem;
+          margin-top: 0.5rem;
+          margin-left: 12rem;
+          h1 {
+            font-size: 15rem;
+          }
+          h2 {
+            font-size: 4rem;
+          }
+        }
+        .col2 {
+          margin-left: -10rem;
+         .ball {
+            width: 32rem;
+            height: 32rem;
+          }
+          .img {
+            width: 28rem;
+            height: 20rem;
+            margin-right: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
