@@ -429,73 +429,92 @@
 /* ++++++++++ End of Feedback Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Demo Component style sheet ++++++++++ */
+// Top-level styles
+h2 {
+  @include heading-2-style;
+  margin-bottom: 2rem; // Assuming you want the margin at the top level as well.
+  text-align: center;
+}
+
+.demo {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .demo-container {
-  /* Variables only for Demo component use */
-  @include section-padding-style;
-  border: 1px solid green;
-  $margin-size: 2rem;
-  $circle-color: rgba(249, 194, 51, 1);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   position: relative;
+  background-image: url("../assets/images/demosession/pexels-marta.jpg");
+  background-color: $secondary-background-color;
+  background-size: cover;
+  background-position: center;
+  $margin-size: 2rem;
 
   .mb-2 {
     margin-bottom: $margin-size;
   }
-  h2 {
-    @include heading-2-style;
-  }
 
-  .info {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    /*  width: 50%; */
-    gap: $margin-size;
-    background-color: $secondary-background-color;
+  .demo-session-description {
     padding: 2rem;
-    width: 60rem;
-    height: 40rem;
-    background-image: url("../assets/images/demosession/pexels-marta.jpg");
-    background-size: cover;
-    background-position: center;
+    width: 30rem;
+    height: 50rem;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $margin-size;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-    .infodiv {
+    p {
+      margin-bottom: $margin-size;
+    }
+
+    .booking-info-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      width: 50%;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 2rem;
-      border-radius: 1rem;
+      gap: $margin-size;
+      width: 80%; // reduced width since it's now inside the demo-session-description
 
-      .book-info {
+      ul {
+        list-style: none;
+        padding-left: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-left: $margin-size;
-        width: 50%;
-        margin: 0 auto;
+        gap: 1rem;
       }
 
       h6 {
         font-size: 2rem;
       }
+
       button {
         @include button-style;
         margin-top: $margin-size;
         width: 11rem;
         transition: all 0.5s ease;
-      }
-      button:hover {
-        color: #001f3f;
+
+        &:hover {
+          color: #001f3f;
+        }
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .demo-session-description {
+      width: 90%;
+    }
+  }
 }
+
 /* ++++++++++ End of Demo Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Contact Component style sheet ++++++++++ */
