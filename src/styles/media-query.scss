@@ -7,7 +7,7 @@
     /*----- End of Navbar component media query----- */
 
     /*----- Start of Hero component media query----- */
-    .hero-container {
+    /* .hero-container {
       width: 100vw;
       height: 100vh;
       padding: 0 8rem;
@@ -55,7 +55,7 @@
           bottom: -5rem;
         }
       }
-    }
+    } */
     /*----- End of Hero component media query----- */
 
     /*----- Start of Aboutme component media query----- */
@@ -123,36 +123,7 @@
  */
 
       .hero-heading {
-        h1 {
-          font-size: 50%;
-        }
-        h2 {
-          @include logo-font-style;
-          font-family: "MoonDance-Regular";
-          font-size: 4.5rem;
-          top: 28rem;
-          left: 18rem;
-          position: absolute;
-        }
-      }
-      .ball {
-        width: 1rem;
-        height: 1rem;
-        background-color: #b68a23;
-        border-radius: 50%;
-        border: #e4e4e48d 2rem solid;
-        position: relative;
-        left: 40rem;
-        top: 6rem;
-
-        .gif {
-          width: 92rem;
-          height: 60rem;
-          position: absolute;
-          right: -22rem;
-          bottom: -5rem;
-        }
-      }
+    
     }
     /*----- End of Hero component media query----- */
 
@@ -213,91 +184,7 @@
         rgba(209, 204, 204, 0.445) 50%
       );
       .hero-heading {
-        h1 {
-          @include yoga;
-          .hero-container {
-            width: 100vw;
-            height: 100vh;
-            padding: 0 8rem;
-
-            background: linear-gradient(
-              360deg,
-              rgba(255, 255, 255, 0) 50%,
-              rgba(209, 204, 204, 0.445) 50%
-            );
-            .hero-heading {
-              h1 {
-                @include yoga;
-                font-weight: 300;
-                font-size: 16rem;
-                color: rgba(29, 28, 26, 0.805);
-                position: absolute;
-                left: 13rem;
-                top: 8rem;
-                z-index: 2;
-              }
-              h2 {
-                @include logo-font-style;
-                font-family: "MoonDance-Regular";
-                font-size: 4.5rem;
-                top: 28rem;
-                left: 18rem;
-                position: absolute;
-              }
-            }
-            .ball {
-              width: 35rem;
-              height: 35rem;
-              background-color: #b68a23;
-              border-radius: 50%;
-              border: #e4e4e48d 2rem solid;
-              position: relative;
-              left: 40rem;
-              top: 6rem;
-
-              .gif {
-                width: 92rem;
-                height: 60rem;
-                position: absolute;
-                right: -22rem;
-                bottom: -5rem;
-              }
-            }
-          }
-          font-size: 0.5rem;
-          color: rgba(29, 28, 26, 0.805);
-          position: absolute;
-          left: 13rem;
-          top: 8rem;
-          z-index: 2;
-        }
-        h2 {
-          @include logo-font-style;
-          font-family: "MoonDance-Regular";
-          font-size: 4.5rem;
-          top: 28rem;
-          left: 18rem;
-          position: absolute;
-        }
-      }
-      .ball {
-        width: 35rem;
-        height: 35rem;
-        background-color: #b68a23;
-        border-radius: 50%;
-        border: #e4e4e48d 2rem solid;
-        position: relative;
-        left: 40rem;
-        top: 6rem;
-
-        .gif {
-          width: 92rem;
-          height: 60rem;
-          position: absolute;
-          right: -22rem;
-          bottom: -5rem;
-        }
-      }
+        
     }
     /*----- End of Hero component media query----- */
 
