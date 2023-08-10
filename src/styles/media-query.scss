@@ -43,7 +43,13 @@
 
     /*----- Start of Footer component media query----- */
     footer {
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+      }
     }
+
     /*----- Start of Footer component media query----- */
   }
 }
@@ -93,7 +99,7 @@
 
     /*----- Start of Footer component media query----- */
     footer {
-      .footer-container{
+      .footer-container {
         display: flex;
         flex-direction: column;
         padding: 2rem;
@@ -148,7 +154,37 @@
 
     /*----- Start of Footer component media query----- */
     footer {
+      .footer-container {
+        .logo-container {
+          h4 {
+            font-size: 3rem;
+          }
+        }
+        .about-icons {
+          display: flex;
+          flex-direction: column;
+          // border: 2px solid aqua;
+          padding: 3rem;
+          align-items: center;
+          .about-icons {
+            display: flex;
+            gap: 3rem;
+            .icons {
+              margin-left: 10rem;
+            }
+          }
+          .links {
+            margin-right: 15rem;
+            padding: 2rem;
+
+            .footer-link {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
     }
+
     /*----- End of Footer component media query----- */
   }
 }
@@ -198,7 +234,8 @@
 
     /*----- Start of Footer component media query----- */
     footer {
-      
+      .footer-container {
+      }
     }
     /*----- End of Footer component media query----- */
   }
@@ -299,8 +336,6 @@
 
     /*----- Start of Footer component media query----- */
     footer {
-
-    
     }
     /*----- Start of Footer component media query----- */
   }

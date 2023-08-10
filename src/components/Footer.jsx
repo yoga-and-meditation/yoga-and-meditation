@@ -48,39 +48,41 @@ function Footer() {
           <h4 className="logo">Yoga and Meditation</h4>
         </div>
 
-        <div className=" about-me">
-          <h5>About me </h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            quidem pariatur autem neque, voluptatum sit error sint. Qui,
-            facilis. Consectetur temporibus ullam neque tempore, ut perferendis
-            nostrum necessitatibus repellendus fuga.
-          </p>
-          <div className="icons">
-            <ul>
-              <li className="list-group">
-                <a href="https://www.facebook.com/sheetal.k.chavan">
-                  <FaFacebook />
-                </a>
-              </li>
-              <li className="list-group">
-                <a href="https://www.instagram.com/sheetalkchavan/">
-                  <FaInstagram />
-                </a>
-              </li>
-              <li className="list-group">
-                <a href="https://www.linkedin.com/in/sheetalchavan/">
-                  <FaLinkedin />
-                </a>
-              </li>
-              <li className="list-group">
-                <a href="website@sheetalchavan.com">
-                  <FaEnvelope />
-                </a>
-              </li>
-            </ul>
+        <div className="about-icons">
+          <div className=" about">
+            <h5>About The Website </h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              quidem pariatur autem neque, voluptatum sit error sint. Qui,
+              facilis. Consectetur temporibus ullam neque tempore, ut perferendis
+              nostrum necessitatibus repellendus fuga.
+            </p>
+            <div className="icons">
+              <ul>
+                <li className="list-group">
+                  <a href="https://www.facebook.com/sheetal.k.chavan">
+                    <FaFacebook />
+                  </a>
+                </li>
+                <li className="list-group">
+                  <a href="https://www.instagram.com/sheetalkchavan/">
+                    <FaInstagram />
+                  </a>
+                </li>
+                <li className="list-group">
+                  <a href="https://www.linkedin.com/in/sheetalchavan/">
+                    <FaLinkedin />
+                  </a>
+                </li>
+                <li className="list-group">
+                  <a href="website@sheetalchavan.com">
+                    <FaEnvelope />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+       
         <div className="links">
           <ul>
             <h5>Links</h5>
@@ -124,6 +126,7 @@ function Footer() {
         </div>
         <Outlet />
       </div>
+       </div>
       <div className="copyright p-3">© 2023 Copyright Reserved</div>
     </footer>
   );

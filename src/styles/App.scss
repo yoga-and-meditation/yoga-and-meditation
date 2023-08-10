@@ -550,7 +550,8 @@ footer {
   }
   .footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
+   
 
     h5 {
       font-size: 1.7rem;
@@ -563,11 +564,11 @@ footer {
       .logo {
         @include logo-font-style;
         font-family: "MoonDance-Regular";
-        font-size: 3rem;
+        font-size: 5rem;
       }
     }
 
-    .about-me {
+    .about {
       margin-top: 2rem;
 
       p {
@@ -577,9 +578,9 @@ footer {
 
       .icons {
         ul {
-          font-size: 2.9rem;
+          font-size: 2rem;
           display: flex;
-          gap: 2rem;
+          gap: 3rem;
 
           :hover {
             opacity: 0.9;
@@ -591,6 +592,7 @@ footer {
           }
         }
       }
+     
     }
 
     .links {
@@ -602,7 +604,7 @@ footer {
         a {
           text-decoration: none;
           color: $text-color;
-          font-size: 1.2rem;
+          font-size: 1.5rem;
 
           &:hover {
             border-bottom: 4px solid #b48821;
