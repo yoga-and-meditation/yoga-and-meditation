@@ -102,6 +102,11 @@
 
     /*----- Start of Footer component media query----- */
     footer {
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+      }
     }
     /*----- Start of Footer component media query----- */
   }
@@ -117,8 +122,6 @@
 
     /*----- Start of Hero component media query----- */
     .hero-container {
-      
-    
     }
     /*----- End of Hero component media query----- */
 
@@ -198,9 +201,14 @@
 
     /*----- Start of Footer component media query----- */
     footer {
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+      }
     }
-    /*----- Start of Footer component media query----- */
   }
+  /*----- End of Footer component media query----- */
 }
 
 /* ++++++++++ Media Query for Desktop screen with min width of 1024px ++++++++++ */
@@ -250,8 +258,7 @@
     footer {
     }
     /*----- Start of Footer component media query----- */
-  
-}
+  }
 }
 @media (min-width: 1300px) and (max-width: 1600px) {
   .app {
@@ -270,7 +277,7 @@
         }
         .col2 {
           margin-left: -1rem;
-         .ball {
+          .ball {
             width: 32rem;
             height: 32rem;
           }
