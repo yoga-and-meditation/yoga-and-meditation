@@ -129,7 +129,7 @@ function Services() {
       {/* Service Section */}
       <section className="service-section">
         {activeService && (
-          <div className="card-container">
+          <div className="card-content-container">
             <div className="content-container">
               <p className="card-text">{activeService.text}</p>
             </div>

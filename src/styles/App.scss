@@ -345,7 +345,8 @@
   .service-section {
     display: flex;
     justify-content: center;
-    .card-container {
+
+    .card-content-container {
       margin-top: 2rem;
       width: 100%;
 
@@ -399,7 +400,7 @@
             /* cards body heading 2 */
             p {
               h3 {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 color: #b48821;
                 padding: 1.3rem;
               }
