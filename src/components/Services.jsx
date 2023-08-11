@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 /* Service Data Array */
 const serviceData = [
@@ -161,9 +162,12 @@ function Services() {
                       </ul>
 
                       {/* Button to join the course */}
-                      <button className={`btn btn-${content.className}`}>
+                      <Link
+                        to="/contacts"
+                        className={`btn btn-${content.className}`}
+                      >
                         {content.buttonText}
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

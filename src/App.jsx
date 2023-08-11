@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/App.scss";
 import Aboutme from "./components/Aboutme";
@@ -15,15 +15,17 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        {/* <Navbar />
-        <Hero />
-        <Aboutme /> */}
-        <Services />
-        {/* <Gallery />
-        <Feedback />
-        <Demo />
-        <Contacts />
-        <Footer /> */}
+        <Navbar />
+        <Routes>
+          <Route path="/hero" element={<Hero />} />
+          <Route path="/aboutme" element={<Aboutme />} />
+          <Route path="/services/*" element={<Services />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/demo" element={<Demo />} />
+          <Route path="/contacts" element={<Contacts />} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
