@@ -303,7 +303,7 @@
       }
 
       [type="radio"] {
-        border-bottom: 3px solid $secondary-background-color;
+        border-bottom: 4px solid $secondary-background-color;
         cursor: pointer;
         appearance: none;
         display: block;
@@ -311,7 +311,7 @@
         transition: all 0.1s ease-in-out;
 
         &:checked {
-          border-bottom: 3px solid #b68a23;
+          border-bottom: 4px solid #b68a23;
           + div {
             opacity: 1;
           }
@@ -354,7 +354,7 @@
       .content-container {
         .card-text {
           font-size: 1.3rem;
-          padding: 0.6rem;
+          padding: 0 3rem;
           color: $text-color;
           @include paragraph-normal;
         }

@@ -131,7 +131,7 @@ function Services() {
         {activeService && (
           <div className="card-content-container">
             <div className="content-container">
-              {/*   <p className="card-text">{activeService.text}</p> */}
+              <p className="card-text">{activeService.text}</p>
             </div>
 
             {/* Cards */}
