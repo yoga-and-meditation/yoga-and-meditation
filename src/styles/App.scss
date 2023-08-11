@@ -269,73 +269,73 @@
   .header-container {
     text-align: center;
     h2 {
+      margin-bottom: 0;
       @include heading-2-style;
       @include heading-2;
     }
   }
 
+  // Reset focus outlines for various form elements
+  button:focus,
+  input:focus,
+  select:focus {
+    outline: none;
+  }
+
   /* Tab container style */
-  .tab-container {
+  .tabs {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    overflow: hidden;
 
-    /* Tab buttons style */
-    .navigation {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    [class^="tab"], //Targets elements whose class attribute starts with "tab"
+    [class*=" tab"] {
+      // Targets the elements whose class attribute contains the substring "tab"
+      label {
+        color: $text-color;
+        cursor: pointer;
+        display: block;
+        /*    font: 400 1.5rem/2em; */
+        font-size: 1.8rem;
+        padding: 2rem 0;
+        text-align: center;
+      }
 
-      /* Tab active button style */
-      .active {
-        background: #b48821;
-        .button {
-          .icon {
-            transition-delay: 0s;
-          }
-          .icon::before {
-            transform: scale(1);
+      [type="radio"] {
+        border-bottom: 3px solid $secondary-background-color;
+        cursor: pointer;
+        appearance: none;
+        display: block;
+        width: 100%;
+        transition: all 0.1s ease-in-out;
+
+        &:checked {
+          border-bottom: 3px solid #b68a23;
+          + div {
+            opacity: 1;
           }
         }
       }
 
-      /* Tab un-active buttons style */
-      li {
-        position: relative;
-        list-style: none;
-        margin: 3.5rem 5rem;
-        display: flex;
-        justify-content: center;
-        padding: 4.9rem;
-        border-radius: 50%;
-        /*       box-shadow: 10px 22px 40px #0000 5%; */
-        box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
+      &.tab-2 {
+        width: 50%;
 
-        .button {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
+        [type="radio"] + div {
+          width: 200%;
+          margin-left: 200%;
+        }
 
-          .icon {
-            position: absolute;
-            font-size: 5rem;
-            width: 10rem;
-            height: 10rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid #b48821;
-            border-radius: 50%;
-            transition: 0.5s;
-            transition-delay: 0.2s;
+        &:last-child [type="radio"] + div {
+          margin-left: 100%;
+        }
 
-            img {
-              height: 6rem;
-              width: 6rem;
-            }
-          }
+        &:last-child [type="radio"]:checked + div {
+          margin-left: -100%;
+        }
+
+        [type="radio"]:checked + div {
+          margin-left: 0;
         }
       }
     }
@@ -346,30 +346,125 @@
     display: flex;
     justify-content: center;
     .card-container {
-      background-image: url("../assets/images/services/wave.svg");
-      background-size: cover;
-      outline: none;
-      border: none;
-
-      box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
+      margin-top: 2rem;
       width: 100%;
-      .img-fluid {
-        height: 30rem;
-        width: 45rem;
+
+      .content-container {
+        .card-text {
+          font-size: 1.2rem;
+          padding: 0.6rem;
+          color: $text-color;
+          @include paragraph-normal;
+        }
       }
 
-      .subscribe-btn {
-        @include button-style;
-      }
+      .cards-container {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
 
-      .card-text {
-        font-size: 1.3rem;
-        padding: 0.6rem;
-        color: $text-color;
-        @include paragraph-normal;
-      }
-      h3 {
-        @include heading-3;
+        /* Cards style */
+        .card-basic,
+        .card-premium,
+        .card-standard {
+          margin: 0 2rem 1rem 0;
+          padding: 0 0 0.5rem 0;
+          width: 30%;
+          background: #fff;
+          color: $text-color;
+          text-align: center;
+          border-radius: 1rem;
+          box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+          overflow: hidden;
+          transition: all 0.1ms ease-in-out;
+
+          /* Cards Header */
+          .card-header {
+            height: 6rem;
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding: 1rem 0;
+            color: #fff;
+            clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+          }
+
+          /* Cards body */
+          .card-body {
+            padding: 0.5rem 0;
+
+            /* cards body heading 2 */
+            h2 {
+              font-size: 2rem;
+              font-weight: 700;
+            }
+
+            /* Card element container */
+            .card-element-container {
+              color: $text-color;
+              list-style: none;
+              font-size: 1.2rem;
+            }
+
+            /* Card element hidden */
+            .card-element-hidden {
+              display: none;
+            }
+
+            /* cards buttons */
+            .btn {
+              margin: 0.5rem 0;
+              padding: 0.7rem 1rem;
+              outline: none;
+              border-radius: 1rem;
+              font-size: 1rem;
+              font-weight: 700;
+              color: #fff;
+              border: none;
+              cursor: pointer;
+              transition: all 0.1ms ease-in-out;
+
+              /* Buttons on hover effect */
+              &:hover {
+                transform: scale(0.95);
+              }
+
+              /* Bttons active state */
+              &:active {
+                transform: scale(1);
+              }
+            }
+          }
+        }
+
+        /* Basic card header */
+        .header-basic,
+        .btn-basic {
+          /* background: linear-gradient(135deg, rgb(0, 119, 238), #06c766); */
+          background: #b78425;
+        }
+
+        /* Standard card Header */
+        .header-standard,
+        .btn-standard {
+          /* background: linear-gradient(135deg, #b202c9, #cf087c); */
+          background: #a88e2e;
+        }
+
+        /* Premium card header */
+        .header-premium,
+        .btn-premium {
+          /*  background: linear-gradient(135deg, #eea300, #ee5700); */
+          background: #b48821;
+        }
+
+        /* Cards hover effect */
+        .card-basic:hover,
+        .card-premium:hover,
+        .card-standard:hover {
+          transform: scale(1.02);
+        }
       }
     }
   }
