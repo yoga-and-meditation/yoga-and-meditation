@@ -63,7 +63,7 @@ function Services() {
                           <li className="card-element">Corporate Meditaion,</li>
                           <li className="card-element">Yoga</li>
                           <li className="card-element">&</li>
-                          <li className="card-element">Retreats</li>
+                          <li className="card-element">Retreats workshops</li>
                         </ul>
                         <button className="btn btn-basic">Conact now</button>
                       </div>
