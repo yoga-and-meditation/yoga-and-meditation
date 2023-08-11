@@ -200,53 +200,49 @@
 /* ++++++++++ Start of Aboutme Component style sheet ++++++++++ */
 .about-container {
   @include section-padding-style;
-  margin-bottom: 15rem;
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
   z-index: 1;
-
-  .image-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 40%;
-
-    .about-image {
-      margin-left: 4rem;
-      width: 400px;
-      height: 570px;
-    }
-
-    .rectangle1,
-    .rectangle2 {
-      position: absolute;
-      top: 0;
-      width: 450px;
-      height: 630px;
-      transform: rotate(-13deg);
-      z-index: -1;
-    }
-
-    .rectangle1 {
-      border: 15px solid #b68a2350;
-      margin-left: 60px; //Add some spacing between the rectangles
-    }
-    .rectangle2 {
-      border: 15px solid #eaeae8;
-      margin-top: -25px;
-      margin-left: -30px; /* Add some spacing between the rectangles */
-    }
+  position: relative;
+  .about-image {
+    width: 400px;
+    height: 600px;
+    margin-left: 5rem;
   }
 
-  .content-container {
-    padding: 4rem;
-    width: 60%;
+  .rectangle1,
+  .rectangle2 {
+
+    position: absolute;
+   top: 0;
+    left: 10rem; 
+    width: 450px;
+    height: 630px;
+    transform: rotate(-13deg);
+    z-index: -1;
+    /*     animation: rotateAnimation 60s infinite linear; */
+  }
+  .rectangle1 {
+    border: 15px solid #b68a2352;
+    margin-left: 50px; //Add some spacing between the rectangles
+  }
+  .rectangle2 {
+    border: 15px solid #eaeae8;
+    margin-top: -50px;
+    margin-left: -10px; /* Add some spacing between the rectangles */
+  }
+
+  section {
     display: flex;
     flex: 1;
+    gap: 2rem;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    padding-top: 1rem;
+    max-width: 50vw;
+    /*    margin-top: 2rem; */
 
     h2 {
       @include heading-2-style;
@@ -256,6 +252,7 @@
       color: $text-color;
       font-family: "Roboto-Medium";
       font-size: 1.5rem;
+      max-width: 80%;
     }
   }
 }
