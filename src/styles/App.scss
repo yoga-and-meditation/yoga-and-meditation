@@ -394,12 +394,15 @@
 
           /* Cards body */
           .card-body {
-            padding: 0.5rem 0;
+            padding: 0.8rem 0;
 
             /* cards body heading 2 */
-            h3 {
-              font-size: 1.5rem;
-              font-weight: 500;
+            p {
+              h3 {
+                font-size: 1.5rem;
+                color: #b48821;
+                padding: 1.3rem;
+              }
             }
 
             /* Card element container */
@@ -443,34 +446,32 @@
         /* Basic card header */
         .header-basic,
         .btn-basic {
-          background: linear-gradient(135deg, rgb(0, 119, 238), #06c766);
-          /*  background: #b78425; */
+          background: #a27a1e;
         }
 
         /* Standard card Header */
         .header-standard,
         .btn-standard {
-          background: linear-gradient(135deg, #b202c9, #cf087c);
-          /*    background: #a88e2e; */
+          background: #7e5f17;
         }
+      }
 
-        /* Premium card header */
-        .header-premium,
-        .btn-premium {
-          background: linear-gradient(135deg, #eea300, #ee5700);
-          /*   background: #b48821; */
-        }
+      /* Premium card header */
+      .header-premium,
+      .btn-premium {
+        background: #5a4411;
+      }
 
-        /* Cards hover effect */
-        .card-basic:hover,
-        .card-premium:hover,
-        .card-standard:hover {
-          transform: scale(1.02);
-        }
+      /* Cards hover effect */
+      .card-basic:hover,
+      .card-premium:hover,
+      .card-standard:hover {
+        transform: scale(1.02);
       }
     }
   }
 }
+
 /* ++++++++++ End of Service Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Gallery Component style sheet ++++++++++ */

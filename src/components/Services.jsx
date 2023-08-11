@@ -54,7 +54,7 @@ const cardsData = [
     {
       header: "Coming soon",
       price: "NIA",
-      buttonText: "Contafont-size: 0.8rem;ct now",
+      buttonText: "Contact now",
       className: "basic",
       elements: ["Corporate Meditation,", "Yoga", "&", "Retreats workshops"],
     },
@@ -147,7 +147,7 @@ function Services() {
                   <div className="card-body">
                     {content.price && (
                       <p>
-                        <h5>{content.price}</h5>
+                        <h3>{content.price}</h3>
                       </p>
                     )}
                     <div className={`card-element-hidden-${content.className}`}>
