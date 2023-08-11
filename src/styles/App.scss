@@ -296,7 +296,6 @@
         color: $text-color;
         cursor: pointer;
         display: block;
-        /*    font: 400 1.5rem/2em; */
         font-size: 1.8rem;
         padding: 2rem 0;
         text-align: center;
@@ -397,7 +396,7 @@
           .card-body {
             padding: 0.8rem 0;
 
-            /* cards body heading 2 */
+            /* cards body heading 3 */
             p {
               h3 {
                 font-size: 1.4rem;
@@ -411,11 +410,6 @@
               color: $text-color;
               list-style: none;
               font-size: 1rem;
-            }
-
-            /* Card element hidden */
-            .card-element-hidden {
-              display: none;
             }
 
             /* cards buttons */
