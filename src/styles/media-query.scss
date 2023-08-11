@@ -59,14 +59,13 @@
     /*----- End of Hero component media query----- */
 
     /*----- Start of Aboutme component media query----- */
-   .about-container {
+    .about-container {
       flex-wrap: wrap;
       .rectangle1,
       .rectangle2 {
-        width:250px ;
+        width: 250px;
         height: 430px;
         left: 3rem;
-      
       }
       .rectangle1 {
         border: 5px solid #b68a2352;
@@ -80,13 +79,13 @@
       .about-image {
         width: 300px;
         height: 400px;
-       // border: 6px solid #b68a2352;
+        // border: 6px solid #b68a2352;
       }
       section {
         gap: 0;
         max-width: 100vw;
         text-align: center;
-      
+
         h2 {
           font-size: 1.5rem;
           margin-bottom: 0;
@@ -99,45 +98,55 @@
           margin-bottom: 1rem;
         }
       }
-    /*----- End of Aboutme component media query----- */
+      /*----- End of Aboutme component media query----- */
 
-    /*----- Start of Service component media query----- */
-    .service-container {
-    }
-    /*----- End of Service component media query----- */
+      /*----- Start of Service component media query----- */
+      .service-container {
+      }
+      /*----- End of Service component media query----- */
 
-    /*----- Start of Feedback component media query----- */
-    .feedback-container {
-    }
-    /*----- End of Feedback component media query----- */
+      /*----- Start of Feedback component media query----- */
+      .feedback-container {
+      }
+      /*----- End of Feedback component media query----- */
 
-    /*----- Start of Demo component media query----- */
-    .demo-container {
-    }
-    /*----- End of Demo component media query----- */
+      /*----- Start of Demo component media query----- */
+      .demo-container {
+      }
+      /*----- End of Demo component media query----- */
 
-    /*----- Start of Contact component media query----- */
-    .contact-container {
-      width: 99%;
+      /*----- Start of Contact component media query----- */
+      .contact-container {
+        width: 99%;
 
-      .contact-sub-container {
-        .form-container {
-          width: 100%;
+        .contact-sub-container {
+          .form-container {
+            width: 100%;
 
-          h2 {
-            font-size: 2rem;
+            h2 {
+              font-size: 2rem;
+            }
+            h3 {
+              font-size: 1.5rem;
+            }
           }
-          h3 {
-            font-size: 1.5rem;
+          .contact-img {
+            display: none;
           }
-        }
-        .contact-img {
-          display: none;
         }
       }
-    }
-    /*----- End of Contact component media query----- */
+      /*----- End of Contact component media query----- */
 
+      /*----- Start of Footer component media query----- */
+      footer {
+        .footer-container {
+          display: flex;
+          flex-direction: column;
+          margin-left: 2rem;
+        }
+      }
+      /*----- Start of Footer component media query----- */
+    }
     /*----- Start of Footer component media query----- */
     footer {
       .footer-container {
@@ -146,21 +155,9 @@
         margin-left: 2rem;
       }
     }
-    /*----- Start of Footer component media query----- */
   }
-  /*----- Start of Footer component media query----- */
-  footer {
-    .footer-container {
-      display: flex;
-      flex-direction: column;
-      margin-left: 2rem;
-    }
-  }
+  /*----- End of Footer component media query----- */
 }
-/*----- End of Footer component media query----- */
-
-  }
-
 
 /* ++++++++++ Media Query for Tablet screen with min 600px and max 1023px  ++++++++++ */
 @media (min-width: $tablet-screen-min) and (max-width: $tablet-screen-max) {
@@ -176,41 +173,38 @@
     /*----- End of Hero component media query----- */
 
     /*----- Start of Aboutme component media query----- */
-   .about-container {
-        display: flex;
-        flex-direction: column;
-        .about-image {
-          width: 300px;
-          height: 450px;
-          margin-left: 0;
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      .about-image {
+        width: 300px;
+        height: 450px;
+        margin-left: 0;
+      }
+      .rectangle1,
+      .rectangle2 {
+        width: 350px;
+        height: 530px;
+      }
+      .rectangle1 {
+        border: 10px solid #b68a2352;
+      }
+      .rectangle2 {
+        border: 10px solid #eaeae8;
+      }
+      section {
+        text-align: center;
+        max-width: 100vw;
+        gap: 0;
+        h2 {
+          margin-top: 2rem;
+          font-size: 2.5rem;
         }
-        .rectangle1,
-        .rectangle2 {
-          width: 350px;
-          height: 530px;
-        }
-        .rectangle1 {
-          border: 10px solid #b68a2352;
-
-        }
-        .rectangle2 {
-          border: 10px solid #eaeae8;
-        
-        }
-        section{
-          text-align: center;
-          max-width: 100vw;
-          gap: 0;
-          h2{
-            margin-top: 2rem;
-            font-size: 2.5rem;
-          }
-          p{
+        p {
           max-width: 80vw;
         }
-        }
-        
       }
+    }
     /*----- End of Aboutme component media query----- */
 
     /*----- Start of Service component media query----- */
@@ -286,7 +280,7 @@
           width: 100%;
 
           h2 {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
           }
           h3 {
             font-size: 1.5rem;
@@ -304,14 +298,13 @@
       .footer-container {
         display: flex;
         flex-direction: column;
-        
+
         margin-left: 2rem;
 
         .links {
           li {
-            a{
+            a {
               &:hover {
-               
                 width: fit-content;
               }
             }
@@ -337,77 +330,74 @@
     /*----- End of Hero component media query----- */
 
     /*----- Start of Aboutme component media query----- */
-   .about-container {
+    .about-container {
+      about-image {
+        width: 400px;
+        height: 600px;
+      }
 
-        about-image {
-          width: 400px;
-          height: 600px;
+      /*----- End of Aboutme component media query----- */
 
-        }
+      /*----- Start of Service component media query----- */
+      .service-container {
+      }
+      /*----- End of Service component media query----- */
 
-    /*----- End of Aboutme component media query----- */
+      /*----- Start of Gallery component media query----- */
+      .gallery-container {
+      }
+      /*----- End of Gallery component media query----- */
 
-    /*----- Start of Service component media query----- */
-    .service-container {
+      /*----- Start of Feedback component media query----- */
+      .feedback-container {
+      }
+      /*----- End of Feedback component media query----- */
+
+      /*----- Start of Demo component media query----- */
+      .demo-container {
+      }
+      /*----- End of Demo component media query----- */
+
+      /*----- Start of Contact component media query----- */
+      .contact-container {
+      }
+      /*----- End of Contact component media query----- */
+
+      /*----- Start of Footer component media query----- */
+      footer {
+      }
+      /*----- Start of Footer component media query----- */
     }
-    /*----- End of Service component media query----- */
-
-    /*----- Start of Gallery component media query----- */
-    .gallery-container {
-    }
-    /*----- End of Gallery component media query----- */
-
-    /*----- Start of Feedback component media query----- */
-    .feedback-container {
-    }
-    /*----- End of Feedback component media query----- */
-
-    /*----- Start of Demo component media query----- */
-    .demo-container {
-    }
-    /*----- End of Demo component media query----- */
-
-    /*----- Start of Contact component media query----- */
-    .contact-container {
-    }
-    /*----- End of Contact component media query----- */
-
-    /*----- Start of Footer component media query----- */
-    footer {
-    }
-    /*----- Start of Footer component media query----- */
   }
-}
-@media (min-width: 1300px) and (max-width: 1600px) {
-  .app {
-    .hero-container {
-      .hero {
-        .col1 {
-          margin-bottom: 20rem;
-          margin-top: 0.5rem;
-          margin-left: 12rem;
-          h1 {
-            font-size: 15rem;
+  @media (min-width: 1300px) and (max-width: 1600px) {
+    .app {
+      .hero-container {
+        .hero {
+          .col1 {
+            margin-bottom: 20rem;
+            margin-top: 0.5rem;
+            margin-left: 12rem;
+            h1 {
+              font-size: 15rem;
+            }
+            h2 {
+              font-size: 4rem;
+            }
           }
-          h2 {
-            font-size: 4rem;
-          }
-        }
-        .col2 {
-          margin-left: -1rem;
-          .ball {
-            width: 32rem;
-            height: 32rem;
-          }
-          .img {
-            width: 28rem;
-            height: 20rem;
-            margin-right: 4rem;
+          .col2 {
+            margin-left: -1rem;
+            .ball {
+              width: 32rem;
+              height: 32rem;
+            }
+            .img {
+              width: 28rem;
+              height: 20rem;
+              margin-right: 4rem;
+            }
           }
         }
       }
     }
   }
 }
-}
-
