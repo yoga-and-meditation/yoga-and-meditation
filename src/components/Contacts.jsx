@@ -1,4 +1,31 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 function Contacts() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_pl6rg6m",
+        "template_2izbeie",
+        form.current,
+        "Jkw-8vpf0sd6gyaxm"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <div className="form contact-container">
       <div className="contact-sub-container">
@@ -8,24 +35,27 @@ function Contacts() {
           <div className="row">
             <div className="col-12 text-center">
               <div className="contactForm">
-                <form id="contact-form" noValidate>
+                {/* Contact form */}
+                <form id="contact-form" ref={form} onSubmit={sendEmail}>
                   {/* Row 1 of form */}
                   <div className="row formRow">
                     <div className="col-6">
                       <input
                         type="text"
-                        name="name"
+                        name="user_name"
                         className="form-control formInput"
                         placeholder="Name"
+                        required
                       />
                     </div>
                     <div className="col-6 mb-5">
                       <input
                         type="email"
-                        name="email"
+                        name="user_email"
                         className="form-control formInput"
                         placeholder="Email address"
-                      ></input>
+                        required
+                      />
                     </div>
                   </div>
                   {/* Row 2 of form */}
@@ -36,7 +66,8 @@ function Contacts() {
                         name="subject"
                         className="form-control formInput"
                         placeholder="Subject"
-                      ></input>
+                        required
+                      />
                     </div>
                   </div>
                   {/* Row 3 of form */}
