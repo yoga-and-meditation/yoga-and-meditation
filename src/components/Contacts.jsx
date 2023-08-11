@@ -1,27 +1,24 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contacts() {
-  const form = useRef();
+  const [buttonValue, setButtonValue] = useState("Submit");
+  const formRef = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
+    try {
+      await emailjs.sendForm(
         "service_pl6rg6m",
         "template_2izbeie",
-        form.current,
+        formRef.current,
         "Jkw-8vpf0sd6gyaxm"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
       );
+      setButtonValue("Sent");
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
 
     e.target.reset();
   };
@@ -36,7 +33,7 @@ function Contacts() {
             <div className="col-12 text-center">
               <div className="contactForm">
                 {/* Contact form */}
-                <form id="contact-form" ref={form} onSubmit={sendEmail}>
+                <form id="contact-form" ref={formRef} onSubmit={sendEmail}>
                   {/* Row 1 of form */}
                   <div className="row formRow">
                     <div className="col-6">
@@ -82,7 +79,7 @@ function Contacts() {
                     </div>
                   </div>
                   <button className="submit-btn" type="submit">
-                    Submit
+                    {buttonValue}
                   </button>
                 </form>
               </div>
