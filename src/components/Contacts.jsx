@@ -72,7 +72,7 @@ function Contacts() {
                         onChange={handleEmailChange}
                         required
                       />
-                      <p className="error-message">{emailError}</p>
+                      <p className="text-danger">{emailError}</p>
                     </div>
                   </div>
                   {/* Row 2 of form */}
