@@ -2063,6 +2063,11 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+validator@^13.11.0:
+  version "13.11.0"
+  resolved "https://registry.npmjs.org/validator/-/validator-13.11.0.tgz"
+  integrity sha512-Ii+sehpSfZy+At5nPdnyMhx78fEoPDkR2XW/zimHEL3MyGJQOCQ7WeP20jPYRz7ZCpcKLB21NxuXHF3bxjStBQ==
+
 vite@^4, vite@^4.2.0, vite@^4.3.9:
   version "4.4.4"
   resolved "https://registry.npmjs.org/vite/-/vite-4.4.4.tgz"

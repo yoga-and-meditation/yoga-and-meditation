@@ -21,7 +21,8 @@
     "react-icons": "^4.10.1",
     "react-responsive-masonry": "^2.1.7",
     "react-router-dom": "^6.14.2",
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "validator": "^13.11.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

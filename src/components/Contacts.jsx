@@ -1,8 +1,11 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import validator from "validator";
 
 function Contacts() {
   const [buttonValue, setButtonValue] = useState("Submit");
+  const [emailError, setEmailError] = useState("");
+
   const formRef = useRef();
 
   const sendEmail = async (e) => {
@@ -16,11 +19,26 @@ function Contacts() {
         "Jkw-8vpf0sd6gyaxm"
       );
       setButtonValue("Sent");
+      formRef.current.reset();
+
+      setTimeout(() => {
+        setButtonValue("Submit"); //Reset the button text after a delay of 3 seconds
+      }, 2000);
     } catch (error) {
       console.error("Error sending email:", error);
     }
+  };
 
-    e.target.reset();
+  const validateEmail = (email) => {
+    if (validator.isEmail(email)) {
+      setEmailError("");
+    } else {
+      setEmailError("Enter valid Email!");
+    }
+  };
+
+  const handleEmailChange = (e) => {
+    validateEmail(e.target.value);
   };
 
   return (
@@ -51,8 +69,10 @@ function Contacts() {
                         name="user_email"
                         className="form-control formInput"
                         placeholder="Email address"
+                        onChange={handleEmailChange}
                         required
                       />
+                      <p className="error-message">{emailError}</p>
                     </div>
                   </div>
                   {/* Row 2 of form */}
