@@ -349,15 +349,17 @@
       margin-top: 2rem;
       width: 100%;
 
+      /* Content container of the section */
       .content-container {
         .card-text {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           padding: 0.6rem;
           color: $text-color;
           @include paragraph-normal;
         }
       }
 
+      /* Cards container */
       .cards-container {
         margin-top: 2rem;
         display: flex;
@@ -370,8 +372,8 @@
         .card-premium,
         .card-standard {
           margin: 0 2rem 1rem 0;
-          padding: 0 0 0.5rem 0;
-          width: 30%;
+          /*  padding: 0 0 0.5rem 0; */
+          width: 23%;
           background: #fff;
           color: $text-color;
           text-align: center;
@@ -382,7 +384,7 @@
 
           /* Cards Header */
           .card-header {
-            height: 6rem;
+            height: 5rem;
             font-weight: 700;
             font-size: 0.8rem;
             padding: 1rem 0;
@@ -395,16 +397,16 @@
             padding: 0.5rem 0;
 
             /* cards body heading 2 */
-            h2 {
-              font-size: 2rem;
-              font-weight: 700;
+            h3 {
+              font-size: 1.5rem;
+              font-weight: 500;
             }
 
             /* Card element container */
             .card-element-container {
               color: $text-color;
               list-style: none;
-              font-size: 1.2rem;
+              font-size: 1rem;
             }
 
             /* Card element hidden */
@@ -441,22 +443,22 @@
         /* Basic card header */
         .header-basic,
         .btn-basic {
-          /* background: linear-gradient(135deg, rgb(0, 119, 238), #06c766); */
-          background: #b78425;
+          background: linear-gradient(135deg, rgb(0, 119, 238), #06c766);
+          /*  background: #b78425; */
         }
 
         /* Standard card Header */
         .header-standard,
         .btn-standard {
-          /* background: linear-gradient(135deg, #b202c9, #cf087c); */
-          background: #a88e2e;
+          background: linear-gradient(135deg, #b202c9, #cf087c);
+          /*    background: #a88e2e; */
         }
 
         /* Premium card header */
         .header-premium,
         .btn-premium {
-          /*  background: linear-gradient(135deg, #eea300, #ee5700); */
-          background: #b48821;
+          background: linear-gradient(135deg, #eea300, #ee5700);
+          /*   background: #b48821; */
         }
 
         /* Cards hover effect */

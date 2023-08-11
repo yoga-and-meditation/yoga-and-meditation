@@ -1,130 +1,175 @@
 import { useState } from "react";
 
+/* Service Data Array */
 const serviceData = [
   {
     title: "Meditation",
     text: `The HBR mentions in its article, ‘What Meditation Can Do for Your Leadership’, that meditation is an antidote to ego. The article also mentions that in times of uncertainty, the survival part of our brain (mainly the amygdala) kicks in when we perceive a threat and causes our focus to narrow. Meditation can be of tremendous help during times like this. Practicing meditation has been shown to reduce anxiety, calm the amygdala, increase our ability to think creatively and empathetically take other people’s perspective. Steve Jobs, an early adaptor of meditation described his experience like this: “You start to see things more clearly and be in the present more. Your mind just slows down, and you see a tremendous expanse in the moment. You see so much more than you could see before.”`,
   },
+
   {
     title: "Yoga",
     text: `The Harvard Health Publishing of the Harvard Medical School mentions in its blog, Yoga for better mental health, when you lift weights, your muscles get stronger and bigger. When you do yoga, your brain cells develop new connections, and changes occur in brain struc­ture as well as function, resulting in improved cog­nitive skills, such as learning and memory. Yoga strengthens parts of the brain that play a key role in memory, attention, awareness, thought, and language. Think of it as weightlifting for the brain.`,
   },
 ];
 
+/* Cards Data Array */
+const cardsData = [
+  [
+    // Courses under Meditation service
+    {
+      header: "Coming soon",
+      price: "NIA",
+      buttonText: "Contact now",
+      className: "basic",
+      elements: ["Corporate Meditation,", "Yoga", "&", "Retreats workshops"],
+    },
+    {
+      header: "Online Meditation",
+      price: "€70 /course",
+      buttonText: "Join now",
+      className: "standard",
+      elements: [
+        "4 sessions of 45 minutes",
+        "Every Friday",
+        "Meditation techniques for daily practice",
+        "Be a part of weekly group meditation",
+      ],
+    },
+    {
+      header: "In-person Meditation",
+      price: "€80 /course",
+      buttonText: "Join now",
+      className: "premium",
+      elements: [
+        "2 sessions of 1.5 hours",
+        "Each Saturday and Sunday",
+        "Meditation techniques for daily practice",
+        "Be a part of weekly group meditation",
+      ],
+    },
+  ],
+  [
+    // Courses under Yoga service
+    {
+      header: "Coming soon",
+      price: "NIA",
+      buttonText: "Contafont-size: 0.8rem;ct now",
+      className: "basic",
+      elements: ["Corporate Meditation,", "Yoga", "&", "Retreats workshops"],
+    },
+    {
+      header: "Online Yoga",
+      price: "€8 /session",
+      buttonText: "Join now",
+      className: "standard",
+      elements: [
+        "1 session of 70 minutes",
+        "Every Monday",
+        "Yoga techniques for daily practice",
+        "Be a part of weekly group Yoga",
+      ],
+    },
+    {
+      header: "In-person Yoga",
+      price: "€13 /session",
+      buttonText: "Join now",
+      className: "premium",
+      elements: [
+        "1 session of 1.5 hours",
+        "Every Thursday",
+        "Yoga techniques for daily practice",
+        "Be a part of weekly group yoga",
+      ],
+    },
+  ],
+];
+
+/* Initializing the Service component */
 function Services() {
   const [tab, setTab] = useState(0);
 
+  // Handle tab click event
   const handleTabClick = (index) => {
     setTab(index);
   };
 
+  // Get active service based on selected tab
+  const activeService = serviceData[tab];
+
   return (
     <div className="service-container">
+      {/* Header  container*/}
       <div className="header-container">
         <h2>Join our courses</h2>
       </div>
 
+      {/* Tabs container*/}
+      {/* Render tabs for different services */}
       <div className="tabs">
         {serviceData.map((service, index) => (
-          <div key={index} className={`tab-2 ${tab === index ? "active" : ""}`}>
+          <div
+            key={index}
+            className={`tab-2 ${tab === index ? "active" : ""}`}
+            onClick={() => handleTabClick(index)}
+          >
+            {/* Tab label */}
             <label htmlFor={`tab2-${index + 1}`}>{service.title}</label>
             <input
               id={`tab2-${index + 1}`}
               name="tabs-two"
               type="radio"
               checked={tab === index}
-              onChange={() => handleTabClick(index)}
+              readOnly
             />
           </div>
         ))}
       </div>
 
+      {/* Service Section */}
       <section className="service-section">
-        {serviceData.map(
-          (service, index) =>
-            tab === index && (
-              <div key={index} className="card-container">
-                <div className="content-container">
-                  {/* <h3 className="card-title">{service.title}</h3> */}
-                  <p className="card-text">{service.text}</p>
-                </div>
+        {activeService && (
+          <div className="card-container">
+            <div className="content-container">
+              <p className="card-text">{activeService.text}</p>
+            </div>
 
-                <div className="cards-container">
-                  <div className="card-basic">
-                    <div className="card-header header-basic">
-                      <h1>Coming soon</h1>
-                    </div>
-                    <div className="card-body">
-                      <p>
-                        <h2>NIA</h2>
-                      </p>
-                      <div className="card-element-hidden-basic">
-                        <ul className="card-element-container">
-                          <li className="card-element">Corporate Meditaion,</li>
-                          <li className="card-element">Yoga</li>
-                          <li className="card-element">&</li>
-                          <li className="card-element">Retreats workshops</li>
-                        </ul>
-                        <button className="btn btn-basic">Conact now</button>
-                      </div>
-                    </div>
+            {/* Cards */}
+            {/* Render cards for different courses */}
+            <div className="cards-container">
+              {cardsData[tab].map((content, index) => (
+                <div key={index} className={`card-${content.className}`}>
+                  {/* Card Header */}
+                  <div className={`card-header header-${content.className}`}>
+                    <h3>{content.header}</h3>
                   </div>
+                  {/* Card Body */}
+                  <div className="card-body">
+                    {content.price && (
+                      <p>
+                        <h5>{content.price}</h5>
+                      </p>
+                    )}
+                    <div className={`card-element-hidden-${content.className}`}>
+                      {/* List of elements for the course */}
+                      <ul className="card-element-container">
+                        {content.elements.map((element, elementIndex) => (
+                          <li className="card-element" key={elementIndex}>
+                            {element}
+                          </li>
+                        ))}
+                      </ul>
 
-                  <div className="card-standard">
-                    <div className="card-header header-standard">
-                      <h1>Online Meditation</h1>
-                    </div>
-                    <div className="card-body">
-                      <p>
-                        <h2>€70 /course</h2>
-                      </p>
-                      <div className="card-element-hidden-standard">
-                        <ul className="card-element-container">
-                          <li className="card-element">
-                            4 sessions of 45 minutes
-                          </li>
-                          <li className="card-element">Every Friday</li>
-                          <li className="card-element">
-                            Mditation techniques for daily practice
-                          </li>
-                          <li className="card-element">
-                            Be a part of weekly group meditation
-                          </li>
-                        </ul>
-                        <button className="btn btn-standard">Join now</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card-premium">
-                    <div className="card-header header-premium">
-                      <h1>In-person Meditation</h1>
-                    </div>
-                    <div className="card-body">
-                      <p>
-                        <h2>€80 /course</h2>
-                      </p>
-                      <div className="card-element-hidden-premium">
-                        <ul className="card-element-container">
-                          <li className="card-element">
-                            2 sessions of 1.5 hour
-                          </li>
-                          <li className="card-element">
-                            Each Saturday and Sunday
-                          </li>
-                          <li className="card-element">
-                            Mditation techniques for daily practice
-                          </li>
-                          <li className="card-element">
-                            Be a part of weekly group meditation
-                          </li>
-                        </ul>
-                        <button className="btn btn-premium">Join now</button>
-                      </div>
+                      {/* Button to join the course */}
+                      <button className={`btn btn-${content.className}`}>
+                        {content.buttonText}
+                      </button>
                     </div>
                   </div>
                 </div>
-              </div>
-            )
+              ))}
+            </div>
+          </div>
         )}
       </section>
     </div>
