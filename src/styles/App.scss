@@ -128,7 +128,7 @@
 /* ++++++++++ Start of Aboutme Component style sheet ++++++++++ */
 .about-container {
   @include section-padding-style;
-  border: 2px solid green;
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
