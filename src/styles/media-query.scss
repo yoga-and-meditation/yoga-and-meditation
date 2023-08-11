@@ -148,7 +148,19 @@
     }
     /*----- Start of Footer component media query----- */
   }
+  /*----- Start of Footer component media query----- */
+  footer {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      margin-left: 2rem;
+    }
+  }
 }
+/*----- End of Footer component media query----- */
+
+  }
+
 
 /* ++++++++++ Media Query for Tablet screen with min 600px and max 1023px  ++++++++++ */
 @media (min-width: $tablet-screen-min) and (max-width: $tablet-screen-max) {
@@ -275,7 +287,19 @@
       .footer-container {
         display: flex;
         flex-direction: column;
+        
         margin-left: 2rem;
+
+        .links {
+          li {
+            a{
+              &:hover {
+               
+                width: fit-content;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -369,4 +393,4 @@
   }
 }
 }
-}
+
