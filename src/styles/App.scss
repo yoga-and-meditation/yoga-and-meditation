@@ -454,19 +454,19 @@
         .btn-standard {
           background: #7e5f17;
         }
-      }
 
-      /* Premium card header */
-      .header-premium,
-      .btn-premium {
-        background: #5a4411;
-      }
+        /* Premium card header */
+        .header-premium,
+        .btn-premium {
+          background: #5a4411;
+        }
 
-      /* Cards hover effect */
-      .card-basic:hover,
-      .card-premium:hover,
-      .card-standard:hover {
-        transform: scale(1.02);
+        /* Cards hover effect */
+        .card-basic:hover,
+        .card-premium:hover,
+        .card-standard:hover {
+          transform: scale(1.02);
+        }
       }
     }
   }
