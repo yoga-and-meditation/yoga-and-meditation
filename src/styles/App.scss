@@ -488,12 +488,6 @@
 
 /* ++++++++++ Start of Demo Component style sheet ++++++++++ */
 // Top-level styles
-h2 {
-  @include heading-2-style;
-  margin-bottom: 2rem; // Assuming you want the margin at the top level as well.
-  text-align: center;
-  padding: 3rem;
-}
 
 .demo {
   @include section-padding-style;
@@ -516,6 +510,13 @@ h2 {
   .mb-2 {
     margin-bottom: $margin-size;
   }
+
+  h2 {
+    @include heading-2-style;
+    margin-bottom: 2rem; // Assuming you want the margin at the top level as well.
+    text-align: center;
+    padding: 3rem;
+  }  
 
   .demo-session-description {
     padding: 2rem;
