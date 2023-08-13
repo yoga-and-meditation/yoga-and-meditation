@@ -18,13 +18,7 @@ const serviceData = [
 const cardsData = [
   [
     // Courses under Meditation service
-    {
-      header: "Coming soon",
-      price: "NIA",
-      buttonText: "Contact now",
-      className: "basic",
-      elements: ["Corporate Meditation,", "Yoga", "&", "Retreats workshops"],
-    },
+
     {
       header: "Online Meditation",
       price: "€70 /course",
@@ -49,9 +43,6 @@ const cardsData = [
         "Be a part of weekly group meditation",
       ],
     },
-  ],
-  [
-    // Courses under Yoga service
     {
       header: "Coming soon",
       price: "NIA",
@@ -59,6 +50,10 @@ const cardsData = [
       className: "basic",
       elements: ["Corporate Meditation,", "Yoga", "&", "Retreats workshops"],
     },
+  ],
+  [
+    // Courses under Yoga service
+
     {
       header: "Online Yoga",
       price: "€8 /session",
@@ -82,6 +77,13 @@ const cardsData = [
         "Yoga techniques for daily practice",
         "Be a part of weekly group yoga",
       ],
+    },
+    {
+      header: "Coming soon",
+      price: "NIA",
+      buttonText: "Contact now",
+      className: "basic",
+      elements: ["Corporate Meditation,", "Yoga", "&", "Retreats workshops"],
     },
   ],
 ];
