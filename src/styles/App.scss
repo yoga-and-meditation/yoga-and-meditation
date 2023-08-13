@@ -5,24 +5,28 @@
 /* ++++++++++ Start of Navbar Component style sheet ++++++++++ */
 .navbar-container {
   position: sticky;
+  background:rgba(0, 0, 0, 0.1);
   width: 100%;
   z-index: 100;
   top: 0;
-  .navbar {
+  .navbar {  width: 100%;
+
     height: 6rem;
     display: flex;
-    background-color: $secondary-background-color;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.061);
     justify-content: space-between;
     align-items: center;
 
     .logo {
       padding: 0 2rem;
 
-      h1 {
+     /*  h1 {
         @include logo-font-style;
         font-family: "MoonDance-Regular";
         font-size: 4rem;
-      }
+      } */
     }
 
     .nav-menu {
@@ -40,7 +44,7 @@
 
         .links {
           text-decoration: none;
-          color: $text-color;
+          color: white;
           font-size: 1.2rem;
 
           &:hover {
@@ -55,7 +59,7 @@
         button {
           @include button-style;
           .links {
-            color: white;
+            color: rgb(255, 255, 255);
 
             &:hover {
               color: black;
@@ -125,74 +129,56 @@
 
 /* ++++++++++ Start of Hero Component style sheet ++++++++++ */
 .hero-container {
-  .hero {
-    display: flex;
-    /*     justify-content: space-between;
- */
-    flex-wrap: wrap;
-    background: linear-gradient(
-      360deg,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(209, 204, 204, 0.445) 50%
-    );
-    .col1 {
-      flex-basis: 30%;
-      margin-bottom: 28rem;
-      margin-left: 18rem;
-      margin-top: 1rem;
-      z-index: 1;
-      h1 {
-        @include yoga;
-        font-weight: 300;
-        font-size: 15rem;
-        color: rgba(29, 28, 26, 0.805);
-        /* 
-      left: 15rem;
-      top: 8rem; */
-        z-index: 2;
-      }
-      h2 {
-        @include logo-font-style;
-        font-family: "MoonDance-Regular";
-        font-size: 4rem;
-        /*  */ /*  top: 28rem;
-      left: 18rem; */
-      }
-    }
-    .col2 {
-      flex-basis: 50%;
-      position: relative;
-      display: flex;
-      align-items: center;
-      margin-left: 0rem;
-      /*       margin-left: -8rem;
- */
-      .img {
-        width: 45rem;
-        height: 28rem;
-        /* position: absolute;
-      right:20rem;
-      top:12rem;  */
-        z-index: 1;
-      }
-      .ball {
-        width: 38rem;
-        height: 38rem;
+height: 100vh;
+width: 100vw;
+ background-image: url('../assets/images/Hero/mainpage.png');
+ background-size: cover;
+ background-position: 60% 50%;
+opacity: .98;
+display: flex;
+justify-content: center;
+.content{
+  width: 50%;
+  display: flex;
+  padding-top: 3rem;
+text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  gap:2rem;
+  h1{
+    font-size: 80px;
+    background: linear-gradient(100deg, #FFF 0%, rgba(182, 150, 65, 0.5) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  padding-top:4rem ; }
+ p,h2{
+  color:#F3F0E5;
+  font-size:1.2rem;
+ }
+ button{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: #b68a23;
+  position: relative;
+top: 10%;
+  border: none
+ }
+ .icon{
+  color: #ffffff;
+  font-size:2rem;
+display: flex;
+justify-content: center;
+align-items: center; }
+}
 
-        position: absolute;
-        right: 0;
-        left: 0;
-        background-color: #b68a23;
-        border-radius: 50%;
-        /*       border: #e4e4e48d 2rem solid;
- */ /*  
-       right:15rem;
-      top:8rem;  */
-        transform: translateX(150px);
-        z-index: 0;
-      }
-    }
-  }
+ 
+
+
+
 }
 
 /* ++++++++++ End of Hero Component style sheet ++++++++++ */

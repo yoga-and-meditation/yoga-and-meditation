@@ -519,3 +519,58 @@
     }
   }
 }
+/* Navbar */
+
+@media (max-width: 850px) {
+  .app {
+    /* ++++++++++ Start Navbar Component media query ++++++++++ */
+    .navbar-container {
+      .hamburger {
+        display: block;
+        padding: 0 1rem;
+        cursor: pointer;
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        color: #ffffff;
+        svg{
+          g{
+            fill:white
+          }
+        }
+        
+      }
+      .navbar {
+        .nav-menu {
+          display: none;
+          gap: 0;
+        }
+        .logo {
+          position: absolute;
+          h1 {
+            font-size: 3rem;
+          }
+          top: 21px;
+        }
+      }
+      .expanded {
+        background-color: $secondary-background-color; /* Use the defined variablebout-container {
+          flex-direction: column;
+          img { here */
+        min-height: 55vh;
+        .nav-menu {
+          position: absolute;
+          top: 120px;
+          left: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          li{
+          .link-color{
+            color: rgb(204, 163, 42);
+          }}
+        }
+        
+      }
+    }}
+}
