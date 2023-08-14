@@ -1,7 +1,8 @@
 import Navbar from "../components/Navbar";
 function Hero() {
   return (<><Navbar/>
-    <div className="hero-container">
+    <div className="hero-container bg">
+    <div className="bgc"></div>
 
      <div className="content"> <h2>SHEETAL CHAVAN</h2>
       <h1>TAKE CHARGE OF YOUR WELL-BEING</h1>

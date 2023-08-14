@@ -45,7 +45,7 @@
         .links {
           text-decoration: none;
           color: white;
-          font-size: 1.2rem;
+          font-size: 1.5rem;
 
           &:hover {
             border-bottom: 4px solid #b48821;
@@ -131,14 +131,20 @@
 .hero-container {
 height: 100vh;
 width: 100vw;
- background-image: url('../assets/images/Hero/mainpage.png');
+ background-image:linear-gradient(rgba(58, 63, 58, 0.671),rgba(43, 49, 43, 0.762)), url('../assets/images/Hero/mainpg.jpg');
+
+ 
  background-size: cover;
  background-position: 60% 50%;
-opacity: .98;
-display: flex;
+opacity: 90%;
+ display: flex;
 justify-content: center;
-.content{
-  width: 50%;
+
+
+
+
+}.content{
+  width: 80%;
   display: flex;
   padding-top: 3rem;
 text-align: center;
@@ -148,16 +154,22 @@ text-align: center;
   
   gap:2rem;
   h1{
-    font-size: 80px;
-    background: linear-gradient(100deg, #FFF 0%, rgba(182, 150, 65, 0.5) 100%);
+    font-size: 70px;
+    background: #F3F0E5;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
-  padding-top:4rem ; }
- p,h2{
+  padding-top:2rem ; }
+ p{
   color:#F3F0E5;
-  font-size:1.2rem;
+  font-size:2rem;
+
  }
+ h2{
+  color:#F3F0E5;
+  font-size:3rem;
+ }
+
  button{
   width: 5rem;
   height: 5rem;
@@ -177,8 +189,9 @@ align-items: center; }
 
  
 
-
-
+.bg{
+  
+  
 }
 
 /* ++++++++++ End of Hero Component style sheet ++++++++++ */
