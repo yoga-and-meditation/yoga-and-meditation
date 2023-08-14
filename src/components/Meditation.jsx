@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaCheckCircle } from "react-icons/fa";
 
 import image1 from "../assets/images/motivation/yoga.jpg";
 import image2 from "../assets/images/motivation/meditation.jpg";
@@ -60,18 +61,19 @@ const Card = ({ image, header, price, buttonText, className, elements }) => (
     </div>
     <div className="card-body">
       <h3>{header}</h3>
-      {price && (
-        <p>
-          <span>{price}</span>
-        </p>
-      )}
+
       <div className={`card-element-hidden-${className}`}>
         <ul className="card-element-container">
           {elements.map((element, index) => (
             <li className="card-element" key={index}>
-              {element}
+              <FaCheckCircle className="circle-icon" /> {element}
             </li>
           ))}
+          {price && (
+            <li className="card-element">
+              <FaCheckCircle className="circle-icon" /> {price}
+            </li>
+          )}
         </ul>
         <Link to="/contacts" className="btn">
           {buttonText}

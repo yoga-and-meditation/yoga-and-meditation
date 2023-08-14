@@ -263,21 +263,24 @@
 
 /* ++++++++++ Start of Meditation Component style sheet ++++++++++ */
 .meditation-container {
-  @include section-padding-style;
+  @include section-padding-style; /* Apply padding style */
   border: 1px solid orange;
 
+  /* Styles for the content container */
   .content-container {
     h2 {
       margin-bottom: 0;
-      @include heading-2-style;
-      @include heading-2;
+      @include heading-2-style; /* Apply heading style */
+      @include heading-2; /* Apply heading style */
     }
+
     p {
       padding: 2rem;
       font-size: 1.1rem;
     }
   }
 
+  /* Styles for the cards container */
   .cards-container {
     margin-top: 2rem;
     display: flex;
@@ -285,48 +288,66 @@
     align-items: center;
     flex-wrap: wrap;
 
+    /* Card styles */
     .card-basic,
     .card-premium,
     .card-standard {
       margin: 0 3rem 1rem 0;
       width: 25%;
       background: #fff;
-      color: $text-color;
-      text-align: center;
+      color: $text-color; /* Set text color */
       border-radius: 1rem;
       box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
       overflow: hidden;
       transition: all 0.1ms ease-in-out;
-    }
 
-    .card-header {
-      height: 20rem;
-      padding: 1rem;
-      clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+      /* Card hover effect */
+      &:hover {
+        transform: scale(1.02);
+      }
 
-      img {
-        height: 18rem;
-        width: 100%;
-        border-radius: 1rem;
+      /* Card header styles */
+      .card-header {
+        height: 20rem;
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+
+        img {
+          height: 18rem;
+          width: 100%;
+          border-radius: 1rem;
+        }
+      }
+
+      /* Card body styles */
+      .card-body {
+        padding: 0.8rem 0;
+        text-align: center;
+
+        h3 {
+          text-align: center;
+          font-size: 1.5rem;
+          padding-bottom: 1rem;
+          color: #b48821;
+        }
+
+        /* Card element list styles */
+        .card-element-container {
+          color: $text-color;
+          list-style: none;
+          font-size: 1rem;
+          text-align: left;
+
+          .card-element {
+            .circle-icon {
+              color: #b48821;
+            }
+          }
+        }
       }
     }
 
-    .card-body {
-      padding: 0.8rem 0;
-    }
-
-    h3 {
-      font-size: 1.5rem;
-      padding-bottom: 1rem;
-      color: #b48821;
-    }
-
-    .card-element-container {
-      color: $text-color;
-      /* list-style: none; */
-      font-size: 1rem;
-    }
-
+    /* Button styles */
     .btn {
       background: #b48821;
       margin: 0.5rem 0;
@@ -339,23 +360,23 @@
       border: none;
       cursor: pointer;
       transition: all 0.1ms ease-in-out;
-    }
 
-    .btn:hover {
-      transform: scale(0.95);
+      /* Button hover effect */
+      &:hover {
+        transform: scale(0.95);
+      }
+
+      &:active {
+        transform: scale(1);
+      }
     }
 
     .btn:active {
       transform: scale(1);
     }
   }
-
-  .card-basic:hover,
-  .card-premium:hover,
-  .card-standard:hover {
-    transform: scale(1.02);
-  }
 }
+
 /* ++++++++++ End of Meditaion Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Gallery Component style sheet ++++++++++ */
