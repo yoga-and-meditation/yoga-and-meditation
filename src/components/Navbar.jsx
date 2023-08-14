@@ -29,7 +29,12 @@ function Navbar() {
             </li>
             <li className="item">
               <Link className="links link-color" to="/services">
-                Services
+                Meditaion
+              </Link>
+            </li>
+            <li className="item">
+              <Link className="links link-color" to="/hero">
+                Yoga
               </Link>
             </li>
             <li className="contact-btn item">
