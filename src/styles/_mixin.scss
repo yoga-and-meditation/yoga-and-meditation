@@ -49,40 +49,70 @@
 
 @mixin heading-1 {
   @font-face {
-    font-family: "Roboto-Black";
-    src: url("../path/to/Roboto-Black.ttf") format("truetype"); /* here also */
-    font-weight: 900;
+    font-family: "Open Sans ExtraBold";
+    src: url("../assets/fonts/OpenSans/OpenSans-ExtraBold.ttf")
+      format("truetype");
+    font-weight: 800;
     font-style: normal;
   }
 }
 
 @mixin heading-2 {
   @font-face {
-    font-family: "Roboto-Medium";
-    src: url("../path/to/Roboto-Medium.ttf") format("truetype");
+    font-family: "Open Sans Bold";
+    src: url("../assets/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
   }
 }
 @mixin heading-3 {
   @font-face {
-    font-family: "Roboto-Medium";
-    src: url("../path/to/Roboto-Medium.ttf") format("truetype");
-    font-weight: 500;
+    font-family: "Open Sans SemiBold";
+    src: url("../assets/fonts/OpenSans/OpenSans-SemiBold.ttf")
+      format("truetype");
+    font-weight: 600;
     font-style: normal;
   }
   font-size: 2.3rem;
 }
 
-@mixin paragraph-normal {
+@mixin medium {
   @font-face {
-    font-family: "Roboto-Regular";
-    src: url("../path/to/Roboto-Regular.ttf") format("truetype");
-    font-weight: normal;
+    font-family: "Open Sans Medium";
+    src: url("../assets/fonts/OpenSans/OpenSans-Medium.ttf") format("truetype");
+    font-weight: 500;
     font-style: normal;
   }
 }
 
+@mixin paragraph-normal {
+  @font-face {
+    font-family: "Open Sans Regular";
+    src: url("../assets/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@mixin cards-font {
+  @font-face {
+    font-family: "Open Sans Light";
+    src: url("../assets/fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+
+/* 
+************ Previous Google fonts ***********
+
+
+
+
+
+
+
+*/
 @mixin paragraph-italics {
   @font-face {
     font-family: "Roboto-MediumItalic";
