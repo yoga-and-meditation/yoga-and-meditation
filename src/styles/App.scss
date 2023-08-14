@@ -260,14 +260,14 @@
 /* ++++ Start of Styles for combined Meditation and Yoga components (service-container) ++++ */
 .service-container {
   @include section-padding-style;
-  /*  border: 1px solid red; */
 
   /* Styles for the content container */
   .content-container {
     padding: 0 3rem 0 3rem;
 
     h2 {
-      margin-bottom: 0;
+      text-align: center;
+      padding: 2rem;
       @include heading-2-style;
       @include heading-2;
     }
