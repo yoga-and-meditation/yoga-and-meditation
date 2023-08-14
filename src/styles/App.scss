@@ -263,12 +263,13 @@
 
 /* ++++ Start of Styles for combined Meditation and Yoga components (service-container) ++++ */
 .service-container {
-  @include section-padding-style; /* Apply padding style */
-  border: 1px solid orange;
+  @include section-padding-style;
+  /*  border: 1px solid red; */
 
   /* Styles for the content container */
   .content-container {
-    padding: 2rem;
+    padding: 0 3rem 0 3rem;
+
     h2 {
       margin-bottom: 0;
       @include heading-2-style;
@@ -276,6 +277,8 @@
     }
 
     p {
+      @include paragraph-normal;
+      font-weight: 300;
       font-size: 1.1rem;
       line-height: 2rem;
     }
@@ -283,17 +286,18 @@
 
   /* Styles for the cards container */
   .cards-container {
-    padding: 2rem;
+    padding: 2rem 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 3rem;
 
     /* Card styles */
     .card-basic,
     .card-premium,
     .card-standard {
-      margin: 0 3rem 1rem 0;
       width: 26%;
       background: #fff;
       color: $text-color;
@@ -310,7 +314,7 @@
       /* Card header styles */
       .card-header {
         height: 16rem;
-        padding: 1.5rem;
+        padding: 1rem;
         clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
 
         img {
@@ -328,6 +332,7 @@
         position: relative;
 
         h3 {
+          @include heading-3;
           text-align: center;
           font-size: 1.5rem;
           padding-bottom: 1rem;
@@ -336,7 +341,8 @@
 
         /* Card element list styles */
         .card-element-container {
-          color: $text-color;
+          color: #676767;
+          @include cards-font;
           list-style: none;
           font-size: 0.9rem;
           text-align: left;
@@ -359,6 +365,7 @@
 
           /* Button styles */
           .btn {
+            @include cards-font;
             background: #b48821;
             margin: 0.5rem 0;
             padding: 0.6rem 1rem;
