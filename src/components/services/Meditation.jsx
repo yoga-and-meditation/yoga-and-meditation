@@ -51,10 +51,15 @@ const cardsDataMeditation = [
   {
     image: image3,
     header: "Workshops",
-    price: "NIA",
+    price: "",
     buttonText: "Contact now",
     className: "basic",
-    elements: ["Corporate Meditation", "Yoga", "&", "Retreats workshops"],
+    elements: [
+      "Learn ancient meditation techniques",
+      "Specially designed for busy professionals",
+      "Optional weekly group meditation support",
+      "Q&A with experts for attendees",
+    ],
   },
 ];
 

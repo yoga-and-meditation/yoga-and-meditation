@@ -271,8 +271,8 @@
     padding: 2rem;
     h2 {
       margin-bottom: 0;
-      @include heading-2-style; /* Apply heading style */
-      @include heading-2; /* Apply heading style */
+      @include heading-2-style;
+      @include heading-2;
     }
 
     p {
@@ -283,7 +283,6 @@
 
   /* Styles for the cards container */
   .cards-container {
-    /* border: 1px solid blue; */
     padding: 2rem;
     display: flex;
     justify-content: center;
@@ -297,7 +296,7 @@
       margin: 0 3rem 1rem 0;
       width: 26%;
       background: #fff;
-      color: $text-color; /* Set text color */
+      color: $text-color;
       border-radius: 1rem;
       box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
       overflow: hidden;
@@ -311,7 +310,7 @@
       /* Card header styles */
       .card-header {
         height: 16rem;
-        padding: 1rem;
+        padding: 1.5rem;
         clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
 
         img {
@@ -323,8 +322,10 @@
 
       /* Card body styles */
       .card-body {
+        height: 20rem;
         padding: 0.8rem 0;
         text-align: center;
+        position: relative;
 
         h3 {
           text-align: center;
@@ -346,35 +347,41 @@
             }
           }
         }
+
+        /* Button container */
+        .btn-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          position: absolute;
+          bottom: 0.8rem;
+
+          /* Button styles */
+          .btn {
+            background: #b48821;
+            margin: 0.5rem 0;
+            padding: 0.6rem 1rem;
+            outline: none;
+            border-radius: 1rem;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: all 0.1ms ease-in-out;
+
+            /* Button hover effect */
+            &:hover {
+              transform: scale(0.95);
+            }
+
+            &:active {
+              transform: scale(1);
+            }
+          }
+        }
       }
-    }
-
-    /* Button styles */
-    .btn {
-      background: #b48821;
-      margin: 0.5rem 0;
-      padding: 0.6rem 1rem;
-      outline: none;
-      border-radius: 1rem;
-      font-size: 1rem;
-      font-weight: 700;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      transition: all 0.1ms ease-in-out;
-
-      /* Button hover effect */
-      &:hover {
-        transform: scale(0.95);
-      }
-
-      &:active {
-        transform: scale(1);
-      }
-    }
-
-    .btn:active {
-      transform: scale(1);
     }
   }
 }
