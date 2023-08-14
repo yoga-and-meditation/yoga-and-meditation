@@ -255,125 +255,140 @@
     }
   }
 }
-/* ++++++++++ End of Aboutme Component style sheet ++++++++++ */
+/* ++++++ End of Aboutme Component style sheet ++++++++++ */
 
-/* ++++++++++ Start of Service Component style sheet ++++++++++ */
+/* ++++ Start of Styles for combined Meditation and Yoga components (service-container) ++++ */
 .service-container {
   @include section-padding-style;
+  /*  border: 1px solid red; */
 
-  /* Heading style of the section */
-  .header-container {
-    text-align: center;
+  /* Styles for the content container */
+  .content-container {
+    padding: 0 3rem 0 3rem;
+
     h2 {
+      margin-bottom: 0;
       @include heading-2-style;
       @include heading-2;
     }
-    h3 {
-      @include heading-3;
+
+    p {
+      @include paragraph-normal;
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 2rem;
     }
   }
 
-  /* Tab container style */
-  .tab-container {
+  /* Styles for the cards container */
+  .cards-container {
+    padding: 2rem 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
 
-    /* Tab buttons style */
-    .navigation {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    /* Card styles */
+    .card-basic,
+    .card-premium,
+    .card-standard {
+      width: 26%;
+      background: #fff;
+      color: $text-color;
+      border-radius: 1rem;
+      box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+      overflow: hidden;
+      transition: all 0.1ms ease-in-out;
 
-      /* Tab active button style */
-      .active {
-        background: #b48821;
-        .button {
-          .icon {
-            transition-delay: 0s;
-          }
-          .icon::before {
-            transform: scale(1);
-          }
+      /* Card hover effect */
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      /* Card header styles */
+      .card-header {
+        height: 16rem;
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+
+        img {
+          height: 14rem;
+          width: 100%;
+          border-radius: 1rem;
         }
       }
 
-      /* Tab un-active buttons style */
-      li {
+      /* Card body styles */
+      .card-body {
+        height: 20rem;
+        padding: 0.8rem 0;
+        text-align: center;
         position: relative;
-        list-style: none;
-        margin: 3.5rem 5rem;
-        display: flex;
-        justify-content: center;
-        padding: 4.9rem;
-        border-radius: 50%;
-        /*       box-shadow: 10px 22px 40px #0000 5%; */
-        box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff;
 
-        .button {
+        h3 {
+          @include heading-3;
+          text-align: center;
+          font-size: 1.5rem;
+          padding-bottom: 1rem;
+          color: #b48821;
+        }
+
+        /* Card element list styles */
+        .card-element-container {
+          color: #676767;
+          @include cards-font;
+          list-style: none;
+          font-size: 0.9rem;
+          text-align: left;
+
+          .card-element {
+            .circle-icon {
+              color: #b48821;
+            }
+          }
+        }
+
+        /* Button container */
+        .btn-container {
+          width: 100%;
           display: flex;
-          align-items: center;
           justify-content: center;
-          flex-direction: column;
 
-          .icon {
-            position: absolute;
-            font-size: 5rem;
-            width: 10rem;
-            height: 10rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid #b48821;
-            border-radius: 50%;
-            transition: 0.5s;
-            transition-delay: 0.2s;
+          position: absolute;
+          bottom: 0.8rem;
 
-            img {
-              height: 6rem;
-              width: 6rem;
+          /* Button styles */
+          .btn {
+            @include cards-font;
+            background: #b48821;
+            margin: 0.5rem 0;
+            padding: 0.6rem 1rem;
+            outline: none;
+            border-radius: 1rem;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: all 0.1ms ease-in-out;
+
+            /* Button hover effect */
+            &:hover {
+              transform: scale(0.95);
+            }
+
+            &:active {
+              transform: scale(1);
             }
           }
         }
       }
     }
   }
-
-  /* Service section style sheet */
-  .service-section {
-    display: flex;
-    justify-content: center;
-    .card-container {
-      background-image: url("../assets/images/services/wave.svg");
-      background-size: cover;
-      outline: none;
-      border: none;
-
-      box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
-      width: 100%;
-      .img-fluid {
-        height: 30rem;
-        width: 45rem;
-      }
-
-      .subscribe-btn {
-        @include button-style;
-      }
-
-      .card-text {
-        font-size: 1.3rem;
-        padding: 0.6rem;
-        color: $text-color;
-        @include paragraph-normal;
-      }
-      h3 {
-        @include heading-3;
-      }
-    }
-  }
 }
-/* ++++++++++ End of Service Component style sheet ++++++++++ */
+/* ++++ End of Styles for combined Meditation and Yoga components (service-container) ++++ */
 
 /* ++++++++++ Start of Gallery Component style sheet ++++++++++ */
 .gallery-container {

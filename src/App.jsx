@@ -2,7 +2,8 @@ import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/App.scss";
 import Aboutme from "./components/Aboutme";
-import Services from "./components/Services";
+import Meditation from "./components/services/Meditation";
+import Yoga from "./components/services/Yoga";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Contacts from "./components/Contacts";
@@ -15,15 +16,16 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-      <Navbar /> 
+        <Navbar />
         <Hero />
         <Aboutme />
-        <Services />
+        <Meditation />
+        <Yoga />
         <Gallery />
         <Feedback />
         <Demo />
         <Contacts />
-        <Footer /> 
+        <Footer />
       </BrowserRouter>
     </div>
   );
