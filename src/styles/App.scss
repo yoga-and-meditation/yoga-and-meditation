@@ -259,15 +259,16 @@
     }
   }
 }
-/* ++++++++++ End of Aboutme Component style sheet ++++++++++ */
+/* ++++++ End of Aboutme Component style sheet ++++++++++ */
 
-/* ++++++++++ Start of Meditation Component style sheet ++++++++++ */
-.meditation-container {
+/* ++++ Start of Styles for combined Meditation and Yoga components (service-container) ++++ */
+.service-container {
   @include section-padding-style; /* Apply padding style */
   border: 1px solid orange;
 
   /* Styles for the content container */
   .content-container {
+    padding: 2rem;
     h2 {
       margin-bottom: 0;
       @include heading-2-style; /* Apply heading style */
@@ -275,14 +276,15 @@
     }
 
     p {
-      padding: 2rem;
       font-size: 1.1rem;
+      line-height: 2rem;
     }
   }
 
   /* Styles for the cards container */
   .cards-container {
-    margin-top: 2rem;
+    /* border: 1px solid blue; */
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,7 +295,7 @@
     .card-premium,
     .card-standard {
       margin: 0 3rem 1rem 0;
-      width: 25%;
+      width: 26%;
       background: #fff;
       color: $text-color; /* Set text color */
       border-radius: 1rem;
@@ -308,12 +310,12 @@
 
       /* Card header styles */
       .card-header {
-        height: 20rem;
+        height: 16rem;
         padding: 1rem;
         clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
 
         img {
-          height: 18rem;
+          height: 14rem;
           width: 100%;
           border-radius: 1rem;
         }
@@ -335,7 +337,7 @@
         .card-element-container {
           color: $text-color;
           list-style: none;
-          font-size: 1rem;
+          font-size: 0.9rem;
           text-align: left;
 
           .card-element {
@@ -376,8 +378,7 @@
     }
   }
 }
-
-/* ++++++++++ End of Meditaion Component style sheet ++++++++++ */
+/* ++++ End of Styles for combined Meditation and Yoga components (service-container) ++++ */
 
 /* ++++++++++ Start of Gallery Component style sheet ++++++++++ */
 .gallery-container {

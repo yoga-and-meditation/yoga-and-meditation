@@ -1,10 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { FaCheckCircle } from "react-icons/fa";
+import Card from "./Cards";
 
-import image1 from "../assets/images/motivation/yoga.jpg";
-import image2 from "../assets/images/motivation/meditation.jpg";
-import image3 from "../assets/images/motivation/retreating.jpg";
+import image1 from "../../assets/images/motivation/yoga.jpg";
+import image2 from "../../assets/images/motivation/meditation.jpg";
+import image3 from "../../assets/images/motivation/retreating.jpg";
 
 /* Service Data Array */
 const meditationData = [
@@ -15,33 +13,39 @@ const meditationData = [
 ];
 
 /* Cards Data Array */
-const cardsData = [
+const cardsDataMeditation = [
   // Courses under Meditation service
 
   {
     image: image1,
     header: "Online Meditation",
-    price: "€70 /course",
+    price: "€70 per course",
     buttonText: "Join now",
     className: "standard",
     elements: [
-      "4 sessions of 45 minutes",
-      "Every Friday",
-      "Meditation techniques for daily practice",
-      "Be a part of weekly group meditation",
+      "Learn ancient meditation techniques",
+      "Join first session free",
+      "4 weeks online course",
+      "4 sessions of 1 hour every week",
+      "Free guided meditation at course end",
+      "Join our weekly guided meditation group",
+      "Free ongoing Q&A support",
     ],
   },
   {
     image: image2,
     header: "In-person Meditation",
-    price: "€80 /course",
+    price: "€80 per course",
     buttonText: "Join now",
     className: "premium",
     elements: [
-      "2 sessions of 1.5 hours",
+      "Learn ancient meditation techniques",
+      "A weekend in-person meditation",
       "Each Saturday and Sunday",
-      "Meditation techniques for daily practice",
-      "Be a part of weekly group meditation",
+      "2 sessions on each day",
+      "Free guided meditation at course end",
+      "Join our weekly guided meditation group",
+      "Free ongoing Q&A support",
     ],
   },
   {
@@ -54,38 +58,9 @@ const cardsData = [
   },
 ];
 
-const Card = ({ image, header, price, buttonText, className, elements }) => (
-  <div className={`card-${className}`} key={header}>
-    <div className={`card-header header-${className}`}>
-      <img src={image} alt={header} />
-    </div>
-    <div className="card-body">
-      <h3>{header}</h3>
-
-      <div className={`card-element-hidden-${className}`}>
-        <ul className="card-element-container">
-          {elements.map((element, index) => (
-            <li className="card-element" key={index}>
-              <FaCheckCircle className="circle-icon" /> {element}
-            </li>
-          ))}
-          {price && (
-            <li className="card-element">
-              <FaCheckCircle className="circle-icon" /> {price}
-            </li>
-          )}
-        </ul>
-        <Link to="/contacts" className="btn">
-          {buttonText}
-        </Link>
-      </div>
-    </div>
-  </div>
-);
-
 function Meditation() {
   return (
-    <div className="meditation-container">
+    <div className="service-container">
       {meditationData.map((data, index) => (
         <div className="content-container" key={index}>
           <h2>{data.title}</h2>
@@ -93,7 +68,7 @@ function Meditation() {
         </div>
       ))}
       <div className="cards-container">
-        {cardsData.map((content, index) => (
+        {cardsDataMeditation.map((content, index) => (
           <Card {...content} key={index} />
         ))}
       </div>
