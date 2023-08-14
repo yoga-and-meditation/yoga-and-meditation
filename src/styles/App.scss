@@ -261,213 +261,102 @@
 }
 /* ++++++++++ End of Aboutme Component style sheet ++++++++++ */
 
-/* ++++++++++ Start of Service Component style sheet ++++++++++ */
-.service-container {
+/* ++++++++++ Start of Meditation Component style sheet ++++++++++ */
+.meditation-container {
   @include section-padding-style;
+  border: 1px solid orange;
 
-  /* Heading style of the section */
-  .header-container {
-    text-align: center;
+  .content-container {
     h2 {
       margin-bottom: 0;
       @include heading-2-style;
       @include heading-2;
     }
-  }
-
-  // Reset focus outlines for various form elements
-  button:focus,
-  input:focus,
-  select:focus {
-    outline: none;
-  }
-
-  /* Tab container style */
-  .tabs {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    overflow: hidden;
-
-    [class^="tab"], //Targets elements whose class attribute starts with "tab"
-    [class*=" tab"] {
-      // Targets the elements whose class attribute contains the substring "tab"
-      label {
-        color: $text-color;
-        cursor: pointer;
-        display: block;
-        font-size: 1.8rem;
-        padding: 2rem 0;
-        text-align: center;
-      }
-
-      [type="radio"] {
-        border-bottom: 4px solid $secondary-background-color;
-        cursor: pointer;
-        appearance: none;
-        display: block;
-        width: 100%;
-        transition: all 0.1s ease-in-out;
-
-        &:checked {
-          border-bottom: 4px solid #b68a23;
-          + div {
-            opacity: 1;
-          }
-        }
-      }
-
-      &.tab-2 {
-        width: 50%;
-
-        [type="radio"] + div {
-          width: 200%;
-          margin-left: 200%;
-        }
-
-        &:last-child [type="radio"] + div {
-          margin-left: 100%;
-        }
-
-        &:last-child [type="radio"]:checked + div {
-          margin-left: -100%;
-        }
-
-        [type="radio"]:checked + div {
-          margin-left: 0;
-        }
-      }
+    p {
+      padding: 2rem;
+      font-size: 1.1rem;
     }
   }
 
-  /* Service section style sheet */
-  .service-section {
+  .cards-container {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-    .card-content-container {
-      margin-top: 2rem;
-      width: 100%;
+    .card-basic,
+    .card-premium,
+    .card-standard {
+      margin: 0 3rem 1rem 0;
+      width: 25%;
+      background: #fff;
+      color: $text-color;
+      text-align: center;
+      border-radius: 1rem;
+      box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+      overflow: hidden;
+      transition: all 0.1ms ease-in-out;
+    }
 
-      /* Content container of the section */
-      .content-container {
-        .card-text {
-          font-size: 1.3rem;
-          padding: 0 3rem;
-          color: $text-color;
-          @include paragraph-normal;
-        }
-      }
+    .card-header {
+      height: 20rem;
+      padding: 1rem;
+      clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
 
-      /* Cards container */
-      .cards-container {
-        margin-top: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-
-        /* Cards style */
-        .card-basic,
-        .card-premium,
-        .card-standard {
-          margin: 0 3rem 1rem 0;
-          /*  padding: 0 0 0.5rem 0; */
-          width: 25%;
-          background: #fff;
-          color: $text-color;
-          text-align: center;
-          border-radius: 1rem;
-          box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
-          overflow: hidden;
-          transition: all 0.1ms ease-in-out;
-
-          /* Cards Header */
-          .card-header {
-            height: 5rem;
-            font-weight: 700;
-            font-size: 0.8rem;
-            padding: 1rem 0;
-            color: #fff;
-            clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-          }
-
-          /* Cards body */
-          .card-body {
-            padding: 0.8rem 0;
-
-            /* cards body heading 3 */
-            p {
-              h3 {
-                font-size: 1.4rem;
-                color: #b48821;
-                padding: 1.3rem;
-              }
-            }
-
-            /* Card element container */
-            .card-element-container {
-              color: $text-color;
-              list-style: none;
-              font-size: 1rem;
-            }
-
-            /* cards buttons */
-            .btn {
-              margin: 0.5rem 0;
-              padding: 0.7rem 1rem;
-              outline: none;
-              border-radius: 1rem;
-              font-size: 1rem;
-              font-weight: 700;
-              color: #fff;
-              border: none;
-              cursor: pointer;
-              transition: all 0.1ms ease-in-out;
-
-              /* Buttons on hover effect */
-              &:hover {
-                transform: scale(0.95);
-              }
-
-              /* Bttons active state */
-              &:active {
-                transform: scale(1);
-              }
-            }
-          }
-        }
-
-        /* Basic card header */
-        .header-basic,
-        .btn-basic {
-          background: #a27a1e;
-        }
-
-        /* Standard card Header */
-        .header-standard,
-        .btn-standard {
-          background: #7e5f17;
-        }
-
-        /* Premium card header */
-        .header-premium,
-        .btn-premium {
-          background: #5a4411;
-        }
-
-        /* Cards hover effect */
-        .card-basic:hover,
-        .card-premium:hover,
-        .card-standard:hover {
-          transform: scale(1.02);
-        }
+      img {
+        height: 18rem;
+        width: 100%;
+        border-radius: 1rem;
       }
     }
+
+    .card-body {
+      padding: 0.8rem 0;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+      color: #b48821;
+    }
+
+    .card-element-container {
+      color: $text-color;
+      /* list-style: none; */
+      font-size: 1rem;
+    }
+
+    .btn {
+      background: #b48821;
+      margin: 0.5rem 0;
+      padding: 0.6rem 1rem;
+      outline: none;
+      border-radius: 1rem;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: all 0.1ms ease-in-out;
+    }
+
+    .btn:hover {
+      transform: scale(0.95);
+    }
+
+    .btn:active {
+      transform: scale(1);
+    }
+  }
+
+  .card-basic:hover,
+  .card-premium:hover,
+  .card-standard:hover {
+    transform: scale(1.02);
   }
 }
-
-/* ++++++++++ End of Service Component style sheet ++++++++++ */
+/* ++++++++++ End of Meditaion Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Gallery Component style sheet ++++++++++ */
 .gallery-container {

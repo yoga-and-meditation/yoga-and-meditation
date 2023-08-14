@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/App.scss";
 import Aboutme from "./components/Aboutme";
 import Services from "./components/Services";
+import Meditation from "./components/Meditation";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Contacts from "./components/Contacts";
@@ -18,7 +19,8 @@ function App() {
         {/* <Navbar />
         <Hero />
         <Aboutme /> */}
-        <Services />
+        {/* <Services /> */}
+        <Meditation />
         {/* <Gallery />
         <Feedback />
         <Demo />
