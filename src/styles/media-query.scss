@@ -6,58 +6,6 @@
     }
     /*----- End of Navbar component media query----- */
 
-    /*----- Start of Hero component media query----- */
-    /* .hero-container {
-      width: 100vw;
-      height: 100vh;
-      padding: 0 8rem;
-
-      background: linear-gradient(
-        360deg,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(209, 204, 204, 0.445) 50%
-      );
-      .hero-heading {
-        h1 {
-          @include yoga;
-          font-weight: 300;
-          font-size: 1rem;
-          color: rgba(29, 28, 26, 0.805);
-          position: absolute;
-          left: 13rem;
-          top: 8rem;
-          z-index: 2;
-        }
-        h2 {
-          @include logo-font-style;
-          font-family: "MoonDance-Regular";
-          font-size: 4.5rem;
-          top: 28rem;
-          left: 18rem;
-          position: absolute;
-        }
-      }
-      .ball {
-        width: 10rem;
-        height: 10rem;
-        background-color: #b68a23;
-        border-radius: 50%;
-        border: #e4e4e48d 2rem solid;
-        position: relative;
-        left: 40rem;
-        top: 6rem;
-
-        .gif {
-          width: 92rem;
-          height: 60rem;
-          position: absolute;
-          right: -22rem;
-          bottom: -5rem;
-        }
-      }
-    } */
-    /*----- End of Hero component media query----- */
-
     /*----- Start of Aboutme component media query----- */
     .about-container {
       flex-wrap: wrap;
@@ -368,10 +316,11 @@
       }
       /*----- Start of Footer component media query----- */
     }
-  }}
- /*----------- Hero Section ------------------*/
+  }
+}
+/*----------- Hero Section ------------------*/
 
- @media (min-width: 1150px) and (max-width: 1300px) {
+@media (min-width: 1150px) and (max-width: 1300px) {
   .app {
     .hero-container {
       .hero {
@@ -397,7 +346,7 @@
             height: 20rem;
             margin-right: 4rem;
           }
-        }    
+        }
       }
     }
   }
@@ -413,7 +362,8 @@
           margin-left: 120px;
           h1 {
             font-size: 10rem;
-          }h2 {
+          }
+          h2 {
             font-size: 3rem;
           }
         }
@@ -436,52 +386,51 @@
 
 @media (min-width: 500px) and (max-width: 900px) {
   .app {
-    .hero-container { display: flex;
+    .hero-container {
+      display: flex;
       justify-content: center;
 
-      .hero { 
-        width:90%;
+      .hero {
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap:1rem;
+        gap: 1rem;
         flex-direction: column;
         background: none;
         .col1 {
           width: 100%;
 
-           margin-left: 0;
+          margin-left: 0;
           margin-top: 0;
           margin-bottom: 0;
           order: 1;
           h1 {
-          text-align: center;
+            text-align: center;
             font-size: 8rem;
           }
-          h2 {          text-align: center;
+          h2 {
+            text-align: center;
 
             font-size: 3rem;
           }
-        } 
+        }
         .col2 {
-          
-         position: relative;
+          position: relative;
           order: 2;
-           margin-left: 0;
-        .ball {
-         
+          margin-left: 0;
+          .ball {
             width: 18rem;
-            height: 18rem;       
-                  margin-left: 0;
-                  right: 10rem;
-                  transform: translateX(20px);
-
-           }
+            height: 18rem;
+            margin-left: 0;
+            right: 10rem;
+            transform: translateX(20px);
+          }
           img {
             width: 18rem;
             height: 15rem;
-           /*   margin-left: 5rem; */
-            margin-top: 1rem; 
+            /*   margin-left: 5rem; */
+            margin-top: 1rem;
           }
         }
       }
@@ -505,7 +454,7 @@
         }
         .col2 {
           margin-left: -10rem;
-         .ball {
+          .ball {
             width: 32rem;
             height: 32rem;
           }
