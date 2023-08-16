@@ -6,7 +6,7 @@
       <div className="hero">
         <div className="col1">
              <h1>yoga</h1>
-             <h2>with sheetal</h2>
+             <h2>and meditation</h2>
          </div>
          <div className='col2 '>
     

@@ -13,7 +13,7 @@ function Navbar() {
     <div className="navbar-container">
       <nav className={isOpen ? "navbar expanded" : "navbar"}>
         <div className="logo">
-          <h1>Sheetal Chavan</h1>
+          <h1>Y&M</h1>
         </div>
         <div>
           <ul className="nav-menu">
