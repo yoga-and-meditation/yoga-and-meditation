@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import emailjs from "emailjs-com"; // Corrected import statement
+import emailjs from "@emailjs/browser";
 import validator from "validator";
 
 function Contacts() {
@@ -16,13 +16,13 @@ function Contacts() {
         "service_vahbirl",
         "template_rn1bvcm",
         formRef.current,
-        "user_12345" // Replace with your emailjs user ID
+        "IKurTGCmhR_ZV4Ju8"
       );
       setButtonValue("Sent");
       formRef.current.reset();
 
       setTimeout(() => {
-        setButtonValue("Submit"); // Reset the button text after a delay of 3 seconds
+        setButtonValue("Submit"); //Reset the button text after a delay of 3 seconds
       }, 2000);
     } catch (error) {
       console.error("Error sending email:", error);
