@@ -200,7 +200,7 @@
 /* ++++++++++ Start of Aboutme Component style sheet ++++++++++ */
 .about-container {
   @include section-padding-style;
-  
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -214,10 +214,9 @@
 
   .rectangle1,
   .rectangle2 {
-
     position: absolute;
-   top: 0;
-    left: 10rem; 
+    top: 0;
+    left: 10rem;
     width: 450px;
     height: 630px;
     transform: rotate(-13deg);
@@ -497,13 +496,13 @@
     padding: 3rem;
   }
   @include section-padding-style;
-  
+
   h2 {
     @include heading-2-style;
     margin-bottom: 2rem; // Assuming you want the margin at the top level as well.
     text-align: center;
     padding: 3rem;
-  }  
+  }
 }
 
 .demo-container {
@@ -523,7 +522,6 @@
   .mb-2 {
     margin-bottom: $margin-size;
   }
-
 
   .demo-session-description {
     padding: 2rem;
@@ -728,153 +726,3 @@ footer {
   }
 }
 /* ++++++++++ End of Footer Component style sheet ++++++++++ */
-
-/* 
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
-/* This part of code should be discussed before removing it  */
-
-/* About component style sheet */
-
-// .about-container {
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-
-//   h2 {
-//     @include heading-2-color;
-//   }
-
-//   img {
-//     width: 500px;
-//     height: 700px;
-//     position: relative;
-//     z-index: 1;
-//   }
-
-//   .rectangle1,
-//   .rectangle2 {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 500px;
-//     height: 700px;
-//     transform: rotate(-45deg);
-//     z-index: -1;
-//     //animation: rotateAnimation 60s infinite linear;
-//   }
-
-//   .rectangle1 {
-//     border: 15px solid #f4e4d5;
-//     margin-left: 50px; /* Add some spacing between the rectangles */
-//   }
-
-//   .rectangle2 {
-//     border: 15px solid #eaeae8;
-//     margin-left: -30px; /* Add some spacing between the rectangles */
-//   }
-
-//   /*  */
-//   @keyframes rotateAnimation {
-//     0% {
-//       transform: rotate(0);
-//     }
-//     100% {
-//       transform: rotate(360deg);
-//     }
-//   }
-// }
-// section {
-//   flex: 1;
-//   display: flex;
-//   gap: 2rem;
-//   flex-direction: column;
-//   padding-top: 1rem;
-
-//   max-width: 50vw;
-//   margin-top: 2rem;
-
-//   p {
-//     color: $text-color;
-//     font-family: "Roboto-Medium";
-//     max-width: 70%;
-//   }
-// }
-
-/* Hero section version 1 style */
-// .hero {
-//   width: 100%;
-//   height: 100vh;
-//   position: fixed;
-//   background: linear-gradient(
-//     360deg,
-//     rgba(255, 255, 255, 0) 50%,
-//     rgba(209, 204, 204, 0.445) 50%
-//   );
-// }
-// .hero-heading {
-//   @include yoga;
-//   font-weight: 100;
-//   font-size: 300px;
-//   color: rgba(29, 28, 26, 0.805);
-//   padding: 0rem 5rem;
-//   position: absolute;
-//   left: 5rem;
-//   z-index: 2;
-// }
-// .name {
-//   top: 18rem;
-//   left: 10rem;
-//   position: absolute;
-// }
-// .ball {
-//   width: 700px;
-//   height: 700px;
-//   background-color: rgb(215, 167, 39);
-//   border-radius: 50%;
-//   position: relative;
-//   top: 8rem;
-//   left: 50rem;
-// }
-// /*  @-webkit-keyframes circle{
-//     0%{
-//       transform: rotate(0deg)translate(-160px)rotate(0deg);
-//     }
-//     100%{
-//       transform :rotate(360deg)translate(-165px)rotate(-360deg);
-//     }
-//   } */
-// .gif {
-//   width: 90rem;
-//   height: 55rem;
-//   position: absolute;
-//   left: -30rem;
-//   bottom: 1rem;
-// }
-// @media only screen and (max-width: 700px) {
-//   .ball {
-//     position: relative;
-//     left: 35rem;
-//   }
-//   .hero {
-//     height: 100vh;
-//     width: 100%;
-//     background: linear-gradient(
-//       360deg,
-//       rgba(255, 255, 255, 0) 39%,
-//       rgba(209, 204, 204, 0.445) 39%
-//     );
-//   }
-// }
