@@ -1,3 +1,452 @@
+/* ++++++++++ Media Query for small Phone screen with max width of 360px ++++++++++ */
+@media (max-width: 360px) {
+  .app {
+    /* Services componenet */
+    .service-container {
+      margin-top: 2rem;
+      width: 99%;
+
+      .header-container {
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+
+      .tab-container {
+        /*   border: 1px solid green; */
+        width: 100%;
+        padding: 2.5rem;
+
+        .navigation {
+          padding-left: 0;
+          gap: 6rem;
+          justify-content: center;
+          li {
+            margin: 0 auto;
+
+            padding: 0;
+
+            .button {
+              .icon {
+                width: 4rem;
+                height: 4rem;
+
+                img {
+                  height: 2.5rem;
+                  width: 2.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .service-section {
+        padding: 1rem;
+
+        .card-container {
+          box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+          border-radius: 1rem;
+          overflow: hidden;
+          transition: all 0.1ms ease-in-out;
+          margin: 0;
+          width: 100%;
+          background: none;
+
+          &:hover {
+            transform: scale(1.02);
+          }
+
+          .img-fluid {
+            display: none;
+          }
+
+          .card-body {
+            position: relative;
+
+            .card-title {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+              background-color: #b48821;
+              width: 100%;
+              text-align: center;
+              font-size: 1.5rem;
+              padding: 1rem;
+              color: white;
+            }
+
+            .card-text {
+              margin-top: 2.5rem;
+              font-size: 0.8rem;
+            }
+
+            .subscribe-btn-container {
+              display: flex;
+              justify-content: center;
+              .subscribe-btn {
+                height: 2rem;
+                font-size: 0.9rem;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ++++++++++ Media Query for Phone screen with max width of 599px ++++++++++ */
+@media (min-width: 361px) and (max-width: $phone-screen) {
+  .app {
+    /*----- Start of Service component media query----- */
+    .service-container {
+      margin-top: 2rem;
+      width: 99%;
+
+      .header-container {
+        h3 {
+          font-size: 1.8rem;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .tab-container {
+        /*  border: 1px solid green; */
+        width: 100%;
+        padding: 2.5rem;
+
+        .navigation {
+          padding-left: 0;
+          gap: 8.5rem;
+          margin-bottom: 1rem;
+          justify-content: center;
+          li {
+            margin: 0 auto;
+
+            padding: 0;
+
+            .button {
+              .icon {
+                width: 5.5rem;
+                height: 5.5rem;
+
+                img {
+                  height: 3rem;
+                  width: 3rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .service-section {
+        padding: 1rem;
+
+        .card-container {
+          box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+          border-radius: 1rem;
+          overflow: hidden;
+          transition: all 0.1ms ease-in-out;
+          margin: 0;
+          width: 85%;
+          background: none;
+
+          &:hover {
+            transform: scale(1.02);
+          }
+
+          .img-fluid {
+            display: none;
+          }
+
+          .card-body {
+            position: relative;
+
+            .card-title {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+              background-color: #b48821;
+              width: 100%;
+              text-align: center;
+              font-size: 1.5rem;
+              padding: 1rem;
+              color: white;
+            }
+
+            .card-text {
+              margin-top: 2.5rem;
+              font-size: 1.2rem;
+            }
+
+            .subscribe-btn-container {
+              display: flex;
+              justify-content: center;
+              .subscribe-btn {
+                height: 2.5rem;
+                font-size: 1.2rem;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*----- End of Service component media query----- */
+  }
+}
+
+/* ++++++++++ Media Query for Tablet screen with min 600px and max 800px  ++++++++++ */
+@media (min-width: $tablet-screen-min) and (max-width: 800px) {
+  .app {
+    /*----- Start of Service component media query----- */
+    .service-container {
+      margin-top: 2rem;
+      width: 99%;
+
+      .header-container {
+        h3 {
+          font-size: 1.9rem;
+          margin-bottom: 2.5rem;
+        }
+      }
+
+      .tab-container {
+        /*  border: 1px solid green; */
+        width: 100%;
+        padding: 2.5rem;
+
+        .navigation {
+          padding-left: 0;
+          gap: 12rem;
+          margin-bottom: 1rem;
+          justify-content: center;
+
+          li {
+            margin: 0 auto;
+            padding: 0;
+
+            .button {
+              .icon {
+                width: 6.5rem;
+                height: 6.5rem;
+
+                img {
+                  height: 4rem;
+                  width: 4rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .service-section {
+        padding: 2rem;
+
+        .card-container {
+          box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+          border-radius: 1rem;
+          overflow: hidden;
+          transition: all 0.1ms ease-in-out;
+          margin: 0;
+          width: 85%;
+          background: none;
+
+          &:hover {
+            transform: scale(1.02);
+          }
+
+          .img-fluid {
+            display: none;
+          }
+
+          .col-md-8 {
+            width: 100%;
+          }
+          .card-body {
+            position: relative;
+
+            .card-title {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+              background-color: #b48821;
+              width: 100%;
+              text-align: center;
+              font-size: 1.9rem;
+              padding: 1.5rem;
+              color: white;
+            }
+
+            .card-text {
+              margin-top: 4.5rem;
+              font-size: 1.5rem;
+            }
+
+            .subscribe-btn-container {
+              display: flex;
+              justify-content: center;
+              .subscribe-btn {
+                height: 3rem;
+                width: 8rem;
+                font-size: 1.4rem;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*----- End of Service component media query----- */
+  }
+}
+
+/* ++++++++++ Media Query for Tablet screen with min 801px and max 1023px  ++++++++++ */
+@media (min-width: 801px) and (max-width: $tablet-screen-max) {
+  .app {
+    /*----- Start of Service component media query----- */
+    .service-container {
+      margin-top: 2rem;
+      width: 99%;
+
+      .header-container {
+        h3 {
+          margin-bottom: 3rem;
+        }
+      }
+
+      .tab-container {
+        /*  border: 1px solid green; */
+        width: 100%;
+        padding: 3rem;
+
+        .navigation {
+          padding-left: 0;
+          gap: 16rem;
+          margin-bottom: 1rem;
+          justify-content: center;
+
+          li {
+            margin: 0 auto;
+            padding: 0;
+
+            .button {
+              .icon {
+                width: 8rem;
+                height: 8rem;
+
+                img {
+                  height: 5.5rem;
+                  width: 5.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .service-section {
+        padding: 2rem;
+
+        .card-container {
+          box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+          border-radius: 1rem;
+          overflow: hidden;
+          transition: all 0.1ms ease-in-out;
+          margin: 0;
+          width: 70%;
+          background: none;
+
+          &:hover {
+            transform: scale(1.02);
+          }
+
+          .img-fluid {
+            display: none;
+          }
+
+          .col-md-8 {
+            width: 100%;
+          }
+          .card-body {
+            position: relative;
+
+            .card-title {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+              background-color: #b48821;
+              width: 100%;
+              text-align: center;
+              font-size: 2.2rem;
+              padding: 2rem;
+              color: white;
+            }
+
+            .card-text {
+              margin-top: 6rem;
+              font-size: 1.6rem;
+            }
+
+            .subscribe-btn-container {
+              display: flex;
+              justify-content: center;
+              .subscribe-btn {
+                height: 3.5rem;
+                width: 10rem;
+                font-size: 1.6rem;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*----- End of Service component media query----- */
+  }
+}
+
+/* ++++++++++ Media Query for Desktop screen with min width of 1024px ++++++++++ */
+@media (min-width: $desktop) and (max-width: 1300px) {
+  .app {
+    .service-container {
+      margin-top: 2rem;
+      width: 99%;
+
+      .tab-container {
+        /*  border: 1px solid green; */
+        /*    width: 100%; */
+
+        .navigation {
+          gap: 22rem;
+        }
+      }
+
+      .service-section {
+        .card-container {
+          width: 85%;
+
+          .card-text {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* ++++++++++ Media Query for Phone screen with max width of 599px ++++++++++ */
 @media (max-width: $phone-screen) {
   .app {
