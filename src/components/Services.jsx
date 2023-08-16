@@ -20,10 +20,7 @@ const serviceData = [
     architecto. Perferendis ducimus accusantium perspiciatis
     qui, accusamus libero earum laudantium maiores voluptatem
     officiis! Vel quos aliquam tenetur a possimus! asperiores,
-    ullam reiciendis vel hic culpa architecto. Perferendis
-    ducimus accusantium perspiciatis qui, accusamus libero earum
-    laudantium maiores voluptatem officiis! Vel quos aliquam
-    tenetur a possimus!`,
+    ullam reiciendis vel hic culpa architecto. `,
   },
   {
     title: "Meditation",
@@ -37,10 +34,7 @@ const serviceData = [
     architecto. Perferendis ducimus accusantium perspiciatis
     qui, accusamus libero earum laudantium maiores voluptatem
     officiis! Vel quos aliquam tenetur a possimus! asperiores,
-    ullam reiciendis vel hic culpa architecto. Perferendis
-    ducimus accusantium perspiciatis qui, accusamus libero earum
-    laudantium maiores voluptatem officiis! Vel quos aliquam
-    tenetur a possimus!`,
+    ullam reiciendis vel hic culpa architecto. `,
   },
   {
     title: "Retreats",
@@ -54,10 +48,7 @@ const serviceData = [
     architecto. Perferendis ducimus accusantium perspiciatis
     qui, accusamus libero earum laudantium maiores voluptatem
     officiis! Vel quos aliquam tenetur a possimus! asperiores,
-    ullam reiciendis vel hic culpa architecto. Perferendis
-    ducimus accusantium perspiciatis qui, accusamus libero earum
-    laudantium maiores voluptatem officiis! Vel quos aliquam
-    tenetur a possimus!`,
+    ullam reiciendis vel hic culpa architecto. `,
   },
 ];
 
@@ -93,7 +84,6 @@ function Services() {
                     alt={`${service.title} icon`}
                   />
                 </span>
-                {/*   <span className="text">{service.title}</span> */}
               </div>
             </li>
           ))}
@@ -104,7 +94,7 @@ function Services() {
         {serviceData.map(
           (service, index) =>
             tab === index + 1 && (
-              <div key={index} className="card m-5 card-container">
+              <div key={index} className="card  card-container">
                 <div className="row g-10">
                   <div className="col-md-4">
                     <img
@@ -117,9 +107,10 @@ function Services() {
                     <div className="card-body">
                       <h3 className="card-title">{service.title}</h3>
                       <p className="card-text">{service.text}</p>
-                      <button className="subscribe-btn">
-                        Make an Appointment
-                      </button>
+
+                      <div className="subscribe-btn-container">
+                        <button className="subscribe-btn">contact</button>
+                      </div>
                     </div>
                   </div>
                 </div>

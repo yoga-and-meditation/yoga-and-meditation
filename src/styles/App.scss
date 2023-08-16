@@ -307,14 +307,15 @@
     .card-container {
       background-image: url("../assets/images/services/wave.svg");
       background-size: cover;
+      background-position: 5% 50%;
       outline: none;
       border: none;
       box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
-      width: 70%;
+      width: 90%;
 
       .img-fluid {
-        height: 25rem;
-        width: 40rem;
+        height: 26rem;
+        width: 45rem;
       }
 
       .subscribe-btn {
