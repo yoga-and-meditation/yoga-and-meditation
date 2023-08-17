@@ -35,6 +35,7 @@ function Footer() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <footer>
       {isVisible && (
@@ -99,7 +100,7 @@ function Footer() {
                 aria-current="page"
                 to="/about-me"
               >
-                About Me
+                About
               </Link>
             </li>
             <li className="list-group">

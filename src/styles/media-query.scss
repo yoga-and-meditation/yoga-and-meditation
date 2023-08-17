@@ -99,7 +99,6 @@
 
     /* Contact component */
     .contact-container {
-      border: 1px solid green;
       width: 99%;
 
       .contact-sub-container {
@@ -142,6 +141,68 @@
         .contact-img {
           display: none;
         }
+      }
+    }
+
+    /* Footer component */
+    footer {
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+
+        .logo-container {
+          padding-top: 1.5rem;
+          display: flex;
+          justify-content: center;
+          .logo {
+            display: none;
+          }
+        }
+
+        /* About container */
+        .about-me {
+          h5 {
+            margin-top: -1.5rem;
+            text-align: center;
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 0.9rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+          }
+          .icons {
+            ul {
+              font-size: 2rem;
+              gap: 1rem;
+              justify-content: center;
+              padding-left: 0;
+            }
+          }
+        }
+
+        /* .links */
+        .links {
+          display: flex;
+          justify-content: center;
+
+          ul {
+            h5 {
+              text-align: center;
+              font-size: 1.5rem;
+            }
+            li {
+              a {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+
+      .copyright {
+        font-size: 1rem;
       }
     }
   }
@@ -573,49 +634,8 @@
       .demo-container {
       }
       /*----- End of Demo component media query----- */
-
-      /*----- Start of Contact component media query----- */
-      .contact-container {
-        width: 99%;
-
-        .contact-sub-container {
-          .form-container {
-            width: 100%;
-
-            h2 {
-              font-size: 2rem;
-            }
-            h3 {
-              font-size: 1.5rem;
-            }
-          }
-          .contact-img {
-            display: none;
-          }
-        }
-      }
-      /*----- End of Contact component media query----- */
-
-      /*----- Start of Footer component media query----- */
-      footer {
-        .footer-container {
-          display: flex;
-          flex-direction: column;
-          margin-left: 2rem;
-        }
-      }
-      /*----- Start of Footer component media query----- */
-    }
-    /*----- Start of Footer component media query----- */
-    footer {
-      .footer-container {
-        display: flex;
-        flex-direction: column;
-        margin-left: 2rem;
-      }
     }
   }
-  /*----- End of Footer component media query----- */
 }
 
 /* ++++++++++ Media Query for Tablet screen with min 600px and max 1023px  ++++++++++ */
