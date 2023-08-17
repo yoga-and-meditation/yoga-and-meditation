@@ -96,6 +96,54 @@
         }
       }
     }
+
+    /* Contact component */
+    .contact-container {
+      border: 1px solid green;
+      width: 99%;
+
+      .contact-sub-container {
+        .form-container {
+          width: 100%;
+
+          h2 {
+            display: none;
+          }
+          h3 {
+            font-size: 2rem;
+            color: #b48821;
+            text-align: center;
+          }
+
+          /* form name */
+          .col-6 {
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+
+          /* form subject */
+          .col {
+            margin-top: -3rem;
+          }
+
+          /* form message */
+          .message {
+            height: 8rem;
+          }
+
+          /* contact button */
+          .submit-btn {
+            font-size: 1rem;
+            height: 2.5rem;
+            font-weight: 500;
+          }
+        }
+
+        .contact-img {
+          display: none;
+        }
+      }
+    }
   }
 }
 
@@ -497,13 +545,27 @@
       }
       /*----- End of Aboutme component media query----- */
 
-      /*----- Start of Service component media query----- */
-      .service-container {
-      }
-      /*----- End of Service component media query----- */
-
       /*----- Start of Feedback component media query----- */
       .feedback-container {
+      }
+      .contact-container {
+        width: 99%;
+
+        .contact-sub-container {
+          .form-container {
+            width: 100%;
+
+            h2 {
+              font-size: 2rem;
+            }
+            h3 {
+              font-size: 1.5rem;
+            }
+          }
+          .contact-img {
+            display: none;
+          }
+        }
       }
       /*----- End of Feedback component media query----- */
 

@@ -93,7 +93,7 @@ function Contacts() {
                       <textarea
                         rows={6}
                         name="message"
-                        className="form-control formInput" // Added missing class name
+                        className="form-control formInput message" // Added missing class name
                         placeholder="Your message"
                         required
                       ></textarea>
