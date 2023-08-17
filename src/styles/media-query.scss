@@ -1,5 +1,5 @@
 /* ++++++++++ Media Query for small Phone screen with max width of 360px ++++++++++ */
-@media (max-width: 360px) {
+@media (max-width: #{$small}) {
   .app {
     /* Services componenet */
     .service-container {
@@ -100,7 +100,7 @@
 }
 
 /* ++++++++++ Media Query for Phone screen with max width of 599px ++++++++++ */
-@media (min-width: 361px) and (max-width: $phone-screen) {
+@media (min-width: #{$medium}) and (max-width: 800px) {
   .app {
     /*----- Start of Service component media query----- */
     .service-container {
@@ -312,7 +312,7 @@
 }
 
 /* ++++++++++ Media Query for Tablet screen with min 801px and max 1023px  ++++++++++ */
-@media (min-width: 801px) and (max-width: $tablet-screen-max) {
+@media (min-width: #{$large}) and (max-width: 1023px) {
   .app {
     /*----- Start of Service component media query----- */
     .service-container {
@@ -419,7 +419,7 @@
 }
 
 /* ++++++++++ Media Query for Desktop screen with min width of 1024px ++++++++++ */
-@media (min-width: $desktop) and (max-width: 1300px) {
+@media (min-width: #{$xlarge}) and (max-width: 1300px) {
   .app {
     .service-container {
       margin-top: 2rem;
