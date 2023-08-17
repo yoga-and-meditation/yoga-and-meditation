@@ -5,11 +5,8 @@ function Aboutme() {
     <div className="about-container">
       <img className="about-image" src={aboutImg} alt="personal photo" />
 
-        <div className="rectangle1"></div>
-        <div className="rectangle2"></div>
-
-      
-
+      <div className="rectangle1"></div>
+      <div className="rectangle2"></div>
 
       <section>
         <h2>About Me</h2>
