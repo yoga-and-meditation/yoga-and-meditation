@@ -146,6 +146,13 @@
 
     /* Footer component */
     footer {
+      .scroll-to-top {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        bottom: 20px;
+        right: 20px;
+      }
       .footer-container {
         display: flex;
         flex-direction: column;

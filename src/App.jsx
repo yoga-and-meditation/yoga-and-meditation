@@ -15,14 +15,14 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        {/* <Navbar />
+        <Navbar />
         <Hero />
         <Aboutme />
         <Services />
         <Gallery />
         <Feedback />
         <Demo />
-        <Contacts /> */}
+        <Contacts />
         <Footer />
       </BrowserRouter>
     </div>
