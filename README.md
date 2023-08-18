@@ -1,29 +1,30 @@
-# 🧘 Yoga with Sheetal
+# 🧘 Yoga and Meditation
 
-Welcome to the README file for the Yoga with Sheetal web application. This project aims to create a single-page website that provides information and services related to yoga, meditation, and retreats. The website will be built using HTML, CSS, JavaScript, Bootstrap, and React with Vite as the development platform.
+Welcome to the README file for the Yoga and Meditation web application. This project aims to create a holistic single-page website providing comprehensive information and services related to yoga, meditation, and wellness retreats. The website will be developed using a blend of HTML, CSS, JavaScript, Bootstrap, and React, with Vite serving as the streamlined development platform.
 
 ## 📚 Table of Contents
 
-- [Project Overview](#project-overview)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
-- [License](#license)
+1. [Project Overview](#project-overview)
+2. [Key Features](#key-features)
+3. [Technologies Used](#technologies-used)
+4. [Project Structure](#project-structure)
+5. [Getting Started](#getting-started)
+6. [Contributing](#contributing)
+7. [Contributors](#contributors)
+8. [License](#license)
 
 ## 🌟 Project Overview
 
-This application is designed to promote physical and mental well-being. It will offer information about various yoga and meditation practices. The web application aims to provide users with resources to learn and practice yoga and meditation techniques, schedule classes, as well as access professional retreat workshops.
+This application is dedicated to fostering physical and mental well-being. It offers an array of resources, from comprehensive guides on diverse yoga and meditation practices to schedules for classes and workshops, all conducted by professionals in the field. With a commitment to enhancing inner harmony, this web application provides an all-encompassing experience.
 
-Key features of the website include:
+### Key Features
 
-- Single-page design for easy navigation and accessibility
-- Responsive layout for optimal viewing on different devices
-- Information about different yoga styles and meditation techniques
-- Integration of a booking system for yoga, meditation, and counseling sessions
-- Blog section for articles on well-being and self-care
-- Contact form for inquiries and feedback
+- Seamlessly designed single-page layout for effortless navigation and accessibility
+- Responsive interface ensuring an optimal user experience across various devices
+- In-depth insights into distinct yoga styles and meditation techniques
+- Integration of a streamlined booking system for yoga, meditation, and counseling sessions
+- A thoughtfully curated blog section featuring articles on holistic well-being and self-care
+- Interactive contact form for inquiries and feedback
 
 ## 💻 Technologies Used
 
@@ -59,13 +60,13 @@ The project structure will be organized as follows:
 
 ## 🚀 Getting Started
 
-To get started with the project, follow these steps:
+To begin with the project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yoga-with-sheetal/website.git`
-2. Navigate to the project directory: `cd yoga-meditation-counseling`
+1. Clone the repository: `git clone https://github.com/yoga-and-meditation/yoga-and-meditation`
+2. Navigate to the project directory: `cd yoga-and-meditation`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
-5. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to view the web page
+5. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to explore the web page.
 
 ## 🤝 Contributing
 
