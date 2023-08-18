@@ -62,7 +62,7 @@ The project structure will be organized as follows:
 
 To begin with the project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yoga-and-meditation/yoga-and-meditation`
+1. Clone the repository: [yoga-and-meditation](https://github.com/yoga-and-meditation/yoga-and-meditation)
 2. Navigate to the project directory: `cd yoga-and-meditation`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
