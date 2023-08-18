@@ -300,40 +300,123 @@
   }
 
   /* Service section style sheet */
+  /* Service section style sheet */
   .service-section {
     display: flex;
     justify-content: center;
 
-    .card-container {
-      background-image: url("../assets/images/services/wave.svg");
-      background-size: cover;
-      background-position: 5% 50%;
-      outline: none;
-      border: none;
-      box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
-      width: 90%;
+    .card-content-container {
+      margin-top: 2rem;
+      width: 100%;
 
-      .img-fluid {
-        height: 26rem;
-        width: 45rem;
-      }
+      /* Cards container */
+      .cards-container {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
 
-      .subscribe-btn {
-        @include button-style;
-      }
+        /* Cards style */
+        .card-basic,
+        .card-premium,
+        .card-standard {
+          margin: 0 3rem 1rem 0;
+          /*  padding: 0 0 0.5rem 0; */
+          width: 28%;
+          background: #fff;
+          color: $text-color;
+          text-align: center;
+          border-radius: 1rem;
+          box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+          overflow: hidden;
+          transition: all 0.1ms ease-in-out;
 
-      .card-text {
-        font-size: 1.2rem;
-        padding: 0.6rem;
-        color: $text-color;
-        @include paragraph-normal;
-      }
-      h3 {
-        @include heading-3;
+          /* Cards Header */
+          .card-header {
+            height: 5rem;
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding: 1rem 0;
+            color: #fff;
+            clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+          }
+
+          /* Cards body */
+          .card-body {
+            padding: 0.8rem 0;
+
+            /* cards body heading 3 */
+            p {
+              h3 {
+                font-size: 1.4rem;
+                color: #b48821;
+                padding: 1.3rem;
+              }
+            }
+
+            /* Card element container */
+            .card-element-container {
+              color: $text-color;
+              list-style: none;
+              font-size: 1rem;
+            }
+
+            /* cards buttons */
+            .btn {
+              margin: 0.5rem 0;
+              padding: 0.7rem 1rem;
+              outline: none;
+              border-radius: 1rem;
+              font-size: 1rem;
+              font-weight: 700;
+              color: #fff;
+              border: none;
+              cursor: pointer;
+              transition: all 0.1ms ease-in-out;
+
+              /* Buttons on hover effect */
+              &:hover {
+                transform: scale(0.95);
+              }
+
+              /* Bttons active state */
+              &:active {
+                transform: scale(1);
+              }
+            }
+          }
+        }
+
+        /* Basic card header */
+        .header-basic,
+        .btn-basic {
+          background: #a27a1e;
+        }
+
+        /* Standard card Header */
+        .header-standard,
+        .btn-standard {
+          background: #7e5f17;
+        }
+
+        /* Premium card header */
+        .header-premium,
+        .btn-premium {
+          background: #5a4411;
+        }
+
+        /* Cards hover effect */
+        .card-basic:hover,
+        .card-premium:hover,
+        .card-standard:hover {
+          transform: scale(1.02);
+        }
       }
     }
   }
 }
+
 /* ++++++++++ End of Service Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Gallery Component style sheet ++++++++++ */
