@@ -207,6 +207,7 @@
 
 /* ++++++++++ Start of Service Component style sheet ++++++++++ */
 .service-container {
+  border: 1px solid orange;
   @include section-padding-style;
   display: flex;
   flex-direction: column;
@@ -302,12 +303,14 @@
   /* Service section style sheet */
   /* Service section style sheet */
   .service-section {
+    width: 100%;
     display: flex;
     justify-content: center;
 
     .card-content-container {
       margin-top: 2rem;
       width: 100%;
+      border: 1px solid green;
 
       /* Cards container */
       .cards-container {
