@@ -41,7 +41,7 @@ function NotFound() {
           </div>
         </div>
 
-        <p>Please visit us back on 17th of August</p>
+        <p>Stay tuned!!!</p>
 
         <div className="social-icons">
           <a
