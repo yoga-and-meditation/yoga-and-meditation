@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   FaFacebook,
   FaInstagram,
@@ -6,35 +6,33 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-function NotFound() {
+function UnderConstruction() {
   const [percentage, setPercentage] = useState(0);
 
-  {
-    useEffect(() => {
-      const progressLoad = () => {
-        if (percentage >= 70) {
-          setPercentage(70);
-        } else {
-          setPercentage((prevPercentage) => prevPercentage + 1);
-        }
-      };
+  useEffect(() => {
+    const progressLoad = () => {
+      if (percentage >= 75) {
+        setPercentage(75);
+      } else {
+        setPercentage((prevPercentage) => prevPercentage + 1);
+      }
+    };
 
-      const interval = setInterval(progressLoad, 90);
-      return () => clearInterval(interval);
-    }, [percentage]);
-  }
+    const interval = setInterval(progressLoad, 90);
+    return () => clearInterval(interval);
+  }, [percentage]);
 
   return (
-    <div className="notFound-page-container">
+    <div className="under-construction-page">
       <div className="background"></div>
       <div className="container">
         <div className="top">
           <hr />
-          <h2>Yoga and Meditation</h2>
+          <h2>Welcome to Yoga & Meditation</h2>
           <hr />
         </div>
 
-        <h3>PROGRESS</h3>
+        <h3>Construction In Progress</h3>
         <div className="progress-wrapper">
           <div className="progress" style={{ width: `${percentage}%` }}>
             <span>{`${percentage}%`}</span>
@@ -54,7 +52,7 @@ function NotFound() {
           <a
             href="https://www.instagram.com"
             target="_blank"
-            rel="noopener noreferrer" /*    rel="noopener noreferrer" attribute, which is a recommended security practice when using target="_blank". This helps prevent potential security vulnerabilities when opening links in a new tab.  */
+            rel="noopener noreferrer"
           >
             <FaInstagram />
           </a>
@@ -74,4 +72,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+export default UnderConstruction;
