@@ -335,70 +335,82 @@
             overflow: hidden;
             transition: all 0.1s ease-in-out;
 
-            /* Yoga Tab header and button style */
-            .yoga {
-              border-radius: 1rem;
-              border-bottom: 3px solid #b48821;
-              .header-basic,
-              .btn-basic {
-                background: #b48821;
-              }
-
-              .header-standard,
-              .btn-standard {
-                background: #b48821;
-              }
-
-              .header-premium,
-              .btn-premium {
-                background: #b48821;
-              }
-            }
-
-            /* Meditaion Tab header and button style */
-            .meditation {
-              border-radius: 1rem;
-              border-bottom: 3px solid;
-
-              .card-body {
-                h3 {
-                  color: #6b8e23;
-                }
-              }
-              .header-basic,
-              .btn-basic {
-                background: #6b8e23;
-              }
-
-              .header-standard,
-              .btn-standard {
-                background: #6b8e23;
-              }
-
-              .header-premium,
-              .btn-premium {
-                background: #6b8e23;
-              }
-            }
-
-            /* Retreat Tab header and button style */
+            .yoga,
+            .meditation,
             .retreat {
               border-radius: 1rem;
-              border-bottom: 3px solid #008080;
-              .header-basic,
-              .btn-basic {
-                background: #008080;
-              }
+              border-bottom: 3px solid;
+            }
 
-              .header-standard,
-              .btn-standard {
-                background: #008080;
-              }
+            .yoga {
+              border-bottom-color: #b48821;
 
-              .header-premium,
-              .btn-premium {
-                background: #008080;
+              .card-body {
+                p h4 {
+                  color: #b48821;
+                }
               }
+            }
+
+            .meditation {
+              border-bottom-color: #6b8e23;
+              .card-body {
+                p h4 {
+                  color: #6b8e23;
+                }
+
+                .card-content-container {
+                  .card-element {
+                    .circle-icon {
+                      color: #6b8e23;
+                    }
+                  }
+                }
+              }
+            }
+
+            .retreat {
+              border-bottom-color: #008080;
+              .card-body {
+                p h4 {
+                  color: #008080;
+                }
+
+                .card-content-container {
+                  .card-element {
+                    .circle-icon {
+                      color: #008080;
+                    }
+                  }
+                }
+              }
+            }
+
+            .header-basic,
+            .header-standard,
+            .header-premium,
+            .btn-basic,
+            .btn-standard,
+            .btn-premium {
+              background: #b48821;
+            }
+
+            .meditation .header-basic,
+            .meditation .header-standard,
+            .meditation .header-premium,
+            .meditation .btn-basic,
+            .meditation .btn-standard,
+            .meditation .btn-premium {
+              background: #6b8e23;
+            }
+
+            .retreat .header-basic,
+            .retreat .header-standard,
+            .retreat .header-premium,
+            .retreat .btn-basic,
+            .retreat .btn-standard,
+            .retreat .btn-premium {
+              background: #008080;
             }
 
             /* Card hover effect */
@@ -421,7 +433,7 @@
               padding: 0.8rem 0;
 
               p {
-                h3 {
+                h4 {
                   @include heading-3;
                   font-size: 1.5rem;
                   color: #b48821;
@@ -483,6 +495,22 @@
           .btn-premium {
             background: #b48821;
           }
+        }
+
+        /* Style the circle icons based on the tab index */
+        .circle-icon-0 {
+          color: #b48821; /* Yoga tab color */
+          margin-right: 0.4rem;
+        }
+
+        .circle-icon-1 {
+          color: #6b8e23; /* Meditation tab color */
+          margin-right: 0.4rem;
+        }
+
+        .circle-icon-2 {
+          color: #008080; /* Retreat tab color */
+          margin-right: 0.4rem;
         }
       }
     }

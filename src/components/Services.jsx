@@ -210,7 +210,7 @@ function Services() {
                     <div className="card-body">
                       {content.price && (
                         <p>
-                          <h3>{content.price}</h3>
+                          <h4>{content.price}</h4>
                         </p>
                       )}
                       <div
@@ -220,7 +220,7 @@ function Services() {
                         <ul className="card-element-container">
                           {content.elements.map((element, elementIndex) => (
                             <li className="card-element" key={elementIndex}>
-                              <FaCheckCircle className="circle-icon" />
+                              <FaCheckCircle className={`circle-icon-${tab}`} />
                               {element}
                             </li>
                           ))}
