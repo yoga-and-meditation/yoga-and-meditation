@@ -92,7 +92,7 @@ const cardsData = [
     {
       header: "Coming soon",
       price: "NIA",
-      buttonText: "Contact now",
+      buttonText: "Book now",
       className: "basic",
       elements: ["Corporate Meditation,", "Yoga", "&", "Retreats workshops"],
     },

@@ -209,22 +209,23 @@
 .service-container {
   background-color: #ece8e7;
 
+  /* Styles for the service wrapper */
   .service-wrapper {
     @include section-padding-style;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    /* Heading style of the section */
+    /* Header container for the section */
     .header-container {
       h2 {
-        padding: 1.5em 0 0%;
+        padding: 1.5em 0 0;
         @include heading-2-style;
         @include heading-2;
       }
     }
 
-    /* Tab container style */
+    /* Container for tab navigation */
     .tab-container {
       width: 80%;
       padding: 8rem;
@@ -232,6 +233,7 @@
       justify-content: center;
       align-items: center;
 
+      /* Navigation for tabs */
       .navigation {
         display: flex;
         justify-content: center;
@@ -247,7 +249,7 @@
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-          box-shadow: 10px 22px 40px #0000 5%;
+          box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
 
           .button {
             display: flex;
@@ -257,19 +259,20 @@
 
             .icon {
               position: absolute;
-              width: 10rem;
-              height: 10rem;
+              width: 8.5rem;
+              height: 8.5rem;
               display: flex;
               justify-content: center;
               align-items: center;
               border: 2px solid #b48821;
+              box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
               border-radius: 50%;
               transition: 0.5s;
               transition-delay: 0.2s;
 
               img {
-                height: 6rem;
-                width: 6rem;
+                height: 5rem;
+                width: 5rem;
               }
             }
 
@@ -288,7 +291,8 @@
             .icon {
               transition-delay: 0s;
               font-size: 12rem;
-              background: #b48821; /* Set background color for active state */
+              background: #b48821;
+
               &::before {
                 transform: scale(1);
               }
@@ -298,41 +302,40 @@
       }
     }
 
-    /* Service section style sheet */
+    /* Style for the service section */
     .service-section {
       width: 100%;
       display: flex;
       justify-content: center;
 
+      /* Container for card content */
       .card-content-container {
-        margin-top: 2rem;
         width: 100%;
-        /* border: 1px solid green; */
 
-        /* Cards container */
+        /* Container for cards */
         .cards-container {
-          margin-top: 2rem;
+          padding: 2rem 0;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-wrap: wrap;
 
-          /* Cards style */
+          /* Individual card styles */
           .card-basic,
           .card-premium,
           .card-standard {
             margin: 0 3rem 1rem 0;
-            /*  padding: 0 0 0.5rem 0; */
-            width: 28%;
+            padding: 0 0 0.5rem;
+            width: 24%;
             background: #fff;
             color: $text-color;
             text-align: center;
             border-radius: 1rem;
             box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
             overflow: hidden;
-            transition: all 0.1ms ease-in-out;
+            transition: all 0.1s ease-in-out;
 
-            /* Cards Header */
+            /* Card header */
             .card-header {
               height: 5rem;
               font-weight: 700;
@@ -342,11 +345,10 @@
               clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
             }
 
-            /* Cards body */
+            /* Card body */
             .card-body {
               padding: 0.8rem 0;
 
-              /* cards body heading 3 */
               p {
                 h3 {
                   font-size: 1.4rem;
@@ -355,14 +357,14 @@
                 }
               }
 
-              /* Card element container */
+              /* Container for card elements */
               .card-element-container {
                 color: $text-color;
                 list-style: none;
                 font-size: 1rem;
               }
 
-              /* cards buttons */
+              /* Card buttons */
               .btn {
                 margin: 0.5rem 0;
                 padding: 0.7rem 1rem;
@@ -373,14 +375,12 @@
                 color: #fff;
                 border: none;
                 cursor: pointer;
-                transition: all 0.1ms ease-in-out;
+                transition: all 0.1s ease-in-out;
 
-                /* Buttons on hover effect */
                 &:hover {
                   transform: scale(0.95);
                 }
 
-                /* Bttons active state */
                 &:active {
                   transform: scale(1);
                 }
@@ -388,25 +388,23 @@
             }
           }
 
-          /* Basic card header */
+          /* Header and button styles for each card type */
           .header-basic,
           .btn-basic {
             background: #a27a1e;
           }
 
-          /* Standard card Header */
           .header-standard,
           .btn-standard {
             background: #7e5f17;
           }
 
-          /* Premium card header */
           .header-premium,
           .btn-premium {
             background: #5a4411;
           }
 
-          /* Cards hover effect */
+          /* Hover effect for cards */
           .card-basic:hover,
           .card-premium:hover,
           .card-standard:hover {
@@ -417,6 +415,7 @@
     }
   }
 }
+
 /* ++++++++++ End of Service Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Gallery Component style sheet ++++++++++ */
