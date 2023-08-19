@@ -95,11 +95,16 @@ const cardsData = [
       ],
     },
     {
-      header: "Coming soon",
-      price: "NIA",
+      header: "Champion",
+      price: "€150 per course",
       buttonText: "Book now",
       className: "basic",
-      elements: ["Corporate Meditation,", "Yoga", "&", "Retreats workshops"],
+      elements: [
+        "In-Person Meditation",
+        "For the duration of 8 weeks",
+        "4 sessions per week",
+        "Develop Deep States of Meditation",
+      ],
     },
   ],
   [
