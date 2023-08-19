@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaCheckCircle } from "react-icons/fa";
 
 import yogaGoldIcon from "../assets/images/services/yoga-gold.png";
 import yogaWhiteIcon from "../assets/images/services/yoga-white.png";
@@ -207,6 +208,7 @@ function Services() {
                       <ul className="card-element-container">
                         {content.elements.map((element, elementIndex) => (
                           <li className="card-element" key={elementIndex}>
+                            <FaCheckCircle className="circle-icon" />
                             {element}
                           </li>
                         ))}
