@@ -74,7 +74,7 @@ const cardsData = [
       header: "Starter",
       price: "€50 per course",
       buttonText: "Book now",
-      className: "standard",
+      className: "basic",
       elements: [
         "Online Meditation",
         "For the duration of 4 weeks",
@@ -86,7 +86,7 @@ const cardsData = [
       header: "Professional",
       price: "€90 per course",
       buttonText: "Book now",
-      className: "premium",
+      className: "standard",
       elements: [
         "In-person Meditation",
         "For the duration of 6 weeks",
@@ -98,7 +98,7 @@ const cardsData = [
       header: "Champion",
       price: "€150 per course",
       buttonText: "Book now",
-      className: "basic",
+      className: "premium",
       elements: [
         "In-Person Meditation",
         "For the duration of 8 weeks",
@@ -111,35 +111,40 @@ const cardsData = [
     // Courses under Meditation service
 
     {
-      header: "Online Meditation",
-      price: "€70 /course",
+      header: "Starter",
+      price: "€150 per person",
+      buttonText: "Book now",
+      className: "basic",
+      elements: [
+        "In-person Retreat",
+        "For the duration of 3 days",
+        "Relaxation and Mindfulness",
+        "Self-Care and Wellness Practices",
+      ],
+    },
+    {
+      header: "Professional",
+      price: "€250 per person",
       buttonText: "Book now",
       className: "standard",
       elements: [
-        "4 sessions of 45 minutes",
-        "Every Friday",
-        "Meditation techniques for daily practice",
-        "Be a part of weekly group meditation",
+        "In-person Retreat",
+        "For the duration of 5 days",
+        "Personal Growth and Wellness",
+        "Nature walks & silent Reflection",
       ],
     },
     {
-      header: "In-person Meditation",
-      price: "€80 /course",
+      header: "Champion",
+      price: "€350 per person",
       buttonText: "Book now",
       className: "premium",
       elements: [
-        "2 sessions of 1.5 hours",
-        "Each Saturday and Sunday",
-        "Meditation techniques for daily practice",
-        "Be a part of weekly group meditation",
+        "In-person Retreat",
+        "For the duration of one week",
+        "Mastery and Transformation",
+        "Connect with Fellow Spiritual",
       ],
-    },
-    {
-      header: "Coming soon",
-      price: "NIA",
-      buttonText: "Book now",
-      className: "basic",
-      elements: ["Corporate Meditation,", "Yoga", "&", "Retreats workshops"],
     },
   ],
 ];
