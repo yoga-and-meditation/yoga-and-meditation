@@ -35,6 +35,7 @@ const cardsData = [
       price: "€70 per course",
       buttonText: "Book now",
       className: "basic",
+      cardContainer: "yoga",
       elements: [
         "Online Yoga",
         "For the duration of 4 sessions",
@@ -47,6 +48,7 @@ const cardsData = [
       price: "€120 per course",
       buttonText: "Book now",
       className: "standard",
+      cardContainer: "yoga",
       elements: [
         "In-person Yoga",
         "For the duration of 6 weeks",
@@ -59,6 +61,7 @@ const cardsData = [
       price: "€180 per course",
       buttonText: "Book now",
       className: "premium",
+      cardContainer: "yoga",
       elements: [
         "Online Yoga",
         "For the duration of 8 weeks",
@@ -76,6 +79,7 @@ const cardsData = [
       price: "€50 per course",
       buttonText: "Book now",
       className: "basic",
+      cardContainer: "meditation",
       elements: [
         "Online Meditation",
         "For the duration of 4 weeks",
@@ -88,6 +92,7 @@ const cardsData = [
       price: "€90 per course",
       buttonText: "Book now",
       className: "standard",
+      cardContainer: "meditation",
       elements: [
         "In-person Meditation",
         "For the duration of 6 weeks",
@@ -100,6 +105,7 @@ const cardsData = [
       price: "€150 per course",
       buttonText: "Book now",
       className: "premium",
+      cardContainer: "meditation",
       elements: [
         "In-Person Meditation",
         "For the duration of 8 weeks",
@@ -116,6 +122,7 @@ const cardsData = [
       price: "€150 per person",
       buttonText: "Book now",
       className: "basic",
+      cardContainer: "retreat",
       elements: [
         "In-person Retreat",
         "For the duration of 3 days",
@@ -128,6 +135,7 @@ const cardsData = [
       price: "€250 per person",
       buttonText: "Book now",
       className: "standard",
+      cardContainer: "retreat",
       elements: [
         "In-person Retreat",
         "For the duration of 5 days",
@@ -140,6 +148,7 @@ const cardsData = [
       price: "€350 per person",
       buttonText: "Book now",
       className: "premium",
+      cardContainer: "retreat",
       elements: [
         "In-person Retreat",
         "For the duration of one week",
@@ -192,34 +201,38 @@ function Services() {
             <div className="cards-container">
               {cardsData[tab].map((content, index) => (
                 <div key={index} className={`card-${content.className}`}>
-                  {/* Card Header */}
-                  <div className={`card-header header-${content.className}`}>
-                    <h3>{content.header}</h3>
-                  </div>
-                  {/* Card Body */}
-                  <div className="card-body">
-                    {content.price && (
-                      <p>
-                        <h3>{content.price}</h3>
-                      </p>
-                    )}
-                    <div className={`card-element-hidden-${content.className}`}>
-                      {/* List of elements for the course */}
-                      <ul className="card-element-container">
-                        {content.elements.map((element, elementIndex) => (
-                          <li className="card-element" key={elementIndex}>
-                            <FaCheckCircle className="circle-icon" />
-                            {element}
-                          </li>
-                        ))}
-                      </ul>
-                      {/* Button to join the course */}
-                      <Link
-                        to="/contacts"
-                        className={`btn btn-${content.className}`}
+                  <div className={`${content.cardContainer}`}>
+                    {/* Card Header */}
+                    <div className={`card-header header-${content.className}`}>
+                      <h3>{content.header}</h3>
+                    </div>
+                    {/* Card Body */}
+                    <div className="card-body">
+                      {content.price && (
+                        <p>
+                          <h3>{content.price}</h3>
+                        </p>
+                      )}
+                      <div
+                        className={`card-element-hidden-${content.className}`}
                       >
-                        {content.buttonText}
-                      </Link>
+                        {/* List of elements for the course */}
+                        <ul className="card-element-container">
+                          {content.elements.map((element, elementIndex) => (
+                            <li className="card-element" key={elementIndex}>
+                              <FaCheckCircle className="circle-icon" />
+                              {element}
+                            </li>
+                          ))}
+                        </ul>
+                        {/* Button to join the course */}
+                        <Link
+                          to="/contacts"
+                          className={`btn btn-${content.className}`}
+                        >
+                          {content.buttonText}
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -340,6 +340,59 @@
               transform: scale(1.02);
             }
 
+            /* Yoga Tab header and button style */
+            .yoga {
+              .header-basic,
+              .btn-basic {
+                background: #b48821;
+              }
+
+              .header-standard,
+              .btn-standard {
+                background: #b48821;
+              }
+
+              .header-premium,
+              .btn-premium {
+                background: #b48821;
+              }
+            }
+
+            /* Meditaion Tab header and button style */
+            .meditation {
+              .header-basic,
+              .btn-basic {
+                background: #f0e3c0;
+              }
+
+              .header-standard,
+              .btn-standard {
+                background: #f0e3c0;
+              }
+
+              .header-premium,
+              .btn-premium {
+                background: #f0e3c0;
+              }
+            }
+
+            /* Retreat Tab header and button style */
+            .retreat {
+              .header-basic,
+              .btn-basic {
+                background: red;
+              }
+
+              .header-standard,
+              .btn-standard {
+                background: red;
+              }
+
+              .header-premium,
+              .btn-premium {
+                background: red;
+              }
+            }
             /* Card header */
             .card-header {
               height: 5rem;
