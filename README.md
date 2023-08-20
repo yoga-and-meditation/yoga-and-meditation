@@ -38,7 +38,7 @@ The following technologies will be utilized in this project:
 - Vite (a React development environment) for efficient development workflow.
 - SASS for advanced styling and customization.
 
-## 🏰 Project Structure
+## 🏰  Project Structure
 
 The project structure will be organized as follows:
 
