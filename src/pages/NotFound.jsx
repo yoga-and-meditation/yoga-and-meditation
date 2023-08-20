@@ -28,7 +28,7 @@ function UnderConstruction() {
       <div className="container">
         <div className="top">
           <hr />
-          <h2>Welcome to Yoga & Meditation</h2>
+          <h2>Yoga & Meditation</h2>
           <hr />
         </div>
 
