@@ -1,12 +1,11 @@
-import sheetalImg from "../assets/images/My project-1.png";
+import aboutMeImg from "../assets/images/aboutme/aboutme.jpg";
 
 function Aboutme() {
   return (
     <div className="about-container">
-      <img className="about-image" src={sheetalImg} alt="personal photo" />
+      <img className="about-image" src={aboutMeImg} alt="personal photo" />
 
-        <div className="rectangle1"></div>
-        <div className="rectangle2"></div>
+  
 
       
 

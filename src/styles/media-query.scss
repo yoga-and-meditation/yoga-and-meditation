@@ -17,22 +17,8 @@
 
     .about-container {
       flex-wrap: wrap;
-      .rectangle1,
-      .rectangle2 {
-        width:250px ;
-        height: 430px;
-        left: 3rem;
       
-      }
-      .rectangle1 {
-        border: 5px solid #b68a2352;
-        margin-left: 30px; //Add some spacing between the rectangles
-      }
-      .rectangle2 {
-        border: 5px solid #eaeae8;
-        margin-top: -15px;
-        margin-left: -5px; /* Add some spacing between the rectangles */
-      }
+     
       .about-image {
         width: 300px;
         height: 400px;
@@ -152,19 +138,7 @@
           height: 450px;
           margin-left: 0;
         }
-        .rectangle1,
-        .rectangle2 {
-          width: 350px;
-          height: 530px;
-        }
-        .rectangle1 {
-          border: 10px solid #b68a2352;
-
-        }
-        .rectangle2 {
-          border: 10px solid #eaeae8;
-        
-        }
+       
         section{
           text-align: center;
           max-width: 100vw;
