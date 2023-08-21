@@ -10,12 +10,16 @@ import Demo from "./components/Demo";
 import Gallery from "./components/Gallery";
 import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
+import Signin from "./components/Signin";
+import Signup from "./components/Signup";
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <Navbar />
+        <Signin />
+        <Signup />
+        {/* <Navbar />
         <Hero />
         <Aboutme />
         <Services />
@@ -23,7 +27,7 @@ function App() {
         <Feedback />
         <Demo />
         <Contacts />
-        <Footer />
+        <Footer /> */}
       </BrowserRouter>
     </div>
   );
