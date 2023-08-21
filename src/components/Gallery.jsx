@@ -10,7 +10,7 @@ const Gallery = () => {
       const importedImages = [];
 
       try {
-        for (let i = 1; i <= 18; i++) {
+        for (let i = 1; i <= 9; i++) {
           // This code imports the image file.
           const imagePath = `../assets/images/gallery/${i}.jpg`;
           
