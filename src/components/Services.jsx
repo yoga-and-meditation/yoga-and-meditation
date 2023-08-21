@@ -5,7 +5,8 @@ import image2 from "../assets/images/services/meditation.jpg";
 import image3 from "../assets/images/services/retreating.jpg";
 import yogaGoldIcon from "../assets/images/services/yoga-gold.png";
 import yogaWhiteIcon from "../assets/images/services/yoga-white.png";
-
+import meditationWhiteIcon from "../assets/images/services/meditation-white.png";
+import meditationGoldIcon from "../assets/images/services/meditation-gold.png";
 const serviceData = [
   {
     title: "Yoga",
@@ -19,15 +20,12 @@ const serviceData = [
     architecto. Perferendis ducimus accusantium perspiciatis
     qui, accusamus libero earum laudantium maiores voluptatem
     officiis! Vel quos aliquam tenetur a possimus! asperiores,
-    ullam reiciendis vel hic culpa architecto. Perferendis
-    ducimus accusantium perspiciatis qui, accusamus libero earum
-    laudantium maiores voluptatem officiis! Vel quos aliquam
-    tenetur a possimus!`,
+    ullam reiciendis vel hic culpa architecto. `,
   },
   {
     title: "Meditation",
-    activeIcon: yogaWhiteIcon,
-    inActiveIcon: yogaGoldIcon,
+    activeIcon: meditationWhiteIcon,
+    inActiveIcon: meditationGoldIcon,
     image: image2,
     text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
     Veniam hic provident at unde porro odio voluptas repellat
@@ -36,10 +34,7 @@ const serviceData = [
     architecto. Perferendis ducimus accusantium perspiciatis
     qui, accusamus libero earum laudantium maiores voluptatem
     officiis! Vel quos aliquam tenetur a possimus! asperiores,
-    ullam reiciendis vel hic culpa architecto. Perferendis
-    ducimus accusantium perspiciatis qui, accusamus libero earum
-    laudantium maiores voluptatem officiis! Vel quos aliquam
-    tenetur a possimus!`,
+    ullam reiciendis vel hic culpa architecto. `,
   },
   {
     title: "Retreats",
@@ -53,10 +48,7 @@ const serviceData = [
     architecto. Perferendis ducimus accusantium perspiciatis
     qui, accusamus libero earum laudantium maiores voluptatem
     officiis! Vel quos aliquam tenetur a possimus! asperiores,
-    ullam reiciendis vel hic culpa architecto. Perferendis
-    ducimus accusantium perspiciatis qui, accusamus libero earum
-    laudantium maiores voluptatem officiis! Vel quos aliquam
-    tenetur a possimus!`,
+    ullam reiciendis vel hic culpa architecto. `,
   },
 ];
 
@@ -81,7 +73,7 @@ function Services() {
               className={tab === index + 1 ? "active" : ""}
               onClick={() => handleTabClick(index)}
             >
-              <button>
+              <div className="button">
                 <span className="icon">
                   <img
                     src={
@@ -92,8 +84,7 @@ function Services() {
                     alt={`${service.title} icon`}
                   />
                 </span>
-                {/*   <span className="text">{service.title}</span> */}
-              </button>
+              </div>
             </li>
           ))}
         </ul>
@@ -103,7 +94,7 @@ function Services() {
         {serviceData.map(
           (service, index) =>
             tab === index + 1 && (
-              <div key={index} className="card m-5 card-container">
+              <div key={index} className="card  card-container">
                 <div className="row g-10">
                   <div className="col-md-4">
                     <img
@@ -116,9 +107,10 @@ function Services() {
                     <div className="card-body">
                       <h3 className="card-title">{service.title}</h3>
                       <p className="card-text">{service.text}</p>
-                      <button className="subscribe-btn">
-                        Make an Appointment
-                      </button>
+
+                      <div className="subscribe-btn-container">
+                        <button className="subscribe-btn">contact</button>
+                      </div>
                     </div>
                   </div>
                 </div>

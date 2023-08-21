@@ -35,6 +35,7 @@ function Footer() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <footer>
       {isVisible && (
@@ -59,22 +60,22 @@ function Footer() {
           <div className="icons">
             <ul>
               <li className="list-group">
-                <a href="https://www.facebook.com/sheetal.k.chavan">
+                <a href="https://www.facebook.com">
                   <FaFacebook />
                 </a>
               </li>
               <li className="list-group">
-                <a href="https://www.instagram.com/sheetalkchavan/">
+                <a href="https://www.instagram.com">
                   <FaInstagram />
                 </a>
               </li>
               <li className="list-group">
-                <a href="https://www.linkedin.com/in/sheetalchavan/">
+                <a href="https://www.linkedin.com">
                   <FaLinkedin />
                 </a>
               </li>
               <li className="list-group">
-                <a href="website@sheetalchavan.com">
+                <a href="#">
                   <FaEnvelope />
                 </a>
               </li>
@@ -99,7 +100,7 @@ function Footer() {
                 aria-current="page"
                 to="/about-me"
               >
-                About Me
+                About
               </Link>
             </li>
             <li className="list-group">

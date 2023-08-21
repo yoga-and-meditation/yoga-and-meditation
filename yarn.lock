@@ -218,6 +218,14 @@
     "@babel/helper-string-parser" "^7.22.5"
     "@babel/helper-validator-identifier" "^7.22.5"
     "to-fast-properties" "^2.0.0"
+<<<<<<< HEAD
+=======
+
+"@emailjs/browser@^3.11.0":
+  "integrity" "sha512-RkY3FKZ3fPdK++OeF46mRTFpmmQWCHUVHZH209P3NE4D5sg2Atg7S2wa3gw5062Gl4clt4Wn5SyC4WhlVZC5pA=="
+  "resolved" "https://registry.npmjs.org/@emailjs/browser/-/browser-3.11.0.tgz"
+  "version" "3.11.0"
+>>>>>>> development
 
 "@esbuild/linux-x64@0.18.12":
   "integrity" "sha512-OrNJMGQbPaVyHHcDF8ybNSwu7TDOfX8NGpXCbetwOSP6txOJiWlgQnRymfC9ocR1S0Y5PW0Wb1mV6pUddqmvmQ=="
@@ -774,6 +782,14 @@
   "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.477.tgz"
   "version" "1.4.477"
 
+<<<<<<< HEAD
+=======
+"emailjs-com@^3.2.0":
+  "integrity" "sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA=="
+  "resolved" "https://registry.npmjs.org/emailjs-com/-/emailjs-com-3.2.0.tgz"
+  "version" "3.2.0"
+
+>>>>>>> development
 "es-abstract@^1.19.0", "es-abstract@^1.20.4":
   "integrity" "sha512-ZU4miiY1j3sGPFLJ34VJXEqhpmL+HGByCinGHv4HC+Fxl2fI2Z4yR6tl0mORnDr6PA8eihWo4LmSWDbvhALckg=="
   "resolved" "https://registry.npmjs.org/es-abstract/-/es-abstract-1.21.3.tgz"
@@ -1713,6 +1729,7 @@
     "loose-envify" "^1.1.0"
     "scheduler" "^0.23.0"
 
+<<<<<<< HEAD
 "react-icons@^4.10.1":
   "integrity" "sha512-/ngzDP/77tlCfqthiiGNZeYFACw85fUjZtLbedmJ5DTlNDIwETxhwBzdOJ21zj4iJdvc0J3y7yOsX3PpxAJzrw=="
   "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.10.1.tgz"
@@ -1738,6 +1755,38 @@
   "resolved" "https://registry.npmjs.org/react-responsive-masonry/-/react-responsive-masonry-2.1.7.tgz"
   "version" "2.1.7"
 
+=======
+"react-hook-form@^7.45.4":
+  "integrity" "sha512-HGDV1JOOBPZj10LB3+OZgfDBTn+IeEsNOKiq/cxbQAIbKaiJUe/KV8DBUzsx0Gx/7IG/orWqRRm736JwOfUSWQ=="
+  "resolved" "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.45.4.tgz"
+  "version" "7.45.4"
+
+"react-icons@^4.10.1":
+  "integrity" "sha512-/ngzDP/77tlCfqthiiGNZeYFACw85fUjZtLbedmJ5DTlNDIwETxhwBzdOJ21zj4iJdvc0J3y7yOsX3PpxAJzrw=="
+  "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.10.1.tgz"
+  "version" "4.10.1"
+
+"react-is@^16.13.1", "react-is@^16.3.2":
+  "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
+  "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
+  "version" "16.13.1"
+
+"react-lifecycles-compat@^3.0.4":
+  "integrity" "sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA=="
+  "resolved" "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz"
+  "version" "3.0.4"
+
+"react-refresh@^0.14.0":
+  "integrity" "sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ=="
+  "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.14.0.tgz"
+  "version" "0.14.0"
+
+"react-responsive-masonry@^2.1.7":
+  "integrity" "sha512-/jOqnTVNtO8zRJMTl6ZXBex7EFYEIFBLVlkIFjiCT7omfm0CgNF2z4ST8RIr0v2ut15NWAQs7Q3kJJPhMoe3Ew=="
+  "resolved" "https://registry.npmjs.org/react-responsive-masonry/-/react-responsive-masonry-2.1.7.tgz"
+  "version" "2.1.7"
+
+>>>>>>> development
 "react-router-dom@^6.14.2":
   "integrity" "sha512-5pWX0jdKR48XFZBuJqHosX3AAHjRAzygouMTyimnBPOLdY3WjzUSKhus2FVMihUFWzeLebDgr4r8UeQFAct7Bg=="
   "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.14.2.tgz"
@@ -1763,7 +1812,11 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
+<<<<<<< HEAD
 "react@*", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^18.2.0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.14.0", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0":
+=======
+"react@*", "react@^16.8.0 || ^17 || ^18", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^18.2.0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.14.0", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0":
+>>>>>>> development
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -2053,6 +2106,14 @@
   dependencies:
     "punycode" "^2.1.0"
 
+<<<<<<< HEAD
+=======
+"validator@^13.11.0":
+  "integrity" "sha512-Ii+sehpSfZy+At5nPdnyMhx78fEoPDkR2XW/zimHEL3MyGJQOCQ7WeP20jPYRz7ZCpcKLB21NxuXHF3bxjStBQ=="
+  "resolved" "https://registry.npmjs.org/validator/-/validator-13.11.0.tgz"
+  "version" "13.11.0"
+
+>>>>>>> development
 "vite@^4", "vite@^4.2.0", "vite@^4.3.9":
   "integrity" "sha512-4mvsTxjkveWrKDJI70QmelfVqTm+ihFAb6+xf4sjEU2TmUCTlVX87tmg/QooPEMQb/lM9qGHT99ebqPziEd3wg=="
   "resolved" "https://registry.npmjs.org/vite/-/vite-4.4.4.tgz"

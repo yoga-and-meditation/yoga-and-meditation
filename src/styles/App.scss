@@ -74,55 +74,75 @@
 
 /* ++++++++++ Start of Hero Component style sheet ++++++++++ */
 .hero-container {
-  width: 100%;
-  height: 100vh;
-  padding: 0 8rem;
-
-  background: linear-gradient(
-    360deg,
-    rgba(255, 255, 255, 0) 50%,
-    rgba(209, 204, 204, 0.445) 50%
-  );
-  .hero-heading {
-    h1 {
-      @include yoga;
-      font-weight: 300;
-      font-size: 18rem;
-      color: rgba(29, 28, 26, 0.805);
-      position: absolute;
+  .hero {
+    display: flex;
+    /*     justify-content: space-between;
+ */
+    flex-wrap: wrap;
+    background: linear-gradient(
+      360deg,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(209, 204, 204, 0.445) 50%
+    );
+    .col1 {
+      flex-basis: 30%;
+      margin-bottom: 28rem;
+      margin-left: 18rem;
+      margin-top: 1rem;
+      z-index: 1;
+      h1 {
+        @include yoga;
+        font-weight: 300;
+        font-size: 15rem;
+        color: rgba(29, 28, 26, 0.805);
+        /* 
       left: 15rem;
-      top: 8rem;
-      z-index: 2;
+      top: 8rem; */
+        z-index: 2;
+      }
+      h2 {
+        @include logo-font-style;
+        font-family: "MoonDance-Regular";
+        font-size: 4rem;
+        /*  */ /*  top: 28rem;
+      left: 18rem; */
+      }
     }
-    h2 {
-      @include logo-font-style;
-      font-family: "MoonDance-Regular";
-      font-size: 4.5rem;
-      top: 28rem;
-      left: 18rem;
-      position: absolute;
-    }
-  }
-  .ball {
-    width: 38rem;
-    height: 38rem;
-    background-color: #b68a23;
-    border-radius: 50%;
-    border: #e4e4e48d 2rem solid;
-    position: relative;
-    left: 50rem;
-    top: 6rem;
+    .col2 {
+      flex-basis: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-left: 0rem;
+      /*       margin-left: -8rem;
+ */
+      .img {
+        width: 45rem;
+        height: 28rem;
+        /* position: absolute;
+      right:20rem;
+      top:12rem;  */
+        z-index: 1;
+      }
+      .ball {
+        width: 38rem;
+        height: 38rem;
 
-    .gif {
-      width: 110rem;
-      height: 70rem;
-      position: absolute;
-      right: -22rem;
-      bottom: -5rem;
+        position: absolute;
+        right: 0;
+        left: 0;
+        background-color: #b68a23;
+        border-radius: 50%;
+        /*       border: #e4e4e48d 2rem solid;
+ */ /*  
+       right:15rem;
+      top:8rem;  */
+        transform: translateX(150px);
+        z-index: 0;
+      }
     }
   }
 }
-
 /* ++++++++++ End of Hero Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Aboutme Component style sheet ++++++++++ */
@@ -170,6 +190,7 @@
     align-items: center;
     padding-top: 1rem;
     max-width: 50vw;
+    margin-left: 10rem;
     /*    margin-top: 2rem; */
 
     h2 {
@@ -189,12 +210,15 @@
 /* ++++++++++ Start of Service Component style sheet ++++++++++ */
 .service-container {
   @include section-padding-style;
-  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   /* Heading style of the section */
   .header-container {
     text-align: center;
     h2 {
+      padding-bottom: 1.5rem;
       @include heading-2-style;
       @include heading-2;
     }
@@ -205,44 +229,30 @@
 
   /* Tab container style */
   .tab-container {
+    width: 80%;
+    padding: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    /* Tab buttons style */
     .navigation {
-      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 25rem;
+      margin-bottom: 0;
+      padding-left: 0;
 
-      /* Tab active button style */
-      .active {
-        background: #b48821;
-        button {
-          .icon {
-            transition-delay: 0s;
-          }
-          .icon::before {
-            transform: scale(1);
-          }
-        }
-      }
-
-      /* Tab un-active buttons style */
       li {
         position: relative;
         list-style: none;
-        margin: 3.5rem 5rem;
         display: flex;
         justify-content: center;
-        padding: 4.9rem;
+        align-items: center;
         border-radius: 50%;
         box-shadow: 10px 22px 40px #0000 5%;
 
-        /*     box-shadow: 20px 20px 60px #d6d6d6, -20px -20px 60px #ffffff; */
-
-        button {
+        .button {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -250,7 +260,6 @@
 
           .icon {
             position: absolute;
-            font-size: 5rem;
             width: 10rem;
             height: 10rem;
             display: flex;
@@ -266,14 +275,26 @@
               width: 6rem;
             }
           }
-          .icon::before {
+
+          &::before {
             content: "";
             position: absolute;
-            inset: 0px;
+            inset: 0;
             box-shadow: 10px 22px 40px #0000 5%;
             border-radius: 50%;
             transform: scale(0);
             transition: 0.5s;
+          }
+        }
+
+        &.active {
+          .icon {
+            transition-delay: 0s;
+            font-size: 12rem;
+            background: #b48821; /* Set background color for active state */
+            &::before {
+              transform: scale(1);
+            }
           }
         }
       }
@@ -284,16 +305,18 @@
   .service-section {
     display: flex;
     justify-content: center;
+
     .card-container {
       background-image: url("../assets/images/services/wave.svg");
       background-size: cover;
+      background-position: 5% 50%;
       outline: none;
       border: none;
-
       box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
-      width: 80%;
+      width: 90%;
+
       .img-fluid {
-        height: 30rem;
+        height: 26rem;
         width: 45rem;
       }
 
@@ -302,7 +325,7 @@
       }
 
       .card-text {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         padding: 0.6rem;
         color: $text-color;
         @include paragraph-normal;
@@ -325,6 +348,7 @@
   h2 {
     /* This class defines the heading for the gallery. */
     @include heading-2-style;
+    text-align: center;
   }
 
   /* This code applies the `heading-2-color` mixin to the heading, which sets its color to the same color as the `h2` heading element in the JSX code. */
@@ -355,7 +379,6 @@
 
   .site-container {
     @include section-padding-style;
-    border: 1px solid green;
 
     padding: 3rem 10rem;
 
@@ -363,6 +386,7 @@
       @include heading-2-style;
       display: flex;
       justify-content: center;
+      padding-bottom: 7rem;
     }
 
     .article-container {
@@ -391,8 +415,9 @@
           transform: translatey(-100px);
 
           img {
-            max-width: 100%;
-            height: 100%;
+            max-width: 120%;
+
+            height: 120%;
           }
         }
 
@@ -424,70 +449,97 @@
 /* ++++++++++ End of Feedback Component style sheet ++++++++++ */
 
 /* ++++++++++ Start of Demo Component style sheet ++++++++++ */
-.demo-container {
-  /* Variables only for Demo component use */
+// Top-level styles
+
+.demo {
+  h2 {
+    @include heading-2-style;
+    margin-bottom: 2rem; // Assuming you want the margin at the top level as well.
+    text-align: center;
+    padding: 3rem;
+  }
   @include section-padding-style;
-  border: 1px solid green;
-  $margin-size: 2rem;
-  $circle-color: rgba(249, 194, 51, 1);
+
+  h2 {
+    @include heading-2-style;
+    margin-bottom: 2rem; // Assuming you want the margin at the top level as well.
+    text-align: center;
+    padding: 3rem;
+  }
+}
+
+.demo-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   position: relative;
+  background-image: url("../assets/images/demosession/pexels-marta.jpg");
+  background-color: $secondary-background-color;
+  background-size: cover;
+  background-position: center;
+  $margin-size: 2rem;
+  width: 90%;
+  margin: 0 auto;
 
   .mb-2 {
     margin-bottom: $margin-size;
   }
-  h2 {
-    @include heading-2-style;
-  }
 
-  .info {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    /*  width: 50%; */
-    gap: $margin-size;
-    background-color: $secondary-background-color;
+  .demo-session-description {
     padding: 2rem;
-    width: 60rem;
-    height: 40rem;
-    background-image: url("../assets/images/demosession/pexels-marta.jpg");
-    background-size: cover;
-    background-position: center;
+    width: 30rem;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $margin-size;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-    .infodiv {
+    p {
+      margin-bottom: $margin-size;
+    }
+
+    .booking-info-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      width: 50%;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 2rem;
-      border-radius: 1rem;
+      gap: 1rem;
+      width: 80%; // reduced width since it's now inside the demo-session-description
 
-      .book-info {
+      ul {
+        list-style: none;
+        padding-left: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-left: $margin-size;
-        width: 50%;
-        margin: 0 auto;
+        gap: 1rem;
+        text-align: center;
       }
 
       h6 {
         font-size: 2rem;
       }
+
       button {
         @include button-style;
         margin-top: $margin-size;
         width: 11rem;
         transition: all 0.5s ease;
+
+        &:hover {
+          color: #001f3f;
+        }
       }
-      button:hover {
-        color: #001f3f;
-      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .demo-session-description {
+      width: 90%;
     }
   }
 }
@@ -496,35 +548,44 @@
 /* ++++++++++ Start of Contact Component style sheet ++++++++++ */
 .contact-container {
   @include section-padding-style;
-  border: 1px solid green;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 
   .contact-sub-container {
+    width: 100%;
     display: flex;
 
     .form-container {
+      width: 55%;
+      padding: 1.5rem;
+
       h2 {
         @include heading-2-style;
-        text-align: center;
-        padding: 2rem;
+        padding: 1.5rem 0;
+        margin-right: 15rem;
       }
 
       h3 {
         @include heading-3;
-        text-align: center;
-      }
-
-      .submit-btn {
-        @include button-style;
+        padding-bottom: 1rem;
       }
     }
+
+    .submit-btn {
+      @include button-style;
+    }
+
     .contact-img {
-      img {
-        width: 30rem;
-      }
+      margin: 1.6rem;
+      width: 40%;
+
+      background-image: url("../assets//images/contact/contact.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -628,153 +689,3 @@ footer {
   }
 }
 /* ++++++++++ End of Footer Component style sheet ++++++++++ */
-
-/* 
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
-/* This part of code should be discussed before removing it  */
-
-/* About component style sheet */
-
-// .about-container {
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-
-//   h2 {
-//     @include heading-2-color;
-//   }
-
-//   img {
-//     width: 500px;
-//     height: 700px;
-//     position: relative;
-//     z-index: 1;
-//   }
-
-//   .rectangle1,
-//   .rectangle2 {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 500px;
-//     height: 700px;
-//     transform: rotate(-45deg);
-//     z-index: -1;
-//     //animation: rotateAnimation 60s infinite linear;
-//   }
-
-//   .rectangle1 {
-//     border: 15px solid #f4e4d5;
-//     margin-left: 50px; /* Add some spacing between the rectangles */
-//   }
-
-//   .rectangle2 {
-//     border: 15px solid #eaeae8;
-//     margin-left: -30px; /* Add some spacing between the rectangles */
-//   }
-
-//   /*  */
-//   @keyframes rotateAnimation {
-//     0% {
-//       transform: rotate(0);
-//     }
-//     100% {
-//       transform: rotate(360deg);
-//     }
-//   }
-// }
-// section {
-//   flex: 1;
-//   display: flex;
-//   gap: 2rem;
-//   flex-direction: column;
-//   padding-top: 1rem;
-
-//   max-width: 50vw;
-//   margin-top: 2rem;
-
-//   p {
-//     color: $text-color;
-//     font-family: "Roboto-Medium";
-//     max-width: 70%;
-//   }
-// }
-
-/* Hero section version 1 style */
-// .hero {
-//   width: 100%;
-//   height: 100vh;
-//   position: fixed;
-//   background: linear-gradient(
-//     360deg,
-//     rgba(255, 255, 255, 0) 50%,
-//     rgba(209, 204, 204, 0.445) 50%
-//   );
-// }
-// .hero-heading {
-//   @include yoga;
-//   font-weight: 100;
-//   font-size: 300px;
-//   color: rgba(29, 28, 26, 0.805);
-//   padding: 0rem 5rem;
-//   position: absolute;
-//   left: 5rem;
-//   z-index: 2;
-// }
-// .name {
-//   top: 18rem;
-//   left: 10rem;
-//   position: absolute;
-// }
-// .ball {
-//   width: 700px;
-//   height: 700px;
-//   background-color: rgb(215, 167, 39);
-//   border-radius: 50%;
-//   position: relative;
-//   top: 8rem;
-//   left: 50rem;
-// }
-// /*  @-webkit-keyframes circle{
-//     0%{
-//       transform: rotate(0deg)translate(-160px)rotate(0deg);
-//     }
-//     100%{
-//       transform :rotate(360deg)translate(-165px)rotate(-360deg);
-//     }
-//   } */
-// .gif {
-//   width: 90rem;
-//   height: 55rem;
-//   position: absolute;
-//   left: -30rem;
-//   bottom: 1rem;
-// }
-// @media only screen and (max-width: 700px) {
-//   .ball {
-//     position: relative;
-//     left: 35rem;
-//   }
-//   .hero {
-//     height: 100vh;
-//     width: 100%;
-//     background: linear-gradient(
-//       360deg,
-//       rgba(255, 255, 255, 0) 39%,
-//       rgba(209, 204, 204, 0.445) 39%
-//     );
-//   }
-// }

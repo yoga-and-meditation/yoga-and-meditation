@@ -20,7 +20,14 @@
 @mixin heading-2-style {
   color: #b48821;
   font-size: 3rem;
-  padding: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2rem;
+  }
 }
 
 /* ---------------------------- Mixin for card shadow style -------------------------- */
@@ -34,7 +41,7 @@
 @mixin section-padding-style {
   margin: 8rem auto;
   width: 100%;
-  max-width: 120rem;
+  max-width: 95rem;
   padding: 0 2rem;
 }
 
@@ -55,7 +62,6 @@
     src: url("../path/to/Roboto-Medium.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
-    
   }
 }
 @mixin heading-3 {

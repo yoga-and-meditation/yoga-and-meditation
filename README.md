@@ -1,29 +1,30 @@
-# 🧘 Yoga with Sheetal
+# 🧘 Yoga and Meditation
 
-Welcome to the README file for the Yoga with Sheetal web application. This project aims to create a single-page website that provides information and services related to yoga, meditation, and retreats. The website will be built using HTML, CSS, JavaScript, Bootstrap, and React with Vite as the development platform.
+Welcome to the README file for the Yoga and Meditation web application. This project aims to create a holistic single-page website providing comprehensive information and services related to yoga, meditation, and wellness retreats. The website will be developed using a blend of HTML, CSS, JavaScript, Bootstrap, and React, with Vite serving as the streamlined development platform.
 
 ## 📚 Table of Contents
 
-- [Project Overview](#project-overview)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
-- [License](#license)
+1. [Project Overview](#project-overview)
+2. [Key Features](#key-features)
+3. [Technologies Used](#technologies-used)
+4. [Project Structure](#project-structure)
+5. [Getting Started](#getting-started)
+6. [Contributing](#contributing)
+7. [Contributors](#contributors)
+8. [License](#license)
 
 ## 🌟 Project Overview
 
-This application is designed to promote physical and mental well-being. It will offer information about various yoga and meditation practices. The web application aims to provide users with resources to learn and practice yoga and meditation techniques, schedule classes, as well as access professional retreat workshops.
+This application is dedicated to fostering physical and mental well-being. It offers an array of resources, from comprehensive guides on diverse yoga and meditation practices to schedules for classes and workshops, all conducted by professionals in the field. With a commitment to enhancing inner harmony, this web application provides an all-encompassing experience.
 
-Key features of the website include:
+### Key Features
 
-- Single-page design for easy navigation and accessibility
-- Responsive layout for optimal viewing on different devices
-- Information about different yoga styles and meditation techniques
-- Integration of a booking system for yoga, meditation, and counseling sessions
-- Blog section for articles on well-being and self-care
-- Contact form for inquiries and feedback
+- Seamlessly designed single-page layout for effortless navigation and accessibility
+- Responsive interface ensuring an optimal user experience across various devices
+- In-depth insights into distinct yoga styles and meditation techniques
+- Integration of a streamlined booking system for yoga, meditation, and counseling sessions
+- A thoughtfully curated blog section featuring articles on holistic well-being and self-care
+- Interactive contact form for inquiries and feedback
 
 ## 💻 Technologies Used
 
@@ -59,13 +60,13 @@ The project structure will be organized as follows:
 
 ## 🚀 Getting Started
 
-To get started with the project, follow these steps:
+To begin with the project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yoga-with-sheetal/website.git`
-2. Navigate to the project directory: `cd yoga-meditation-counseling`
+1. Clone the repository: [yoga-and-meditation](https://github.com/yoga-and-meditation/yoga-and-meditation)
+2. Navigate to the project directory: `cd yoga-and-meditation`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
-5. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to view the web page
+5. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to explore the web page.
 
 ## 🤝 Contributing
 
@@ -81,12 +82,52 @@ Contributions to the Yoga with Sheetal website project are welcome. If you would
 
 The following individuals have contributed to the development of this project:
 
-- <a href="https://github.com/Kidan-Tekelearegy" target="_blank">Kidan Lakew</a>
-- <a href="https://github.com/louisclarencepeter" target="_blank">Louis Peter</a>
-- <a href="https://github.com/Naeemi7" target="_blank">Abdulwase Naeemi</a>
-- <a href ="https://github.com/roshinimurali" target="_blank">Roshini Muralidharan</a>
-- <a href="https://github.com/Shaqayeq-taheri" target="_blank">Shaqayeq Taheri</a>
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/Shaqayeq-taheri">
+          <img src="https://avatars.githubusercontent.com/u/120387460?v=4" width="100px;" alt="Shaqayeq Taheri" style="border-radius: 50%;">
+          <br />
+          <sub><b>Shaqayeq Taheri</b></sub>
+        </a>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/Naeemi7">
+          <img src="https://avatars.githubusercontent.com/u/120386826?u=bde7bfb40f3f0b9c80385fd78a5ae6b28bba6ab5&v=4" width="100px;" alt="Abdulwase Naeemi" style="border-radius: 50%;">
+          <br />
+          <sub><b>Abdulwase Naeemi</b></sub>
+        </a>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/Kidan-Tekelearegy">
+          <img src="https://avatars.githubusercontent.com/u/120387984?v=4" width="100px;" alt="Kidan Lakew" style="border-radius: 50%;">
+          <br />
+          <sub><b>Kidan Lakew</b></sub>
+        </a>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/louisclarencepeter">
+          <img src="https://avatars.githubusercontent.com/u/109584572?v=4" width="100px;" alt="Louis Peter" style="border-radius: 50%;">
+          <br />
+          <sub><b>Louis Peter</b></sub>
+        </a>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/roshinimurali">
+          <img src="https://avatars.githubusercontent.com/u/80250538?v=4" width="100px;" alt="Roshini Muralidharan" style="border-radius: 50%;">
+          <br />
+          <sub><b>Roshini Muralidharan</b></sub>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
+The website is designed by 
+
+
+<a href="https://github.com/roshinimurali">Roshini Muralidharan</a>
 ## 📜 License
 
 The Yoga, Meditation, and Counseling website project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
