@@ -11,3 +11,7 @@
 :root {
   font-size: calc(1rem + 0.5vw, 1.5rem);
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
