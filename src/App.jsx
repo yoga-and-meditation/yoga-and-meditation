@@ -10,20 +10,24 @@ import Demo from "./components/Demo";
 import Gallery from "./components/Gallery";
 import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
+import Signin from "./components/Signin";
+import Signup from "./components/Signup";
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <Navbar />
-        <Hero />
-        <Aboutme />
+        <Signup />
+        {/*  <Navbar />
+        <Hero /> */}
+        {/*  <Signin /> */}
+        {/*  <Aboutme />
         <Services />
         <Gallery />
         <Feedback />
         <Demo />
         <Contacts />
-        <Footer />
+        <Footer /> */}
       </BrowserRouter>
     </div>
   );
