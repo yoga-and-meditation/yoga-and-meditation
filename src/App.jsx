@@ -17,10 +17,10 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <Signup />
+        {/* <Signup /> */}
         {/*  <Navbar />
         <Hero /> */}
-        {/*  <Signin /> */}
+        <Signin />
         {/*  <Aboutme />
         <Services />
         <Gallery />
