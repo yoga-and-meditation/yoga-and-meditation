@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Signin() {
+function Signin(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -69,6 +69,7 @@ function Signin() {
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                   Don’t have an account yet?{" "}
                   <a
+                    onClick={props.onSwitchForm}
                     href="#"
                     className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                   >

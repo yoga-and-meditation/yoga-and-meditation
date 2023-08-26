@@ -1,4 +1,4 @@
-function Signup() {
+function Signup(props) {
   return (
     <>
       <section className="">
@@ -91,6 +91,7 @@ function Signup() {
                 <p className="text-sm font-light text-gray-500 dark:text-dark-700">
                   Already have an account?{" "}
                   <a
+                    onClick={props.onSwitchForm}
                     href="#"
                     className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                   >
