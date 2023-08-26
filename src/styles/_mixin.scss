@@ -4,11 +4,11 @@
 @mixin button-style {
   background-color: #b48821;
   color: $button-text-color;
-  padding: 0 1rem;
-  height: 3rem;
+  padding: 0 0.9rem;
+  height: 2.6rem;
   border-radius: 0.5rem;
   border: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   box-shadow: 4px 8px 40px 0px rgba(142, 110, 26, 0.15%);
   transition: all 0.5s ease;
   &:hover {

@@ -2,6 +2,8 @@ import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
 import { FcMenu } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
+
+import { FaUserCircle } from "react-icons/fa";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -38,6 +40,11 @@ function Navbar() {
                   Contact
                 </Link>
               </button>
+            </li>
+            <li className="profile-btn">
+              <Link className="links" to="/authentication">
+                <FaUserCircle className="user" />
+              </Link>
             </li>
           </ul>
         </div>

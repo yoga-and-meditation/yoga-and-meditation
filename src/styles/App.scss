@@ -30,7 +30,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 2rem;
+      gap: 1rem;
+      margin-right: 2.5rem;
 
       .item {
         display: flex;
@@ -41,17 +42,16 @@
         .links {
           text-decoration: none;
           color: $text-color;
-          font-size: 1.2rem;
+          font-size: 1.1rem;
 
           &:hover {
-            border-bottom: 4px solid #b48821;
+            border-bottom: 3px solid #b48821;
             transition: ease-in-out;
           }
         }
       }
 
       .contact-btn {
-        margin: 0 2rem;
         button {
           @include button-style;
           .links {
@@ -60,6 +60,21 @@
             &:hover {
               color: black;
             }
+          }
+        }
+      }
+
+      .profile-btn {
+        list-style: none;
+        .links {
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .user {
+            color: #b48821;
+            font-size: 3.5rem;
           }
         }
       }
@@ -652,7 +667,7 @@
 .demo-container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
   background-image: url("../assets/images/demosession/pexels-marta.jpg");
