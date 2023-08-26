@@ -14,6 +14,22 @@ function Signup(props) {
                     htmlFor="email"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
                   >
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    className="bg-gray-100 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
+                  >
                     Your email
                   </label>
                   <input
