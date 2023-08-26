@@ -7,6 +7,7 @@ function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [notification, setNotification] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate("");
 
   const signIn = (e) => {
@@ -59,7 +60,7 @@ function Login(props) {
                     name="email"
                     id="email"
                     className="bg-gray-50 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="name@company.com"
+                    placeholder=""
                     required
                   />
                 </div>
@@ -73,13 +74,30 @@ function Login(props) {
                   <input
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    type="password"
+                    type={showPassword ? "text" : "password"}
                     name="password"
                     id="password"
-                    placeholder="*******"
+                    placeholder=""
                     className="bg-gray-50 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     required
                   />
+                </div>
+
+                {/* Show password */}
+                <div className="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="showPassword"
+                    checked={showPassword}
+                    onChange={() => setShowPassword(!showPassword)}
+                    className="mr-2 text-primary-600 dark:text-primary-500"
+                  />
+                  <label
+                    htmlFor="showPassword"
+                    className="text-sm font-medium text-black dark:text-white cursor-pointer"
+                  >
+                    Show Password
+                  </label>
                 </div>
 
                 <button
