@@ -1,13 +1,35 @@
 import { useState } from "react";
+import { auth, app } from "../store/firebase"; // Removed 'app' import as it's not used here
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [notification, setNotification] = useState("");
+  const navigate = useNavigate("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(e.target.email.value);
-    console.log(password);
+  const signIn = (e) => {
+    e.preventDefault(); // Prevent the default form submission
+
+    signInWithEmailAndPassword(auth, email, password)
+      .then(() => {
+        // Successfully signed in
+        setNotification("Login successful!"); // Set the notification
+        clearForm();
+        setTimeout(() => {
+          navigate("/");
+        }, 2000);
+      })
+      .catch((error) => {
+        console.log(error.message);
+        setNotification("Error signing in."); // Set the error notification
+      });
+
+    const clearForm = () => {
+      setEmail("");
+      setPassword("");
+    };
   };
   return (
     <>
@@ -19,7 +41,7 @@ function Login(props) {
                 Sign in to your account
               </h1>
               <form
-                onSubmit={(e) => handleSubmit(e)}
+                onSubmit={signIn}
                 className="space-y-4 md:space-y-6"
                 action="#"
               >
@@ -31,6 +53,7 @@ function Login(props) {
                     Your email
                   </label>
                   <input
+                    value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     name="email"
@@ -65,6 +88,19 @@ function Login(props) {
                 >
                   Sign in
                 </button>
+
+                {/* Show notification if available */}
+                {notification && (
+                  <p
+                    className={`text-center text-sm ${
+                      notification.includes("success")
+                        ? "text-green-600"
+                        : "text-red-600"
+                    }`}
+                  >
+                    {notification}
+                  </p>
+                )}
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                   Don’t have an account yet?{" "}
                   <a
