@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-function Signin(props) {
+function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email);
+    console.log(e.target.email.value);
     console.log(password);
   };
   return (
@@ -19,7 +19,7 @@ function Signin(props) {
                 Sign in to your account
               </h1>
               <form
-                onSubmit={handleSubmit}
+                onSubmit={(e) => handleSubmit(e)}
                 className="space-y-4 md:space-y-6"
                 action="#"
               >
@@ -31,7 +31,6 @@ function Signin(props) {
                     Your email
                   </label>
                   <input
-                    value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     name="email"
@@ -85,4 +84,4 @@ function Signin(props) {
   );
 }
 
-export default Signin;
+export default Login;

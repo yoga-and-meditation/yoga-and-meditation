@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Signin from "../pages/Signin";
+import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 
 function Authentication() {
@@ -12,7 +12,7 @@ function Authentication() {
   return (
     <>
       {currentForm === "login" ? (
-        <Signin onSwitchForm={handleFormSwitch} />
+        <Login onSwitchForm={handleFormSwitch} />
       ) : (
         <Signup onSwitchForm={handleFormSwitch} />
       )}
