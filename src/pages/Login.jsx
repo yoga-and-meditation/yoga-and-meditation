@@ -59,8 +59,8 @@ function Login(props) {
                     type="email"
                     name="email"
                     id="email"
-                    className="bg-gray-50 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder=""
+                    className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
                     required
                   />
                 </div>
@@ -78,7 +78,7 @@ function Login(props) {
                     name="password"
                     id="password"
                     placeholder=""
-                    className="bg-gray-50 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
                     required
                   />
                 </div>
@@ -119,7 +119,7 @@ function Login(props) {
                     {notification}
                   </p>
                 )}
-                <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                <p className="text-sm font-light text-gray-500 dark:text-gray-500">
                   Don’t have an account yet?{" "}
                   <a
                     onClick={props.onSwitchForm}
