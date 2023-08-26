@@ -16,17 +16,16 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
+        <Navbar />
+        <Hero />
         <Authentication />
-        {/*  <Navbar />
-        <Hero /> */}
-
-        {/*  <Aboutme />
+        <Aboutme />
         <Services />
         <Gallery />
         <Feedback />
         <Demo />
         <Contacts />
-        <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );
