@@ -10,28 +10,26 @@ function Login(props) {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate("");
 
-  const signIn = (e) => {
+  const signIn = async (e) => {
     e.preventDefault(); // Prevent the default form submission
 
-    signInWithEmailAndPassword(auth, email, password)
-      .then(() => {
-        // Successfully signed in
-        setNotification("Login successful!"); // Set the notification
-        clearForm();
-        setTimeout(() => {
-          navigate("/");
-        }, 2000);
-      })
-      .catch((error) => {
-        console.log(error.message);
-        setNotification("Error signing in."); // Set the error notification
-      });
-
-    const clearForm = () => {
-      setEmail("");
-      setPassword("");
-    };
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      // Successfully signed in
+      setNotification("Login successful!"); // Set the notification
+      clearForm();
+      navigate("/user"); // Navigate immediately
+    } catch (error) {
+      console.log(error.message);
+      setNotification("Error signing in."); // Set the error notification
+    }
   };
+
+  const clearForm = () => {
+    setEmail("");
+    setPassword("");
+  };
+
   return (
     <>
       <section className="bg-white signin-container">

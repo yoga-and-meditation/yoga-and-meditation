@@ -10,6 +10,7 @@ import Authentication from "./components/Authentication";
 import Demo from "./components/Demo";
 import Gallery from "./components/Gallery";
 import Feedback from "./components/Feedback";
+import User from "./pages/user";
 import Footer from "./components/Footer";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/authentication" element={<Authentication />} />
+        <Route path="/user" element={<User />} />
         <Route
           path="/dashboard/*"
           element={
