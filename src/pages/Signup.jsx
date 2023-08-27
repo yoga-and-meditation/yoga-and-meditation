@@ -34,7 +34,7 @@ function Signup(props) {
       }, 2000);
     } catch (error) {
       console.error("Signup Error:", error.message);
-      setNotification(error.message);
+      setNotification("The email already exits!");
     }
   };
 
