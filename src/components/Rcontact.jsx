@@ -10,7 +10,7 @@ function Rcontact() {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_n0x9wia', 'template_szt4hxx', form.current, '2xUBQSjV5qyiTcGFk')
+        emailjs.sendForm('', '', form.current, '')
           .then((result) => {
               console.log(result.text);
               setButtonValue("Sent");
