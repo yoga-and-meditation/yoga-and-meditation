@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
-
+import Card from '../components/Cart'
 import yogaGoldIcon from "../assets/images/services/yoga-gold.png";
 import yogaWhiteIcon from "../assets/images/services/yoga-white.png";
 import meditationWhiteIcon from "../assets/images/services/meditation-white.png";
@@ -32,7 +32,7 @@ const cardsData = [
     // Courses under Yoga service
     {
       header: "Starter",
-      price: "€70 per course",
+      price: 70,
       buttonText: "Book now",
       className: "basic",
       cardContainer: "yoga",
@@ -45,7 +45,7 @@ const cardsData = [
     },
     {
       header: "Professional",
-      price: "€120 per course",
+      price: 120,
       buttonText: "Book now",
       className: "standard",
       cardContainer: "yoga",
@@ -58,7 +58,7 @@ const cardsData = [
     },
     {
       header: "Champion",
-      price: "€180 per course",
+      price:180,
       buttonText: "Book now",
       className: "premium",
       cardContainer: "yoga",
@@ -76,7 +76,7 @@ const cardsData = [
 
     {
       header: "Starter",
-      price: "€50 per course",
+      price: 50,
       buttonText: "Book now",
       className: "basic",
       cardContainer: "meditation",
@@ -89,7 +89,7 @@ const cardsData = [
     },
     {
       header: "Professional",
-      price: "€90 per course",
+      price: 90,
       buttonText: "Book now",
       className: "standard",
       cardContainer: "meditation",
@@ -102,7 +102,7 @@ const cardsData = [
     },
     {
       header: "Champion",
-      price: "€150 per course",
+      price: 150,
       buttonText: "Book now",
       className: "premium",
       cardContainer: "meditation",
@@ -119,7 +119,7 @@ const cardsData = [
 
     {
       header: "Starter",
-      price: "€150 per person",
+      price: 150,
       buttonText: "Book now",
       className: "basic",
       cardContainer: "retreat",
@@ -132,7 +132,7 @@ const cardsData = [
     },
     {
       header: "Professional",
-      price: "€250 per person",
+      price: 250,
       buttonText: "Book now",
       className: "standard",
       cardContainer: "retreat",
@@ -145,7 +145,7 @@ const cardsData = [
     },
     {
       header: "Champion",
-      price: "€350 per person",
+      price: 350,
       buttonText: "Book now",
       className: "premium",
       cardContainer: "retreat",
@@ -165,8 +165,16 @@ function Services() {
   const handleTabClick = (index) => {
     setTab(index);
   };
-
+  const [card, setCard] = useState([]);
+  
+    const handladd=(prop) => {
+/*       alert('addded to cart')
+ */   const newCard=[...card,prop]
+ setCard(newCard);
+console.log(newCard)
+}
   return (
+   
     <div className="service-container">
       <div className="service-wrapper">
         <div className="header-container">
@@ -226,8 +234,8 @@ function Services() {
                           ))}
                         </ul>
                         {/* Button to join the course */}
-                        <Link
-                          to="/contacts"
+                        <Link   onClick={()=>handladd(content)}
+                          /* to="/contacts" */
                           className={`btn btn-${content.className}`}
                         >
                           {content.buttonText}
@@ -241,6 +249,7 @@ function Services() {
           </div>
         </section>
       </div>
+      <Card card={card}/>
     </div>
   );
 }
