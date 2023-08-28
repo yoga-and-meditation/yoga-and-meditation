@@ -14,7 +14,6 @@ import User from "./pages/user";
 import Footer from "./components/Footer";
 
 function App() {
-  console.log(`the tkey ${import.meta.env.VITE_API_KEY}`);
   return (
     <div className="app">
       <Navbar />
