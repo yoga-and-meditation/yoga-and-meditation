@@ -30,11 +30,11 @@ function Signup(props) {
       clearForm();
 
       setTimeout(() => {
-        navigate("/");
+        navigate("/services");
       }, 2000);
     } catch (error) {
       console.error("Signup Error:", error.message);
-      setNotification("The email already exits!");
+      setNotification(error.message);
     }
   };
 
