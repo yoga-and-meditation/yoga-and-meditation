@@ -216,7 +216,7 @@
     }
     /* Contact component */
     .contact-container {
-      margin: 2rem auto;
+      margin-top: -5rem;
       width: 99%;
 
       .contact-sub-container {
@@ -227,6 +227,7 @@
             display: none;
           }
           h3 {
+            margin-top: 0;
             font-size: 2rem;
             color: #b48821;
             text-align: center;
