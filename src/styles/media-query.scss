@@ -1,218 +1,257 @@
 /* +++ Media Query for max width of 360px +++ */
 @media (max-width: #{$small}) {
   .app {
-    /* Services componenet */
-    .service-container {
-      margin: 2rem auto;
-      width: 99%;
+    /* ++++++++++ Start Navbar Component media query ++++++++++ */
+    .navbar-container {
+      .hamburger {
+        display: block;
+        padding: 0 1rem;
+        cursor: pointer;
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        color: #b48821;
+      }
+      .navbar {
+        .nav-menu {
+          display: none;
+          gap: 0;
+        }
+        .logo {
+          position: absolute;
+          h1 {
+            font-size: 3rem;
+          }
+          top: 21px;
+        }
+      }
+      .expanded {
+        background-color: $secondary-background-color; /* Use the defined variablebout-container {
+          flex-direction: column;
+          img { here */
+        min-height: 55vh;
+        .nav-menu {
+          position: absolute;
+          top: 120px;
+          left: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+/* Services componenet */
+.service-container {
+  margin: 2rem auto;
+  width: 99%;
 
-      .header-container {
-        h3 {
+  .header-container {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .tab-container {
+    /*   border: 1px solid green; */
+    width: 100%;
+    padding: 2.5rem;
+
+    .navigation {
+      padding-left: 0;
+      gap: 6rem;
+      justify-content: center;
+      li {
+        margin: 0 auto;
+
+        padding: 0;
+
+        .button {
+          .icon {
+            width: 4rem;
+            height: 4rem;
+
+            img {
+              height: 2.5rem;
+              width: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .service-section {
+    padding: 1rem;
+
+    .card-container {
+      box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: all 0.1ms ease-in-out;
+      margin: 0;
+      width: 100%;
+      background: none;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      .img-fluid {
+        display: none;
+      }
+
+      .card-body {
+        position: relative;
+
+        .card-title {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+          background-color: #b48821;
+          width: 100%;
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 1rem;
+          color: white;
+        }
+
+        .card-text {
+          margin-top: 2.5rem;
+          font-size: 0.8rem;
+        }
+
+        .subscribe-btn-container {
+          display: flex;
+          justify-content: center;
+          .subscribe-btn {
+            height: 2rem;
+            font-size: 0.9rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Contact component */
+.contact-container {
+  margin: 2rem auto;
+  width: 99%;
+
+  .contact-sub-container {
+    .form-container {
+      width: 100%;
+
+      h2 {
+        display: none;
+      }
+      h3 {
+        font-size: 2rem;
+        color: #b48821;
+        text-align: center;
+      }
+
+      /* form name */
+      .col-6 {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      /* form subject */
+      .col {
+        margin-top: -3rem;
+      }
+
+      /* form message */
+      .message {
+        height: 8rem;
+      }
+
+      /* contact button */
+      .submit-btn {
+        font-size: 1rem;
+        height: 2.5rem;
+        font-weight: 500;
+      }
+    }
+
+    .contact-img {
+      display: none;
+    }
+  }
+}
+
+/* Footer component */
+footer {
+  .scroll-to-top {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    bottom: 20px;
+    right: 20px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+
+    .logo-container {
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      .logo {
+        font-size: 2.5rem;
+      }
+    }
+
+    /* About container */
+    .about-me {
+      h5 {
+        margin-top: -1.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.9rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+      .icons {
+        ul {
+          font-size: 2rem;
+          gap: 1rem;
+          justify-content: center;
+          padding-left: 0;
+        }
+      }
+    }
+
+    /* .links */
+    .links {
+      display: flex;
+      justify-content: center;
+
+      ul {
+        h5 {
+          text-align: center;
           font-size: 1.5rem;
         }
-      }
-
-      .tab-container {
-        /*   border: 1px solid green; */
-        width: 100%;
-        padding: 2.5rem;
-
-        .navigation {
-          padding-left: 0;
-          gap: 6rem;
-          justify-content: center;
-          li {
-            margin: 0 auto;
-
-            padding: 0;
-
-            .button {
-              .icon {
-                width: 4rem;
-                height: 4rem;
-
-                img {
-                  height: 2.5rem;
-                  width: 2.5rem;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .service-section {
-        padding: 1rem;
-
-        .card-container {
-          box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
-          border-radius: 1rem;
-          overflow: hidden;
-          transition: all 0.1ms ease-in-out;
-          margin: 0;
-          width: 100%;
-          background: none;
-
-          &:hover {
-            transform: scale(1.02);
-          }
-
-          .img-fluid {
-            display: none;
-          }
-
-          .card-body {
-            position: relative;
-
-            .card-title {
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-              background-color: #b48821;
-              width: 100%;
-              text-align: center;
-              font-size: 1.5rem;
-              padding: 1rem;
-              color: white;
-            }
-
-            .card-text {
-              margin-top: 2.5rem;
-              font-size: 0.8rem;
-            }
-
-            .subscribe-btn-container {
-              display: flex;
-              justify-content: center;
-              .subscribe-btn {
-                height: 2rem;
-                font-size: 0.9rem;
-                font-weight: 400;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    /* Contact component */
-    .contact-container {
-      margin: 2rem auto;
-      width: 99%;
-
-      .contact-sub-container {
-        .form-container {
-          width: 100%;
-
-          h2 {
-            display: none;
-          }
-          h3 {
-            font-size: 2rem;
-            color: #b48821;
-            text-align: center;
-          }
-
-          /* form name */
-          .col-6 {
-            width: 100%;
-            margin-bottom: 1rem;
-          }
-
-          /* form subject */
-          .col {
-            margin-top: -3rem;
-          }
-
-          /* form message */
-          .message {
-            height: 8rem;
-          }
-
-          /* contact button */
-          .submit-btn {
+        li {
+          a {
             font-size: 1rem;
-            height: 2.5rem;
-            font-weight: 500;
           }
-        }
-
-        .contact-img {
-          display: none;
         }
       }
     }
+  }
 
-    /* Footer component */
-    footer {
-      .scroll-to-top {
-        width: 35px;
-        height: 35px;
-        font-size: 18px;
-        bottom: 20px;
-        right: 20px;
-      }
-      .footer-container {
-        display: flex;
-        flex-direction: column;
-
-        .logo-container {
-          padding-top: 1.5rem;
-          display: flex;
-          justify-content: center;
-          .logo {
-            font-size: 2.5rem;
-          }
-        }
-
-        /* About container */
-        .about-me {
-          h5 {
-            margin-top: -1.5rem;
-            text-align: center;
-            padding-bottom: 1rem;
-            font-size: 1.5rem;
-          }
-          p {
-            font-size: 0.9rem;
-            padding-left: 2.5rem;
-            padding-right: 2.5rem;
-          }
-          .icons {
-            ul {
-              font-size: 2rem;
-              gap: 1rem;
-              justify-content: center;
-              padding-left: 0;
-            }
-          }
-        }
-
-        /* .links */
-        .links {
-          display: flex;
-          justify-content: center;
-
-          ul {
-            h5 {
-              text-align: center;
-              font-size: 1.5rem;
-            }
-            li {
-              a {
-                font-size: 1rem;
-              }
-            }
-          }
-        }
-      }
-
-      .copyright {
-        font-size: 1rem;
-      }
-    }
+  .copyright {
+    font-size: 1rem;
   }
 }
 
