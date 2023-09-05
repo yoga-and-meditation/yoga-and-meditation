@@ -17,11 +17,12 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Hero />
-        <Aboutme />
+
         {/*   <Services /> */}
         <Gallery />
         <Feedback />
         {/* <Demo /> */}
+        <Aboutme />
         <Contacts />
         <Footer />
       </BrowserRouter>
