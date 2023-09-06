@@ -207,129 +207,311 @@
 
 /* ++++++++++ Start of Service Component style sheet ++++++++++ */
 .service-container {
-  @include section-padding-style;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #ece8e7;
 
-  /* Heading style of the section */
-  .header-container {
-    text-align: center;
-    h2 {
-      padding-bottom: 1.5rem;
-      @include heading-2-style;
-      @include heading-2;
-    }
-    h3 {
-      @include heading-3;
-    }
-  }
-
-  /* Tab container style */
-  .tab-container {
-    width: 80%;
-    padding: 8rem;
+  /* Styles for the service wrapper */
+  .service-wrapper {
+    @include section-padding-style;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 
-    .navigation {
+    /* Header container for the section */
+    .header-container {
+      h2 {
+        padding: 1.5em 0 0;
+        @include heading-2-style;
+        @include heading-2;
+      }
+    }
+
+    /* Container for tab navigation */
+    .tab-container {
+      width: 80%;
+      padding: 8rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 25rem;
-      margin-bottom: 0;
-      padding-left: 0;
 
-      li {
-        position: relative;
-        list-style: none;
+      /* Navigation for tabs */
+      .navigation {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
-        box-shadow: 10px 22px 40px #0000 5%;
+        gap: 25rem;
+        margin-bottom: 0;
+        padding-left: 0;
 
-        .button {
+        li {
+          position: relative;
+          list-style: none;
           display: flex;
-          align-items: center;
           justify-content: center;
-          flex-direction: column;
+          align-items: center;
+          border-radius: 50%;
+          box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
 
-          .icon {
-            position: absolute;
-            width: 10rem;
-            height: 10rem;
+          // Button and icon styles
+          .button {
             display: flex;
-            justify-content: center;
             align-items: center;
-            border: 2px solid #b48821;
-            border-radius: 50%;
-            transition: 0.5s;
-            transition-delay: 0.2s;
+            justify-content: center;
+            flex-direction: column;
 
-            img {
-              height: 6rem;
-              width: 6rem;
+            .icon {
+              position: absolute;
+              width: 8.5rem;
+              height: 8.5rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 2px solid #b48821;
+              box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+              border-radius: 50%;
+              transition: 0.5s;
+              transition-delay: 0.2s;
+
+              img {
+                height: 5rem;
+                width: 5rem;
+              }
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              inset: 0;
+              box-shadow: 10px 22px 40px #0000 5%;
+              border-radius: 50%;
+              transform: scale(0);
+              transition: 0.5s;
             }
           }
 
-          &::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            box-shadow: 10px 22px 40px #0000 5%;
-            border-radius: 50%;
-            transform: scale(0);
-            transition: 0.5s;
-          }
-        }
+          &.active {
+            .icon {
+              transition-delay: 0s;
+              font-size: 12rem;
+              background: #b48821;
 
-        &.active {
-          .icon {
-            transition-delay: 0s;
-            font-size: 12rem;
-            background: #b48821; /* Set background color for active state */
-            &::before {
-              transform: scale(1);
+              &::before {
+                transform: scale(1);
+              }
             }
           }
         }
       }
     }
-  }
 
-  /* Service section style sheet */
-  .service-section {
-    display: flex;
-    justify-content: center;
+    /* Style for the service section */
+    .service-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
 
-    .card-container {
-      background-image: url("../assets/images/services/wave.svg");
-      background-size: cover;
-      background-position: 5% 50%;
-      outline: none;
-      border: none;
-      box-shadow: 20px 20px 60px #ece8e7, -20px -20px 60px #ffffff;
-      width: 90%;
+      /* Container for card content */
+      .card-content-container {
+        width: 100%;
 
-      .img-fluid {
-        height: 26rem;
-        width: 45rem;
-      }
+        /* Container for cards */
+        .cards-container {
+          padding: 2rem 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 3rem;
 
-      .subscribe-btn {
-        @include button-style;
-      }
+          /* Individual card styles */
+          .card-basic,
+          .card-premium,
+          .card-standard {
+            width: 24%;
+            background: #fff;
+            color: $text-color;
+            text-align: center;
+            border-radius: 1rem;
+            box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+            overflow: hidden;
+            transition: all 0.1s ease-in-out;
 
-      .card-text {
-        font-size: 1.2rem;
-        padding: 0.6rem;
-        color: $text-color;
-        @include paragraph-normal;
-      }
-      h3 {
-        @include heading-3;
+            .yoga,
+            .meditation,
+            .retreat {
+              border-radius: 1rem;
+              border-bottom: 3px solid;
+            }
+
+            .yoga {
+              border-bottom-color: #b48821;
+
+              .card-body {
+                p h4 {
+                  color: #b48821;
+                }
+              }
+            }
+
+            .meditation {
+              border-bottom-color: #6b8e23;
+              .card-body {
+                p h4 {
+                  color: #6b8e23;
+                }
+
+                .card-content-container {
+                  .card-element {
+                    .circle-icon {
+                      color: #6b8e23;
+                    }
+                  }
+                }
+              }
+            }
+
+            .retreat {
+              border-bottom-color: #008080;
+              .card-body {
+                p h4 {
+                  color: #008080;
+                }
+
+                .card-content-container {
+                  .card-element {
+                    .circle-icon {
+                      color: #008080;
+                    }
+                  }
+                }
+              }
+            }
+
+            .header-basic,
+            .header-standard,
+            .header-premium,
+            .btn-basic,
+            .btn-standard,
+            .btn-premium {
+              background: #b48821;
+            }
+
+            .meditation .header-basic,
+            .meditation .header-standard,
+            .meditation .header-premium,
+            .meditation .btn-basic,
+            .meditation .btn-standard,
+            .meditation .btn-premium {
+              background: #6b8e23;
+            }
+
+            .retreat .header-basic,
+            .retreat .header-standard,
+            .retreat .header-premium,
+            .retreat .btn-basic,
+            .retreat .btn-standard,
+            .retreat .btn-premium {
+              background: #008080;
+            }
+
+            /* Card hover effect */
+            &:hover {
+              transform: scale(1.02);
+            }
+
+            /* Card header */
+            .card-header {
+              height: 5rem;
+              font-weight: 700;
+              font-size: 0.8rem;
+              padding: 1rem 0;
+              color: #fff;
+              clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+            }
+
+            /* Card body */
+            .card-body {
+              padding: 0.8rem 0;
+
+              p {
+                h4 {
+                  @include heading-3;
+                  font-size: 1.5rem;
+                  color: #b48821;
+                  padding: 1rem;
+                }
+              }
+
+              /* Container for card elements */
+              .card-element-container {
+                color: $text-color;
+                list-style: none;
+                font-size: 1rem;
+                text-align: left;
+
+                .card-element {
+                  .circle-icon {
+                    margin-right: 0.5rem;
+                    color: #b48821;
+                  }
+                }
+              }
+
+              /* Card buttons */
+              .btn {
+                margin: 0.5rem 0;
+                padding: 0.6rem 0.9rem;
+                outline: none;
+                border-radius: 0.7rem;
+                font-size: 0.9rem;
+                font-weight: 700;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                transition: all 0.1s ease-in-out;
+
+                &:hover {
+                  transform: scale(0.95);
+                }
+
+                &:active {
+                  transform: scale(1);
+                }
+              }
+            }
+          }
+
+          /* Header and button styles for each card type */
+          .header-basic,
+          .btn-basic {
+            background: #b48821;
+          }
+
+          .header-standard,
+          .btn-standard {
+            background: #b48821;
+          }
+
+          .header-premium,
+          .btn-premium {
+            background: #b48821;
+          }
+        }
+
+        /* Style the circle icons based on the tab index */
+        .circle-icon-0 {
+          color: #b48821; /* Yoga tab color */
+          margin-right: 0.4rem;
+        }
+
+        .circle-icon-1 {
+          color: #6b8e23; /* Meditation tab color */
+          margin-right: 0.4rem;
+        }
+
+        .circle-icon-2 {
+          color: #008080; /* Retreat tab color */
+          margin-right: 0.4rem;
+        }
       }
     }
   }
@@ -462,7 +644,7 @@
 .demo-container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
   background-image: url("../assets/images/demosession/pexels-marta.jpg");
