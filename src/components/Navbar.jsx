@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FcMenu } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
 import { FaUserCircle } from "react-icons/fa";
-
+import {AiOutlineShoppingCart} from 'react-icons/ai'
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -41,9 +41,18 @@ function Navbar() {
                 </Link>
               </button>
             </li>
+            <li className="cart ">
+              
+                <Link className="links" to="/cart">
+                  < AiOutlineShoppingCart className="cart-btn"/>
+                  <span className="quantity">0</span>
+                </Link>
+             
+            </li>
             <li className="profile-btn">
               <Link className="links" to="/authentication">
                 <FaUserCircle className="user" />
+                
               </Link>
             </li>
           </ul>

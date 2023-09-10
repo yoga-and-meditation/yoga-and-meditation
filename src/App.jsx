@@ -12,22 +12,34 @@ import Gallery from "./components/Gallery";
 import Feedback from "./components/Feedback";
 import User from "./pages/user";
 import Footer from "./components/Footer";
-
+import Cart from './components/Cart'
+import {useState} from 'react'
 function App() {
+
+  const [cart,setcart]=useState([])
+  const handleClick=(item)=>{
+    console.log(item)
+
+setcart([...cart,item])
+console.log(setcart)
+  }
   return (
     <div className="app">
-      <Navbar />
+      <Navbar size={cart.length}/>
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/aboutme" element={<Aboutme />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<Services handleClick={handleClick} />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/cart" element={<Cart cart={cart}setcart={setcart}/>} />
+
         <Route path="/authentication" element={<Authentication />} />
         <Route path="/user" element={<User />} />
         <Route
           path="/dashboard/*"
           element={
             <>
+         
               <Demo />
               <Gallery />
               <Feedback />
