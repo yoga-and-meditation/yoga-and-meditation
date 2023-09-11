@@ -3,6 +3,7 @@
 @import "media-query";
 
 /* ++++++++++ Start of Navbar Component style sheet ++++++++++ */
+
 .navbar-container {
   position: sticky;
   width: 100%;
@@ -884,4 +885,16 @@ footer {
     text-align: center;
   }
 }
+.user-profile {
+  margin: 10rem;
+  padding: 4rem;
+  h1{
+    @include logo-font-style;
+  }
+
+  .user-btn {
+    @include button-style;
+  }
+}
+
 /* ++++++++++ End of Footer Component style sheet ++++++++++ */
