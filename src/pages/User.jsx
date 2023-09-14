@@ -1,15 +1,9 @@
-import { useContext } from "react";
-import { AuthContext } from "../context/AuthContext";
-
-function User() {
-  const { name } = useContext(AuthContext);
-  console.log(name);
-
+function user() {
   return (
     <div>
-      <h1>Welcome {name}</h1>
+      <h1>Welcome</h1>
     </div>
   );
 }
 
-export default User;
+export default user;

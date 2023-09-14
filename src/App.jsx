@@ -10,7 +10,7 @@ import Authentication from "./components/Authentication";
 import Demo from "./components/Demo";
 import Gallery from "./components/Gallery";
 import Feedback from "./components/Feedback";
-import User from "./pages/user";
+import User from "./pages/User";
 import Footer from "./components/Footer";
 
 function App() {

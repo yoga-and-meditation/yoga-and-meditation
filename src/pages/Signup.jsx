@@ -30,7 +30,7 @@ function Signup(props) {
       clearForm();
 
       setTimeout(() => {
-        navigate("/services");
+        navigate("/authentication");
       }, 2000);
     } catch (error) {
       console.error("Signup Error:", error.message);
