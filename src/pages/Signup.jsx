@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { auth, app } from "../store/firebase";
+import { auth } from "../store/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom"; // Import useHistory instead of useNavigate
 
 function Signup(props) {
   const [name, setName] = useState("");
@@ -9,10 +9,10 @@ function Signup(props) {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [notification, setNotification] = useState("");
-  const navigate = useNavigate("");
+  const history = useHistory(); // Initialize useHistory
 
   const signUp = async (e) => {
-    e.preventDefault(); // Prevent the default form submission
+    e.preventDefault();
 
     if (password !== confirmPassword) {
       setNotification("Passwords do not match.");
@@ -30,7 +30,7 @@ function Signup(props) {
       clearForm();
 
       setTimeout(() => {
-        navigate("/authentication");
+        history.push("/authentication"); // Use history.push to navigate
       }, 2000);
     } catch (error) {
       console.error("Signup Error:", error.message);
