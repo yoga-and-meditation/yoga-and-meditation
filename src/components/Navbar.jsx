@@ -4,7 +4,8 @@ import { FcMenu } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
 import { FaUserCircle } from "react-icons/fa";
 import {AiOutlineShoppingCart} from 'react-icons/ai'
-function Navbar() {
+
+function Navbar({size}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNav = () => {
@@ -45,7 +46,7 @@ function Navbar() {
               
                 <Link className="links" to="/cart">
                   < AiOutlineShoppingCart className="cart-btn"/>
-                  <span className="quantity">0</span>
+                  <span className="quantity">{size}</span>
                 </Link>
              
             </li>

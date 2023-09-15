@@ -18,10 +18,12 @@ function App() {
 
   const [cart,setcart]=useState([])
   const handleClick=(item)=>{
-    console.log(item)
-
+    if(cart.includes(item)){
+      alert('item already exist')
+    }
+else{
 setcart([...cart,item])
-console.log(setcart)
+console.log(setcart)}
   }
   return (
     <div className="app">

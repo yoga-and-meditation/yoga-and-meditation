@@ -1,6 +1,9 @@
 
  import {useState,useEffect} from 'react' 
+ import {AiFillDelete} from 'react-icons/ai'
+
 const Cart = ({ cart, setCart }) => {
+  
 let[total,setTotal]=useState(0)
 
 useEffect(() => {
@@ -11,18 +14,30 @@ useEffect(() => {
     // Update the total state
     setTotal(calculatedTotal);
   }, [cart]);
+  const handleDelete = (itemId) => {
+    // Filter out the item with the given ID and update the cart state
+    const updatedCart = cart.filter((item) => item.id !== itemId);
+    setCart(updatedCart);
+  };
     return (
-      <div>
+      <div className="ShoppingCart">
         <h1>Your Shopping Cart</h1>
         <p></p>
-        <ul>
-          {cart.map((ele) => (
-            <div key={ele.id}><div><h3>{ele.cardContainer}</h3><p>{ele.header}</p></div>
-            <div><h5>Price{ele.price}</h5></div> </div>
-             
+        <div className='card'>
+       
+ 
+{cart.map((ele) => (<div className='item' key={ele.id}>
+        <div className='services'>{ele.cardContainer}<br></br> <p>level:{ele.header}</p></div>
+        <div className='price'>{ele.price}€</div>
+        <div className='delete' onClick={() => handleDelete(ele.id)}><AiFillDelete className='bin'></AiFillDelete></div>
+       </div>
+           
           ))}
-<h4>Total={total}</h4>
-        </ul>
+<h4 className='Total'>Total={total}€</h4>
+
+        </div>
+        <button className='checkout'>Checkout</button>
+
         
       </div>
     );
