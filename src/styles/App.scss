@@ -640,19 +640,12 @@
     padding: 3rem;
   }
   @include section-padding-style;
-
-  h2 {
-    @include heading-2-style;
-    margin-bottom: 2rem; // Assuming you want the margin at the top level as well.
-    text-align: center;
-    padding: 3rem;
-  }
 }
 
 .demo-container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
   background-image: url("../assets/images/demosession/pexels-marta.jpg");

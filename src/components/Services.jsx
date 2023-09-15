@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
-import Card from '../components/Cart'
 import yogaGoldIcon from "../assets/images/services/yoga-gold.png";
 import yogaWhiteIcon from "../assets/images/services/yoga-white.png";
 import meditationWhiteIcon from "../assets/images/services/meditation-white.png";
@@ -32,7 +31,7 @@ const cardsData = [
     // Courses under Yoga service
     {
       header: "Starter",
-      price: 70,
+      price: "€70 per course",
       buttonText: "Book now",
       className: "basic",
       cardContainer: "yoga",
@@ -45,7 +44,7 @@ const cardsData = [
     },
     {
       header: "Professional",
-      price: 120,
+      price: "€120 per course",
       buttonText: "Book now",
       className: "standard",
       cardContainer: "yoga",
@@ -58,7 +57,7 @@ const cardsData = [
     },
     {
       header: "Champion",
-      price:180,
+      price: "€180 per course",
       buttonText: "Book now",
       className: "premium",
       cardContainer: "yoga",
@@ -76,7 +75,7 @@ const cardsData = [
 
     {
       header: "Starter",
-      price: 50,
+      price: "€50 per course",
       buttonText: "Book now",
       className: "basic",
       cardContainer: "meditation",
@@ -89,7 +88,7 @@ const cardsData = [
     },
     {
       header: "Professional",
-      price: 90,
+      price: "€90 per course",
       buttonText: "Book now",
       className: "standard",
       cardContainer: "meditation",
@@ -102,7 +101,7 @@ const cardsData = [
     },
     {
       header: "Champion",
-      price: 150,
+      price: "€150 per course",
       buttonText: "Book now",
       className: "premium",
       cardContainer: "meditation",
@@ -119,7 +118,7 @@ const cardsData = [
 
     {
       header: "Starter",
-      price: 150,
+      price: "€150 per person",
       buttonText: "Book now",
       className: "basic",
       cardContainer: "retreat",
@@ -132,7 +131,7 @@ const cardsData = [
     },
     {
       header: "Professional",
-      price: 250,
+      price: "€250 per person",
       buttonText: "Book now",
       className: "standard",
       cardContainer: "retreat",
@@ -145,7 +144,7 @@ const cardsData = [
     },
     {
       header: "Champion",
-      price: 350,
+      price: "€350 per person",
       buttonText: "Book now",
       className: "premium",
       cardContainer: "retreat",
@@ -234,8 +233,8 @@ console.log(newCard)
                           ))}
                         </ul>
                         {/* Button to join the course */}
-                        <Link   onClick={()=>handladd(content)}
-                          /* to="/contacts" */
+                        <Link
+                          to="/contacts"
                           className={`btn btn-${content.className}`}
                         >
                           {content.buttonText}
@@ -249,7 +248,6 @@ console.log(newCard)
           </div>
         </section>
       </div>
-      <Card card={card}/>
     </div>
   );
 }

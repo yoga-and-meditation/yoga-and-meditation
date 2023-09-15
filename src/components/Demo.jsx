@@ -10,7 +10,9 @@ function BookingInfo({ availability, time, timezone, duration }) {
         <li>{timezone}</li>
         <li>Duration {duration}</li>
       </ul>
-      <button className="mb-2" aria-label="Book Yoga Session Now">Book Now</button>
+      <button className="mb-2" aria-label="Book Yoga Session Now">
+        Book Now
+      </button>
     </div>
   );
 }
@@ -25,12 +27,10 @@ function Demo() {
     <div className="demo">
       <h2 className="mb-2">Yoga Demo Session</h2>
       <div className="demo-container">
-
         <div className="demo-session-description">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.
           </p>
-
           <BookingInfo
             availability={availability}
             time={time}
