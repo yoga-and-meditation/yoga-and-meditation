@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/App.scss";
 import Navbar from "./components/Navbar";
@@ -12,30 +12,33 @@ import Gallery from "./components/Gallery";
 import Feedback from "./components/Feedback";
 import User from "./pages/User";
 import Footer from "./components/Footer";
+import AuthProvider from "./provider/AuthProvider";
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/aboutme" element={<Aboutme />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contacts" element={<Contacts />} />
-        <Route path="/authentication" element={<Authentication />} />
-        <Route path="/user" element={<User />} />
-        <Route
-          path="/dashboard/*"
-          element={
-            <>
-              <Demo />
-              <Gallery />
-              <Feedback />
-              <Footer />
-            </>
-          }
-        />
-      </Routes>
+      <AuthProvider>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/aboutme" element={<Aboutme />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/authentication" element={<Authentication />} />
+          <Route path="/user" element={<User />} />
+          <Route
+            path="/dashboard/*"
+            element={
+              <>
+                <Demo />
+                <Gallery />
+                <Feedback />
+                <Footer />
+              </>
+            }
+          />
+        </Routes>
+      </AuthProvider>
     </div>
   );
 }
