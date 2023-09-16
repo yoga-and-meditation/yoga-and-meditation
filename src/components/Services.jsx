@@ -1,14 +1,26 @@
-import { useState } from "react";
+import { useState,useContext } from "react";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
 import { cardsData, serviceData } from "../database/services/data";
+import {UserContext} from '../Context/Parentcontext.jsx'
 
-function Services({handleClick}) {
+const Services=() =>{
+  const { cart, setcart } = useContext(UserContext)
   const [tab, setTab] = useState(0); // Initialize tab index
+ 
 
   const handleTabClick = (index) => {
     setTab(index);
   };
+   const handleClick=(item)=>{
+    if(cart.includes(item)){
+      alert('item already exist')
+    }
+else{
+ setcart([...cart,item])
+} 
+  } 
+  
 
   return (
     <div className="service-container">
@@ -71,7 +83,7 @@ function Services({handleClick}) {
                         </ul>
                         {/* Button to join the course */}
                         <Link
-                          onClick={()=>handleClick(content)}
+                           onClick={()=>handleClick(content)} 
                           className={`btn btn-${content.className}`}
                         >
                           {content.buttonText}
