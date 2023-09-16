@@ -45,7 +45,7 @@ function Navbar() {
           {isOpen ? <GrClose /> : <FcMenu />}
         </div>
       </nav>
-      <Outlet />
+      <Outlet/>
     </div>
   );
 }
