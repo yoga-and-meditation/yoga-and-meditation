@@ -2,8 +2,22 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
 import { cardsData, serviceData } from "../database/services/data";
+import { useMyContext } from "../Context/Context";
 
-function Services({handleClick}) {
+function Services() {
+  const{cart,setcart}=useMyContext()
+  function addToCart(item){ 
+    const cardContainer=cart.map((ele)=>{return ele.cardContainer})
+    if(cart.includes(item)){
+    alert('item already exist')
+    
+  }else if (cardContainer.includes(item.cardContainer)){
+    alert('you already choosed one level from this  ')
+  }
+  else{
+    setcart([...cart,item])
+  }
+  }
   const [tab, setTab] = useState(0); // Initialize tab index
 
   const handleTabClick = (index) => {
@@ -71,7 +85,7 @@ function Services({handleClick}) {
                         </ul>
                         {/* Button to join the course */}
                         <Link
-                          onClick={()=>handleClick(content)}
+                          onClick={()=>addToCart(content)}
                           className={`btn btn-${content.className}`}
                         >
                           {content.buttonText}

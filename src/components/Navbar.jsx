@@ -4,10 +4,11 @@ import { FcMenu } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
 import { FaUserCircle } from "react-icons/fa";
 import {AiOutlineShoppingCart} from 'react-icons/ai'
+import { useMyContext } from "../Context/Context";
 
-function Navbar({size}) {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
+const {cart} =useMyContext()
   const toggleNav = () => {
     setIsOpen(!isOpen);
   };
@@ -46,7 +47,7 @@ function Navbar({size}) {
               
                 <Link className="links" to="/cart">
                   < AiOutlineShoppingCart className="cart-btn"/>
-                  <span className="quantity">{size}</span>
+                  <span className="quantity">{cart.length}</span>
                 </Link>
              
             </li>
