@@ -1,9 +1,11 @@
 
- import {useState,useEffect} from 'react' 
+ import {useState,useEffect,useContext} from 'react' 
  import {AiFillDelete} from 'react-icons/ai'
+ import {UserContext} from '../Context/Parentcontext.jsx'
 
-const Cart = ({ cart, setCart }) => {
-  
+const Cart = () => {
+  const { cart, setcart } = useContext(UserContext)
+
 let[total,setTotal]=useState(0)
 
 useEffect(() => {
@@ -17,7 +19,7 @@ useEffect(() => {
   const handleDelete = (itemId) => {
     // Filter out the item with the given ID and update the cart state
     const updatedCart = cart.filter((item) => item.id !== itemId);
-    setCart(updatedCart);
+    setcart(updatedCart);
   };
     return (
       <div className="ShoppingCart">

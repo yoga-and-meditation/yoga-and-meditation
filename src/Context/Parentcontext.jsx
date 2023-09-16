@@ -1,6 +1,9 @@
 import {createContext,useState} from 'react'
 
-import Services from '../components/Services.jsx'
+ /* import Services from '../components/Services' 
+  import Cart from '../components/Cart */
+import App from '../App'  
+/* import Cart from '../components/Cart' */
  export const UserContext=createContext()
 const Parentcontext=() =>{ 
 
@@ -11,7 +14,7 @@ const Parentcontext=() =>{
     <div>
        
         <UserContext.Provider value={{cart,setcart}}>
-      <Services/>
+         <App/>
       </UserContext.Provider>
     </div>
   )

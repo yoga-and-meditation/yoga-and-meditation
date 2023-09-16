@@ -13,19 +13,20 @@ import Feedback from "./components/Feedback";
 import User from "./pages/user";
 import Footer from "./components/Footer";
 import Cart from './components/Cart'
-import Parentcontext from './Context/Parentcontext.jsx'
 
+ 
 function App() {
 
 
   return (
     <div className="app">
+      
       <Navbar/>
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/aboutme" element={<Aboutme />} />
-        <Route path="/services" element={    <Parentcontext>
-<Services/></Parentcontext>} />
+        <Route path="/services" element={  
+<Services/>} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/cart" element={<Cart/>} />
 
@@ -35,7 +36,7 @@ function App() {
           path="/dashboard/*"
           element={
             <>
-         
+      
               <Demo />
               <Gallery />
               <Feedback />
