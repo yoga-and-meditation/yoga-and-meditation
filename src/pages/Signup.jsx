@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { auth } from "../store/firebase";
+import { auth, app } from "../store/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { useHistory } from "react-router-dom"; // Import useHistory instead of useNavigate
+import { useNavigate } from "react-router-dom";
 
 function Signup(props) {
   const [name, setName] = useState("");
@@ -9,7 +9,7 @@ function Signup(props) {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [notification, setNotification] = useState("");
-  const history = useHistory(); // Initialize useHistory
+  const navigate = useNavigate();
 
   const signUp = async (e) => {
     e.preventDefault();
@@ -30,7 +30,7 @@ function Signup(props) {
       clearForm();
 
       setTimeout(() => {
-        history.push("/authentication"); // Use history.push to navigate
+        navigate("/authentication");
       }, 2000);
     } catch (error) {
       console.error("Signup Error:", error.message);
