@@ -787,6 +787,17 @@
 }
 /* ++++++++++ End of Contact Component style sheet ++++++++++ */
 
+.user-profile {
+  margin: 10rem;
+  padding: 4rem;
+  h1 {
+    @include logo-font-style;
+  }
+
+  .user-btn {
+    @include button-style;
+  }
+}
 /* ++++++++++ Start of Footer Component style sheet ++++++++++ */
 footer {
   background: $secondary-background-color;
