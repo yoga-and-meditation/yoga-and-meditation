@@ -1,9 +1,11 @@
-import { useState } from "react";
+// Import necessary Firebase authentication functions and auth
+import { useState, useCallback } from "react";
 import { auth } from "../store/firebase";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
+  updateProfile as updateProfileFirebase,
 } from "firebase/auth";
 
 import AuthContext from "../context/AuthContext";
@@ -39,11 +41,30 @@ const AuthProvider = ({ children }) => {
     setCurrentUser(null);
   };
 
+  // Update user's profile function
+  const updateProfile = useCallback(
+    async (displayName) => {
+      if (currentUser) {
+        try {
+          await updateProfileFirebase(currentUser, {
+            displayName: displayName,
+          });
+          // Update the display name in the current user object
+          setCurrentUser({ ...currentUser, displayName: displayName });
+        } catch (error) {
+          console.error("Error updating profile:", error);
+        }
+      }
+    },
+    [currentUser]
+  );
+
   const value = {
     currentUser,
     signup,
     login,
     logout,
+    updateProfile,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
