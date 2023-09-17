@@ -3,7 +3,7 @@ import { auth } from "../store/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
-function Login(props) {
+function Login() {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
   const [notification, setNotification] = useState("");
