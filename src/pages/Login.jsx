@@ -19,16 +19,13 @@ function Login() {
     });
   };
 
+  const { email, password } = inputRefs; // Destructure the inputRefs
+
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const {
-      email: { current: emailInput },
-      password: { current: passwordInput },
-    } = inputRefs;
-
     try {
-      await login(emailInput.value, passwordInput.value);
+      await login(email.current.value, password.current.value);
       setNotification("Login successful!");
       clearForm();
       navigate("/user");
@@ -51,38 +48,26 @@ function Login() {
               className="space-y-4 md:space-y-6"
               action="#"
             >
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-black dark:text-white"
-                >
-                  Your email
-                </label>
-                <input
-                  ref={inputRefs.email}
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="password"
-                  className="block mb-2 text-sm font-medium text-black dark:text-white"
-                >
-                  Password
-                </label>
-                <input
-                  ref={inputRefs.password}
-                  type={showPassword ? "text" : "password"}
-                  name="password"
-                  id="password"
-                  className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
-                  required
-                />
-              </div>
+              {["email", "password"].map((field) => (
+                <div key={field}>
+                  <label
+                    htmlFor={field}
+                    className="block mb-2 text-sm font-medium text-black dark:text-white"
+                  >
+                    {field === "email" ? "Your email" : "Password"}
+                  </label>
+                  <input
+                    ref={inputRefs[field]}
+                    type={
+                      field === "password" && showPassword ? "text" : "password"
+                    }
+                    name={field}
+                    id={field}
+                    className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
+                    required
+                  />
+                </div>
+              ))}
 
               <div className="flex items-center">
                 <input

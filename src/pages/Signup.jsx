@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
-import useAuth from "../context/useAuth";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../context/useAuth";
 
 function Signup() {
   const [notification, setNotification] = useState("");
@@ -8,13 +8,12 @@ function Signup() {
   const { signup } = useAuth();
 
   const inputRefs = {
-    name: useRef(null),
-    email: useRef(null),
-    password: useRef(null),
-    confirmPassword: useRef(null),
+    name: useRef(),
+    email: useRef(),
+    password: useRef(),
+    confirmPassword: useRef(),
   };
 
-  // Resets the Signup form fields
   const clearForm = () => {
     Object.values(inputRefs).forEach((ref) => {
       ref.current.value = "";
@@ -24,40 +23,32 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
 
-    const { name, email, password, confirmPassword } = inputRefs;
+    const { email, password, confirmPassword } = inputRefs;
 
     if (password.current.value !== confirmPassword.current.value) {
       setNotification("Passwords do not match.");
-      return;
-    }
-
-    if (
-      !name.current.value ||
-      !email.current.value ||
-      !password.current.value
-    ) {
+    } else if (!email.current.value || !password.current.value) {
       setNotification("Please fill in all fields.");
-      return;
-    }
+    } else {
+      try {
+        await signup(email.current.value, password.current.value);
+        setNotification("User created successfully!");
+        clearForm();
 
-    try {
-      await signup(email.current.value, password.current.value);
-      setNotification("User created successfully!");
-      clearForm();
-
-      setTimeout(() => {
-        navigate("/login");
-      }, 2000);
-    } catch (error) {
-      console.error("Signup Error:", error.message);
-      setNotification(error.message);
+        setTimeout(() => {
+          navigate("/login");
+        }, 2000);
+      } catch (error) {
+        console.error("Signup Error:", error.message);
+        setNotification(error.message);
+      }
     }
   };
 
   return (
     <section className="">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 ">
+        <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-dark text-center">
               Create an account
@@ -68,71 +59,28 @@ function Signup() {
               className="space-y-4 md:space-y-6"
               action="#"
             >
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
-                >
-                  Full Name
-                </label>
-                <input
-                  ref={inputRefs.name}
-                  type="text"
-                  name="name"
-                  id="name"
-                  className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
-                >
-                  Your email
-                </label>
-                <input
-                  ref={inputRefs.email}
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="password"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
-                >
-                  Password
-                </label>
-                <input
-                  ref={inputRefs.password}
-                  type="password"
-                  name="password"
-                  id="password"
-                  className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="confirm-password"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
-                >
-                  Confirm password
-                </label>
-                <input
-                  ref={inputRefs.confirmPassword}
-                  type="password"
-                  name="confirm-password"
-                  id="confirm-password"
-                  placeholder=""
-                  className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
-                  required
-                />
-              </div>
+              {Object.entries(inputRefs).map(([key, ref], index) => (
+                <div key={index}>
+                  <label
+                    htmlFor={key}
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
+                  >
+                    {key === "name"
+                      ? "Full Name"
+                      : key === "email"
+                      ? "Your email"
+                      : "Password"}
+                  </label>
+                  <input
+                    ref={ref}
+                    type={key.includes("password") ? "password" : "text"}
+                    name={key}
+                    id={key}
+                    className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
+                    required
+                  />
+                </div>
+              ))}
 
               <button
                 type="submit"
@@ -141,7 +89,6 @@ function Signup() {
                 Create an account
               </button>
 
-              {/* Show notification if available */}
               {notification && (
                 <p
                   className={`text-center text-sm ${
