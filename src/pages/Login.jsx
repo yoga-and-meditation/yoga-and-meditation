@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../context/useAuth";
 
+import useAuth from "../context/useAuth";
 function Login() {
   const [notification, setNotification] = useState("");
   const [showPassword, setShowPassword] = useState(false);

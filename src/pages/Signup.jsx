@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../context/useAuth";
+import useAuth from "../context/useAuth";
 
 function Signup() {
   const [notification, setNotification] = useState("");
