@@ -39,7 +39,13 @@ function User() {
   return (
     <div className="user-profile">
       <h1 className="card-title text-left">
-        Welcome, {currentUser ? currentUser.displayName || "User" : "User"}!
+        Welcome,{" "}
+        {currentUser
+          ? currentUser.displayName
+            ? currentUser.displayName
+            : "User"
+          : "User"}
+        !
       </h1>
       <p className="card-text">
         You have successfully logged in to your account.
