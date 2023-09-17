@@ -2,10 +2,12 @@ import { useState } from "react";
 import useAuth from "../context/useAuth";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 function User() {
   const { currentUser, logout } = useAuth();
   const [showConfirmationModal, setShowConfirmationModal] = useState(false);
+  const navigate = useNavigate(); // Get the navigate function
 
   const handleLogout = () => {
     setShowConfirmationModal(true);
@@ -14,10 +16,24 @@ function User() {
   const confirmLogout = () => {
     logout(); // You should implement the logout function in your authentication context.
     setShowConfirmationModal(false); // Close the modal after logout
+    navigate("/"); // Navigate to the home page after logout
   };
 
   const closeModal = () => {
     setShowConfirmationModal(false);
+  };
+
+  // Define inline styles for buttons
+  const primaryCustom = {
+    marginRight: "10px",
+    backgroundColor: "#b48821",
+    color: "#fff",
+  };
+
+  const secondaryCustom = {
+    marginRight: "10px",
+    backgroundColor: "#7a6416",
+    color: "#fff",
   };
 
   return (
@@ -45,10 +61,18 @@ function User() {
           Are you sure you want to logout from your account?
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={closeModal}>
+          <Button
+            variant="secondary"
+            onClick={closeModal}
+            style={secondaryCustom}
+          >
             Cancel
           </Button>
-          <Button variant="primary" onClick={confirmLogout}>
+          <Button
+            variant="primary"
+            onClick={confirmLogout}
+            style={primaryCustom}
+          >
             Logout
           </Button>
         </Modal.Footer>
