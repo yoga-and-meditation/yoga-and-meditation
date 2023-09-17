@@ -1,18 +1,24 @@
-import { useState } from "react";
-import { auth, app } from "../store/firebase";
+import { useState, useRef } from "react";
+import { auth } from "../store/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 function Signup(props) {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
+  const confirmPasswordRef = useRef(null);
+
   const [notification, setNotification] = useState("");
   const navigate = useNavigate();
 
-  const signUp = async (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
+
+    const name = nameRef.current.value;
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+    const confirmPassword = confirmPasswordRef.current.value;
 
     if (password !== confirmPassword) {
       setNotification("Passwords do not match.");
@@ -27,7 +33,6 @@ function Signup(props) {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       setNotification("User created successfully!");
-      clearForm();
 
       setTimeout(() => {
         navigate("/authentication");
@@ -36,13 +41,6 @@ function Signup(props) {
       console.error("Signup Error:", error.message);
       setNotification(error.message);
     }
-  };
-
-  const clearForm = () => {
-    setName("");
-    setEmail("");
-    setPassword("");
-    setConfirmPassword("");
   };
 
   return (
@@ -56,7 +54,7 @@ function Signup(props) {
               </h1>
 
               <form
-                onSubmit={signUp}
+                onSubmit={handleSignup}
                 className="space-y-4 md:space-y-6"
                 action="#"
               >
@@ -68,13 +66,11 @@ function Signup(props) {
                     Full Name
                   </label>
                   <input
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    ref={nameRef}
                     type="text"
                     name="name"
                     id="name"
                     className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
-                    placeholder=""
                     required
                   />
                 </div>
@@ -86,13 +82,11 @@ function Signup(props) {
                     Your email
                   </label>
                   <input
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    ref={emailRef}
                     type="email"
                     name="email"
                     id="email"
                     className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
-                    placeholder=""
                     required
                   />
                 </div>
@@ -104,12 +98,10 @@ function Signup(props) {
                     Password
                   </label>
                   <input
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    ref={passwordRef}
                     type="password"
                     name="password"
                     id="password"
-                    placeholder=""
                     className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
                     required
                   />
@@ -122,8 +114,7 @@ function Signup(props) {
                     Confirm password
                   </label>
                   <input
-                    value={confirmPassword}
-                    onChange={(e) => setConfirmPassword(e.target.value)}
+                    ref={confirmPasswordRef}
                     type="password"
                     name="confirm-password"
                     id="confirm-password"
