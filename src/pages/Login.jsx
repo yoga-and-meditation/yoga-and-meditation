@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-
 import useAuth from "../context/useAuth";
+
 function Login() {
   const [notification, setNotification] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -19,19 +19,23 @@ function Login() {
     });
   };
 
-  const { email, password } = inputRefs; // Destructure the inputRefs
-
   const handleLogin = async (e) => {
     e.preventDefault();
 
+    const {
+      email: { current: emailInput },
+      password: { current: passwordInput },
+    } = inputRefs;
+
     try {
-      await login(email.current.value, password.current.value);
+      await login(emailInput.value, passwordInput.value);
       setNotification("Login successful!");
-      clearForm();
+      clearForm(); // Clear the form on success
       navigate("/user");
     } catch (error) {
       console.error("Login Error:", error.message);
       setNotification("Error signing in.");
+      clearForm(); // Clear the form on error as well
     }
   };
 
@@ -48,26 +52,38 @@ function Login() {
               className="space-y-4 md:space-y-6"
               action="#"
             >
-              {["email", "password"].map((field) => (
-                <div key={field}>
-                  <label
-                    htmlFor={field}
-                    className="block mb-2 text-sm font-medium text-black dark:text-white"
-                  >
-                    {field === "email" ? "Your email" : "Password"}
-                  </label>
-                  <input
-                    ref={inputRefs[field]}
-                    type={
-                      field === "password" && showPassword ? "text" : "password"
-                    }
-                    name={field}
-                    id={field}
-                    className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
-                    required
-                  />
-                </div>
-              ))}
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block mb-2 text-sm font-medium text-black dark:text-white"
+                >
+                  Your email
+                </label>
+                <input
+                  ref={inputRefs.email}
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="password"
+                  className="block mb-2 text-sm font-medium text-black dark:text-white"
+                >
+                  Password
+                </label>
+                <input
+                  ref={inputRefs.password}
+                  type={showPassword ? "text" : "password"}
+                  name="password"
+                  id="password"
+                  className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
+                  required
+                />
+              </div>
 
               <div className="flex items-center">
                 <input
