@@ -12,6 +12,13 @@ function Signup(props) {
   const [notification, setNotification] = useState("");
   const navigate = useNavigate();
 
+  const clearForm = () => {
+    nameRef.current.value = "";
+    emailRef.current.value = "";
+    passwordRef.current.value = "";
+    confirmPasswordRef.current.value = "";
+  };
+
   const handleSignup = async (e) => {
     e.preventDefault();
 
@@ -33,6 +40,7 @@ function Signup(props) {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       setNotification("User created successfully!");
+      clearForm();
 
       setTimeout(() => {
         navigate("/authentication");
