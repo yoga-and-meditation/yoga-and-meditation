@@ -16,12 +16,10 @@ import Gallery from "./components/Gallery";
 import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
 
-//import Cart from "./components/Cart";
-
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Navbar/>}>
-      <Route path="/hero" element={<Hero />} />
+    <Route>
+      <Route path="/" element={<Hero />} />
       <Route path="/services" element={<Services />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/feedback" element={<Feedback />} />
@@ -36,7 +34,8 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className="app">
-      <RouterProvider router={router}/>
+      <Navbar />
+      <RouterProvider router={router} />
     </div>
   );
 }

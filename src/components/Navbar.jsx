@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FcMenu } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
@@ -45,7 +45,7 @@ function Navbar() {
           {isOpen ? <GrClose /> : <FcMenu />}
         </div>
       </nav>
-      <Outlet/>
+
     </div>
   );
 }
