@@ -1,12 +1,12 @@
 import { useState, useRef } from "react";
-import { auth } from "../store/firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import useAuth from "../context/useAuth";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [notification, setNotification] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const inputRefs = {
     email: useRef(null),
@@ -27,11 +27,7 @@ function Login() {
     const { email, password } = inputRefs;
 
     try {
-      await signInWithEmailAndPassword(
-        auth,
-        email.current.value,
-        password.current.value
-      );
+      await login(email.current.value, password.current.value);
       // Successfully signed in
       setNotification("Login successful!"); // Set the notification
 

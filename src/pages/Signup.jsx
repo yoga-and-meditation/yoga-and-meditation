@@ -1,11 +1,11 @@
 import { useState, useRef } from "react";
-import { auth } from "../store/firebase";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import useAuth from "../context/useAuth";
 import { useNavigate } from "react-router-dom";
 
 function Signup() {
   const [notification, setNotification] = useState("");
   const navigate = useNavigate();
+  const { signup } = useAuth();
 
   const inputRefs = {
     name: useRef(null),
@@ -41,11 +41,7 @@ function Signup() {
     }
 
     try {
-      await createUserWithEmailAndPassword(
-        auth,
-        email.current.value,
-        password.current.value
-      );
+      await signup(email.current.value, password.current.value);
       setNotification("User created successfully!");
       clearForm();
 
