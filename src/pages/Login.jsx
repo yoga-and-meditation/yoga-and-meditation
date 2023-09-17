@@ -4,33 +4,44 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
-  const emailRef = useRef(null);
-  const passwordRef = useRef(null);
   const [notification, setNotification] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
+  const inputRefs = {
+    email: useRef(null),
+    password: useRef(null),
+  };
+
+  // Resets the Login form fields
+  const clearForm = () => {
+    Object.values(inputRefs).forEach((ref) => {
+      ref.current.value = "";
+    });
+  };
+
+  // Login User with Firebase
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const email = emailRef.current.value;
-    const password = passwordRef.current.value;
+    const { email, password } = inputRefs;
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value
+      );
       // Successfully signed in
       setNotification("Login successful!"); // Set the notification
+
       clearForm();
+
       navigate("/user"); // Navigate immediately
     } catch (error) {
-      console.log(error.message);
+      console.error(error.message);
       setNotification("Error signing in."); // Set the error notification
     }
-  };
-
-  const clearForm = () => {
-    emailRef.current.value = "";
-    passwordRef.current.value = "";
   };
 
   return (
@@ -55,7 +66,7 @@ function Login() {
                     Your email
                   </label>
                   <input
-                    ref={emailRef}
+                    ref={inputRefs.email}
                     type="email"
                     name="email"
                     id="email"
@@ -71,7 +82,7 @@ function Login() {
                     Password
                   </label>
                   <input
-                    ref={passwordRef}
+                    ref={inputRefs.password}
                     type={showPassword ? "text" : "password"}
                     name="password"
                     id="password"
