@@ -14,6 +14,7 @@ import User from "./pages/User";
 import Footer from "./components/Footer";
 import AuthProvider from "./provider/AuthProvider";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/login" element={<Login />} />
           <Route path="/user" element={<User />} />
+          <Route path="/signup" element={<Signup />} />
           <Route
             path="/dashboard/*"
             element={

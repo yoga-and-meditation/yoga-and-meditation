@@ -1,17 +1,20 @@
-import { useState } from "react";
-import { auth, app } from "../store/firebase"; // Removed 'app' import as it's not used here
+import { useState, useRef } from "react";
+import { auth } from "../store/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 function Login(props) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
   const [notification, setNotification] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const navigate = useNavigate("");
+  const navigate = useNavigate();
 
-  const signIn = async (e) => {
-    e.preventDefault(); // Prevent the default form submission
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
@@ -26,8 +29,8 @@ function Login(props) {
   };
 
   const clearForm = () => {
-    setEmail("");
-    setPassword("");
+    emailRef.current.value = "";
+    passwordRef.current.value = "";
   };
 
   return (
@@ -40,7 +43,7 @@ function Login(props) {
                 Sign in to your account
               </h1>
               <form
-                onSubmit={signIn}
+                onSubmit={handleLogin}
                 className="space-y-4 md:space-y-6"
                 action="#"
               >
@@ -52,12 +55,10 @@ function Login(props) {
                     Your email
                   </label>
                   <input
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    ref={emailRef}
                     type="email"
                     name="email"
                     id="email"
-                    placeholder=""
                     className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
                     required
                   />
@@ -70,12 +71,10 @@ function Login(props) {
                     Password
                   </label>
                   <input
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    ref={passwordRef}
                     type={showPassword ? "text" : "password"}
                     name="password"
                     id="password"
-                    placeholder=""
                     className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
                     required
                   />
@@ -120,7 +119,7 @@ function Login(props) {
                 <p className="text-sm font-light text-gray-500 dark:text-gray-500">
                   Don’t have an account yet?{" "}
                   <a
-                    onClick={props.onSwitchForm}
+                    onClick={() => navigate("/signup")}
                     href="#"
                     className="font-medium text-gray-500 hover:text-yellow-600 dark:text-gray-500 dark:hover:text-yellow-600 hover:no-underline dark:hover:no-underline"
                   >

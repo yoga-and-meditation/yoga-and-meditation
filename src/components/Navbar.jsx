@@ -42,7 +42,7 @@ function Navbar() {
               </button>
             </li>
             <li className="profile-btn">
-              <Link className="links" to="/authentication">
+              <Link className="links" to="/login">
                 <FaUserCircle className="user" />
               </Link>
             </li>

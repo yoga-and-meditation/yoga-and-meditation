@@ -3,7 +3,7 @@ import { auth } from "../store/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
-function Signup(props) {
+function Signup() {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
@@ -155,7 +155,7 @@ function Signup(props) {
                 <p className="text-sm font-light text-gray-500 dark:text-dark-700">
                   Already have an account?{" "}
                   <a
-                    onClick={props.onSwitchForm}
+                    onClick={() => navigate("/login")}
                     href="#"
                     className="font-medium text-gray-500 hover:text-yellow-600 dark:text-gray-500 dark:hover:text-yellow-600 hover:no-underline dark:hover:no-underline"
                   >
