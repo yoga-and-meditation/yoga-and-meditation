@@ -7,39 +7,34 @@ function Signup() {
   const navigate = useNavigate();
   const { signup } = useAuth();
 
-  const inputRefs = {
-    name: useRef(),
-    email: useRef(),
-    password: useRef(),
-    confirmPassword: useRef(),
-  };
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const confirmPasswordRef = useRef();
 
+  // Function to reset the input fields
   const clearForm = () => {
-    Object.values(inputRefs).forEach((ref) => {
-      ref.current.value = "";
-    });
+    nameRef.current.value = "";
+    emailRef.current.value = "";
+    passwordRef.current.value = "";
+    confirmPasswordRef.current.value = "";
   };
 
   const handleSignup = async (e) => {
     e.preventDefault();
 
-    const { email, password, confirmPassword, name } = inputRefs;
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+    const confirmPassword = confirmPasswordRef.current.value;
+    const name = nameRef.current.value;
 
-    if (password.current.value !== confirmPassword.current.value) {
+    if (password !== confirmPassword) {
       setNotification("Passwords do not match.");
-    } else if (
-      !email.current.value ||
-      !password.current.value ||
-      !name.current.value
-    ) {
+    } else if (!email || !password || !name) {
       setNotification("Please fill in all fields.");
     } else {
       try {
-        await signup(
-          email.current.value,
-          password.current.value,
-          name.current.value // Pass the name input to the signup function
-        );
+        await signup(email, password, name);
         setNotification("User created successfully!");
         clearForm();
 
@@ -67,32 +62,74 @@ function Signup() {
               className="space-y-4 md:space-y-6"
               action="#"
             >
-              {Object.entries(inputRefs).map(([key, ref], index) => (
-                <div key={index}>
-                  <label
-                    htmlFor={key}
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
-                  >
-                    {key === "name"
-                      ? "Full Name"
-                      : key === "email"
-                      ? "Your email"
-                      : "Password"}
-                  </label>
-                  <input
-                    ref={ref}
-                    type={key.includes("password") ? "password" : "text"}
-                    name={key}
-                    id={key}
-                    className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
-                    required
-                  />
-                </div>
-              ))}
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
+                >
+                  Full Name
+                </label>
+                <input
+                  ref={nameRef}
+                  type="text"
+                  name="name"
+                  id="name"
+                  className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
+                >
+                  Your email
+                </label>
+                <input
+                  ref={emailRef}
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="password"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
+                >
+                  Password
+                </label>
+                <input
+                  ref={passwordRef}
+                  type="password"
+                  name="password"
+                  id="password"
+                  className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="confirm-password"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
+                >
+                  Confirm password
+                </label>
+                <input
+                  ref={confirmPasswordRef}
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  className="border border-gray-300 rounded-lg focus:ring-yellow-600 focus:border-yellow-600 focus:ring-1 focus:outline-none block w-full p-2.5"
+                  required
+                />
+              </div>
 
               <button
                 type="submit"
-                className="w-full text-white bg-yellow-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 border-none"
+                className="w-full text-white bg-yellow-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark-bg-primary-600 dark-hover:bg-primary-700 dark:focus:ring-primary-800 border-none"
               >
                 Create an account
               </button>
@@ -114,7 +151,7 @@ function Signup() {
                 <a
                   onClick={() => navigate("/login")}
                   href="#"
-                  className="font-medium text-gray-500 hover:text-yellow-600 dark:text-gray-500 dark:hover:text-yellow-600 hover:no-underline dark:hover:no-underline"
+                  className="font-medium text-gray-500 hover:text-yellow-600 dark:text-gray-500 dark-hover:text-yellow-600 hover:no-underline dark-hover:no-underline"
                 >
                   Login here
                 </a>
