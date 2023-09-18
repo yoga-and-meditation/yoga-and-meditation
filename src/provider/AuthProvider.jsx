@@ -32,12 +32,34 @@ const AuthProvider = ({ children }) => {
       );
       const user = userCredential.user;
 
-      // Update the user's display name
-      await updateProfileFirebase(user, { displayName });
+      if (user) {
+        // Update the display name
+        await updateProfileFirebase(user, {
+          displayName: displayName,
+        });
 
-      setCurrentUser(user);
+        // Update the current user state with the updated user object
+        setCurrentUser(user);
+      }
     } catch (error) {
       console.error("Error signing up:", error);
+    }
+  };
+
+  // Function to update display name
+  const updateDisplayName = async (newDisplayName) => {
+    try {
+      if (currentUser) {
+        // Check if currentUser is not null
+        await updateProfileFirebase(currentUser, {
+          displayName: newDisplayName,
+        });
+
+        // Update the current user state with the updated user object
+        setCurrentUser({ ...currentUser, displayName: newDisplayName });
+      }
+    } catch (error) {
+      console.error("Error updating display name:", error);
     }
   };
 
@@ -71,6 +93,7 @@ const AuthProvider = ({ children }) => {
     signup,
     login,
     logout,
+    updateDisplayName, // Make sure to include the updateDisplayName function in the value
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

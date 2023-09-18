@@ -23,15 +23,23 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
 
-    const { email, password, confirmPassword } = inputRefs;
+    const { email, password, confirmPassword, name } = inputRefs;
 
     if (password.current.value !== confirmPassword.current.value) {
       setNotification("Passwords do not match.");
-    } else if (!email.current.value || !password.current.value) {
+    } else if (
+      !email.current.value ||
+      !password.current.value ||
+      !name.current.value
+    ) {
       setNotification("Please fill in all fields.");
     } else {
       try {
-        await signup(email.current.value, password.current.value);
+        await signup(
+          email.current.value,
+          password.current.value,
+          name.current.value // Pass the name input to the signup function
+        );
         setNotification("User created successfully!");
         clearForm();
 
