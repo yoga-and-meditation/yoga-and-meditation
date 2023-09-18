@@ -14,11 +14,13 @@ function Login(props) {
     e.preventDefault(); // Prevent the default form submission
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
-      // Successfully signed in
-      setNotification("Login successful!"); // Set the notification
-      clearForm();
-      navigate("/user"); // Navigate immediately
+      signInWithEmailAndPassword(auth, email, password).then((response) => {
+        console.log(`Display name is ${response.user.displayName}`);
+        // Successfully signed in
+        setNotification("Login successful!"); // Set the notification
+        clearForm();
+        navigate(`/user/${response.user.displayName}`); // Navigate to user by passing the display name
+      });
     } catch (error) {
       console.log(error.message);
       setNotification("Error signing in."); // Set the error notification

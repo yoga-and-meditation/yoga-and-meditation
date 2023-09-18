@@ -891,6 +891,9 @@ footer {
   h1{
     @include logo-font-style;
   }
+  .user {
+    color: #b48821
+  }
 
   .user-btn {
     @include button-style;
