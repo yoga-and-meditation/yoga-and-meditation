@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
 import { FcMenu } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
@@ -13,7 +13,7 @@ function Navbar() {
     <div className="navbar-container">
       <nav className={isOpen ? "navbar expanded" : "navbar"}>
         <div className="logo">
-          <h1>Y&M</h1>
+         <h1>Y&M</h1>
         </div>
         <div>
           <ul className="nav-menu">
