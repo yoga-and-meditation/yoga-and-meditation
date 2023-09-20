@@ -3,8 +3,9 @@ import { useState, useEffect } from "react";
 import { FcMenu } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
 import { FaUserCircle } from "react-icons/fa";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
-function Navbar() {
+function Navbar({ size }) {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -87,6 +88,12 @@ function Navbar() {
                   Contact
                 </Link>
               </button>
+            </li>
+            <li className="cart ">
+              <Link className="links" to="/cart">
+                <AiOutlineShoppingCart className="cart-btn" />
+                <span className="quantity">{size}</span>
+              </Link>
             </li>
             <li className="profile-btn">
               <Link to="/login" className="links">

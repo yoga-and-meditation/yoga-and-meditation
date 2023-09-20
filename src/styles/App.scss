@@ -781,6 +781,7 @@
 }
 /* ++++++++++ End of Contact Component style sheet ++++++++++ */
 
+/* ++++++++++ Start of User page style sheet ++++++++++ */
 .user-profile {
   margin: 10rem;
   padding: 4rem;
@@ -792,6 +793,65 @@
     @include button-style;
   }
 }
+/* ++++++++++ End of User page style sheet ++++++++++ */
+
+/* ++++++++++ Start of Cart Component style sheet ++++++++++ */
+.card {
+  width: 30%;
+  height: 50vh;
+  background-color: rgb(255, 255, 253);
+  border: 2px solid rgba(210, 188, 64, 0.587);
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ShoppingCart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 5rem;
+}
+.item {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.Total {
+  position: absolute;
+  bottom: 3rem;
+  right: 6rem;
+}
+.checkout {
+  font-size: 1.2rem;
+  height: 3rem;
+  background-color: #b48821;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: 8rem;
+}
+.services {
+  font-size: 1.8rem;
+  p {
+    color: #b48821;
+    font-size: 1rem;
+  }
+}
+.price {
+  font-size: 1.2rem;
+  padding-top: 7px;
+}
+.bin {
+  color: rgba(77, 76, 76, 0.61);
+  width: 2.5rem;
+  height: 1.8rem;
+  padding-top: 8px;
+}
+/* ++++++++++ End of Cart Component style sheet ++++++++++ */
+
 /* ++++++++++ Start of Footer Component style sheet ++++++++++ */
 footer {
   background: $secondary-background-color;
