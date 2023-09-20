@@ -1,3 +1,6 @@
+/* @tailwind base; */ /* this will reset the root style that's why it is commented */
+@tailwind components;
+@tailwind utilities;
 /* Universal pre-defined style */
 *,
 *::before,

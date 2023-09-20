@@ -4,30 +4,39 @@ import "./styles/App.scss";
 
 /* Components */
 import Aboutme from "./components/Aboutme";
+import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
 import Contacts from "./components/Contacts";
 import Demo from "./components/Demo";
 import Gallery from "./components/Gallery";
 import Feedback from "./components/Feedback";
+import User from "./pages/User";
 import Footer from "./components/Footer";
+import AuthProvider from "./provider/AuthProvider";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutme" element={<Aboutme />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/demo" element={<Demo />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/feedback" element={<Feedback />} />
-        </Routes>
-        {<Footer />}
+        <AuthProvider>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/aboutme" element={<Aboutme />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/demo" element={<Demo />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/feedback" element={<Feedback />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/user" element={<User />} />
+            <Route path="/signup" element={<Signup />} />
+          </Routes>
+          <Footer />
+        </AuthProvider>
       </BrowserRouter>
     </div>
   );

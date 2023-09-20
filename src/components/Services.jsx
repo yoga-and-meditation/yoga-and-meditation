@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
-
 import { cardsData, serviceData } from "../database/services/data";
 
-function Services() {
+function Services({ handleClick }) {
   const [tab, setTab] = useState(0); // Initialize tab index
 
   const handleTabClick = (index) => {
@@ -72,7 +71,7 @@ function Services() {
                         </ul>
                         {/* Button to join the course */}
                         <Link
-                          to="/contacts"
+                          onClick={() => handleClick(content)}
                           className={`btn btn-${content.className}`}
                         >
                           {content.buttonText}

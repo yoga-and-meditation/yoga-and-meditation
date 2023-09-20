@@ -9,6 +9,8 @@ import {
   FaArrowUp,
 } from "react-icons/fa";
 
+import logo from "../assets/images/logo.png";
+
 function Footer() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -46,7 +48,8 @@ function Footer() {
 
       <div className="footer-container">
         <div className="logo-container">
-          <h4 className="logo">Yoga and Meditation</h4>
+          {/*  <h4 className="logo">Yoga and Meditation</h4> */}
+          <img src={logo} alt="yoga and meditaion" />
         </div>
 
         <div className=" about-me">
