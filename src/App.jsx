@@ -17,7 +17,6 @@ import Footer from "./components/Footer";
 import AuthProvider from "./provider/AuthProvider";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Cart from "./components/Cart";
 
 function App() {
   return (
@@ -44,7 +43,6 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/user" element={<User />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/cart" element={<Cart />} />
           </Routes>
           <Footer />
         </AuthProvider>
