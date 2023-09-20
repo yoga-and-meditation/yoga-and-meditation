@@ -19,23 +19,39 @@ function Navbar() {
         <div>
           <ul className="nav-menu">
             <li className="item">
-              <NavLink className="links link-color" to="/">
+              <NavLink
+                className="links link-color"
+                activeClassName="active-link"
+                to="/"
+              >
                 Home
               </NavLink>
             </li>
             <li className="item">
-              <NavLink className="links link-color" to="/aboutme">
+              <NavLink
+                className="links link-color"
+                activeClassName="active-link"
+                to="/aboutme"
+              >
                 About
               </NavLink>
             </li>
             <li className="item">
-              <NavLink className="links link-color" to="/services">
+              <NavLink
+                className="links link-color"
+                activeClassName="active-link" // Add a class for active links
+                to="/services"
+              >
                 Services
               </NavLink>
             </li>
             <li className="contact-btn item">
               <button>
-                <NavLink className="links" to="/contacts">
+                <NavLink
+                  className="links"
+                  activeClassName="active-link" // Add a class for active links
+                  to="/contacts"
+                >
                   Contact
                 </NavLink>
               </button>
