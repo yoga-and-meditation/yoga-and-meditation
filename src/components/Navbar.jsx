@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { useState } from "react";
 import { FcMenu } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
@@ -18,25 +18,25 @@ function Navbar() {
         <div>
           <ul className="nav-menu">
             <li className="item">
-              <Link className="links link-color" to="/hero">
+              <NavLink className="links link-color" to="/hero">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="item">
-              <Link className="links link-color" to="/aboutme">
+              <NavLink className="links link-color" to="/aboutme">
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="item">
-              <Link className="links link-color" to="/services">
+              <NavLink className="links link-color" to="/services">
                 Services
-              </Link>
+              </NavLink>
             </li>
             <li className="contact-btn item">
               <button>
-                <Link className="links" to="/contacts">
+                <NavLink className="links" to="/contacts">
                   Contact
-                </Link>
+                </NavLink>
               </button>
             </li>
           </ul>
