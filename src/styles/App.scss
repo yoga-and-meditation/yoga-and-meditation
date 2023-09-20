@@ -227,6 +227,7 @@
   /* Styles for the service wrapper */
   .service-wrapper {
     @include section-padding-style;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
