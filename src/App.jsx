@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/App.scss";
+import { Element } from "react-scroll"; // Import Element from react-scroll
 
 /* Components */
 import Aboutme from "./components/Aboutme";
@@ -24,7 +25,15 @@ function App() {
         <AuthProvider>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            {/* Use Element to wrap the Home component */}
+            <Route
+              path="/"
+              element={
+                <Element name="home-section">
+                  <Home />
+                </Element>
+              }
+            />
             <Route path="/aboutme" element={<Aboutme />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contacts" element={<Contacts />} />

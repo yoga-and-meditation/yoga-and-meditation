@@ -1,15 +1,42 @@
-import { NavLink, Outlet } from "react-router-dom";
-import { useState } from "react";
+import { Outlet, Link, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { FcMenu } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
 import { FaUserCircle } from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleNav = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleScrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+    const homeLink = document.getElementById("home-link");
+
+    if (homeLink) {
+      homeLink.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent default navigation behavior
+        handleScrollToTop(); // Scroll to top
+        navigate("/"); // Navigate to the home route
+        toggleNav(); // Close the navigation menu
+      });
+    }
+
+    return () => {
+      if (homeLink) {
+        homeLink.removeEventListener("click", handleScrollToTop);
+      }
+    };
+  }, [navigate]);
 
   return (
     <div className="navbar-container">
@@ -20,47 +47,51 @@ function Navbar() {
         <div>
           <ul className={`nav-menu ${isOpen ? "show-menu" : ""}`}>
             <li className="item">
-              <NavLink
-                className="links link-color"
-                activeClassName="active-link"
+              <Link
                 to="/"
+                id="home-link"
+                className="links link-color"
+                onClick={toggleNav}
               >
                 Home
-              </NavLink>
+              </Link>
             </li>
             <li className="item">
-              <NavLink
+              <Link
+                to="/aboutme"
                 className="links link-color"
                 activeClassName="active-link"
-                to="/aboutme"
+                onClick={toggleNav}
               >
                 About
-              </NavLink>
+              </Link>
             </li>
             <li className="item">
-              <NavLink
+              <Link
+                to="/services"
                 className="links link-color"
                 activeClassName="active-link"
-                to="/services"
+                onClick={toggleNav}
               >
                 Services
-              </NavLink>
+              </Link>
             </li>
             <li className="contact-btn item">
               <button>
-                <NavLink
+                <Link
+                  to="/contacts"
                   className="links"
                   activeClassName="active-link"
-                  to="/contacts"
+                  onClick={toggleNav}
                 >
                   Contact
-                </NavLink>
+                </Link>
               </button>
             </li>
             <li className="profile-btn">
-              <NavLink className="links" to="/login">
+              <Link to="/login" className="links">
                 <FaUserCircle className="user" />
-              </NavLink>
+              </Link>
             </li>
           </ul>
         </div>
