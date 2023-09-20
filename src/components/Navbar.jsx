@@ -2,6 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { useState } from "react";
 import { FcMenu } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,7 +19,7 @@ function Navbar() {
         <div>
           <ul className="nav-menu">
             <li className="item">
-              <NavLink className="links link-color" to="/hero">
+              <NavLink className="links link-color" to="/">
                 Home
               </NavLink>
             </li>
@@ -49,4 +50,5 @@ function Navbar() {
     </div>
   );
 }
+
 export default Navbar;
