@@ -26,7 +26,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/feedback" element={<Feedback />} />
       </Routes>
-      <Footer />
+      {<Footer />}
     </BrowserRouter>
   );
 }
