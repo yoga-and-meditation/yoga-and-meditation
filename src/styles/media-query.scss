@@ -25,11 +25,9 @@
       }
     }
     .expanded {
-      background-color: $secondary-background-color; /* Use the defined variablebout-container {
-          flex-direction: column;
-          img { here */
+      background-color: $secondary-background-color;
       min-height: 55vh;
-      .nav-menu {
+      .nav-menu.show-menu {
         position: absolute;
         top: 120px;
         left: 0;

@@ -2,6 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { useState } from "react";
 import { FcMenu } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
+import { FaUserCircle } from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ function Navbar() {
           <h1>Y&M</h1>
         </div>
         <div>
-          <ul className="nav-menu">
+          <ul className={`nav-menu ${isOpen ? "show-menu" : ""}`}>
             <li className="item">
               <NavLink
                 className="links link-color"
@@ -39,7 +40,7 @@ function Navbar() {
             <li className="item">
               <NavLink
                 className="links link-color"
-                activeClassName="active-link" // Add a class for active links
+                activeClassName="active-link"
                 to="/services"
               >
                 Services
@@ -49,12 +50,17 @@ function Navbar() {
               <button>
                 <NavLink
                   className="links"
-                  activeClassName="active-link" // Add a class for active links
+                  activeClassName="active-link"
                   to="/contacts"
                 >
                   Contact
                 </NavLink>
               </button>
+            </li>
+            <li className="profile-btn">
+              <NavLink className="links" to="/login">
+                <FaUserCircle className="user" />
+              </NavLink>
             </li>
           </ul>
         </div>
