@@ -89,11 +89,7 @@ function Footer() {
           <ul>
             <h5>Links</h5>
             <li className="list-group">
-              <Link
-                className="footer-link active"
-                aria-current="page"
-                to="/hero"
-              >
+              <Link className="footer-link active" aria-current="page" to="/">
                 Home
               </Link>
             </li>
@@ -101,7 +97,7 @@ function Footer() {
               <Link
                 className="footer-link active"
                 aria-current="page"
-                to="/about-me"
+                to="/aboutme"
               >
                 About
               </Link>
