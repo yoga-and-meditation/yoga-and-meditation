@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { auth, app } from "../store/firebase"; // Removed 'app' import as it's not used here
+import { auth, app } from "../store/firebase"; // Remove 'app' import as it's not used here
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
