@@ -17,10 +17,13 @@ import Footer from "./components/Footer";
 import AuthProvider from "./provider/AuthProvider";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Cart from './components/Cart'
+import { MyContextProvider } from "./Context/Context.jsx";
 
 function App() {
   return (
     <div className="app">
+<MyContextProvider>
       <BrowserRouter>
         <AuthProvider>
           <Navbar />
@@ -37,6 +40,8 @@ function App() {
             <Route path="/aboutme" element={<Aboutme />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contacts" element={<Contacts />} />
+            <Route path="/cart" element={<Cart/>} />
+
             <Route path="/demo" element={<Demo />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/feedback" element={<Feedback />} />
@@ -47,6 +52,7 @@ function App() {
           <Footer />
         </AuthProvider>
       </BrowserRouter>
+      </MyContextProvider>
     </div>
   );
 }

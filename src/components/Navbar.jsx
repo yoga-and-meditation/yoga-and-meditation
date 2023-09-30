@@ -3,10 +3,12 @@ import { useState, useEffect } from "react";
 import { FcMenu } from "react-icons/fc";
 import { GrClose } from "react-icons/gr";
 import { FaUserCircle } from "react-icons/fa";
-
+import {AiOutlineShoppingCart} from 'react-icons/ai'
+import  {useMyContext } from "../Context/Context.jsx";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const {cart} =useMyContext()
 
   const toggleNav = () => {
     setIsOpen(!isOpen);
@@ -88,7 +90,14 @@ function Navbar() {
                 </Link>
               </button>
             </li>
-
+            <li className="cart ">
+              
+              <Link className="links" to="/cart">
+                < AiOutlineShoppingCart className="cart-btn"/>
+                <span className="quantity">{cart.length}</span>
+              </Link>
+           
+          </li>
             <li className="profile-btn">
               <Link to="/login" className="links">
                 <FaUserCircle className="user" />
