@@ -2,8 +2,30 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
 import { cardsData, serviceData } from "../database/services/data";
+import { useMyContext } from "../context/Context.jsx";
+ import Modal from 'react-bootstrap/Modal';
+function Services() {
 
-function Services({ handleClick }) {
+  const [showConfirmationModal, setShowConfirmationModal] = useState(false);
+   const [showModal, setShowModal] = useState(false);
+
+   const closeModal = () => {
+    setShowConfirmationModal(false);
+    setShowModal(false);
+
+  }; 
+  const{cart,setcart}=useMyContext()
+  function addToCart(item){ 
+    const cardContainer=cart.map((ele)=>{return ele.cardContainer})
+    if(cart.includes(item)){
+       setShowConfirmationModal(true);
+   }else if (cardContainer.includes(item.cardContainer)){
+    setShowModal(true);
+  }
+  else{
+    setcart([...cart,item])
+  }
+  }
   const [tab, setTab] = useState(0); // Initialize tab index
 
   const handleTabClick = (index) => {
@@ -71,8 +93,9 @@ function Services({ handleClick }) {
                         </ul>
                         {/* Button to join the course */}
                         <Link
-                          onClick={() => handleClick(content)}
-                          className={`btn btn-${content.className}`}
+                              onClick={()=>addToCart(content)}
+                              className={`btn btn-${content.className}`}
+    
                         >
                           {content.buttonText}
                         </Link>
@@ -85,6 +108,36 @@ function Services({ handleClick }) {
           </div>
         </section>
       </div>
+      <Modal show={showConfirmationModal} onHide={closeModal} centered>
+        <Modal.Header closeButton> 
+           <Modal.Title>Sorry!!</Modal.Title>
+       </Modal.Header>
+        <Modal.Body>
+You already choosed this service        </Modal.Body>
+        <Modal.Footer>
+          
+          <button className='contact-btn'
+                      onClick={closeModal}
+
+          >
+OK,thanks for reminding </button>
+        </Modal.Footer>
+      </Modal> 
+      <Modal show={showModal} onHide={closeModal} centered>
+        <Modal.Header closeButton> 
+           <Modal.Title>Sorry!!</Modal.Title>
+       </Modal.Header>
+        <Modal.Body>
+You already choosed this service        </Modal.Body>
+        <Modal.Footer>
+          
+          <button className='contact-btn'
+                      onClick={closeModal}
+
+          >
+You already choosed one level from this service</button>
+        </Modal.Footer>
+      </Modal> 
     </div>
   );
 }
