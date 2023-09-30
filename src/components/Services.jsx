@@ -3,14 +3,22 @@ import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
 import { cardsData, serviceData } from "../database/services/data";
 import { useMyContext } from "../Context/Context";
+import Modal from 'react-bootstrap/Modal';
 
 function Services() {
   const{cart,setcart}=useMyContext()
   function addToCart(item){ 
     const cardContainer=cart.map((ele)=>{return ele.cardContainer})
     if(cart.includes(item)){
-    alert('item already exist')
-    
+      {<Modal.Dialog>
+         <Modal.Header closeButton></Modal.Header>
+<Modal.Body>
+          <p>you have already picked this service </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <button>Close</button>
+        </Modal.Footer>
+    </Modal.Dialog>}
   }else if (cardContainer.includes(item.cardContainer)){
     alert('you already choosed one level from this  ')
   }

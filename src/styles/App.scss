@@ -913,7 +913,7 @@ footer {
 /* cart  */
 
 .card{
-  width:30%;
+  width:40%;
   height:50vh;
   background-color:rgb(255, 255, 253);
   border:2px solid rgba(210, 188, 64, 0.587);
@@ -927,7 +927,7 @@ footer {
   align-items: center;
   flex-direction: column;
   gap:1rem;
-  padding-top: 5rem;
+  padding-top: 8rem;
 }
 .item{
   padding-top: 2rem;
@@ -965,3 +965,15 @@ width: 8rem;
   height: 1.8rem;
   padding-top: 8px;
 }
+@media (max-width: 700px) {
+  .ShoppingCart h1{
+    font-size: 1.5rem;
+  }
+  .card{
+    width: 60%;
+    .services{
+      font-size: 1.5rem;
+    }
+  }
+}
+//shopping cart
