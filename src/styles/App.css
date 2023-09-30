@@ -1,0 +1,1859 @@
+/* Media Query breakPoints for Service component */
+/* Media Query breakPoints for Service component */
+/* ---------------------------- Mixin for button style -------------------------- */
+/* ---------------------------- Mixin for heading 2 style -------------------------- */
+/* ---------------------------- Mixin for card shadow style -------------------------- */
+/* ---------------------------- Mixin for section padding style -------------------------- */
+/* ---------------------------- Mixin for Google fonts -------------------------- */
+/* ++++++++++ Media Query for max width of 360px ++++++++++ */
+@media (max-width: 360px) {
+  .app {
+    /* Services componenet */
+    /* Contact component */
+    /* Footer component */
+  }
+  .app .service-container {
+    margin: 2rem auto;
+    width: 99%;
+  }
+  .app .service-container .header-container h3 {
+    font-size: 1.5rem;
+  }
+  .app .service-container .tab-container {
+    /*   border: 1px solid green; */
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .app .service-container .tab-container .navigation {
+    padding-left: 0;
+    gap: 6rem;
+    justify-content: center;
+  }
+  .app .service-container .tab-container .navigation li {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .app .service-container .tab-container .navigation li .button .icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .app .service-container .tab-container .navigation li .button .icon img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .app .service-container .service-section {
+    padding: 1rem;
+  }
+  .app .service-container .service-section .card-container {
+    box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.1ms ease-in-out;
+    margin: 0;
+    width: 100%;
+    background: none;
+  }
+  .app .service-container .service-section .card-container:hover {
+    transform: scale(1.02);
+  }
+  .app .service-container .service-section .card-container .img-fluid {
+    display: none;
+  }
+  .app .service-container .service-section .card-container .card-body {
+    position: relative;
+  }
+  .app .service-container .service-section .card-container .card-body .card-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    background-color: #b48821;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+  }
+  .app .service-container .service-section .card-container .card-body .card-text {
+    margin-top: 2.5rem;
+    font-size: 0.8rem;
+  }
+  .app .service-container .service-section .card-container .card-body .subscribe-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .app .service-container .service-section .card-container .card-body .subscribe-btn-container .subscribe-btn {
+    height: 2rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .app .contact-container {
+    margin: 2rem auto;
+    width: 99%;
+  }
+  .app .contact-container .contact-sub-container .form-container {
+    width: 100%;
+    /* form name */
+    /* form subject */
+    /* form message */
+    /* contact button */
+  }
+  .app .contact-container .contact-sub-container .form-container h2 {
+    display: none;
+  }
+  .app .contact-container .contact-sub-container .form-container h3 {
+    font-size: 2rem;
+    color: #b48821;
+    text-align: center;
+  }
+  .app .contact-container .contact-sub-container .form-container .col-6 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .app .contact-container .contact-sub-container .form-container .col {
+    margin-top: -3rem;
+  }
+  .app .contact-container .contact-sub-container .form-container .message {
+    height: 8rem;
+  }
+  .app .contact-container .contact-sub-container .form-container .submit-btn {
+    font-size: 1rem;
+    height: 2.5rem;
+    font-weight: 500;
+  }
+  .app .contact-container .contact-sub-container .contact-img {
+    display: none;
+  }
+  .app footer .scroll-to-top {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    bottom: 20px;
+    right: 20px;
+  }
+  .app footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    /* About container */
+    /* .links */
+  }
+  .app footer .footer-container .logo-container {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .app footer .footer-container .logo-container .logo {
+    font-size: 2.5rem;
+  }
+  .app footer .footer-container .about-me h5 {
+    margin-top: -1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .app footer .footer-container .about-me p {
+    font-size: 0.9rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .app footer .footer-container .about-me .icons ul {
+    font-size: 2rem;
+    gap: 1rem;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .app footer .footer-container .links {
+    display: flex;
+    justify-content: center;
+  }
+  .app footer .footer-container .links ul h5 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .app footer .footer-container .links ul li a {
+    font-size: 1rem;
+  }
+  .app footer .copyright {
+    font-size: 1rem;
+  }
+}
+/* ++++++++++ Media Query between 361px and 600px  ++++++++++ */
+@media (min-width: 361px) and (max-width: 600px) {
+  .app {
+    /*----- Start of Service component media query----- */
+    /*----- End of Service component media query----- */
+  }
+  .app .service-container {
+    margin-top: 2rem;
+    width: 99%;
+  }
+  .app .service-container .header-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .app .service-container .tab-container {
+    /*  border: 1px solid green; */
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .app .service-container .tab-container .navigation {
+    padding-left: 0;
+    gap: 8.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  .app .service-container .tab-container .navigation li {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .app .service-container .tab-container .navigation li .button .icon {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .app .service-container .tab-container .navigation li .button .icon img {
+    height: 3rem;
+    width: 3rem;
+  }
+  .app .service-container .service-section {
+    padding: 1rem;
+  }
+  .app .service-container .service-section .card-container {
+    box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.1ms ease-in-out;
+    margin: 0;
+    width: 85%;
+    background: none;
+  }
+  .app .service-container .service-section .card-container:hover {
+    transform: scale(1.02);
+  }
+  .app .service-container .service-section .card-container .img-fluid {
+    display: none;
+  }
+  .app .service-container .service-section .card-container .card-body {
+    position: relative;
+  }
+  .app .service-container .service-section .card-container .card-body .card-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    background-color: #b48821;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+  }
+  .app .service-container .service-section .card-container .card-body .card-text {
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .app .service-container .service-section .card-container .card-body .subscribe-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .app .service-container .service-section .card-container .card-body .subscribe-btn-container .subscribe-btn {
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}
+/* ++++++++++ Media Query for Tablet screen with min 600px and max 800px  ++++++++++ */
+@media (min-width: 601px) and (max-width: 800px) {
+  .app {
+    /*----- Start of Service component media query----- */
+    /*----- End of Service component media query----- */
+  }
+  .app .service-container {
+    margin-top: 2rem;
+    width: 99%;
+  }
+  .app .service-container .header-container h3 {
+    font-size: 1.9rem;
+    margin-bottom: 2.5rem;
+  }
+  .app .service-container .tab-container {
+    /*  border: 1px solid green; */
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .app .service-container .tab-container .navigation {
+    padding-left: 0;
+    gap: 12rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  .app .service-container .tab-container .navigation li {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .app .service-container .tab-container .navigation li .button .icon {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .app .service-container .tab-container .navigation li .button .icon img {
+    height: 4rem;
+    width: 4rem;
+  }
+  .app .service-container .service-section {
+    padding: 2rem;
+  }
+  .app .service-container .service-section .card-container {
+    box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.1ms ease-in-out;
+    margin: 0;
+    width: 85%;
+    background: none;
+  }
+  .app .service-container .service-section .card-container:hover {
+    transform: scale(1.02);
+  }
+  .app .service-container .service-section .card-container .img-fluid {
+    display: none;
+  }
+  .app .service-container .service-section .card-container .col-md-8 {
+    width: 100%;
+  }
+  .app .service-container .service-section .card-container .card-body {
+    position: relative;
+  }
+  .app .service-container .service-section .card-container .card-body .card-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    background-color: #b48821;
+    width: 100%;
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 1.5rem;
+    color: white;
+  }
+  .app .service-container .service-section .card-container .card-body .card-text {
+    margin-top: 4.5rem;
+    font-size: 1.5rem;
+  }
+  .app .service-container .service-section .card-container .card-body .subscribe-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .app .service-container .service-section .card-container .card-body .subscribe-btn-container .subscribe-btn {
+    height: 3rem;
+    width: 8rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+}
+/* ++++++++++ Media Query for Tablet screen with min 801px and max 1023px  ++++++++++ */
+@media (min-width: 801px) and (max-width: 1023px) {
+  .app {
+    /*----- Start of Service component media query----- */
+    /*----- End of Service component media query----- */
+  }
+  .app .service-container {
+    margin-top: 2rem;
+    width: 99%;
+  }
+  .app .service-container .header-container h3 {
+    margin-bottom: 3rem;
+  }
+  .app .service-container .tab-container {
+    /*  border: 1px solid green; */
+    width: 100%;
+    padding: 3rem;
+  }
+  .app .service-container .tab-container .navigation {
+    padding-left: 0;
+    gap: 16rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  .app .service-container .tab-container .navigation li {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .app .service-container .tab-container .navigation li .button .icon {
+    width: 8rem;
+    height: 8rem;
+  }
+  .app .service-container .tab-container .navigation li .button .icon img {
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+  .app .service-container .service-section {
+    padding: 2rem;
+  }
+  .app .service-container .service-section .card-container {
+    box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.1ms ease-in-out;
+    margin: 0;
+    width: 70%;
+    background: none;
+  }
+  .app .service-container .service-section .card-container:hover {
+    transform: scale(1.02);
+  }
+  .app .service-container .service-section .card-container .img-fluid {
+    display: none;
+  }
+  .app .service-container .service-section .card-container .col-md-8 {
+    width: 100%;
+  }
+  .app .service-container .service-section .card-container .card-body {
+    position: relative;
+  }
+  .app .service-container .service-section .card-container .card-body .card-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    background-color: #b48821;
+    width: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 2rem;
+    color: white;
+  }
+  .app .service-container .service-section .card-container .card-body .card-text {
+    margin-top: 6rem;
+    font-size: 1.6rem;
+  }
+  .app .service-container .service-section .card-container .card-body .subscribe-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .app .service-container .service-section .card-container .card-body .subscribe-btn-container .subscribe-btn {
+    height: 3.5rem;
+    width: 10rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
+/* ++++++++++ Media Query for Desktop screen with min width of 1024px ++++++++++ */
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .app .service-container {
+    margin-top: 2rem;
+    width: 99%;
+  }
+  .app .service-container .tab-container {
+    /*  border: 1px solid green; */
+    /*    width: 100%; */
+  }
+  .app .service-container .tab-container .navigation {
+    gap: 22rem;
+  }
+  .app .service-container .service-section .card-container {
+    width: 85%;
+  }
+  .app .service-container .service-section .card-container .card-text {
+    font-size: 1.1rem;
+  }
+}
+/* 
+
+
+
+
+
+
+
+
+
+
+Other media query
+*/
+/* ++++++++++ Media Query for Phone screen with max width of 599px ++++++++++ */
+@media (max-width: 599px) {
+  .app {
+    /*----- Start of Navbar component media query----- */
+    /*----- End of Navbar component media query----- */
+    /*----- Start of Aboutme component media query----- */
+  }
+  .app .about-container {
+    flex-wrap: wrap;
+    /*----- End of Aboutme component media query----- */
+    /*----- Start of Feedback component media query----- */
+    /*----- End of Feedback component media query----- */
+    /*----- Start of Demo component media query----- */
+    /*----- End of Demo component media query----- */
+  }
+  .app .about-container .rectangle1,
+  .app .about-container .rectangle2 {
+    width: 250px;
+    height: 430px;
+    left: 3rem;
+  }
+  .app .about-container .rectangle1 {
+    border: 5px solid rgba(182, 138, 35, 0.3215686275);
+    margin-left: 30px;
+  }
+  .app .about-container .rectangle2 {
+    border: 5px solid #eaeae8;
+    margin-top: -15px;
+    margin-left: -5px; /* Add some spacing between the rectangles */
+  }
+  .app .about-container .about-image {
+    width: 300px;
+    height: 400px;
+  }
+  .app .about-container section {
+    gap: 0;
+    max-width: 100vw;
+    text-align: center;
+  }
+  .app .about-container section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .app .about-container section p {
+    font-size: 1rem;
+    width: 100vw;
+    margin-bottom: 1rem;
+  }
+  .app .about-container .contact-container {
+    width: 99%;
+  }
+  .app .about-container .contact-container .contact-sub-container .form-container {
+    width: 100%;
+  }
+  .app .about-container .contact-container .contact-sub-container .form-container h2 {
+    font-size: 2rem;
+  }
+  .app .about-container .contact-container .contact-sub-container .form-container h3 {
+    font-size: 1.5rem;
+  }
+  .app .about-container .contact-container .contact-sub-container .contact-img {
+    display: none;
+  }
+}
+/* ++++++++++ Media Query for Tablet screen with min 600px and max 1023px  ++++++++++ */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .app {
+    /*----- Start of Navbar component media query----- */
+    /*----- End of Navbar component media query----- */
+    /*----- Start of Hero component media query----- */
+    /*----- End of Hero component media query----- */
+    /*----- Start of Aboutme component media query----- */
+    /*----- End of Aboutme component media query----- */
+    /*----- Start of Service component media query----- */
+    /*----- End of Service component media query----- */
+    /*----- Start of Feedback component media query----- */
+    /*----- End of Feedback component media query----- */
+    /*----- Start of Demo component media query----- */
+    /*----- End of Demo component media query----- */
+    /*----- Start of Contact component media query----- */
+    /*----- End of Contact component media query----- */
+    /*----- Start of Footer component media query----- */
+  }
+  .app .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .app .about-container .about-image {
+    width: 300px;
+    height: 450px;
+    margin-left: 0;
+  }
+  .app .about-container .rectangle1,
+  .app .about-container .rectangle2 {
+    width: 350px;
+    height: 530px;
+  }
+  .app .about-container .rectangle1 {
+    border: 10px solid rgba(182, 138, 35, 0.3215686275);
+  }
+  .app .about-container .rectangle2 {
+    border: 10px solid #eaeae8;
+  }
+  .app .about-container section {
+    text-align: center;
+    max-width: 100vw;
+    gap: 0;
+  }
+  .app .about-container section h2 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+  }
+  .app .about-container section p {
+    max-width: 80vw;
+  }
+  .app .contact-container {
+    width: 99%;
+  }
+  .app .contact-container .contact-sub-container .form-container {
+    width: 100%;
+  }
+  .app .contact-container .contact-sub-container .form-container h2 {
+    font-size: 1.5rem;
+  }
+  .app .contact-container .contact-sub-container .form-container h3 {
+    font-size: 1.5rem;
+  }
+  .app .contact-container .contact-sub-container .contact-img {
+    display: none;
+  }
+  .app footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+  .app footer .footer-container .links li a:hover {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  /*----- End of Footer component media query----- */
+}
+/* ++++++++++ Media Query for Desktop screen with min width of 1024px ++++++++++ */
+@media (min-width: 1024px) {
+  .app {
+    /*----- Start of Navbar component media query----- */
+    /*----- End of Navbar component media query----- */
+    /*----- Start of Hero component media query----- */
+    /*----- End of Hero component media query----- */
+    /*----- Start of Aboutme component media query----- */
+  }
+  .app .about-container {
+    /*----- End of Aboutme component media query----- */
+    /*----- Start of Service component media query----- */
+    /*----- End of Service component media query----- */
+    /*----- Start of Gallery component media query----- */
+    /*----- End of Gallery component media query----- */
+    /*----- Start of Feedback component media query----- */
+    /*----- End of Feedback component media query----- */
+    /*----- Start of Demo component media query----- */
+    /*----- End of Demo component media query----- */
+    /*----- Start of Contact component media query----- */
+    /*----- End of Contact component media query----- */
+    /*----- Start of Footer component media query----- */
+    /*----- Start of Footer component media query----- */
+  }
+  .app .about-container about-image {
+    width: 400px;
+    height: 600px;
+  }
+}
+/*----------- Hero Section ------------------*/
+@media (min-width: 1150px) and (max-width: 1300px) {
+  .app .hero-container .hero .col1 {
+    margin-bottom: 20rem;
+    margin-top: 0.5rem;
+    margin-left: 150px;
+  }
+  .app .hero-container .hero .col1 h1 {
+    font-size: 14rem;
+  }
+  .app .hero-container .hero .col1 h2 {
+    font-size: 3rem;
+  }
+  .app .hero-container .hero .col2 {
+    margin-left: -10rem;
+  }
+  .app .hero-container .hero .col2 .ball {
+    width: 30rem;
+    height: 30rem;
+  }
+  .app .hero-container .hero .col2 .img {
+    width: 28rem;
+    height: 20rem;
+    margin-right: 4rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1150px) {
+  .app .hero-container .hero .col1 {
+    margin-bottom: 20rem;
+    margin-top: 0.5rem;
+    margin-left: 120px;
+  }
+  .app .hero-container .hero .col1 h1 {
+    font-size: 10rem;
+  }
+  .app .hero-container .hero .col1 h2 {
+    font-size: 3rem;
+  }
+  .app .hero-container .hero .col2 {
+    margin-left: -10rem;
+  }
+  .app .hero-container .hero .col2 .ball {
+    width: 26rem;
+    height: 26rem;
+  }
+  .app .hero-container .hero .col2 .img {
+    width: 25rem;
+    height: 18rem;
+    margin-right: 4rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 900px) {
+  .app .hero-container {
+    display: flex;
+    justify-content: center;
+  }
+  .app .hero-container .hero {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    background: none;
+  }
+  .app .hero-container .hero .col1 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    order: 1;
+  }
+  .app .hero-container .hero .col1 h1 {
+    text-align: center;
+    font-size: 8rem;
+  }
+  .app .hero-container .hero .col1 h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .app .hero-container .hero .col2 {
+    position: relative;
+    order: 2;
+    margin-left: 0;
+  }
+  .app .hero-container .hero .col2 .ball {
+    width: 18rem;
+    height: 18rem;
+    margin-left: 0;
+    right: 10rem;
+    transform: translateX(20px);
+  }
+  .app .hero-container .hero .col2 img {
+    width: 18rem;
+    height: 15rem;
+    /*   margin-left: 5rem; */
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .app .hero-container .hero .col1 {
+    margin-bottom: 20rem;
+    margin-top: 0.5rem;
+    margin-left: 12rem;
+  }
+  .app .hero-container .hero .col1 h1 {
+    font-size: 15rem;
+  }
+  .app .hero-container .hero .col1 h2 {
+    font-size: 4rem;
+  }
+  .app .hero-container .hero .col2 {
+    margin-left: -10rem;
+  }
+  .app .hero-container .hero .col2 .ball {
+    width: 32rem;
+    height: 32rem;
+  }
+  .app .hero-container .hero .col2 .img {
+    width: 28rem;
+    height: 20rem;
+    margin-right: 4rem;
+  }
+}
+/* ++++++++++ Start of Navbar Component style sheet ++++++++++ */
+.navbar-container {
+  position: sticky;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+.navbar-container .navbar {
+  height: 6rem;
+  display: flex;
+  background-color: #ece8e7;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-container .navbar .logo {
+  padding: 0 2rem;
+}
+.navbar-container .navbar .logo h1 {
+  color: #b48821;
+  font-family: "MoonDance-Regular";
+  font-size: 4rem;
+}
+@font-face {
+  font-family: "MoonDance-Regular";
+  src: url("../assets/fonts/MoonDance/MoonDance-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.navbar-container .navbar .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 2.5rem;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../path/to/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.navbar-container .navbar .nav-menu .item {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+}
+.navbar-container .navbar .nav-menu .item .links {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+}
+.navbar-container .navbar .nav-menu .item .links:hover {
+  border-bottom: 3px solid #b48821;
+  transition: ease-in-out;
+}
+.navbar-container .navbar .nav-menu .contact-btn button {
+  background-color: #b48821;
+  color: white;
+  padding: 0 0.9rem;
+  height: 2.6rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 4px 8px 40px 0px rgba(142, 110, 26, 0.0015);
+  transition: all 0.5s ease;
+}
+.navbar-container .navbar .nav-menu .contact-btn button:hover {
+  color: #001f3f;
+}
+.navbar-container .navbar .nav-menu .contact-btn button .links {
+  color: white;
+}
+.navbar-container .navbar .nav-menu .contact-btn button .links:hover {
+  color: black;
+}
+.navbar-container .navbar .nav-menu .cart-btn {
+  color: #b48821;
+  width: 30px;
+  height: 50px;
+}
+.navbar-container .navbar .nav-menu .cart-btn:hover {
+  color: black;
+}
+.navbar-container .navbar .nav-menu .cart {
+  list-style: none;
+  position: relative;
+}
+.navbar-container .navbar .nav-menu .cart .links span {
+  font-size: 10px;
+  background-color: rgb(11, 11, 11);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  padding: 0.5px 5px;
+}
+.navbar-container .navbar .nav-menu .profile-btn {
+  list-style: none;
+}
+.navbar-container .navbar .nav-menu .profile-btn .links {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-container .navbar .nav-menu .profile-btn .links .user {
+  color: #b48821;
+  font-size: 3.5rem;
+}
+.navbar-container .hamburger {
+  font-size: 3rem;
+  display: none;
+}
+
+/* ++++++++++ End of Navbar Component style sheet ++++++++++ */
+/* ++++++++++ Start of Hero Component style sheet ++++++++++ */
+.hero-container .hero {
+  display: flex;
+  /*     justify-content: space-between;
+  */
+  flex-wrap: wrap;
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0) 50%, rgba(209, 204, 204, 0.445) 50%);
+}
+.hero-container .hero .col1 {
+  flex-basis: 30%;
+  margin-bottom: 28rem;
+  margin-left: 18rem;
+  margin-top: 1rem;
+  z-index: 1;
+}
+.hero-container .hero .col1 h1 {
+  font-weight: 300;
+  font-size: 15rem;
+  color: rgba(29, 28, 26, 0.805);
+  /* 
+  left: 15rem;
+  top: 8rem; */
+  z-index: 2;
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../path/to/Roboto-Medium.ttf") format("truetype");
+  font-style: Light;
+}
+.hero-container .hero .col1 h2 {
+  color: #b48821;
+  font-family: "MoonDance-Regular";
+  font-size: 4rem;
+  /*  */ /*  top: 28rem;
+left: 18rem; */
+}
+@font-face {
+  font-family: "MoonDance-Regular";
+  src: url("../assets/fonts/MoonDance/MoonDance-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.hero-container .hero .col2 {
+  flex-basis: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 0rem;
+  /*       margin-left: -8rem;
+  */
+}
+.hero-container .hero .col2 .img {
+  width: 45rem;
+  height: 28rem;
+  /* position: absolute;
+  right:20rem;
+  top:12rem;  */
+  z-index: 1;
+}
+.hero-container .hero .col2 .ball {
+  width: 38rem;
+  height: 38rem;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #b68a23;
+  border-radius: 50%;
+  /*       border: #e4e4e48d 2rem solid;
+  */ /*  
+   right:15rem;
+  top:8rem;  */
+  transform: translateX(150px);
+  z-index: 0;
+}
+
+/* ++++++++++ End of Hero Component style sheet ++++++++++ */
+/* ++++++++++ Start of Aboutme Component style sheet ++++++++++ */
+.about-container {
+  margin: 8rem auto;
+  width: 100%;
+  max-width: 95rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+.about-container .about-image {
+  width: 400px;
+  height: 600px;
+  margin-left: 5rem;
+}
+.about-container .rectangle1,
+.about-container .rectangle2 {
+  position: absolute;
+  top: 0;
+  left: 10rem;
+  width: 450px;
+  height: 630px;
+  transform: rotate(-13deg);
+  z-index: -1;
+  /*     animation: rotateAnimation 60s infinite linear; */
+}
+.about-container .rectangle1 {
+  border: 15px solid rgba(182, 138, 35, 0.3215686275);
+  margin-left: 50px;
+}
+.about-container .rectangle2 {
+  border: 15px solid #eaeae8;
+  margin-top: -50px;
+  margin-left: -10px; /* Add some spacing between the rectangles */
+}
+.about-container section {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  max-width: 50vw;
+  margin-left: 10rem;
+  /*    margin-top: 2rem; */
+}
+.about-container section h2 {
+  color: #b48821;
+  font-size: 3rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .about-container section h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-container section h2 {
+    font-size: 2rem;
+  }
+}
+.about-container section p {
+  color: #333;
+  font-family: "Roboto-Medium";
+  font-size: 1.5rem;
+  max-width: 80%;
+}
+
+/* ++++++++++ End of Aboutme Component style sheet ++++++++++ */
+/* ++++++++++ Start of Service Component style sheet ++++++++++ */
+.service-container {
+  background-color: #ece8e7;
+  /* Styles for the service wrapper */
+}
+.service-container .service-wrapper {
+  margin: 8rem auto;
+  width: 100%;
+  max-width: 95rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Header container for the section */
+  /* Container for tab navigation */
+  /* Style for the service section */
+}
+.service-container .service-wrapper .header-container h2 {
+  padding: 1.5em 0 0;
+  color: #b48821;
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .service-container .service-wrapper .header-container h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .service-container .service-wrapper .header-container h2 {
+    font-size: 2rem;
+  }
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../path/to/Roboto-Medium.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.service-container .service-wrapper .tab-container {
+  width: 80%;
+  padding: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Navigation for tabs */
+}
+.service-container .service-wrapper .tab-container .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.service-container .service-wrapper .tab-container .navigation li {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+}
+.service-container .service-wrapper .tab-container .navigation li .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.service-container .service-wrapper .tab-container .navigation li .button .icon {
+  position: absolute;
+  width: 8.5rem;
+  height: 8.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #b48821;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+  border-radius: 50%;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+.service-container .service-wrapper .tab-container .navigation li .button .icon img {
+  height: 5rem;
+  width: 5rem;
+}
+.service-container .service-wrapper .tab-container .navigation li .button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: 10px 22px 40px rgba(0, 0, 0, 0) 5%;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.service-container .service-wrapper .tab-container .navigation li.active .icon {
+  transition-delay: 0s;
+  font-size: 12rem;
+  background: #b48821;
+}
+.service-container .service-wrapper .tab-container .navigation li.active .icon::before {
+  transform: scale(1);
+}
+.service-container .service-wrapper .service-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* Container for card content */
+}
+.service-container .service-wrapper .service-section .card-content-container {
+  width: 100%;
+  /* Container for cards */
+  /* Style the circle icons based on the tab index */
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  /* Individual card styles */
+  /* Header and button styles for each card type */
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard {
+  width: 24%;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+  overflow: hidden;
+  transition: all 0.1s ease-in-out;
+  /* Card hover effect */
+  /* Card header */
+  /* Card body */
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .yoga,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .meditation,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .retreat,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .yoga,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .meditation,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .retreat,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .yoga,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .meditation,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .retreat {
+  border-radius: 1rem;
+  border-bottom: 3px solid;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .yoga,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .yoga,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .yoga {
+  border-bottom-color: #b48821;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .yoga .card-body p h4,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .yoga .card-body p h4,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .yoga .card-body p h4 {
+  color: #b48821;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .meditation,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .meditation,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .meditation {
+  border-bottom-color: #6b8e23;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .meditation .card-body p h4,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .meditation .card-body p h4,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .meditation .card-body p h4 {
+  color: #6b8e23;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .meditation .card-body .card-content-container .card-element .circle-icon,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .meditation .card-body .card-content-container .card-element .circle-icon,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .meditation .card-body .card-content-container .card-element .circle-icon {
+  color: #6b8e23;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .retreat,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .retreat,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .retreat {
+  border-bottom-color: #008080;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .retreat .card-body p h4,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .retreat .card-body p h4,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .retreat .card-body p h4 {
+  color: #008080;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .retreat .card-body .card-content-container .card-element .circle-icon,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .retreat .card-body .card-content-container .card-element .circle-icon,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .retreat .card-body .card-content-container .card-element .circle-icon {
+  color: #008080;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .header-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .header-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .header-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .btn-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .btn-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .btn-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .header-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .header-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .header-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .btn-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .btn-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .btn-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .header-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .header-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .header-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .btn-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .btn-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .btn-premium {
+  background: #b48821;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .meditation .header-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .meditation .header-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .meditation .header-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .meditation .btn-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .meditation .btn-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .meditation .btn-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .meditation .header-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .meditation .header-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .meditation .header-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .meditation .btn-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .meditation .btn-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .meditation .btn-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .meditation .header-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .meditation .header-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .meditation .header-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .meditation .btn-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .meditation .btn-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .meditation .btn-premium {
+  background: #6b8e23;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .retreat .header-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .retreat .header-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .retreat .header-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .retreat .btn-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .retreat .btn-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .retreat .btn-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .retreat .header-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .retreat .header-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .retreat .header-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .retreat .btn-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .retreat .btn-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .retreat .btn-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .retreat .header-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .retreat .header-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .retreat .header-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .retreat .btn-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .retreat .btn-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .retreat .btn-premium {
+  background: #008080;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic:hover,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium:hover,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard:hover {
+  transform: scale(1.02);
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .card-header,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .card-header,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .card-header {
+  height: 5rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .card-body,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .card-body,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .card-body {
+  padding: 0.8rem 0;
+  /* Container for card elements */
+  /* Card buttons */
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .card-body p h4,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .card-body p h4,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .card-body p h4 {
+  font-size: 2.3rem;
+  font-size: 1.5rem;
+  color: #b48821;
+  padding: 1rem;
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../path/to/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .card-body .card-element-container,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .card-body .card-element-container,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .card-body .card-element-container {
+  color: #333;
+  list-style: none;
+  font-size: 1rem;
+  text-align: left;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .card-body .card-element-container .card-element .circle-icon,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .card-body .card-element-container .card-element .circle-icon,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .card-body .card-element-container .card-element .circle-icon {
+  margin-right: 0.5rem;
+  color: #b48821;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .card-body .btn,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .card-body .btn,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .card-body .btn {
+  margin: 0.5rem 0;
+  padding: 0.6rem 0.9rem;
+  outline: none;
+  border-radius: 0.7rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .card-body .btn:hover,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .card-body .btn:hover,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .card-body .btn:hover {
+  transform: scale(0.95);
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-basic .card-body .btn:active,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-premium .card-body .btn:active,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .card-standard .card-body .btn:active {
+  transform: scale(1);
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .header-basic,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .btn-basic {
+  background: #b48821;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .header-standard,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .btn-standard {
+  background: #b48821;
+}
+.service-container .service-wrapper .service-section .card-content-container .cards-container .header-premium,
+.service-container .service-wrapper .service-section .card-content-container .cards-container .btn-premium {
+  background: #b48821;
+}
+.service-container .service-wrapper .service-section .card-content-container .circle-icon-0 {
+  color: #b48821; /* Yoga tab color */
+  margin-right: 0.4rem;
+}
+.service-container .service-wrapper .service-section .card-content-container .circle-icon-1 {
+  color: #6b8e23; /* Meditation tab color */
+  margin-right: 0.4rem;
+}
+.service-container .service-wrapper .service-section .card-content-container .circle-icon-2 {
+  color: #008080; /* Retreat tab color */
+  margin-right: 0.4rem;
+}
+
+/* ++++++++++ End of Service Component style sheet ++++++++++ */
+/* ++++++++++ Start of Gallery Component style sheet ++++++++++ */
+.gallery-container {
+  /* This class defines the container for the gallery. */
+  margin: 8rem auto;
+  width: 100%;
+  max-width: 95rem;
+  padding: 0 2rem;
+  /* This code centers the container and sets its maximum width. */
+  /* This code applies the `heading-2-color` mixin to the heading, which sets its color to the same color as the `h2` heading element in the JSX code. */
+  /* This code applies a transition to the images, which will cause them to scale up slightly when the user hovers over them. */
+  /* Code applies scale transform and box shadow on image hover. */
+}
+.gallery-container h2 {
+  /* This class defines the heading for the gallery. */
+  color: #b48821;
+  font-size: 3rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .gallery-container h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .gallery-container h2 {
+    font-size: 2rem;
+  }
+}
+.gallery-container .gallery-image {
+  /* This class defines the styles for the gallery images. */
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  position: relative;
+  padding: 1rem;
+}
+.gallery-container .gallery-image:hover {
+  /* This class defines the styles for the gallery images when the user hovers over them. */
+  transform: scale(1.05);
+  z-index: 1;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ++++++++++ End of Gallery Component style sheet ++++++++++ */
+/* ++++++++++ Start of Feedback Component style sheet ++++++++++ */
+.feedback-container {
+  background-color: #ece8e7;
+}
+.feedback-container .site-container {
+  margin: 8rem auto;
+  width: 100%;
+  max-width: 95rem;
+  padding: 0 2rem;
+  padding: 3rem 10rem;
+}
+.feedback-container .site-container .feedback-heading {
+  color: #b48821;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7rem;
+}
+@media (max-width: 768px) {
+  .feedback-container .site-container .feedback-heading {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .feedback-container .site-container .feedback-heading {
+    font-size: 2rem;
+  }
+}
+.feedback-container .site-container .article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+.feedback-container .site-container .article-container .article-card {
+  width: 20rem;
+  height: 10rem;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0px 10px 33px -3px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.feedback-container .site-container .article-container .article-card .article-image {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 60px;
+  border-radius: 50%;
+  border: 5px solid rgba(190, 143, 57, 0.937);
+  overflow: hidden;
+  transform: translatey(-100px);
+}
+.feedback-container .site-container .article-container .article-card .article-image img {
+  max-width: 120%;
+  height: 120%;
+}
+.feedback-container .site-container .article-container .article-card .article-content {
+  padding: 10px 20px;
+  text-align: center;
+  transform: translatey(-100px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.feedback-container .site-container .article-container .article-card .article-content1 {
+  transform: translatey(-100px);
+  text-align: center;
+  margin-top: 10px;
+}
+.feedback-container .site-container .article-container .article-card:hover {
+  height: 20rem;
+}
+.feedback-container .site-container .article-container .article-card:hover > .article-content {
+  opacity: 1;
+  transform: translateY(-100px);
+}
+
+/* ++++++++++ End of Feedback Component style sheet ++++++++++ */
+/* ++++++++++ Start of Demo Component style sheet ++++++++++ */
+.demo {
+  margin: 8rem auto;
+  width: 100%;
+  max-width: 95rem;
+  padding: 0 2rem;
+}
+.demo h2 {
+  color: #b48821;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 3rem;
+}
+@media (max-width: 768px) {
+  .demo h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .demo h2 {
+    font-size: 2rem;
+  }
+}
+.demo h2 {
+  color: #b48821;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 3rem;
+}
+@media (max-width: 768px) {
+  .demo h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .demo h2 {
+    font-size: 2rem;
+  }
+}
+
+.demo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  background-image: url("../assets/images/demosession/pexels-marta.jpg");
+  background-color: #ece8e7;
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.demo-container .mb-2 {
+  margin-bottom: 2rem;
+}
+.demo-container .demo-session-description {
+  padding: 2rem;
+  width: 30rem;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.demo-container .demo-session-description p {
+  margin-bottom: 2rem;
+}
+.demo-container .demo-session-description .booking-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+}
+.demo-container .demo-session-description .booking-info-container ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+.demo-container .demo-session-description .booking-info-container h6 {
+  font-size: 2rem;
+}
+.demo-container .demo-session-description .booking-info-container button {
+  background-color: #b48821;
+  color: white;
+  padding: 0 0.9rem;
+  height: 2.6rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 4px 8px 40px 0px rgba(142, 110, 26, 0.0015);
+  transition: all 0.5s ease;
+  margin-top: 2rem;
+  width: 11rem;
+  transition: all 0.5s ease;
+}
+.demo-container .demo-session-description .booking-info-container button:hover {
+  color: #001f3f;
+}
+.demo-container .demo-session-description .booking-info-container button:hover {
+  color: #001f3f;
+}
+@media (max-width: 768px) {
+  .demo-container .demo-session-description {
+    width: 90%;
+  }
+}
+
+/* ++++++++++ End of Demo Component style sheet ++++++++++ */
+/* ++++++++++ Start of Contact Component style sheet ++++++++++ */
+.contact-container {
+  margin: 8rem auto;
+  width: 100%;
+  max-width: 95rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-container .contact-sub-container {
+  width: 100%;
+  display: flex;
+}
+.contact-container .contact-sub-container .form-container {
+  width: 55%;
+  padding: 1.5rem;
+}
+.contact-container .contact-sub-container .form-container h2 {
+  color: #b48821;
+  font-size: 3rem;
+  padding: 1.5rem 0;
+  margin-right: 15rem;
+}
+@media (max-width: 768px) {
+  .contact-container .contact-sub-container .form-container h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .contact-container .contact-sub-container .form-container h2 {
+    font-size: 2rem;
+  }
+}
+.contact-container .contact-sub-container .form-container h3 {
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../path/to/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.contact-container .contact-sub-container .submit-btn {
+  background-color: #b48821;
+  color: white;
+  padding: 0 0.9rem;
+  height: 2.6rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 4px 8px 40px 0px rgba(142, 110, 26, 0.0015);
+  transition: all 0.5s ease;
+}
+.contact-container .contact-sub-container .submit-btn:hover {
+  color: #001f3f;
+}
+.contact-container .contact-sub-container .contact-img {
+  margin: 1.6rem;
+  width: 40%;
+  background-image: url("../assets//images/contact/contact.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ++++++++++ End of Contact Component style sheet ++++++++++ */
+/* ++++++++++ Start of Footer Component style sheet ++++++++++ */
+footer {
+  background: #ece8e7;
+  /*   background-image: url("../assets/images/wave.svg"); */
+}
+footer .scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #b48821;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+footer .scroll-to-top:hover {
+  color: #333;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-container h5 {
+  font-size: 1.7rem;
+}
+footer .footer-container .logo-container {
+  display: flex;
+  align-items: center;
+  /*  .logo {
+    @include logo-font-style;
+    font-family: "MoonDance-Regular";
+    font-size: 3rem;
+  } */
+}
+footer .footer-container .about-me {
+  margin-top: 2rem;
+}
+footer .footer-container .about-me p {
+  max-width: 30rem;
+  font-size: 1.2rem;
+}
+footer .footer-container .about-me .icons ul {
+  font-size: 2.9rem;
+  display: flex;
+  gap: 2rem;
+}
+footer .footer-container .about-me .icons ul :hover {
+  opacity: 0.9;
+}
+footer .footer-container .about-me .icons ul li a {
+  color: #b48821;
+}
+footer .footer-container .links {
+  margin-top: 2rem;
+  background-color: transparent;
+  /*  border: none; */
+}
+footer .footer-container .links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+footer .footer-container .links li a:hover {
+  border-bottom: 4px solid #b48821;
+  transition: ease-in-out;
+}
+footer .copyright {
+  background-color: #e1dddc;
+  color: #333;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* ++++++++++ End of Footer Component style sheet ++++++++++ */
+/* cart  */
+.card {
+  width: 40%;
+  height: 50vh;
+  background-color: rgb(255, 255, 253);
+  border: 2px solid rgba(210, 188, 64, 0.587);
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ShoppingCart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 8rem;
+}
+
+.item {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.Total {
+  position: absolute;
+  bottom: 3rem;
+  right: 6rem;
+}
+
+.checkout {
+  font-size: 1.2rem;
+  height: 3rem;
+  background-color: #b48821;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: 8rem;
+}
+
+.services {
+  font-size: 1.8rem;
+}
+.services p {
+  color: #b48821;
+  font-size: 1rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  padding-top: 7px;
+}
+
+.bin {
+  color: rgba(77, 76, 76, 0.61);
+  width: 2.5rem;
+  height: 1.8rem;
+  padding-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .ShoppingCart h1 {
+    font-size: 1.5rem;
+  }
+  .card {
+    width: 60%;
+  }
+  .card .services {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=App.css.map */

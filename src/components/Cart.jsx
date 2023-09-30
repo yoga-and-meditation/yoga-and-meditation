@@ -2,11 +2,19 @@
  import {useState,useEffect} from 'react' 
  import {AiFillDelete} from 'react-icons/ai'
 import { useMyContext } from '../Context/Context';
+import Modal from 'react-bootstrap/Modal';
 
 const Cart = () => {
   const {cart,setcart}=useMyContext();
 let[total,setTotal]=useState(0)
+const [showModal, setShowModal] = useState(false);
+const closeModal = () => {
+  setShowModal(false);
 
+};
+const handlecheckout = () => {
+  setShowModal(true);
+};
 useEffect(() => {
     let calculatedTotal = 0;
     cart.forEach((ele) => {
@@ -45,9 +53,38 @@ useEffect(() => {
 <h4 className='Total'>Total={total}€</h4>
 
         </div>
-        <button className='checkout'>Checkout</button>
+        <button className='checkout' onClick={handlecheckout}>Checkout</button>
 
-        
+        <Modal show={showModal} onHide={closeModal} centered>
+        <Modal.Header closeButton> 
+           <Modal.Title>Sorry!!</Modal.Title>
+       </Modal.Header>
+        <Modal.Body>
+You already choosed this service        </Modal.Body>
+        <Modal.Footer>
+          
+          <button className='contact-btn'
+                      onClick={closeModal}
+
+          >
+OK,thanks for reminding </button>
+        </Modal.Footer>
+      </Modal> 
+      <Modal show={showModal} onHide={closeModal} centered>
+        <Modal.Header closeButton> 
+           <Modal.Title>Thank you for choosing our service</Modal.Title>
+       </Modal.Header>
+        <Modal.Body>
+you will get an email regarding the classes       </Modal.Body>
+        <Modal.Footer>
+          
+          <button className='model-btn'
+                      onClick={closeModal}
+
+          >
+close</button>
+        </Modal.Footer>
+      </Modal> 
       </div>
     );
   };
