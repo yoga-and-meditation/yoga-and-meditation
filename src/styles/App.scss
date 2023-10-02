@@ -950,3 +950,48 @@ footer {
   }
 }
 /* ++++++++++ End of Footer Component style sheet ++++++++++ */
+
+/*  */
+.teamheading{
+  text-align: center;
+  padding: 5rem 0;
+  color:#b48821
+}
+.profilecard{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding-bottom: 5rem;
+  .card{
+    width:18rem;
+    height:15rem;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.11) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 2px 1px;       .img{
+      width:45%
+    }
+    
+    .icon-container{
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      .icon{
+font-size: 2rem;   
+color: #18191b79;   }
+    }
+  }
+  .card:hover{
+    transform: scale(1.1);
+    transition: .6s;
+  }
+}
+
+ .img{  
+  width:8rem;
+  height:8rem;
+  border-radius: 50%;
+
+  
+}
+

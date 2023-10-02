@@ -19,7 +19,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Cart from './components/Cart'
 import { MyContextProvider } from "./Context/Context.jsx";
-
+import Ourteam from "./components/Ourteam";
 function App() {
   return (
     <div className="app">
@@ -41,6 +41,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/cart" element={<Cart/>} />
+            <Route path="/ourteam" element={<Ourteam />} />
 
             <Route path="/demo" element={<Demo />} />
             <Route path="/gallery" element={<Gallery />} />
@@ -60,13 +61,14 @@ function App() {
 function Home() {
   return (
     <>
-      <Hero />
+      {/* <Hero />
       <Aboutme />
       <Services />
       <Contacts />
       <Demo />
       <Gallery />
-      <Feedback />
+      <Feedback /> */}
+      <Ourteam/>
     </>
   );
 }
