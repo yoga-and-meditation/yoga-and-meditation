@@ -1064,6 +1064,7 @@ footer {
   border-radius: 10px;
   border: none;
   width: 8rem;
+  margin-bottom: 2rem;
 }
 .services {
   font-size: 1.8rem;
@@ -1077,10 +1078,11 @@ footer {
   padding-top: 7px;
 }
 .bin {
-  color: rgba(77, 76, 76, 0.61);
-  width: 2.5rem;
-  height: 1.8rem;
+  color: rgba(255, 0, 0, 0.619);
+  width: 3rem;
+  height: 2.5rem;
   padding-top: 8px;
+  cursor: pointer;
 }
 @media (max-width: 700px) {
   .ShoppingCart h1 {
