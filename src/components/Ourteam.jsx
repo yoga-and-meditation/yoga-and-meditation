@@ -1,8 +1,9 @@
 import React from 'react'
-import image1 from "../assets/images/Team/Rosh.png";
+import image1 from "../assets/images/Team/Rosh2.jpg";
 import image2 from "../assets/images/Team/Abdulwase.jpg";
 import image3 from "../assets/images/Team/Louis.jpg";
 import image4 from "../assets/images/Team/Kidan.jpg";
+import image5 from "../assets/images/Team/Shaqayeq.jpeg";
 import { BsLinkedin,BsGithub } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 const Ourteam = () => {
@@ -11,7 +12,7 @@ const Ourteam = () => {
         { id: 2, title: ' Roshini Muralidharan',Linkedin:'https://www.linkedin.com/in/roshini-muralidharan/',Github:'https://github.com/roshinimurali',image:image1 },
         { id: 3, title: 'Louis Peter',Linkedin:'https://www.linkedin.com/in/louisclarencepeter/',Github:'https://github.com/louisclarencepeter',image:image3 },
         { id: 4, title: 'Kidan Lakew',Linkedin:'https://www.linkedin.com/in/kidan-lakew/',Github:'https://github.com/Kidan-Tekelearegy',image:image4},
-        { id: 5, title: 'Shaqayeq Taheri',Linkedin:'https://www.linkedin.com/in/shaqayeq-taheri-328697254/',Github:'https://github.com/Shaqayeq-taheri',image:image1 },
+        { id: 5, title: 'Shaqayeq Taheri',Linkedin:'https://www.linkedin.com/in/shaqayeq-taheri-328697254/',Github:'https://github.com/Shaqayeq-taheri',image:image5 },
       ];
   return (
     <div> 
