@@ -4,7 +4,7 @@ import image3 from "../assets/images/Team/Louis.jpg";
 import image4 from "../assets/images/Team/Kidan.jpg";
 import image5 from "../assets/images/Team/Shaqayeq.jpeg";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { Link } from "react-router-dom";
+
 const Ourteam = () => {
   const cardsData = [
     {
