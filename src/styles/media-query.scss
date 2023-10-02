@@ -1238,6 +1238,13 @@
 /* +++Media Query between 1150px and 1300px  +++*/
 @media (min-width: 1150px) and (max-width: 1300px) {
   .app {
+    /* About Componenet */
+    /* About Componet */
+    .about-container {
+      margin-top: 15rem;
+      width: 99%;
+      padding-bottom: 8rem;
+    }
     .hero-container {
       .hero {
         .col1 {
