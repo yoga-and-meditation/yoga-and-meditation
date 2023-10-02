@@ -1,6 +1,16 @@
-body {
-  padding: 0;
+/* @tailwind base; */ /* this will reset the root style that's why it is commented */
+@tailwind components;
+@tailwind utilities;
+/* Universal pre-defined style */
+*,
+*::before,
+*:after {
   margin: 0;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
-  color: #b48821;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root  pre-defined style*/
+:root {
+  font-size: calc(1rem + 0.5vw, 1.5rem);
 }

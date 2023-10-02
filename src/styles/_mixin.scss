@@ -1,27 +1,110 @@
-@mixin logo-font-style {
-  @font-face {
-    font-family: "MoonDance-Regular";
-    src: url("src/assets/fonts/MoonDance/MoonDance-Regular.ttf")
-      format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    /*comment*/
+@import "variables";
+
+/* ---------------------------- Mixin for button style -------------------------- */
+@mixin button-style {
+  background-color: #b48821;
+  color: $button-text-color;
+  padding: 0 0.9rem;
+  height: 2.6rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 4px 8px 40px 0px rgba(142, 110, 26, 0.15%);
+  transition: all 0.5s ease;
+  &:hover {
+    color: #001f3f;
   }
 }
 
-@mixin button-style {
-  /* The yellow-gold color, we keep it incase we need it */
-  /* background: linear-gradient(
-    360deg,
-    rgba(203, 157, 35, 1) 0%,
-    rgba(249, 194, 51, 1) 100%
-  ); */
-  background-color: #B48821;
-  color: white;
-  padding: 0 1.8rem;
-  height: 3.6rem;
-  border-radius: 1.2rem;
-  border: none;
-  font-size: 1.4rem;
-  box-shadow: 4px 8px 40px 0px rgba(142, 110, 26, 15%);
+/* ---------------------------- Mixin for heading 2 style -------------------------- */
+@mixin heading-2-style {
+  color: #b48821;
+  font-size: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2rem;
+  }
+}
+
+/* ---------------------------- Mixin for card shadow style -------------------------- */
+@mixin card-shadow {
+  box-shadow: -16px -19px 57px 32px rgba(0, 0, 0, 0.1),
+    -30px 6px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+/* ---------------------------- Mixin for section padding style -------------------------- */
+@mixin section-padding-style {
+  margin: 8rem auto;
+  width: 100%;
+  max-width: 95rem;
+  padding: 0 2rem;
+}
+
+/* ---------------------------- Mixin for Google fonts -------------------------- */
+
+@mixin heading-1 {
+  @font-face {
+    font-family: "Roboto-Black";
+    src: url("../path/to/Roboto-Black.ttf") format("truetype"); /* here also */
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
+@mixin heading-2 {
+  @font-face {
+    font-family: "Roboto-Medium";
+    src: url("../path/to/Roboto-Medium.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+@mixin heading-3 {
+  @font-face {
+    font-family: "Roboto-Medium";
+    src: url("../path/to/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  font-size: 2.3rem;
+}
+
+@mixin paragraph-normal {
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url("../path/to/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@mixin paragraph-italics {
+  @font-face {
+    font-family: "Roboto-MediumItalic";
+    src: url("../path/to/Roboto-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+@mixin yoga {
+  @font-face {
+    font-family: "Roboto-Light";
+    src: url("../path/to/Roboto-Medium.ttf") format("truetype");
+    font-style: Light;
+  }
+}
+@mixin logo-font-style {
+  @font-face {
+    font-family: "MoonDance-Regular";
+    src: url("../assets/fonts/MoonDance/MoonDance-Regular.ttf")
+      format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  color: #b48821;
 }

@@ -38,7 +38,7 @@ The following technologies will be utilized in this project:
 - Vite (a React development environment) for efficient development workflow.
 - SASS for advanced styling and customization.
 
-## 🏰  Project Structure
+## 🏰 Project Structure
 
 The project structure will be organized as follows:
 
@@ -123,6 +123,14 @@ The following individuals have contributed to the development of this project:
     </tr>
   </tbody>
 </table>
+
+# <<<<<<< HEAD
+
+The website is designed by
+
+<a href="https://github.com/roshinimurali">Roshini Muralidharan</a>
+
+> > > > > > > development
 
 ## 📜 License
 
