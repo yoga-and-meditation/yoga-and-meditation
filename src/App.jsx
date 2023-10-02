@@ -63,11 +63,12 @@ function Home() {
       <Hero />
       <Aboutme />
       <Services />
-      <Contacts />
-      <Demo />
       <Gallery />
       <Feedback />
+      <Demo />
       <Ourteam />
+
+      <Contacts />
     </>
   );
 }
