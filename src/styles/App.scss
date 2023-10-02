@@ -964,7 +964,15 @@ footer {
         font-size: 3rem;
       } */
     }
+    .logo {
+      padding: 5rem 5rem;
 
+      h1 {
+        @include logo-font-style;
+        font-family: "MoonDance-Regular";
+        font-size: 4rem;
+      }
+    }
     .about-me {
       margin-top: 2rem;
 
