@@ -134,10 +134,25 @@
         font-weight: 300;
         font-size: 15rem;
         color: rgba(29, 28, 26, 0.805);
+        animation: zoomInOut 8s ease-in-out infinite;
+        transform-origin: center;
+        transform: scale(1);
+
         /* 
       left: 15rem;
       top: 8rem; */
         z-index: 2;
+      }
+      @keyframes zoomInOut {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(
+            1.1
+          ); /* Increase the scale factor for a slower zoom effect */
+        }
       }
       h2 {
         @include logo-font-style;
@@ -829,6 +844,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 2rem;
 }
 .ShoppingCart {
   display: flex;
@@ -890,11 +906,17 @@
   justify-content: center;
   padding-bottom: 5rem;
   .card {
+    padding-top: 1rem;
+
     width: 18rem;
-    height: 15rem;
+    height: 17rem;
     border: none;
     box-shadow: rgba(60, 64, 67, 0.11) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 1px 2px 1px;
+
+    h4 {
+      padding-top: 1rem;
+    }
     .img {
       width: 45%;
     }

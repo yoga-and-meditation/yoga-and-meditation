@@ -71,13 +71,13 @@ const Cart = () => {
         <Modal.Header closeButton>
           <Modal.Title>Sorry!!</Modal.Title>
         </Modal.Header>
-        <Modal.Body>You already chose this service </Modal.Body>
+        <Modal.Body>You already chose this service</Modal.Body>
         <Modal.Footer>
           <button
             className="contact-btn"
             onClick={closeModal}
             style={{
-              backgroundColor: "#b48821", // Changed background color
+              backgroundColor: "#b48821",
               color: "white",
               padding: "10px 20px",
               border: "none",
@@ -89,6 +89,7 @@ const Cart = () => {
           </button>
         </Modal.Footer>
       </Modal>
+
       <Modal show={showModal} onHide={closeModal} centered>
         <Modal.Header closeButton>
           <Modal.Title>Thank you for choosing our service</Modal.Title>
