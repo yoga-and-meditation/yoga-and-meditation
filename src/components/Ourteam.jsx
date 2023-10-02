@@ -49,7 +49,7 @@ const Ourteam = () => {
       <div className="profilecard">
         {cardsData.map((card) => (
           <div key={card.id} className="card">
-            <img src={card.image} className="img" alt="" />
+            <img src={card.image} className="img-profile" alt="" />
             <h4>{card.title}</h4>
             <div className="icon-container">
               {" "}
