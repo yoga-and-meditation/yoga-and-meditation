@@ -1,5 +1,5 @@
 import image1 from "../assets/images/Team/Rosh2.jpg";
-import image2 from "../assets/images/Team/Abdulwase.jpg";
+import image2 from "../assets/images/Team/Abdulwase.png";
 import image3 from "../assets/images/Team/Louis.jpg";
 import image4 from "../assets/images/Team/Kidan.jpg";
 import image5 from "../assets/images/Team/Shaqayeq.jpeg";
