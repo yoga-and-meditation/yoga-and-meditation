@@ -340,6 +340,31 @@
       .footer-container {
         display: flex;
         flex-direction: column;
+
+        .logo {
+          padding: 0;
+          h1 {
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 1.5rem;
+          }
+        }
+
+        .about-me {
+          padding: 1.5rem;
+          h5 {
+            font-size: 1.3rem;
+          }
+        }
+        .icons {
+          ul {
+            padding-left: 0;
+          }
+        }
+        .links {
+          display: flex;
+          justify-content: center;
+        }
         /* Hero Component */
       }
 

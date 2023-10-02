@@ -50,17 +50,16 @@ function Footer() {
         <div className="logo">
           <h1>Yoga & Meditaion</h1>
           {/*  <h4 className="logo">Yoga and Meditation</h4> */}
-         {/*  <img src={logo} alt="yoga and meditaion" / */}
+          {/*  <img src={logo} alt="yoga and meditaion" / */}
         </div>
 
         <div className=" about-me">
-          <h5>About me </h5>
+          <h5>About Us </h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
             quidem pariatur autem neque, voluptatum sit error sint. Qui,
-            facilis. Consectetur temporibus ullam neque tempore, ut perferendis
-            nostrum necessitatibus repellendus fuga.
           </p>
+
           <div className="icons">
             <ul>
               <li className="list-group">
