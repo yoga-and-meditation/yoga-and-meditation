@@ -63,30 +63,29 @@
           }
         }
       }
-      .cart-btn{
-        color:#b48821;
-        width:30px;
+      .cart-btn {
+        color: #b48821;
+        width: 30px;
         height: 50px;
         &:hover {
           color: black;
         }
-        
       }
-      .cart{
+      .cart {
         list-style: none;
-        position:relative;
-        .links span{
+        position: relative;
+        .links span {
           font-size: 10px;
           background-color: rgb(11, 11, 11);
           border-radius: 50%;
           display: flex;
           justify-content: center;
           align-items: center;
-          color:white;
-          position:absolute;
-          top:0px;
-          left:20px;
-          padding: .5px 5px;
+          color: white;
+          position: absolute;
+          top: 0px;
+          left: 20px;
+          padding: 0.5px 5px;
         }
       }
       .profile-btn {
@@ -877,6 +876,50 @@
 }
 /* ++++++++++ End of Cart Component style sheet ++++++++++ */
 
+/* Out Team Component */
+
+.teamheading {
+  text-align: center;
+  padding: 5rem 0;
+  color: #b48821;
+}
+.profilecard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding-bottom: 5rem;
+  .card {
+    width: 18rem;
+    height: 15rem;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.11) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 2px 1px;
+    .img {
+      width: 45%;
+    }
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      .icon {
+        font-size: 2rem;
+        color: #18191b79;
+      }
+    }
+  }
+  .card:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+  }
+}
+.img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 2px solid rgb(149, 147, 147);
+}
 /* ++++++++++ Start of Footer Component style sheet ++++++++++ */
 footer {
   background: $secondary-background-color;
@@ -977,66 +1020,67 @@ footer {
 /* ++++++++++ End of Footer Component style sheet ++++++++++ */
 /* cart  */
 
-.card{
-  width:40%;
-  height:50vh;
-  background-color:rgb(255, 255, 253);
-  border:2px solid rgba(210, 188, 64, 0.587);
+.card {
+  width: 40%;
+  height: 50vh;
+  background-color: rgb(255, 255, 253);
+  border: 2px solid rgba(210, 188, 64, 0.587);
   border-radius: 10%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.ShoppingCart{
+.ShoppingCart {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap:1rem;
+  gap: 1rem;
   padding-top: 8rem;
 }
-.item{
+.item {
   padding-top: 2rem;
-display: flex;
-flex-direction: row;
-gap :2rem
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
-.Total{
+.Total {
   position: absolute;
-  bottom:3rem;
+  bottom: 3rem;
   right: 6rem;
 }
-.checkout{
+.checkout {
   font-size: 1.2rem;
   height: 3rem;
-background-color: #b48821;
-color:white;
-border-radius:10px;
-border: none;
-width: 8rem;
+  background-color: #b48821;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: 8rem;
 }
-.services{
+.services {
   font-size: 1.8rem;
-  p
-  {color:#b48821;
-  font-size: 1rem;}
+  p {
+    color: #b48821;
+    font-size: 1rem;
+  }
 }
-.price{
+.price {
   font-size: 1.2rem;
   padding-top: 7px;
 }
-.bin{
-  color:rgba(77, 76, 76, 0.61);
+.bin {
+  color: rgba(77, 76, 76, 0.61);
   width: 2.5rem;
   height: 1.8rem;
   padding-top: 8px;
 }
 @media (max-width: 700px) {
-  .ShoppingCart h1{
+  .ShoppingCart h1 {
     font-size: 1.5rem;
   }
-  .card{
+  .card {
     width: 60%;
-    .services{
+    .services {
       font-size: 1.5rem;
     }
   }

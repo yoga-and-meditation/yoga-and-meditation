@@ -17,41 +17,42 @@ import Footer from "./components/Footer";
 import AuthProvider from "./provider/AuthProvider";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Cart from './components/Cart'
+import Cart from "./components/Cart";
 import { MyContextProvider } from "./context/Context.jsx";
+import Ourteam from "./components/Ourteam";
 function App() {
   return (
     <div className="app">
       <MyContextProvider>
+        <BrowserRouter>
+          <AuthProvider>
+            <Navbar />
+            <Routes>
+              {/* Use Element to wrap the Home component */}
+              <Route
+                path="/"
+                element={
+                  <Element name="home-section">
+                    <Home />
+                  </Element>
+                }
+              />
+              <Route path="/aboutme" element={<Aboutme />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/cart" element={<Cart />} />
 
-      <BrowserRouter>
-        <AuthProvider>
-          <Navbar />
-          <Routes>
-            {/* Use Element to wrap the Home component */}
-            <Route
-              path="/"
-              element={
-                <Element name="home-section">
-                  <Home />
-                </Element>
-              }
-            />
-            <Route path="/aboutme" element={<Aboutme />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contacts" element={<Contacts />} />
-            <Route path="/cart" element={<Cart/>} />
-
-            <Route path="/demo" element={<Demo />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/feedback" element={<Feedback />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/user" element={<User />} />
-            <Route path="/signup" element={<Signup />} />
-          </Routes>
-          <Footer />
-        </AuthProvider>
-      </BrowserRouter></MyContextProvider>
+              <Route path="/demo" element={<Demo />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/feedback" element={<Feedback />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/user" element={<User />} />
+              <Route path="/signup" element={<Signup />} />
+            </Routes>
+            <Footer />
+          </AuthProvider>
+        </BrowserRouter>
+      </MyContextProvider>
     </div>
   );
 }
@@ -66,6 +67,7 @@ function Home() {
       <Demo />
       <Gallery />
       <Feedback />
+      <Ourteam />
     </>
   );
 }
