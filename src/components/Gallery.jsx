@@ -14,13 +14,10 @@ const Gallery = () => {
           // This code imports the image file.
           const imagePath = `/gallery/${i}.jpg`;
 
-          // Using the @vite-ignore comment to suppress the warning
-          const importedImage = await import(/* @vite-ignore */ imagePath);
-
           // This code creates an object that represents the image.
           importedImages.push({
             id: i,
-            src: importedImage.default,
+            src: imagePath, // Use imagePath directly without import statement
             alt: `Image ${i}`,
           });
         }
