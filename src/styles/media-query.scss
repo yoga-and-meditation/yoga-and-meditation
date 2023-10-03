@@ -375,10 +375,49 @@
   }
 }
 
-/* Meida Query only for Service component */
-@media (min-width: 361px) and (max-width: 450px) {
+/* +++Media Query between 361px and 600px  +++*/
+@media (min-width: 361px) and (max-width: #{$medium}) {
   .app {
-    /* Services componenet */
+    /* Navbar Component */
+    .navbar-container {
+      .hamburger {
+        display: block;
+        padding: 0 1rem;
+        cursor: pointer;
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        color: #b48821;
+      }
+      .navbar {
+        .nav-menu {
+          display: none;
+          gap: 0;
+        }
+        .logo {
+          position: absolute;
+          h1 {
+            font-size: 3rem;
+          }
+          top: 21px;
+        }
+      }
+      .expanded {
+        background-color: $secondary-background-color; /* Use the defined variablebout-container {
+          flex-direction: column;
+          img { here */
+        min-height: 58vh;
+        .nav-menu {
+          position: absolute;
+          top: 120px;
+          left: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+
     .service-container {
       width: 99%;
       margin-top: -7rem;
@@ -477,51 +516,6 @@
         }
       }
     }
-  }
-}
-/* +++Media Query between 361px and 600px  +++*/
-@media (min-width: 361px) and (max-width: #{$medium}) {
-  .app {
-    /* Navbar Component */
-    .navbar-container {
-      .hamburger {
-        display: block;
-        padding: 0 1rem;
-        cursor: pointer;
-        position: absolute;
-        top: 2px;
-        right: 10px;
-        color: #b48821;
-      }
-      .navbar {
-        .nav-menu {
-          display: none;
-          gap: 0;
-        }
-        .logo {
-          position: absolute;
-          h1 {
-            font-size: 3rem;
-          }
-          top: 21px;
-        }
-      }
-      .expanded {
-        background-color: $secondary-background-color; /* Use the defined variablebout-container {
-          flex-direction: column;
-          img { here */
-        min-height: 58vh;
-        .nav-menu {
-          position: absolute;
-          top: 120px;
-          left: 0;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-        }
-      }
-    }
-
     /* Hero Component */
     .hero-container {
       width: 99%;
