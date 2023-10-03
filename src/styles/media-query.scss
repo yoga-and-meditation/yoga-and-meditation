@@ -721,12 +721,12 @@
         display: flex;
         flex-direction: column;
 
-        .logo-container {
-          padding-top: 1.5rem;
-          display: flex;
-          justify-content: center;
-          .logo {
-            font-size: 2.5rem;
+        .logo {
+          padding: 0;
+          h1 {
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 1.5rem;
           }
         }
 
@@ -736,10 +736,10 @@
           flex-direction: column;
           align-items: center;
           h5 {
-            margin-top: -1.5rem;
+            /* margin-top: -1.5rem;
             text-align: center;
-            padding-bottom: 1rem;
-            font-size: 1.5rem;
+            padding-bottom: 1rem; */
+            font-size: 1.3rem;
           }
           p {
             font-size: 0.9rem;
