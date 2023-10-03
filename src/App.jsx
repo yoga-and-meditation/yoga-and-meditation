@@ -67,7 +67,6 @@ function Home() {
       <Feedback />
       <Demo />
       <Ourteam />
-
       <Contacts />
     </>
   );

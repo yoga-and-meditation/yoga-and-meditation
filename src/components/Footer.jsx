@@ -1,6 +1,5 @@
-import { Outlet, Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-//Icons
+import { Link, Outlet } from "react-router-dom";
+import { useEffect, useState } from "react";
 import {
   FaFacebook,
   FaInstagram,
@@ -8,9 +7,8 @@ import {
   FaEnvelope,
   FaArrowUp,
 } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll"; // Import ScrollLink from react-scroll
 
-/* import logo from "../assets/images/logo.png";
- */
 function Footer() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -48,13 +46,11 @@ function Footer() {
 
       <div className="footer-container">
         <div className="logo">
-          <h1>Yoga & Meditaion</h1>
-          {/*  <h4 className="logo">Yoga and Meditation</h4> */}
-          {/*  <img src={logo} alt="yoga and meditaion" / */}
+          <h1>Yoga & Meditation</h1>
         </div>
 
-        <div className=" about-me">
-          <h5>About Us </h5>
+        <div className="about-me">
+          <h5>About Us</h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
             quidem pariatur autem neque, voluptatum sit error sint. Qui,
@@ -89,36 +85,49 @@ function Footer() {
           <ul>
             <h5>Links</h5>
             <li className="list-group">
-              <Link className="footer-link active" aria-current="page" to="/">
+              {/* Use ScrollLink to scroll to a specific section */}
+              <ScrollLink
+                className="footer-link"
+                to="home-section"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
                 Home
-              </Link>
+              </ScrollLink>
             </li>
             <li className="list-group">
-              <Link
-                className="footer-link active"
-                aria-current="page"
-                to="/aboutme"
+              <ScrollLink
+                className="footer-link"
+                to="aboutme-section"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
                 About
-              </Link>
+              </ScrollLink>
             </li>
             <li className="list-group">
-              <Link
-                className="footer-link active"
-                aria-current="page"
-                to="/demo"
+              <ScrollLink
+                className="footer-link"
+                to="demo-section"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
                 Demo
-              </Link>
+              </ScrollLink>
             </li>
             <li className="list-group">
-              <Link
-                className="footer-link active"
-                aria-current="page"
-                to="/services"
+              <ScrollLink
+                className="footer-link"
+                to="services-section"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
                 Services
-              </Link>
+              </ScrollLink>
             </li>
           </ul>
         </div>
