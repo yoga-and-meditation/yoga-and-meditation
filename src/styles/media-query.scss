@@ -573,6 +573,10 @@
     .demo {
       font-size: 0.8rem;
 
+      .demo-heading {
+        margin-top: -6rem;
+      }
+
       .demo-container {
         display: flex;
         flex-direction: column;
@@ -640,7 +644,8 @@
 
     /* Contact component */
     .contact-container {
-      margin-top: -5rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
       width: 99%;
 
       .contact-sub-container {
@@ -687,6 +692,14 @@
       }
     }
 
+    /* OurTeam Componenet */
+    .ourteam {
+      margin-bottom: -4rem;
+      h1 {
+        margin-top: -7rem;
+        margin-bottom: -2.5rem;
+      }
+    }
     /* Footer component */
     footer {
       .scroll-to-top {

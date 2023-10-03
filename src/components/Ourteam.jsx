@@ -44,7 +44,7 @@ const Ourteam = () => {
     },
   ];
   return (
-    <div>
+    <div className="ourteam">
       <h1 className="teamheading">Our Team</h1>
       <div className="profilecard">
         {cardsData.map((card) => (

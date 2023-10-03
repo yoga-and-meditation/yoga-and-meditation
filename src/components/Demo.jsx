@@ -3,7 +3,7 @@ function BookingInfo({ availability, time, timezone, duration }) {
     <div className="booking-info-container">
       <h6 className="mb-2">Availability</h6>
       <ul>
-        {availability.map(day => (
+        {availability.map((day) => (
           <li key={day}>{day}</li>
         ))}
         <li>{time}</li>
@@ -25,11 +25,15 @@ function Demo() {
 
   return (
     <div className="demo">
-      <h2 className="mb-2">Yoga Demo Session</h2>
+      <h2 className="mb-2 demo-heading">Yoga Demo Session</h2>
       <div className="demo-container">
         <div className="demo-session-description">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam
+            velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate
+            commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor
+            sed eleifend tristique, tortor mauris molestie elit, et lacinia
+            ipsum quam nec dui.
           </p>
           <BookingInfo
             availability={availability}
