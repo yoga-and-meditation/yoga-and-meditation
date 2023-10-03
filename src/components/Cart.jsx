@@ -85,7 +85,7 @@ const Cart = () => {
               cursor: "pointer",
             }}
           >
-            OK, thanks for reminding
+            OK
           </button>
         </Modal.Footer>
       </Modal>
