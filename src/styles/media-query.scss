@@ -113,7 +113,7 @@
 
     /* Services componenet */
     .service-container {
-      width: 99%;
+      width: 100%;
       margin-top: -7rem;
 
       .service-wrapper {
@@ -158,7 +158,7 @@
         }
 
         .service-section {
-          width: 70%;
+          width: 76%;
 
           .card-content-container {
             .cards-container {
@@ -375,6 +375,110 @@
   }
 }
 
+/* Meida Query only for Service component */
+@media (min-width: 361px) and (max-width: 450px) {
+  .app {
+    /* Services componenet */
+    .service-container {
+      width: 99%;
+      margin-top: -7rem;
+
+      .service-wrapper {
+        padding: 0;
+        .header-container {
+          h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1.9rem;
+          }
+        }
+
+        .tab-container {
+          margin-left: 0;
+          margin-bottom: 1rem;
+          width: 95%;
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+          padding-left: 0;
+          padding-right: 0;
+
+          .navigation {
+            padding-left: 0;
+            gap: 7.5rem;
+            justify-content: center;
+            li {
+              margin: 0 auto;
+
+              padding: 0;
+
+              .button {
+                .icon {
+                  width: 5rem;
+                  height: 5rem;
+
+                  img {
+                    height: 3rem;
+                    width: 3rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .service-section {
+          width: 70%;
+
+          .card-content-container {
+            .cards-container {
+              gap: 1rem;
+              padding: 0;
+              padding-bottom: 1rem;
+              display: flex;
+              flex-direction: column;
+
+              .card-basic,
+              .card-premium,
+              .card-standard {
+                width: 100%;
+
+                /* Cards header */
+                .card-header {
+                  padding: 0.8rem;
+                  height: 4rem;
+
+                  h3 {
+                    font-size: 1.5rem;
+                  }
+                }
+
+                /* Card body */
+                .card-body {
+                  p {
+                    h4 {
+                      font-size: 1.2rem;
+                      padding: 0rem;
+                    }
+                  }
+
+                  /* Cards elements*/
+                  .card-element-container {
+                    font-size: 0.9rem;
+                  }
+
+                  /* buttons */
+                  .btn {
+                    font-size: 0.9rem;
+                    padding: 0.5rem 0.7rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 /* +++Media Query between 361px and 600px  +++*/
 @media (min-width: 361px) and (max-width: #{$medium}) {
   .app {
@@ -464,106 +568,6 @@
             width: 14rem;
             height: 15rem;
             margin-top: 1rem;
-          }
-        }
-      }
-    }
-
-    /* Services componenet */
-    .service-container {
-      width: 99%;
-      margin-top: -7rem;
-
-      .service-wrapper {
-        padding: 0;
-        .header-container {
-          h2 {
-            margin-bottom: 1.5rem;
-            font-size: 1.9rem;
-          }
-        }
-
-        .tab-container {
-          margin-left: 0;
-          margin-bottom: 1rem;
-          width: 96%;
-          padding-top: 3rem;
-          padding-bottom: 3rem;
-          padding-left: 0;
-          padding-right: 0;
-
-          .navigation {
-            padding-left: 0;
-            gap: 8rem;
-            justify-content: center;
-            li {
-              margin: 0 auto;
-
-              padding: 0;
-
-              .button {
-                .icon {
-                  width: 5rem;
-                  height: 5rem;
-
-                  img {
-                    height: 3rem;
-                    width: 3rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .service-section {
-          width: 50%;
-
-          .card-content-container {
-            .cards-container {
-              gap: 1rem;
-              padding: 0;
-              padding-bottom: 1rem;
-              display: flex;
-              flex-direction: column;
-
-              .card-basic,
-              .card-premium,
-              .card-standard {
-                width: 100%;
-
-                /* Cards header */
-                .card-header {
-                  padding: 0.8rem;
-                  height: 4rem;
-
-                  h3 {
-                    font-size: 1.5rem;
-                  }
-                }
-
-                /* Card body */
-                .card-body {
-                  p {
-                    h4 {
-                      font-size: 1.2rem;
-                      padding: 0rem;
-                    }
-                  }
-
-                  /* Cards elements*/
-                  .card-element-container {
-                    font-size: 0.9rem;
-                  }
-
-                  /* buttons */
-                  .btn {
-                    font-size: 0.9rem;
-                    padding: 0.5rem 0.7rem;
-                  }
-                }
-              }
-            }
           }
         }
       }
