@@ -895,9 +895,9 @@
 /* Out Team Component */
 
 .teamheading {
+  @include heading-2-style;
   text-align: center;
-  padding: 5rem 0;
-  color: #b48821;
+  padding-bottom: 1.8rem;
 }
 .profilecard {
   display: flex;
