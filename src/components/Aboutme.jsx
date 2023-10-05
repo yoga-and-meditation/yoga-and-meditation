@@ -11,10 +11,7 @@ function Aboutme() {
       <section>
         <h2>About Me</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          animi voluptatum voluptatem, facilis, fugiat quam placeat consequatur
-          id eveniet pariatur labore, quo quia fuga dignissimos perspiciatis.
-          Eius fuga delectus recusandae.
+          My name is Jessica and I am a certified yoga and meditation instructor. I have been practicing yoga for over 10 years and teaching for the past 5 years. I am passionate about helping others find their own unique yoga and meditation practice to improve their physical and mental health.
         </p>
       </section>
     </div>

@@ -29,11 +29,7 @@ function Demo() {
       <div className="demo-container">
         <div className="demo-session-description">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam
-            velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate
-            commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor
-            sed eleifend tristique, tortor mauris molestie elit, et lacinia
-            ipsum quam nec dui.
+            This yoga demo session is designed to give you a taste of what a typical yoga class might be like. The session will begin with a short warm-up to prepare your body for the practice. We will then move through a series of basic yoga poses, with modifications offered as needed. The session will end with a short relaxation pose.
           </p>
           <BookingInfo
             availability={availability}

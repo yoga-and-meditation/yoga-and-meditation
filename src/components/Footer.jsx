@@ -52,8 +52,7 @@ function Footer() {
         <div className="about-me">
           <h5>About Us</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            quidem pariatur autem neque, voluptatum sit error sint. Qui,
+          Abdulwase, Roshini, Louis, Kidan, and Shaqayeq, students at DCI in Germany, collaborated to create a React full-stack yoga page. Remotely they built a captivating yoga platform, showcasing teamwork and innovation.
           </p>
 
           <div className="icons">
