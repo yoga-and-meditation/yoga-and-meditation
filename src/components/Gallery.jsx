@@ -40,8 +40,8 @@ const Gallery = () => {
         <ResponsiveMasonry
           className="gallery-masonry"
           columnsCountBreakPoints={{
-            350: 1,
-            750: 2,
+            350: 3,
+            750: 3,
             900: 3,
           }}
         >
