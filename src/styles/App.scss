@@ -972,7 +972,7 @@ footer {
   }
   .footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     h5 {
       font-size: 1.7rem;
@@ -988,7 +988,7 @@ footer {
       } */
     }
     .logo {
-      padding: 5rem 5rem;
+      padding: 5rem 1rem;
 
       h1 {
         @include logo-font-style;
@@ -997,10 +997,20 @@ footer {
       }
     }
     .about-me {
-      margin-top: 2rem;
+      //margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h5 {
+        font-size: 1.7rem;
+        text-align: center;
+      }
 
       p {
-        max-width: 30rem;
+        //height: 10rem;
+        text-align: center;
         font-size: 1.2rem;
       }
 
@@ -1023,7 +1033,8 @@ footer {
     }
 
     .links {
-      margin-top: 2rem;
+      margin-top: 3.5rem;
+      margin-right: 1rem;
       background-color: transparent;
       /*  border: none; */
 

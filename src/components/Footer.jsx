@@ -52,7 +52,7 @@ function Footer() {
         <div className="about-me">
           <h5>About Us</h5>
           <p>
-          Abdulwase, Roshini, Louis, Kidan, and Shaqayeq, students at DCI in Germany, collaborated to create a React full-stack yoga page. Remotely they built a captivating yoga platform, showcasing teamwork and innovation.
+            Abdulwase, Roshini, Louis, Kidan, and Shaqayeq, students at DCI in Germany, collaborated to create a React full-stack yoga page. Remotely they built a captivating yoga platform, showcasing teamwork and innovation.
           </p>
 
           <div className="icons">
