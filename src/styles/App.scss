@@ -989,6 +989,7 @@ footer {
     }
     .logo {
       padding: 5rem 1rem;
+      margin-top: -1rem;
 
       h1 {
         @include logo-font-style;
