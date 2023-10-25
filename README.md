@@ -124,8 +124,6 @@ The following individuals have contributed to the development of this project:
   </tbody>
 </table>
 
-# <<<<<<< HEAD
-
 The website is designed by
 
 <a href="https://github.com/roshinimurali">Roshini Muralidharan</a>
