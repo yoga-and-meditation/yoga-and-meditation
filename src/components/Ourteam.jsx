@@ -45,7 +45,7 @@ const Ourteam = () => {
   ];
   return (
     <div className="ourteam">
-      <h2 className="teamheading">Our Team</h2>
+      <h2 className="teamheading">Developed By</h2>
       <div className="profilecard">
         {cardsData.map((card) => (
           <div key={card.id} className="card">
