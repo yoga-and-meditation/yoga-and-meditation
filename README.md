@@ -129,7 +129,8 @@ The website is designed by
 <a href="https://github.com/roshinimurali">Roshini Muralidharan</a>
 
 > > > > > > > development
-
+<!--
 ## 📜 License
 
 The Yoga, Meditation, and Counseling website project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+--!>
